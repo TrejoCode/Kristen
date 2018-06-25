@@ -23,7 +23,8 @@
 
     --black:         #000000;
     --white:         #FFFFFF;
-    --color:
+    --blueTeal:      #00b6bf;
+    --blueLink:      #2c54b3;
 
     /*    FONT SIZES    */
 
@@ -48,6 +49,7 @@
 
     --paddingNormal: 8px;
     --paddingMedium: 16px;
+    --paddingSemi: 24px;
     --paddingLarge: 32px;
 
 

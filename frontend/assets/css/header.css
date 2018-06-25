@@ -1,0 +1,5 @@
+header {
+  height: 100px;
+  background-color: var(--blueTeal);
+  font-weight: var(--weightBold);
+}
