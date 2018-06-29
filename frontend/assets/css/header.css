@@ -1,5 +1,59 @@
 header {
-  height: 100px;
+  height: 50px;
   background-color: var(--blueTeal);
   font-weight: var(--weightBold);
+  padding-top: 20px;
+  /*padding-left: 40px;*/
+    
 }
+
+ul.contact{
+    padding-left: 100px;
+}
+
+a{
+    color: white;
+}
+
+i{
+    color: white;
+    padding-top: 8px;
+}
+
+.social{
+    padding-left: 1400px;
+}
+
+#logo{
+    padding-top: 5px;
+    padding-left: 95px
+}
+
+#menu{
+    font-weight: var(--weightBold);
+    color: #2c54b3;
+}
+
+.wrapper {
+  width: 80%;
+  overflow:hidden;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+nav ul li {
+  float: right;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding-left: 5px
+}
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
