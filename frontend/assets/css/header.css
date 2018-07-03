@@ -21,7 +21,7 @@ i{
 }
 
 .social{
-    padding-left: 1400px;
+    padding-left: 1350px;
 }
 
 #logo{
@@ -35,8 +35,9 @@ i{
 }
 
 .wrapper {
-  width: 80%;
+  width: 100%;
   overflow:hidden;
+  
 }
 
 nav ul {
@@ -47,13 +48,32 @@ nav ul li {
   float: right;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  padding-left: 5px
+  padding-right: 10px
 }
 nav ul li a {
-  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
-  padding: 20px;
-  color: #fff;
-  text-decoration: none;
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    
 }
 
+#face{
+    padding-right: 30px
+}
 
+#cel{
+    padding-right: 30px;    
+}
+
+.miDiv flex{
+    padding-bottom: 30px;
+}
+
+.top{
+    border-width: thin;
+    border-style: groove;
+    border-color: var(--black);
+    border-top: 0px;
+    border-left: 0px
+}
