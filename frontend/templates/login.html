@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style> 
+header, footer { width: 100%; height: 100px; background: #666; font-size: 2em; text-align: center; clear: both; } 
+section { position: relative; } 
+#izquierda { position: relative; width: 50%; top: 0; left: 0; background: #ccc; float: left; height: 200px; } 
+#derecha { position: relative; width: 50%; top: 0; right: 0; background: #ddf; float: right; height: 200px; } 
+.esqinfder { position: absolute; bottom: 5px; right: 5px; background: #ff0; } 
+</style> 
+</head> 
+<body> 
+<header> 
+Encabezado 
+</header> 
+<section> 
+<div id="izquierda">Izquierda 
+<div class="esqinfder">Esq Inf Der</div> 
+</div> 
+<div id="derecha">Derecha 
+<div class="esqinfder">Esq Inf Der</div> 
+</div> 
+</section> 
+<footer> 
+Pie 
+</footer> 
+</body> 
+</html> 
