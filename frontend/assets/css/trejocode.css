@@ -165,6 +165,14 @@ div, header, footer, section, article, aside, nav, form, table {
 }
 
 
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;;
+}
+
 /*    WHITE SPACES    */
 
 .white-space-8 {
