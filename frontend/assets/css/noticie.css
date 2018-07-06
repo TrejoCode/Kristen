@@ -1,0 +1,31 @@
+.notice {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.notice .left {
+    width: 70%;
+}
+
+.notice .right {
+    width: 30%;
+}
+
+.notice h2 {
+    color: #505050;
+    font-weight: 700;
+}
+
+.post-date .date-icon, .post-date .date-text {
+    width: auto;
+    padding: 0 var(--paddingNormal);
+    height: 32px;
+}
+
+.post-date .date-text p {
+    font-size: var(--fontTiny);
+}
+
+.notice-description {
+    text-align: justify;
+    color: var(--grayDescription);
+}

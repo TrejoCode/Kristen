@@ -21,10 +21,11 @@
 
     /*    COLORES    */
 
-    --black:         #000000;
-    --white:         #FFFFFF;
-    --blueTeal:      #00b6bf;
-    --blueLink:      #2c54b3;
+    --black:             #000000;
+    --white:             #FFFFFF;
+    --blueTeal:          #00b6bf;
+    --blueLink:          #2c54b3;
+    --grayDescription:   #787878;
 
     /*    FONT SIZES    */
 
@@ -69,6 +70,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+    background-color: #F6F6F7;
+}
+
 button, input, select, textarea {
   margin: 0;
 }
@@ -89,6 +94,10 @@ img {
 
 div, header, footer, section, article, aside, nav, form, table {
     width: 100%;
+}
+
+h2 {
+    font-size: var(--fontLarge);
 }
 
 /* CLASES
