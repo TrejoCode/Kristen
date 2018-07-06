@@ -185,15 +185,15 @@ h2 {
 /*    WHITE SPACES    */
 
 .white-space-8 {
-    margin: 8px 0;
+    height: 8px ;
 }
 
 .white-space-16 {
-    margin: 16px 0;
+    height: 16px ;
 }
 
 .white-space-32 {
-    margin: 32px 0;
+    height: 32px ;
 }
 
 @media screen and (max-width: 768px) {
