@@ -30,6 +30,7 @@
     /*    FONT SIZES    */
 
     --fontTiny:      0.9em;
+    --fontText:      0.93em;
     --fontSmall:     1em;
     --fontRegular:   1.2em;
     --fontMedium:    1.4em;
@@ -46,14 +47,14 @@
 
     /*    FONT FAMILIES    */
 
+    --Roboto: 'Roboto', sans-serif;
+
     /*    PADDINGS    */
 
     --paddingNormal: 8px;
     --paddingMedium: 16px;
     --paddingSemi: 24px;
     --paddingLarge: 32px;
-
-
 }
 
 /* RESET
@@ -86,6 +87,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: none;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -113,7 +118,7 @@ h2 {
     display: flex;
 }
 
-.flex div, .flex img {
+.flex div, .flex img, .flex nav {
     display: flex;
 }
 
@@ -196,10 +201,40 @@ h2 {
     height: 32px ;
 }
 
+/*    LARGE DEVICES    */
+
+@media screen and (max-width: 1200px) {
+    body {
+        background: gray;
+    }
+}
+
+/*    NOTEBOOKS, IPADS DEVICES    */
+
+@media screen and (max-width: 992px) {
+
+    body {
+        background: green;
+    }
+}
+
+/*    TABLETS DEVICES    */
+
 @media screen and (max-width: 768px) {
+
+    body {
+        background: red;
+    }
 
     .row-responsive {
         flex-direction: column;
     }
+}
 
+/*    MOBILE DEVICES    */
+
+@media screen and (max-width: 576px) {
+    body {
+        background: blue;
+    }
 }
