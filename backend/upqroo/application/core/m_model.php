@@ -38,6 +38,7 @@ class m_controller
         curl_setopt($this->curl, CURLOPT_POST,false);
         curl_setopt($this->curl, CURLOPT_HEADER, false);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
+        curl_setopt($this->curl, CURLOPT_POSTFIELDS, $elements);
         $result=curl_exec ($this->curl);
         if($result === false){
             echo curl_error($this->curl);
