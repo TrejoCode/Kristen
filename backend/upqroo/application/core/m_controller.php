@@ -3,7 +3,7 @@
 /**
  *
  */
-class ClassName extends Ci_Controller
+class m_controller extends Ci_Controller
 {
 
   //Revisa el estado del usuario (logueado=true, noLogueado=false)
