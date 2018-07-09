@@ -1,10 +1,10 @@
 /*
     INFORMACIÓN
 	- Documento:      TrejoCode.CSS
-	- Versión:        1.1.1
+	- Versión:        1.1.2
 	- Licence:        MIT
 	- Author:         TrejoCode
-    - Actualización:  06/06/2018
+    - Actualización:  08/07/2018
 */
 
 
@@ -110,6 +110,9 @@ h2 {
 	1. = FLEX LAYOUT
 	2. = ALIGNMENT
     3. = WHITE SPACES
+    4. = FORMS
+    5. = BUTTONS
+
 */
 
 /*    FLEX LAYOUT    */
@@ -200,6 +203,46 @@ h2 {
 .white-space-32 {
     height: 32px ;
 }
+
+
+/*    FORMS     */
+
+
+form, form > input {
+    font-family: var(--Roboto);
+}
+
+.input-text {
+    height: 24px;
+    padding: var(--paddingNormal) var(--paddingMedium);
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: var(--weightSemi);
+    font-family: var(--Roboto);
+}
+
+label {
+    color: var(--grayDescription);
+}
+
+
+/*    BUTTONS     */
+
+.btn {
+    font-weight: var(--weightBold);
+    font-size: var(--fontSmall);
+    padding: var(--paddingMedium) 0;
+    font-family: var(--Roboto);
+    border: none;
+}
+
+.btn-login {
+    background-color: var(--blueTeal);
+    color: var(--white);
+}
+
 
 /*    LARGE DEVICES    */
 
