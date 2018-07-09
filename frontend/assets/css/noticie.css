@@ -1,5 +1,5 @@
 .notice {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--Roboto);
 }
 
 .notice .left {
@@ -15,17 +15,70 @@
     font-weight: 700;
 }
 
-.post-date .date-icon, .post-date .date-text {
-    width: auto;
-    padding: 0 var(--paddingNormal);
-    height: 32px;
+.notice h2::after {
+    content: "";
+    width: 48px;
+    height: 2px;
+    margin: var(--paddingNormal) 0;
+    display: block;
+    position: relative;
+    background-color: #333333;
 }
 
-.post-date .date-text p {
-    font-size: var(--fontTiny);
+.post-date .date-icon, .post-date .date-text, .post-date .tags-icon, .post-date .notice-tags {
+    width: auto;
+    padding: 0 4px;
+    height: 32px;
+    color: var(--grayDescription);
+}
+
+.date-icon i, .tags-icon i {
+    font-size: 0.8em;
+}
+
+.post-date .date-text p, .post-date .notice-tags a  {
+    font-size: 0.8em;
+    color: var(--darkGray);
+    text-transform: uppercase;
+}
+
+.tags-icon i {
+    padding-left: var(--paddingMedium);
+}
+
+.post-date .notice-tags a {
+    padding: 0 var(--paddingNormal);
+    color: var(--blueLink);
 }
 
 .notice-description {
     text-align: justify;
-    color: var(--grayDescription);
+}
+
+.notice-description p {
+    font-size: var(--fontText);
+    line-height: 24px;
+    color: #333;
+}
+
+.notices-latest {
+    width: 80%;
+}
+
+.notices-latest .title h3 {
+    color: var(--blueLink);
+}
+
+.notice-last-card .thumb {
+    width: 90%;
+}
+
+.notice-last-card .title-link a {
+    font-size: 0.8em;
+    font-weight: var(--weightRegular);
+    color: var(--darkGray);
+}
+
+.notice-gallery img{
+    padding: var(--paddingNormal);
 }
