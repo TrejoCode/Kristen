@@ -1,10 +1,10 @@
 <?php
 
-class m_controller
+class m_model extends CI_Model
 {
 
     private $curl;
-    private $url="http://www.google.com"; //url del web service
+    private $url="https://kristen.glitch.me/api/WebSite"; //url del web service https://kristen.glitch.me/api/WebSite/carrera/1
 
     /*
      * Crea la conexion con el web service segun los parametros espesificados
@@ -21,32 +21,41 @@ class m_controller
         curl_setopt($this->curl, CURLOPT_AUTOREFERER, TRUE);
     }
 
+    /*
+     * Genera una url /nombre/valor
+     * Normalmente se usa en peticiones GET
+     */
+    private function urlFormater($elements)
+    {
+        $strUrl='';
+        foreach ($elements as $name=>$value) {
+            $strUrl.='/'.$name.'/'.$value;
+        }
+        return $strUrl;
+    }
 
 
     /*
      * Genera una peticion GET para el servidor
-     * @param bool $get_elements array()
-     * @return string Respuesta generada por el servidor
+     * @param bool $elements array()
+     * @return result as array Respuesta generada por el servidor
      */
-    public function get($get_elements) {
+    public function get($elements)
+    {
         $this->conecction();
-        $elements=array();
-        foreach ($get_elements as $name=>$value) {
-            $elements[] = "{$name}=".urlencode($value);
-        }
+        $this->url.=$this->urlFormater($elements);
         curl_setopt($this->curl, CURLOPT_URL, $this->url);
         curl_setopt($this->curl, CURLOPT_POST,false);
         curl_setopt($this->curl, CURLOPT_HEADER, false);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
-        curl_setopt($this->curl, CURLOPT_POSTFIELDS, $elements);
         $result=curl_exec ($this->curl);
         if($result === false){
             echo curl_error($this->curl);
         }
         $this->close();
-        return $result;
+        $res=json_decode($result);
+        return $res;
     }
-
 
     /*
      * Genera una peticion POST para el servidor
@@ -57,7 +66,7 @@ class m_controller
         $this->conecction();
         $elements=array();
         foreach ($post_elements as $name=>$value) {
-            $elements[] = "{$name}=".urlencode($value);
+            $elements[] = "{$name}:".json_decode($value);
         }
         $elements = join("&",$elements);
         curl_setopt($this->curl, CURLOPT_URL, $this->url);
