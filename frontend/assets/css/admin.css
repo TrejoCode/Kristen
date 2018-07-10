@@ -30,3 +30,34 @@
 .admin-header .right .end-session i {
     color: #545454;
 }
+
+.admin .left-panel {
+    width: 18%;
+    height: 90vh;
+    border-right: 1px solid #e6e6e7;
+    background-color: var(--white);
+}
+
+.left-panel .panel-item {
+    padding: var(--paddingNormal);
+    color: var(--blueLink);
+}
+
+.left-panel .panel-item a {
+    padding: 0 var(--paddingMedium);
+    color: var(--grayDescription);
+    font-weight: var(--weightMedium);
+}
+
+.left-panel .panel-item i {
+    font-size: var(--fontMedium);
+}
+
+.left-panel .panel-subitem {
+    padding: var(--paddingNormal) var(--paddingLarge);
+}
+
+.left-panel .panel-subitem a {
+    font-size: var(--fontTiny);
+    color: var(--grayDescription);
+}
