@@ -8,6 +8,7 @@
 
 .notice .right {
     width: 30%;
+    justify-content: flex-end;
 }
 
 .notice h2 {
@@ -92,9 +93,29 @@
 }
 
 .notice-files .file-link {
-    padding: 0 var(--paddingNormal);
+    padding: var(--paddingNormal) var(--paddingNormal);
 }
 
 .notice-files .file-icon i {
     color: var(--grayDescription);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .notice .left {
+        width: 100%;
+    }
+
+    .notice .right {
+        width: 100%;
+    }
+
+    .notice-files .file-link a {
+        width: 100%;
+    }
+
+    .tags-icon i {
+        padding: 0;
+    }
 }
