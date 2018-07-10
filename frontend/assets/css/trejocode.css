@@ -233,7 +233,7 @@ label {
 .btn {
     font-weight: var(--weightBold);
     font-size: var(--fontSmall);
-    padding: var(--paddingMedium) 0;
+    padding: var(--paddingMedium) var(--paddingSemi);
     font-family: var(--Roboto);
     border: none;
 }
@@ -241,6 +241,15 @@ label {
 .btn-login {
     background-color: var(--blueTeal);
     color: var(--white);
+}
+
+.btn-file {
+    background-color: var(--blueLink);
+    color: var(--white);
+}
+
+.btn-file i {
+    padding: 0 var(--paddingNormal);
 }
 
 

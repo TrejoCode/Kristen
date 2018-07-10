@@ -82,3 +82,19 @@
 .notice-gallery img{
     padding: var(--paddingNormal);
 }
+
+.notice-files .file-icon, .notice-files .file-link {
+    width: auto;
+}
+
+.notice-files .file {
+    margin: var(--paddingNormal) 0;
+}
+
+.notice-files .file-link {
+    padding: 0 var(--paddingNormal);
+}
+
+.notice-files .file-icon i {
+    color: var(--grayDescription);
+}
