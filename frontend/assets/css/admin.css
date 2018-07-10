@@ -1,0 +1,32 @@
+
+.admin {
+    font-family: var(--Roboto);
+}
+
+.admin-header {
+    height: 95px;
+    background-color: var(--white);
+    border-bottom: 1px solid #e6e6e7;
+}
+
+.admin-header .left {
+    width: 50%;
+}
+
+.admin-header .left .logo {
+    justify-content: flex-start;
+}
+
+.admin-header .right {
+    width: 50%;
+}
+
+.admin-header .right .current-user, .admin-header .right .end-session {
+    width: auto;
+    padding: 0 var(--paddingNormal);
+    color: var(--grayDescription);
+}
+
+.admin-header .right .end-session i {
+    color: #545454;
+}
