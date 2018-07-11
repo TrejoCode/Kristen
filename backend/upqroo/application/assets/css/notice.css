@@ -1,0 +1,121 @@
+.notice {
+    font-family: var(--Roboto);
+}
+
+.notice .left {
+    width: 70%;
+}
+
+.notice .right {
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.notice h2 {
+    color: #505050;
+    font-weight: 700;
+}
+
+.notice h2::after {
+    content: "";
+    width: 48px;
+    height: 2px;
+    margin: var(--paddingNormal) 0;
+    display: block;
+    position: relative;
+    background-color: #333333;
+}
+
+.post-date .date-icon, .post-date .date-text, .post-date .tags-icon, .post-date .notice-tags {
+    width: auto;
+    padding: 0 4px;
+    height: 32px;
+    color: var(--grayDescription);
+}
+
+.date-icon i, .tags-icon i {
+    font-size: 0.8em;
+}
+
+.post-date .date-text p, .post-date .notice-tags a  {
+    font-size: 0.8em;
+    color: var(--darkGray);
+    text-transform: uppercase;
+}
+
+.tags-icon i {
+    padding-left: var(--paddingMedium);
+}
+
+.post-date .notice-tags a {
+    padding: 0 var(--paddingNormal);
+    color: var(--blueLink);
+}
+
+.notice-description {
+    text-align: justify;
+}
+
+.notice-description p {
+    font-size: var(--fontText);
+    line-height: 24px;
+    color: #333;
+}
+
+.notices-latest {
+    width: 80%;
+}
+
+.notices-latest .title h3 {
+    color: var(--blueLink);
+}
+
+.notice-last-card .thumb {
+    width: 90%;
+}
+
+.notice-last-card .title-link a {
+    font-size: 0.8em;
+    font-weight: var(--weightRegular);
+    color: var(--darkGray);
+}
+
+.notice-gallery img{
+    padding: var(--paddingNormal);
+}
+
+.notice-files .file-icon, .notice-files .file-link {
+    width: auto;
+}
+
+.notice-files .file {
+    margin: var(--paddingNormal) 0;
+}
+
+.notice-files .file-link {
+    padding: var(--paddingNormal) var(--paddingNormal);
+}
+
+.notice-files .file-icon i {
+    color: var(--grayDescription);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .notice .left {
+        width: 100%;
+    }
+
+    .notice .right {
+        width: 100%;
+    }
+
+    .notice-files .file-link a {
+        width: 100%;
+    }
+
+    .tags-icon i {
+        padding: 0;
+    }
+}
