@@ -15,6 +15,7 @@ class m_controller extends Ci_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->helper('url');
         $this->load->library('session');
         $this->load->model('../core/m_model','initModel');
     }
@@ -59,9 +60,9 @@ class m_controller extends Ci_Controller
     //Carga las vistas publicas
     public function loadView($view)
     {
-        //$this->load->view('templates/header');
+        $this->load->view('templates/header');
         $this->load->view($view);
-        //$this->load->view('template/footer');
+        $this->load->view('templates/footer');
     }
 
 

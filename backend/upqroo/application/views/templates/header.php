@@ -7,8 +7,8 @@
     <title> - UPQROO</title>
     <meta name="description" content="Únete a UPQROO! La oferta educativa superior con áreas de oportunidades y crecimiento">
     <meta name="keywords" content="universisad, universidad en cancún, UPQROO, universidad politécnica de quinatana roo, universidades">
-    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
-    <link rel="stylesheet" href="../assets/css/header.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/trejocode.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/header.css" media="screen">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 </head>
@@ -48,7 +48,7 @@
                     <div class="row">
                         <div class="left">
                             <div class="logo responsive-img">
-                                <img src="../assets/img/logo-upqroo.png" alt="">
+                                <img src="<?php echo base_url(); ?>assets/img/logo-upqroo.png" alt="">
                             </div>
                         </div>
 
@@ -81,6 +81,4 @@
         </div>
     </header>
 
-    <script type="text/javascript" src="assets/js/main.js" async></script>
-</body>
-</html>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/main.js" async></script>
