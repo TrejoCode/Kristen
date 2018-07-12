@@ -53,8 +53,7 @@ class m_model extends CI_Model
             echo curl_error($this->curl);
         }
         $this->close();
-        $res=json_decode($result);
-        return $res;
+        return json_decode($result);
     }
 
     /*
@@ -62,7 +61,23 @@ class m_model extends CI_Model
      * @param array $post_elements
      * @return string Respuesta generada por el servidor
     */
-    public function post($post_elements) {
+
+
+    public function post($post_elements)
+    {
+        $this->conecction();
+        $elements=json_encode($post_elements);
+        curl_setopt($this->curl, CURLOPT_URL, $this->url);
+        curl_setopt($this->curl, CURLOPT_POST,true);
+        curl_setopt($this->curl, CURLOPT_REFERER, '');
+        curl_setopt($this->curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($this->curl, CURLOPT_POSTFIELDS, $elements);
+        $result=curl_exec ($this->curl);
+        return json_decode($result);
+    }
+
+
+    /*public function post($post_elements) {
         $this->conecction();
         $elements=array();
         foreach ($post_elements as $name=>$value) {
@@ -77,7 +92,7 @@ class m_model extends CI_Model
         $result=curl_exec ($this->curl);
         $this->close();
         return $result;
-    }
+    }*/
 
 
     /*
