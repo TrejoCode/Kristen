@@ -26,7 +26,7 @@ class Welcome extends m_controller {
         $res=$this->exampleModel->getElementBy(array('carrera'=>'1'));
         $data['carrera']=$res->nombre;
         //echo $data['info'];
-
-		$this->load->view('welcome_message',$data);
+		
+		$this->loadView('public/noticia');		
 	}
 }
