@@ -22,7 +22,7 @@ class Welcome extends m_controller {
 	{
         $this->load->model('exampleModel');
 
-        $res=array();
+        //$res=array();
         $res=$this->exampleModel->getElementBy(array('carrera'=>'1'));
         $data['carrera']=$res->nombre;
         //echo $data['info'];

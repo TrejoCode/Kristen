@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
-        <link rel="stylesheet" href="../assets/css/noticie.css" media="screen">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/trejocode.css" media="screen">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/noticie.css" media="screen">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <title>UPQROO - NOTICIAS</title>
@@ -44,7 +44,7 @@
                             <div class="white-space-8"></div>
                             <div class="notice-banner">
                                 <div class="responsive-img">
-                                    <img src="../assets/img/noticia.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
                                 </div>
                             </div>
                             <div class="white-space-16"></div>
@@ -63,16 +63,16 @@
                             <div class="notice-gallery">
                                 <div class="column">
                                     <div class="row-responsive">
-                                        <img src="../assets/img/noticia.jpg" alt="">
-                                        <img src="../assets/img/noticia.jpg" alt="">
-                                        <img src="../assets/img/noticia.jpg" alt="">
-                                        <img src="../assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
                                     </div>
                                     <div class="row-responsive">
-                                        <img src="../assets/img/noticia.jpg" alt="">
-                                        <img src="../assets/img/noticia.jpg" alt="">
-                                        <img src="../assets/img/noticia.jpg" alt="">
-                                        <img src="../assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +115,7 @@
                                         <div class="column">
 
                                             <div class="thumb responsive-img">
-                                                <img src="../assets/img/thumcard.jpg" alt="">
+                                                <img src="<?php echo base_url(); ?>assets/img/thumcard.jpg" alt="">
                                             </div>
                                             <div class="white-space-8"></div>
                                             <div class="title-link">
@@ -125,7 +125,7 @@
                                             <div class="white-space-16"></div>
 
                                             <div class="thumb responsive-img">
-                                                <img src="../assets/img/thumcard.jpg" alt="">
+                                                <img src="<?php echo base_url(); ?>assets/img/thumcard.jpg" alt="">
                                             </div>
                                             <div class="white-space-8"></div>
                                             <div class="title-link">
@@ -135,7 +135,7 @@
                                             <div class="white-space-16"></div>
 
                                             <div class="thumb responsive-img">
-                                                <img src="../assets/img/thumcard.jpg" alt="">
+                                                <img src="<?php echo base_url(); ?>assets/img/thumcard.jpg" alt="">
                                             </div>
                                             <div class="white-space-8"></div>
                                             <div class="title-link">

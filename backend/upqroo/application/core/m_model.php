@@ -61,19 +61,69 @@ class m_model extends CI_Model
      * @param array $post_elements
      * @return string Respuesta generada por el servidor
     */
-
-
-    public function post($post_elements)
+    public function post($table,$post_elements)
     {
         $this->conecction();
         $elements=json_encode($post_elements);
-        curl_setopt($this->curl, CURLOPT_URL, $this->url);
+        curl_setopt($this->curl, CURLOPT_URL, $this->curl.'/'.$table);
         curl_setopt($this->curl, CURLOPT_POST,true);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
-        curl_setopt($this->curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($this->curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($this->curl, CURLOPT_POSTFIELDS, $elements);
         $result=curl_exec ($this->curl);
+        if($result === false){
+            echo curl_error($this->curl);
+        }
+        $this->close();
         return json_decode($result);
+    }
+
+
+    /*
+     * Genera peticiones put para el servidor
+     * @param array put_elements datos a insertar
+     * @param array table indicadors
+     */
+    public function put($table,$put_elements)
+    {
+        $this->conecction();
+        $elements=json_encode($put_elements);
+        $this->url.=$this->urlFormater($table);
+        curl_setopt($this->curl, CURLOPT_URL, $this->url);
+        curl_setopt($this->curl, CURLOPT_POST,false);
+        curl_setopt($this->curl, CURLOPT_REFERER, '');
+        curl_setopt($this->curl,CURLOPT_CUSTOMREQUEST, 'PUT');
+        curl_setopt($this->curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+        curl_setopt($this->curl, CURLOPT_POSTFIELDS, $elements);
+        $result=curl_exec ($this->curl);
+        if($result === false){
+            echo curl_error($this->curl);
+        }
+        $this->close();
+        return json_decode($result);
+    }
+
+
+    /*
+     * Genera petidciones DELETE al web service
+     * param array elements tabla y id a eliminar
+     */
+    public function delete($elements)
+    {
+        $this->conecction();
+        $this->url.=$this->urlFormater($elements);
+        curl_setopt($this->curl, CURLOPT_URL, $this->url);
+        curl_setopt($this->curl, CURLOPT_POST,false);
+        curl_setopt($this->curl, CURLOPT_HEADER, false);
+        curl_setopt($this->curl, CURLOPT_REFERER, '');
+        curl_setopt($this->curl,CURLOPT_CUSTOMREQUEST, 'DELETE');
+        $result=curl_exec ($this->curl);
+        if($result === false){
+            echo curl_error($this->curl);
+        }
+        $this->close();
+        return json_decode($result);
+
     }
 
 
