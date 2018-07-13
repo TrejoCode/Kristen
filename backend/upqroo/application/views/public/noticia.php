@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/trejocode.css" media="screen">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/noticie.css" media="screen">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <title>UPQROO - NOTICIAS</title>
-    </head>
-    <body>
-
-        <div class="notice flex justify-center">
-            <div class="container">
-                <div class="row-responsive">
-                    <div class="left">
-                        <div class="column">
-                            <div class="white-space-16"></div>
+<body>
+    <div class="notice flex justify-center">
+        <div class="container">
+            <div class="row-responsive">
+                <div class="left">
+                    <div class="column">
+                        <div class="white-space-16"></div>
                             <div class="title">
                                 <h2>
                                     Firma de Convenios con Instituciones Educativas
@@ -42,40 +29,40 @@
                                 </div>
                             </div>
                             <div class="white-space-8"></div>
-                            <div class="notice-banner">
-                                <div class="responsive-img">
-                                    <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="white-space-16"></div>
-                            <div class="notice-description">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-                            <div class="white-space-8"></div>
-                            <div class="notice-description">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-                            <div class="white-space-16"></div>
-                            <div class="notice-gallery">
-                                <div class="column">
-                                    <div class="row-responsive">
-                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                    </div>
-                                    <div class="row-responsive">
-                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                <div class="notice-banner">
+                                    <div class="responsive-img">
                                         <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
                                     </div>
                                 </div>
-                            </div>
+                                <div class="white-space-16"></div>
+                                <div class="notice-description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div class="white-space-8"></div>
+                                <div class="notice-description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div class="white-space-16"></div>
+                                <div class="notice-gallery">
+                                    <div class="column">
+                                        <div class="row-responsive">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        </div>
+                                        <div class="row-responsive">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             <div class="white-space-8"></div>
                             <div class="notice-files">
                                 <div class="row-responsive">
@@ -151,7 +138,3 @@
                 </div>
             </div>
         </div>
-
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b437850a46f51f9"></script>
-    </body>
-</html>

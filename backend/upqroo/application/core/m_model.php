@@ -4,7 +4,7 @@ class m_model extends CI_Model
 {
 
     private $curl;
-    private $url="https://kristen.glitch.me/api/WebSite"; //url del web service https://kristen.glitch.me/api/WebSite/carrera/1
+    private $url="https://kristen.glitch.me/api/WebSite"; //url del web service
 
     /*
      * Crea la conexion con el web service segun los parametros espesificados
@@ -33,7 +33,6 @@ class m_model extends CI_Model
         }
         return $strUrl;
     }
-
 
     /*
      * Genera una peticion GET para el servidor
@@ -78,7 +77,6 @@ class m_model extends CI_Model
         return json_decode($result);
     }
 
-
     /*
      * Genera peticiones put para el servidor
      * @param array put_elements datos a insertar
@@ -103,7 +101,6 @@ class m_model extends CI_Model
         return json_decode($result);
     }
 
-
     /*
      * Genera petidciones DELETE al web service
      * param array elements tabla y id a eliminar
@@ -123,27 +120,7 @@ class m_model extends CI_Model
         }
         $this->close();
         return json_decode($result);
-
     }
-
-
-    /*public function post($post_elements) {
-        $this->conecction();
-        $elements=array();
-        foreach ($post_elements as $name=>$value) {
-            $elements[] = "{$name}:".json_decode($value);
-        }
-        $elements = join("&",$elements);
-        curl_setopt($this->curl, CURLOPT_URL, $this->url);
-        curl_setopt($this->curl, CURLOPT_POST,true);
-        curl_setopt($this->curl, CURLOPT_REFERER, '');
-        curl_setopt($this->curl, CURLOPT_HEADER, false);
-        curl_setopt($this->curl, CURLOPT_POSTFIELDS, $elements);
-        $result=curl_exec ($this->curl);
-        $this->close();
-        return $result;
-    }*/
-
 
     /*
      * Cierra la comunicacion con el web service
