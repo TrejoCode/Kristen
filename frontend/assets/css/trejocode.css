@@ -25,7 +25,8 @@
     --white:             #FFFFFF;
     --blueTeal:          #00b6bf;
     --blueLink:          #2c54b3;
-    --grayDescription:   #787878;
+    --grayDescription:   #333333;
+    --grayTitle:         #505050;
 
     /*    FONT SIZES    */
 
@@ -36,6 +37,7 @@
     --fontMedium:    1.4em;
     --fontLarge:     1.6em;
     --fontHuge:      1.8em;
+    --fontMassive:   3em;
 
     /*    FONT WEIGHT    */
 
@@ -102,8 +104,19 @@ div, header, footer, section, article, aside, nav, form, table {
     width: 100%;
 }
 
+h1 {
+    font-size: var(--fontHuge);
+    color: var(--grayTitle);
+}
+
 h2 {
     font-size: var(--fontLarge);
+    color: var(--grayTitle);
+}
+
+p {
+    color: var(--grayDescription);
+    line-height: 24px;
 }
 
 /* CLASES
@@ -128,6 +141,10 @@ h2 {
 
 .container {
     width: 90%;
+}
+
+.inner-container {
+    width: 85%;
 }
 
 .responsive-img {
@@ -194,17 +211,32 @@ h2 {
 /*    WHITE SPACES    */
 
 .white-space-8 {
-    height: 8px ;
+    height: 8px;
 }
 
 .white-space-16 {
-    height: 16px ;
+    height: 16px;
+}
+
+.white-space-24 {
+    height: 24px;
 }
 
 .white-space-32 {
-    height: 32px ;
+    height: 32px;
 }
 
+.white-space-48 {
+    height: 48px;
+}
+
+.white-space-48 {
+    height: 48px;
+}
+
+.white-space-64 {
+    height: 64px;
+}
 
 /*    FORMS     */
 
@@ -232,11 +264,17 @@ label {
 /*    BUTTONS     */
 
 .btn {
+    width: auto;
     font-weight: var(--weightBold);
     font-size: var(--fontSmall);
     padding: var(--paddingMedium) var(--paddingSemi);
     font-family: var(--Roboto);
     border: none;
+}
+
+.btn-blue {
+    background-color: var(--blueLink);
+    color: var(--white);
 }
 
 .btn-login {
@@ -251,6 +289,12 @@ label {
 
 .btn-file i {
     padding: 0 var(--paddingNormal);
+}
+
+/*    TEXTS     */
+
+.textHuge {
+    font-size: var(--fontHuge);
 }
 
 

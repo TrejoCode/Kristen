@@ -1,1 +1,73 @@
 
+.home {
+    font-family: var(--Roboto);
+}
+
+/* --- Slider --- */
+
+.slider {
+    width: 300%;
+    height: 500px;
+    animation: nextSlide 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes nextSlide {
+    0% {
+        margin-left: 0%
+    }
+    27% {
+        margin-left: 0%
+    }
+    33% {
+        margin-left: -100%
+    }
+    60% {
+        margin-left: -100%
+    }
+    66% {
+        margin-left: -200%
+    }
+    94% {
+        margin-left: -200%
+    }
+    100% {
+        margin-left: 0%
+    }
+}
+
+/* --- Quick Info --- */
+
+.home .quick-info {
+    margin-top: -0.55em;
+}
+
+.home .quick-info .left {
+    width: 60%;
+}
+
+.home .quick-info .right {
+    width: 40%;
+    background-color: var(--blueLink);
+}
+
+.home .quick-info .records h2 {
+    font-size: var(--fontMassive);
+    color: var(--white);
+}
+
+.home .quick-info .records p {
+    font-style: italic;
+    color: var(--white);
+}
+
+/* --- Career --- */
+
+.career {
+    background-color: var(--white);
+    border: 1px solid #e6e7ea;
+}
