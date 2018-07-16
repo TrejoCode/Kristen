@@ -48,6 +48,7 @@
 
 .home .quick-info .left {
     width: 60%;
+    background-color: var(--white);
 }
 
 .home .quick-info .right {
@@ -67,7 +68,115 @@
 
 /* --- Career --- */
 
-.career {
-    background-color: var(--white);
+.careers {
     border: 1px solid #e6e7ea;
+}
+
+.career {
+    padding: var(--paddingNormal);
+}
+
+/* --- Call To Action --- */
+
+.call-to-action {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.call-to-action h2, .call-to-action p {
+    color: var(--white);
+}
+
+.call-to-action p {
+    font-size: var(--fontRegular);
+}
+
+/* --- News --- */
+
+.home .news .news-cards .new-card {
+    margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+}
+
+.home .new-card .date, .home .new-card .description {
+    padding: var(--paddingNormal) var(--paddingMedium);
+}
+
+.new-card .title, .new-card .read-more {
+    padding: 0 var(--paddingMedium);
+}
+
+.new-card .read-more {
+    padding-bottom: var(--paddingMedium);
+}
+
+.home .new-card {
+    background-color: var(--white);
+}
+
+.home .new-card .date p {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--darkGray);
+}
+
+.home .new-card .description p {
+    color: var(--grayDescription);
+    font-size: var(--fontTiny);
+}
+
+.home .new-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+/* --- Events --- */
+
+.home .events .events-cards .event-card {
+    background-color: var(--white);
+    margin: var(--paddingNormal);
+}
+
+.home .events .events-cards .event-card .date {
+    width: 30%;
+    background-color: var(--blueLink);
+    padding: var(--paddingMedium) 0;
+}
+
+.home .events .events-cards .event-card .date p {
+    color: var(--white);
+    font-weight: var(--weightSemi);
+}
+
+.home .events .events-cards .event-card .date .day p {
+    font-size: var(--fontLarge);
+}
+
+.home .events .events-cards .event-card .date .month p, .home .events .events-cards .event-card .date .year p {
+    font-size: 0.8em;
+}
+
+.home .events .events-cards .event-card .info, .home .events .events-cards .event-card .schedule {
+    padding: var(--paddingNormal) 0;
+}
+
+.home .events .events-cards .event-card .schedule i {
+    padding-right: var(--paddingNormal);
+}
+
+
+.home .events .events-cards .event-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+.home .aliados {
+    background-color: var(--white);
 }
