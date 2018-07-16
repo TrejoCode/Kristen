@@ -118,6 +118,10 @@ h3 {
     color: var(--grayTitle);
 }
 
+h4 {
+    color: var(--grayTitle);
+}
+
 p {
     color: var(--grayDescription);
     line-height: 24px;
@@ -262,6 +266,20 @@ form, form > input {
     outline: none;
     font-weight: var(--weightSemi);
     font-family: var(--Roboto);
+    font-size: var(--fontTiny);
+    color: var(--grayTitle);
+}
+
+.input-textarea {
+    padding: var(--paddingNormal) var(--paddingMedium);
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: var(--weightSemi);
+    font-family: var(--Roboto);
+    font-size: var(--fontTiny);
+    color: var(--grayTitle);
 }
 
 label {

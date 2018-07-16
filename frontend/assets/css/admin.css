@@ -61,3 +61,17 @@
     font-size: var(--fontTiny);
     color: var(--grayDescription);
 }
+
+.admin-add-news {
+    width: 81%;
+}
+
+.admin-add-news .left {
+    width: 70%;
+    padding: 0 var(--paddingMedium);
+}
+
+.admin-add-news .right {
+    width: 30%;
+    background: white;
+}
