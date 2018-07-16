@@ -73,5 +73,10 @@
 
 .admin-add-news .right {
     width: 30%;
-    background: white;
+    background-color: #fafafa;
+    border: 1px solid #e6e7ea;
+}
+
+.admin-add-news .right span {
+    font-weight: var(--weightMedium);
 }

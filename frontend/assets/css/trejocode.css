@@ -282,6 +282,10 @@ form, form > input {
     color: var(--grayTitle);
 }
 
+.input-file-h {
+    display: none;
+}
+
 label {
     color: var(--grayDescription);
 }
