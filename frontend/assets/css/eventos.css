@@ -1,12 +1,16 @@
 /* --- Events --- */
 
+.events {
+    font-family: var(--Roboto);
+}
+
 .events .events-cards .event-card {
     background-color: var(--white);
     margin: var(--paddingNormal);
 }
 
 .events .events-cards .event-card .date {
-    width: 100%;
+    width: 30%;
     background-color: var(--blueLink);
     padding: var(--paddingMedium) 0;
 }
@@ -40,4 +44,20 @@
     font-weight: var(--weightSemi);
 }
 
+/*    NOTEBOOKS, IPADS DEVICES    */
 
+@media screen and (max-width: 992px) {
+
+}
+
+/*    TABLETS DEVICES    */
+
+@media screen and (max-width: 768px) {
+
+}
+
+/*    MOBILE DEVICES    */
+
+@media screen and (max-width: 576px) {
+
+}
