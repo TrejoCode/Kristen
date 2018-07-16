@@ -33,7 +33,6 @@
 
 .admin .left-panel {
     width: 18%;
-    height: 90vh;
     border-right: 1px solid #e6e6e7;
     background-color: var(--white);
 }
