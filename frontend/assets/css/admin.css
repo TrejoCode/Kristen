@@ -88,3 +88,22 @@
 }
 
 /* --- End Admin News -- */
+
+/* --- Admin Events -- */
+
+.admin-add-events{
+    width: 81%;
+}
+
+.admin-add-events .left {
+    width: 70%;
+    padding: 0 var(--paddingMedium);
+}
+
+.admin-add-events .right {
+    width: 30%;
+    background-color: #fafafa;
+    border: 1px solid #e6e7ea;
+}
+
+/* --- End Admin Events -- */
