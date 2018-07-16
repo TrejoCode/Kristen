@@ -180,3 +180,30 @@
 .home .aliados {
     background-color: var(--white);
 }
+
+
+/*    LARGE DEVICES    */
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+/*    NOTEBOOKS, IPADS DEVICES    */
+
+@media screen and (max-width: 992px) {
+
+
+}
+
+/*    TABLETS DEVICES    */
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+/*    MOBILE DEVICES    */
+
+@media screen and (max-width: 576px) {
+
+}
