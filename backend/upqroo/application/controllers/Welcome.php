@@ -25,8 +25,17 @@ class Welcome extends m_controller {
         //$res=array();
         $res=$this->exampleModel->getElementBy(array('carrera'=>'1'));
         $data['carrera']=$res->nombre;
-        //echo $data['info'];
+        $data['title']='LOGIN';
 		
-		$this->loadView('public/noticia');		
+		$this->loadView('public/login',$data);
 	}
+
+	public function loginE()
+    {
+        $username = $this->input->post('email');
+        $password = $this->input->post('password');
+        $resultado=$this->login($username,$password);
+        //echo $username.' '.$password;
+        echo 'Bienvenido '.$_SESSION['tipoNombre'].' '.$_SESSION['carrera'].' '.$_SESSION['nombre'];
+    }
 }

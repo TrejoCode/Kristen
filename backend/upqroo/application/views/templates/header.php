@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> - UPQROO</title>
+    <title>UPQROO-<?php echo $title;?></title>
     <meta name="description" content="Únete a UPQROO! La oferta educativa superior con áreas de oportunidades y crecimiento">
     <meta name="keywords" content="universisad, universidad en cancún, UPQROO, universidad politécnica de quinatana roo, universidades">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/trejocode.css" media="screen">
@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 </head>
 <body>
-
     <header class="flex">
         <div class="column">
             <div class="header-top justify-center">
@@ -55,23 +54,23 @@
                         <div class="right">
                             <nav class="row align-center justify-end">
                                 <div class="nav-item">
-                                    <a href="#">UNIVERSIDAD</a>
+                                    <a href="<?php echo base_url()?>/">UNIVERSIDAD</a>
                                 </div>
 
                                 <div class="nav-item">
-                                    <a href="#">CARRERAS</a>
+                                    <a href="<?php echo base_url()?>carreras">CARRERAS</a>
                                 </div>
 
                                 <div class="nav-item">
-                                    <a href="#">NOTICIAS</a>
+                                    <a href="<?php echo base_url()?>noticias">NOTICIAS</a>
                                 </div>
 
                                 <div class="nav-item">
-                                    <a href="#">SERVICIOS ESCOLARES</a>
+                                    <a href="<?php echo base_url()?>ser_escolares">SERVICIOS ESCOLARES</a>
                                 </div>
 
                                 <div class="nav-item">
-                                    <a href="#">VINCULACIÓN</a>
+                                    <a href="<?php echo base_url()?>vinculacion">VINCULACIÓN</a>
                                 </div>
                             </nav>
                         </div>
@@ -80,5 +79,4 @@
             </div>
         </div>
     </header>
-
-    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/main.js" async></script>
+<body>

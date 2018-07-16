@@ -36,14 +36,13 @@ class m_model extends CI_Model
 
     /*
      * Genera una peticion GET para el servidor
-     * @param bool $elements array()
+     * @param  array $elements indicador and id
      * @return result as array Respuesta generada por el servidor
      */
     public function get($elements)
     {
         $this->conecction();
-        $this->url.=$this->urlFormater($elements);
-        curl_setopt($this->curl, CURLOPT_URL, $this->url);
+        curl_setopt($this->curl, CURLOPT_URL, $this->url.$this->urlFormater($elements));
         curl_setopt($this->curl, CURLOPT_POST,false);
         curl_setopt($this->curl, CURLOPT_HEADER, false);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
@@ -57,14 +56,15 @@ class m_model extends CI_Model
 
     /*
      * Genera una peticion POST para el servidor
-     * @param array $post_elements
+     * @param array $post_elements datos a insertar
+     * @param string $table indicador
      * @return string Respuesta generada por el servidor
     */
     public function post($table,$post_elements)
     {
         $this->conecction();
         $elements=json_encode($post_elements);
-        curl_setopt($this->curl, CURLOPT_URL, $this->curl.'/'.$table);
+        curl_setopt($this->curl, CURLOPT_URL, $this->url.'/'.$table);
         curl_setopt($this->curl, CURLOPT_POST,true);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
         curl_setopt($this->curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
@@ -80,14 +80,13 @@ class m_model extends CI_Model
     /*
      * Genera peticiones put para el servidor
      * @param array put_elements datos a insertar
-     * @param array table indicadors
+     * @param array table indicador
      */
     public function put($table,$put_elements)
     {
         $this->conecction();
         $elements=json_encode($put_elements);
-        $this->url.=$this->urlFormater($table);
-        curl_setopt($this->curl, CURLOPT_URL, $this->url);
+        curl_setopt($this->curl, CURLOPT_URL, $this->url.$this->urlFormater($table));
         curl_setopt($this->curl, CURLOPT_POST,false);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
         curl_setopt($this->curl,CURLOPT_CUSTOMREQUEST, 'PUT');
@@ -108,8 +107,7 @@ class m_model extends CI_Model
     public function delete($elements)
     {
         $this->conecction();
-        $this->url.=$this->urlFormater($elements);
-        curl_setopt($this->curl, CURLOPT_URL, $this->url);
+        curl_setopt($this->curl, CURLOPT_URL, $this->url.$this->urlFormater($elements));
         curl_setopt($this->curl, CURLOPT_POST,false);
         curl_setopt($this->curl, CURLOPT_HEADER, false);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
