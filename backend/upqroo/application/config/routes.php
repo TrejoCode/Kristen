@@ -53,3 +53,12 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['login']='welcome/loginE';
+
+
+//Rutas para botaniQR
+$route['botaniqr']='botaniqr/home';
+$route['botaniqr/plantas']='botaniqr/plantas';
+$route['botaniqr/plantas/(:any)']='botaniqr/plantas/$1';
+$route['botaniqr/noticias']='botaniqr/noticias';
+$route['botaniqr/noticias/(:any)']='botaniqr/noticias/$1';
+$route['botaniqr/webservice/(:any)']='botaniqr/webservice/$1';
