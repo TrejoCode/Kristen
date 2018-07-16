@@ -1,4 +1,6 @@
 
+/* --- Admin General -- */
+
 .admin {
     font-family: var(--Roboto);
 }
@@ -61,6 +63,11 @@
     color: var(--grayDescription);
 }
 
+/* --- End Admin General -- */
+
+
+/* --- Admin News -- */
+
 .admin-add-news {
     width: 81%;
 }
@@ -79,3 +86,5 @@
 .admin-add-news .right span {
     font-weight: var(--weightMedium);
 }
+
+/* --- End Admin News -- */
