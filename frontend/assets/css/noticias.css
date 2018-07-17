@@ -1,9 +1,12 @@
 /* --- News --- */
 
+.news {
+    font-family: var(--Roboto);
+}
+
 .news-cards .new-card {
     margin: var(--paddingNormal);
     border: 1px solid #e6e7ea;
-     
 }
 
  .new-card .date, .new-card .description {
@@ -38,4 +41,12 @@
     color: var(--blueTeal);
     font-size: 0.9em;
     font-weight: var(--weightSemi);
+}
+
+@media screen and (max-width: 768px) {
+
+    .news-cards .new-card {
+        margin: var(--paddingNormal) 0;
+    }
+
 }

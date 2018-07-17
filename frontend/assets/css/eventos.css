@@ -44,20 +44,23 @@
     font-weight: var(--weightSemi);
 }
 
-/*    NOTEBOOKS, IPADS DEVICES    */
 
-@media screen and (max-width: 992px) {
 
+
+@media screen and (max-width: 1200px) {
+    .events .events-cards .event-card .date {
+        width: 40%;
+    }
 }
-
-/*    TABLETS DEVICES    */
 
 @media screen and (max-width: 768px) {
 
-}
+    .events .events-cards .event-card .date {
+        width: 100%;
+    }
 
-/*    MOBILE DEVICES    */
-
-@media screen and (max-width: 576px) {
+    .events .events-cards .event-card {
+        margin: var(--paddingNormal) 0;
+    }
 
 }
