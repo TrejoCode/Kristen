@@ -1,44 +1,129 @@
 <div class="white-space-25"></div>
-<div class="noticia flex justify">
+<div class="notices-cards flex justify">
     <div class="container">
         <div class="column">
-            <div class="title">
-                <h2>Nullam ullamcorper nisl quis ornare molestie</h2>
-            </div>
-            <div class="publish">
-                <div class="row">
-                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    <p>11/12/2018</p>
-                </div>
-            </div>
-            <div class="notice-banner">
-                <div class="container">
-                    <div class="responsive-img">
-                        <img src="<?php echo base_url();?>BotaniQR/assets/img/notice-banner.jpg" alt="">
-                    </div>
+            <div class="row">
+                <div class="title">
+                    <h2>Últimas Noticias</h2>
                 </div>
             </div>
             <div class="white-space-16"></div>
-            <div class="notice-description">
-                <div class="container">
-                    <div class="column">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <div class="white-space-8"></div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+            <div class="row">
+                <div class="cards-container row-responsive">
+                    <div class="notice-card">
+                        <div class="column">
+                            <div class="card-image responsive-img">
+                                <img src="<?php echo base_url();?>BotaniQr/assets/img/notice1.jpg" alt="" title="">
+                            </div>
+                            <div class="card-title justify">
+                                <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
+                            </div>
+                            <div class="card-details row">
+                                <div class="card-date">
+                                    <div class="column justify">
+                                        <p>
+                                            <time>
+                                                ABR
+                                            </time>
+                                        </p>
+                                        <p>
+                                            <time>
+                                                26
+                                            </time>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-description">
+                                    <div class="column">
+                                        <p>
+                                            Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
+                                        </p>
+                                        <a href="<?php echo base_url();?>noticia" class="read-more">
+                                            Leer Noticia
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="white-space-8"></div>
-            <div class="comments">
-                <div class="container">
-                    <div class="column">
-                        <div class="fb-like" data-href="http://upqroobotaniqr.com/noticia/" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
-                        <div class="fb-comments" width="100%" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
+
+                    <div class="notice-card">
+                        <div class="column">
+                            <div class="card-image responsive-img">
+                                <img src="<?php echo base_url();?>BotaniQr/assets/img/notice2.jpg" alt="" title="">
+                            </div>
+                            <div class="card-title justify">
+                                <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
+                            </div>
+                            <div class="card-details row">
+                                <div class="card-date">
+                                    <div class="column justify">
+                                        <p>
+                                            <time>
+                                                ABR
+                                            </time>
+                                        </p>
+                                        <p>
+                                            <time>
+                                                26
+                                            </time>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-description">
+                                    <div class="column">
+                                        <p>
+                                            Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
+                                        </p>
+                                        <a href="<?php echo base_url();?>noticia" class="read-more">
+                                            Leer Noticia
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="notice-card">
+                        <div class="column">
+                            <div class="card-image responsive-img">
+                                <img src="<?php echo base_url();?>BotaniQr/assets/img/notice1.jpg" alt="" title="">
+                            </div>
+                            <div class="card-title justify">
+                                <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
+                            </div>
+                            <div class="card-details row">
+                                <div class="card-date">
+                                    <div class="column justify">
+                                        <p>
+                                            <time>
+                                                ABR
+                                            </time>
+                                        </p>
+                                        <p>
+                                            <time>
+                                                26
+                                            </time>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-description">
+                                    <div class="column">
+                                        <p>
+                                            Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
+                                        </p>
+                                        <a href="<?php echo base_url();?>noticia" class="read-more">
+                                            Leer Noticia
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

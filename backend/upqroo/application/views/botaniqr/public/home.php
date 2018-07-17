@@ -13,7 +13,7 @@
                     <div class="notice-card">
                         <div class="column">
                             <div class="card-image responsive-img">
-                                <img src="<?php echo SERVER_URL?>application/assets/img/notice1.jpg" alt="" title="">
+                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/notice1.jpg" alt="" title="">
                             </div>
                             <div class="card-title justify">
                                 <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
@@ -38,7 +38,7 @@
                                         <p>
                                             Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
                                         </p>
-                                        <a href="<?php echo SERVER_URL?>noticia" class="read-more">
+                                        <a href="<?php echo base_url();?>index.php/botaniqr/noticias/1" class="read-more">
                                             Leer Noticia
                                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                                         </a>
@@ -51,7 +51,7 @@
                     <div class="notice-card">
                         <div class="column">
                             <div class="card-image responsive-img">
-                                <img src="<?php echo SERVER_URL?>application/assets/img/notice2.jpg" alt="" title="">
+                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/notice2.jpg" alt="" title="">
                             </div>
                             <div class="card-title justify">
                                 <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
@@ -76,7 +76,7 @@
                                         <p>
                                             Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
                                         </p>
-                                        <a href="<?php echo SERVER_URL?>noticia" class="read-more">
+                                        <a href="<?php echo base_url();?>index.php/botaniqr/noticias/1" class="read-more">
                                             Leer Noticia
                                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                                         </a>
@@ -89,7 +89,7 @@
                     <div class="notice-card">
                         <div class="column">
                             <div class="card-image responsive-img">
-                                <img src="<?php echo SERVER_URL?>application/assets/img/notice1.jpg" alt="" title="">
+                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/notice1.jpg" alt="" title="">
                             </div>
                             <div class="card-title justify">
                                 <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
@@ -114,7 +114,7 @@
                                         <p>
                                             Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
                                         </p>
-                                        <a href="<?php echo SERVER_URL?>noticia" class="read-more">
+                                        <a href="<?php echo base_url();?>index.php/botaniqr/noticias/1" class="read-more">
                                             Leer Noticia
                                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                                         </a>
@@ -162,7 +162,7 @@
                     <div class="plant-card">
                         <div class="column">
                             <div class="card-image responsive-img">
-                                <img src="<?php echo SERVER_URL?>application/assets/img/planta1.jpg" alt="" title="">
+                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/planta1.jpg" alt="" title="">
                             </div>
                             <div class="card-title justify">
                                 <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
@@ -191,7 +191,7 @@
                     <div class="plant-card">
                         <div class="column">
                             <div class="card-image responsive-img">
-                                <img src="<?php echo SERVER_URL?>application/assets/img/planta2.jpg" alt="" title="">
+                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/planta2.jpg" alt="" title="">
                             </div>
                             <div class="card-title justify">
                                 <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
@@ -220,7 +220,7 @@
                     <div class="plant-card">
                         <div class="column">
                             <div class="card-image responsive-img">
-                                <img src="<?php echo SERVER_URL?>application/assets/img/planta1.jpg" alt="" title="">
+                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/planta1.jpg" alt="" title="">
                             </div>
                             <div class="card-title justify">
                                 <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
