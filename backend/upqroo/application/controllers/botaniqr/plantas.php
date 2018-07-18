@@ -20,4 +20,9 @@ class plantas extends CI_Controller
         $this->load->view('botaniqr/templates/footer');
     }
 
+    public function showOne()
+    {
+
+    }
+
 }

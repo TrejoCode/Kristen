@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row university">
                 <div class="name">
-                    <a href="http://www.upqroo.edu.mx/">Universidad Politécnica de Quintana Roo</a>
+                    <a href="<?php echo base_url();?>">Universidad Politécnica de Quintana Roo</a>
                 </div>
                 <div class="phone">
                     <a href="tel:9982831859"> <i class="fa fa-phone" aria-hidden="true"></i>(998) 283 1859</a>
@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="logo responsive-img">
-                    <a href="<?php echo base_url(); ?>inicio">
+                    <a href="<?php echo base_url().'index.php/'; ?>botaniqr">
                         <img src="<?php echo base_url(); ?>BotaniQR/assets/img/LogoBotaniQR.png" alt="BotaniQR Logo">
                     </a>
                 </div>
