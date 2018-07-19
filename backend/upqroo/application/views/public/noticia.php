@@ -31,7 +31,7 @@
                             <div class="white-space-8"></div>
                                 <div class="notice-banner">
                                     <div class="responsive-img">
-                                        <img src="<?php echo $portada ?>" alt="">
+                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="white-space-16"></div>
@@ -39,6 +39,27 @@
                                     <p>
                                         <?php echo $descripcion; ?>
                                     </p>
+                                </div>
+                                <div class="white-space-8"></div>
+                                <div class="notice-description">
+                                    
+                                </div>
+                                <div class="white-space-16"></div>
+                                <div class="notice-gallery">
+                                    <div class="column">
+                                        <div class="row-responsive">
+                                            <img src="<?php echo $portada ?>" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        </div>
+                                        <div class="row-responsive">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             <div class="white-space-8"></div>
                             <div class="notice-files">
@@ -57,10 +78,59 @@
                                             Descargar Pack Atisha
                                         </a>
                                     </div>
+
+
+
                                 </div>
                             </div>
                             <div class="white-space-32"></div>
                             <div class="addthis_inline_share_toolbox"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="container">
+                            <div class="notices-latest">
+                                <div class="column">
+                                    <div class="white-space-16"></div>
+                                    <div class="title">
+                                        <h3>ÚLTIMAS NOTICIAS</h3>
+                                    </div>
+                                    <div class="white-space-16"></div>
+                                    <div class="notice-last-card">
+                                        <div class="column">
+
+                                            <div class="thumb responsive-img">
+                                                <img src="<?php echo base_url(); ?>assets/img/thumcard.jpg" alt="">
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="title-link">
+                                                <h3><a href="#">DÍA DEL MAESTRO 2018</a></h3>
+                                            </div>
+
+                                            <div class="white-space-16"></div>
+
+                                            <div class="thumb responsive-img">
+                                                <img src="<?php echo base_url(); ?>assets/img/thumcard.jpg" alt="">
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="title-link">
+                                                <h3><a href="#">DÍA DEL MAESTRO 2018</a></h3>
+                                            </div>
+
+                                            <div class="white-space-16"></div>
+
+                                            <div class="thumb responsive-img">
+                                                <img src="<?php echo base_url(); ?>assets/img/thumcard.jpg" alt="">
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <div class="title-link">
+                                                <h3><a href="#">DÍA DEL MAESTRO 2018</a></h3>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
