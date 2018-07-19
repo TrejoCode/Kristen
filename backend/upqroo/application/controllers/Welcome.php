@@ -30,12 +30,48 @@ class Welcome extends m_controller {
 		$this->loadView('public/login',$data);
 	}
 
+	public function logoutE()
+    {
+        $this->logout();
+        redirect(base_url());
+    }
+
 	public function loginE()
     {
         $username = $this->input->post('email');
         $password = $this->input->post('password');
         $resultado=$this->login($username,$password);
-        //echo $username.' '.$password;
-        echo 'Bienvenido '.$_SESSION['tipoNombre'].' '.$_SESSION['carrera'].' '.$_SESSION['nombre'];
+
+        if($resultado!='404')
+        {
+            if($_SESSION['tipoUsuario']==1)
+            {
+                //Director de carrera
+            }
+            if($_SESSION['tipoUsuario']==2)
+            {
+                //Vinculacion
+            }
+            if($_SESSION['tipoUsuario']==3)
+            {
+                //Servicios escolares
+            }
+            if($_SESSION['tipoUsuario']==4)
+            {
+                //Prensa y difucion
+            }
+            if ($_SESSION['tipoUsuario']==5)
+            {
+                //Administrador web
+                $this->load->helper('url');
+                redirect(base_url().'index.php/administrador');
+                /*$data['nombre']=$_SESSION['nombre'];
+                $this->loadViewAdmin('admin-add-news',$data);*/
+            }
+        }
+        else
+        {
+            echo 'login failed';
+        }
     }
 }
