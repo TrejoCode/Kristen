@@ -10,7 +10,7 @@ class m_controller extends Ci_Controller
     //almacena el tipo del usuario logueado
     public $tipoUsario=0;
     //almacena el nombre del usuario logueado
-    public $nombre='';
+    public $nombre='    ';
 
     public function __construct()
     {

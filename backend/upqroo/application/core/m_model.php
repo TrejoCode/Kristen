@@ -43,6 +43,7 @@ class m_model extends CI_Model
     {
         $this->conecction();
         curl_setopt($this->curl, CURLOPT_URL, $this->url.$this->urlFormater($elements));
+        echo $this->url.$this->urlFormater($elements);
         curl_setopt($this->curl, CURLOPT_POST,false);
         curl_setopt($this->curl, CURLOPT_HEADER, false);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
