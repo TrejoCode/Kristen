@@ -85,7 +85,8 @@
                             </div>
                         </div>
                     </div>
-
+                    <?php foreach ($plantas as $dataPlant)
+                    {?>
                     <div class="notice-card">
                         <div class="column">
                             <div class="card-image responsive-img">
@@ -123,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <?php }?>
                 </div>
             </div>
         </div>
