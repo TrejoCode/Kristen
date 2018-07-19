@@ -80,7 +80,7 @@
     color: var(--darkGray);
 }
 
-.notice-gallery img{
+.notice-gallery .responsive-img {
     padding: var(--paddingNormal);
 }
 

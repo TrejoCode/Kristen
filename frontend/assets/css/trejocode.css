@@ -207,6 +207,9 @@ p {
     align-items: flex-end;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
 
 .text-center {
     text-align: center;
@@ -319,6 +322,10 @@ label {
 
 .btn-file i {
     padding: 0 var(--paddingNormal);
+}
+
+.link {
+    color: var(--blueTeal);
 }
 
 /*    TEXTS     */
