@@ -6,7 +6,20 @@
  * Time: 10:40 AM
  */
 
-class plantasModel
+class plantasModel extends CI_Model
 {
+    public function __construct()
+    {
+        $this->load->database();
+    }
 
+    public function get_One($id)
+    {
+        $this->db->select('*');
+        $this->db->from('plantas');
+        $this->db->where('id',$id);
+        $res=$this->db->get();
+
+        return $res->result();
+    }
 }

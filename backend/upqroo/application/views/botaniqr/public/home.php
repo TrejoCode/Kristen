@@ -178,7 +178,7 @@
                                         <p>
                                             Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
                                         </p>
-                                        <a href="#" class="read-more">
+                                        <a href="<?php echo base_url().'index.php/botaniqr/plantas/1'?>" class="read-more">
                                             Conocer Más
                                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                                         </a>

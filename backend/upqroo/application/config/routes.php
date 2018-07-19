@@ -58,7 +58,8 @@ $route['login']='welcome/loginE';
 //Rutas para botaniQR
 $route['botaniqr']='botaniqr/home';
 $route['botaniqr/plantas']='botaniqr/plantas';
-$route['botaniqr/plantas/(:any)']='botaniqr/plantas/';
+$route['botaniqr/plantas/(:num)']='botaniqr/plantas/showOne/$1';
 $route['botaniqr/noticias']='botaniqr/noticias';
 $route['botaniqr/noticias/(:num)']='botaniqr/noticias/showOne/$1';
 $route['botaniqr/webservice/(:any)']='botaniqr/webservice/$1';
+$route['botaniqr/login']='botaniqr/home/login';

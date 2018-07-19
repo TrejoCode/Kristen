@@ -22,4 +22,11 @@ class home extends CI_Controller
 
     }
 
+    public function login()
+    {
+        $this->load->helper('url');
+
+        $this->load->view('botaniqr/public/login');
+    }
+
 }
