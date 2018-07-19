@@ -18,13 +18,13 @@
                                     <div class="container">
                                         <div class="column">
                                             <div class="date">
-                                                <p>2 de Marzo, 2018</p>
+                                                <p><?php echo $fecha; ?></p>
                                             </div>
                                             <div class="title">
-                                                <h3>Firma de Convenios con Instituciones Educativas</h3>
+                                                <h3><?php echo $titulo; ?></h3>
                                             </div>
                                             <div class="description">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p><?php echo $descripcion; ?></p>
                                             </div>
                                             <a class="read-more" href="#">Leer Más</a>
                                         </div>

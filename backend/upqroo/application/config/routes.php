@@ -54,5 +54,6 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['login']='welcome/loginE';
 $route['logout']='welcome/logoutE';
-
+$route['noticias'] = 'noticia_controller';
+//$route['noticia'] = ''
 $route['administrador']='admin';
