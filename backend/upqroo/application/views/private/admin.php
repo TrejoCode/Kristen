@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
-    <link rel="stylesheet" href="../assets/css/admin.css" media="screen">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/trejocode.css" media="screen">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/admin.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>UPQROO - ADMIN</title>
 </head>
 <body>
-
     <div class="admin flex">
         <div class="column">
             <div class="admin-header justify-center">
                 <div class="container">
                     <div class="left justify-start">
                         <div class="logo responsive-img">
-                            <img src="../assets/img/logo-upqroo.png" alt="">
+                            <img src="<?php echo base_url();?>assets/img/logo-upqroo.png" alt="">
                         </div>
                     </div>
                     <div class="right">
                         <div class="row justify-end align-center">
                             <div class="current-user justify-end">
-                                <h4>Lorem Ipsum</h4>
+                                <h4><?php echo $nombre; ?></h4>
                             </div>
                             <div class="end-session justify-end">
-                                <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                                <a href="<?php echo base_url().'index.php/logout';?>"><i class="fas fa-sign-out-alt"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="row">
             <div class="left-panel justify-center">
                 <div class="container">
                     <div class="column">
@@ -88,12 +88,3 @@
                     </div>
                 </div>
             </div>
-
-            <div class=""></div>
-
-        </div>
-
-    </div>
-
-</body>
-</html>

@@ -1,4 +1,6 @@
 
+/* --- Admin General -- */
+
 .admin {
     font-family: var(--Roboto);
 }
@@ -33,7 +35,6 @@
 
 .admin .left-panel {
     width: 18%;
-    height: 90vh;
     border-right: 1px solid #e6e6e7;
     background-color: var(--white);
 }
@@ -61,3 +62,48 @@
     font-size: var(--fontTiny);
     color: var(--grayDescription);
 }
+
+/* --- End Admin General -- */
+
+
+/* --- Admin News -- */
+
+.admin-add-news {
+    width: 81%;
+}
+
+.admin-add-news .left {
+    width: 70%;
+    padding: 0 var(--paddingMedium);
+}
+
+.admin-add-news .right {
+    width: 30%;
+    background-color: #fafafa;
+    border: 1px solid #e6e7ea;
+}
+
+.admin-add-news .right span {
+    font-weight: var(--weightMedium);
+}
+
+/* --- End Admin News -- */
+
+/* --- Admin Events -- */
+
+.admin-add-events{
+    width: 81%;
+}
+
+.admin-add-events .left {
+    width: 70%;
+    padding: 0 var(--paddingMedium);
+}
+
+.admin-add-events .right {
+    width: 30%;
+    background-color: #fafafa;
+    border: 1px solid #e6e7ea;
+}
+
+/* --- End Admin Events -- */

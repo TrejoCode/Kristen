@@ -1,0 +1,66 @@
+/* --- Events --- */
+
+.events {
+    font-family: var(--Roboto);
+}
+
+.events .events-cards .event-card {
+    background-color: var(--white);
+    margin: var(--paddingNormal);
+}
+
+.events .events-cards .event-card .date {
+    width: 30%;
+    background-color: var(--blueLink);
+    padding: var(--paddingMedium) 0;
+}
+
+.events .events-cards .event-card .date p {
+    color: var(--white);
+    font-weight: var(--weightSemi);
+}
+
+.events .events-cards .event-card .date .day p {
+    font-size: var(--fontLarge);
+}
+
+.events .events-cards .event-card .date .month p, .home .events .events-cards .event-card .date .year p {
+    font-size: 0.8em;
+}
+
+.events .events-cards .event-card .info, .home .events .events-cards .event-card .schedule {
+    padding: var(--paddingNormal) 0;
+}
+
+.events .events-cards .event-card .schedule i {
+    padding-right: var(--paddingNormal);
+}
+
+
+.events .events-cards .event-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .events .events-cards .event-card .date {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .events .events-cards .event-card .date {
+        width: 100%;
+    }
+
+    .events .events-cards .event-card {
+        margin: var(--paddingNormal) 0;
+    }
+
+}

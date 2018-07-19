@@ -31,20 +31,29 @@ class m_controller extends Ci_Controller
     //si la respuesta es positiva llena la variable de sesion
     public function login($user,$pass)
     {
-        $data=array('nombre'=>$user,'contrasena'=>$pass);
+        $data=array('correo'=>$user,'contrasena'=>$pass);
         $result=$this->m_model->post('Usuarios/iniciaSesion',$data);
         if(!empty($result))
         {
-            $getCarrera=$this->m_model->get(array('carrera'=>$result[0]->idCarreras));
+            if(is_array($result))
+            {
+                //login success
+                //echo 'login success';
 
-            $getUserType=$this->m_model->get(array('Tipos_usuario'=>$result[0]->idTipos_Usuario));
+                $getCarrera=$this->m_model->get(array('carrera'=>$result[0]->idCarreras));
+                $getUserType=$this->m_model->get(array('Tipos_usuario'=>$result[0]->idTipos_Usuario));
 
-            $_SESSION['idUser']=$result[0]->idUsuarios;
-            $_SESSION['nombre']=$result[0]->nombre;
-            $_SESSION['tipoUsuario']=$result[0]->idTipos_Usuario;
-            $_SESSION['idCarrera']=$result[0]->idCarreras;
-            $_SESSION['tipoNombre']=$getUserType->nombre;
-            $_SESSION['carrera']=$getCarrera->nombre;
+                $_SESSION['idUser']=$result[0]->idUsuarios;
+                $_SESSION['nombre']=$result[0]->nombre;
+                $_SESSION['tipoUsuario']=$result[0]->idTipos_Usuario;
+                $_SESSION['idCarrera']=$result[0]->idCarreras;
+                $_SESSION['tipoNombre']=$getUserType->nombre;
+                $_SESSION['carrera']=$getCarrera->nombre;
+            }
+            else
+            {
+                $result=$result->error->statusCode;
+            }
         }
         return $result;
     }
@@ -52,6 +61,8 @@ class m_controller extends Ci_Controller
     //Limpia las variables de sesion
     public function logout()
     {
+        session_unset();
+        session_destroy();
         //return status
     }
 
@@ -74,9 +85,24 @@ class m_controller extends Ci_Controller
 
 
     //Carga la vista de administrador
-    public function loadViewAdmin($view)
+    public function loadViewAdmin($view,$data)
     {
-
+        $this->load->view('private/admin',$data);
+        $this->load->view('private/'.$view,$data);
+        $this->load->view('templates/footer');
+        /*if(!empty($_SESSION))
+        {
+            if($_SESSION['tipoUsuario']==5)
+            {
+                //echo 'admin logued';
+                $this->load->view('private/admin',$data);
+                //$this->load->view('private/'.$view,$data);
+            }
+            else
+            {
+                echo 'dame admin prro';
+            }
+        }*/
     }
 
 
