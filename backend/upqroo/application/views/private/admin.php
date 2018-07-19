@@ -33,6 +33,7 @@
                 </div>
             </div>
 
+            <div class="row">
             <div class="left-panel justify-center">
                 <div class="container">
                     <div class="column">
@@ -87,9 +88,3 @@
                     </div>
                 </div>
             </div>
-
-            <div class=""></div>
-
-        </div>
-
-    </div>

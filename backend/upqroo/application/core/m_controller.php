@@ -52,7 +52,6 @@ class m_controller extends Ci_Controller
             }
             else
             {
-                $this->status=false;
                 $result=$result->error->statusCode;
             }
         }
@@ -62,8 +61,8 @@ class m_controller extends Ci_Controller
     //Limpia las variables de sesion
     public function logout()
     {
-        //session_destroy();
-        //session_unset();
+        session_unset();
+        session_destroy();
         //return status
     }
 
@@ -88,7 +87,10 @@ class m_controller extends Ci_Controller
     //Carga la vista de administrador
     public function loadViewAdmin($view,$data)
     {
-        if(!empty($_SESSION))
+        $this->load->view('private/admin',$data);
+        $this->load->view('private/'.$view,$data);
+        $this->load->view('templates/footer');
+        /*if(!empty($_SESSION))
         {
             if($_SESSION['tipoUsuario']==5)
             {
@@ -100,7 +102,7 @@ class m_controller extends Ci_Controller
             {
                 echo 'dame admin prro';
             }
-        }
+        }*/
     }
 
 
