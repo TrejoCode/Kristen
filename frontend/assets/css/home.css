@@ -140,6 +140,7 @@
 .home .events .events-cards .event-card {
     background-color: var(--white);
     margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
 }
 
 .home .events .events-cards .event-card .date {
@@ -185,7 +186,7 @@
 /*    LARGE DEVICES    */
 
 @media screen and (max-width: 1200px) {
-    
+
 }
 
 /*    NOTEBOOKS, IPADS DEVICES    */
