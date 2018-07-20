@@ -46,40 +46,55 @@
                                 </div>
                                 <div class="white-space-16"></div>
                                 <div class="notice-gallery">
-                                    <div class="column">
-                                        <div class="row-responsive">
-                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                <div class="column">
+                                    <div class="row-responsive">
+                                        <div class="responsive-img">
+                                            <img src="../assets/img/noticia.jpg" alt="">
                                         </div>
-                                        <div class="row-responsive">
-                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
-                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        <div class="responsive-img">
+                                            <img src="../assets/img/noticia.jpg" alt="">
+                                        </div>
+                                        <div class="responsive-img">
+                                            <img src="../assets/img/noticia.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row-responsive">
+                                        <div class="responsive-img">
+                                            <img src="../assets/img/noticia.jpg" alt="">
+                                        </div>
+                                        <div class="responsive-img">
+                                            <img src="../assets/img/noticia.jpg" alt="">
+                                        </div>
+                                        <div class="responsive-img">
+                                            <img src="../assets/img/noticia.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             <div class="white-space-8"></div>
                             <div class="notice-files">
-                                <div class="row-responsive">
+                                <div class="row-responsive wrap">
 
                                     <div class="file-link align-center">
-                                        <a class="btn btn-file" href="#">
-                                            <i class="fas fa-paperclip"></i>
-                                            Descargar Formato Convenio
+                                        <a class="link" href="#">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Convocatoria 2018 - 2019
                                         </a>
                                     </div>
 
                                     <div class="file-link align-center">
-                                        <a class="btn btn-file" href="#">
-                                            <i class="fas fa-paperclip"></i>
-                                            Descargar Pack Atisha
+                                        <a class="link" href="#">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Convocatoria 2018 - 2019
                                         </a>
                                     </div>
 
-
+                                    <div class="file-link align-center">
+                                        <a class="link" href="#">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Convocatoria 2018 - 2019
+                                        </a>
+                                    </div>
 
                                 </div>
                             </div>
