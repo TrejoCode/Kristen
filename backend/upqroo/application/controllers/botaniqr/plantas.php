@@ -11,12 +11,14 @@ class plantas extends CI_Controller
 
     public function index()
     {
-        $this->load->model('botaniqr/homeModel');
+        $this->load->model('botaniqr/plantasModel');
 
         $this->load->helper('url');
 
+        $data['plantas']=$this->plantasModel->getPlantas();
+
         $this->load->view('botaniqr/templates/header');
-        $this->load->view('botaniqr/public/plantas');
+        $this->load->view('botaniqr/public/plantas',$data);
         $this->load->view('botaniqr/templates/footer');
     }
 

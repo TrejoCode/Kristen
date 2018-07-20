@@ -13,6 +13,14 @@ class plantasModel extends CI_Model
         $this->load->database();
     }
 
+    public function getPlantas()
+    {
+        $this->db->select('*');
+        $this->db->from('plantas');
+        $res=$this->db->get();
+        return $res->result();
+    }
+
     public function get_One($id)
     {
         $this->db->select('*');
