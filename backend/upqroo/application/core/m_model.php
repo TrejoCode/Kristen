@@ -39,11 +39,11 @@ class m_model extends CI_Model
      * @param  array $elements indicador and id
      * @return result as array Respuesta generada por el servidor
      */
-    public function get($elements)
+    public function get($table,$elements)
     {
         $this->conecction();
-        curl_setopt($this->curl, CURLOPT_URL, $this->url.$this->urlFormater($elements));
-        //echo $this->url.$this->urlFormater($elements);
+        curl_setopt($this->curl, CURLOPT_URL, $this->url.$table.$this->urlFormater($elements));
+        echo $this->url.$table.$this->urlFormater($elements);
         curl_setopt($this->curl, CURLOPT_POST,false);
         curl_setopt($this->curl, CURLOPT_HEADER, false);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
