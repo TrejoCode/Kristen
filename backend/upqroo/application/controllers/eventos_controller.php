@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class noticias_controller extends m_controller {
+class eventos_controller extends m_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class noticias_controller extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->model('noticias_model');
+        $this->load->model('eventos_model');
 
         $numPag = 1;
         $res=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$numPag.''));
@@ -28,10 +28,10 @@ class noticias_controller extends m_controller {
         $datos['Datos'] = $res;
         $datos['title'] = 'NOTICIAS';
 		
-		$this->loadView('public/noticias',$datos);
+		$this->loadView('public/eventos',$datos);
 	}
 
-	public function showNotice()
+	public function showEvento()
 	{
 		$this->load->model('noticias_model');
 
@@ -46,10 +46,6 @@ class noticias_controller extends m_controller {
 	        $datos['portada']=$res1->portada;
         }
 		
-		$this->loadView('public/noticia',$datos);
+		$this->loadView('public/evento',$datos);
 	}
-
-
-
-
 }
