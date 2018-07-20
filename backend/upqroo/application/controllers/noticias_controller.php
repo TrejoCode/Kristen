@@ -22,35 +22,34 @@ class noticias_controller extends m_controller {
 	{
         $this->load->model('noticias_model');
 
-        //$res=array();
         $res=$this->noticias_model->getNoticias(array('publicacion'=>'noticias','1'=>'1'));
 
         $datos['Datos'] = $res;
         $datos['title'] = 'NOTICIAS';
-        /*$total = 0;
-        foreach ($res as $r) 
-        {
-        	if ($r->idTipos_Publicacion == 2) 
-	        {
-	        	$datos['titulo'] = $r->titulo;
-		        $datos['descripcion'] = $r->descripcion;
-		        $datos['fecha'] = $r->fecha;
-		        $datos['portada'] = $r->portada;
-		        echo $datos['titulo'];
-		        $total++;
-	        }
-        }
-        echo $total;
-        $datos['total'] = $total;*/
-        /*if ($res[0]->idTipos_Publicacion == 2) 
-        {
-        	$datos['titulo']=$res[0]->titulo;
-	        $datos['descripcion']=$res[0]->descripcion;
-	        $datos['fecha']=$res[0]->fecha;
-	        $datos['portada']=$res[0]->portada;
-	        //echo $datos['titulo'];
-        }*/
 		
 		$this->loadView('public/noticias',$datos);
 	}
+
+	public function showNotice()
+	{
+		$this->load->model('noticias_model');
+
+        //$res=array();
+        $res1=$this->noticias_model->getNoticia(array('publicacion'=>$_GET['id']));
+
+        $datos['title'] = 'NOTICIA';
+        if ($res1->idTipos_Publicacion == 2) 
+        {
+        	$datos['titulo']=$res1->titulo;
+	        $datos['descripcion']=$res1->descripcion;
+	        $datos['fecha']=$res1->fecha;
+	        $datos['portada']=$res1->portada;
+        }
+		
+		$this->loadView('public/noticia',$datos);
+	}
+
+
+
+
 }

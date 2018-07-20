@@ -55,5 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['login']='welcome/loginE';
 $route['logout']='welcome/logoutE';
 $route['noticias'] = 'noticias_controller';
-$route['noticia'] = 'noticia_controller';
+$route['noticia'] = 'noticias_controller/showNotice';
 $route['administrador']='admin';
