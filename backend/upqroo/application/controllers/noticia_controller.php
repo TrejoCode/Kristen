@@ -23,27 +23,17 @@ class noticia_controller extends m_controller {
         $this->load->model('noticia_model');
 
         //$res=array();
-        $res=$this->noticia_model->getNoticias(array('publicacion'=>'noticias','1'=>'1'));
-        /*foreach ($res as $r) 
+        $res=$this->noticia_model->getNoticia(array('publicacion'=>$_GET['id']));
+
+        $datos['title'] = 'NOTICIA';
+        if ($res->idTipos_Publicacion == 2) 
         {
-        	if ($tipo == 2) 
-	        {
-	        	$datos['titulo']=$r->titulo;
-		        $datos['descripcion']=$r->descripcion;
-		        $datos['fecha']=$r->fecha;
-		        //$datos['portada']=$res[$i]->portada;
-		        echo $datos['titulo'];
-	        }
-        }*/
-        if ($res[0]->idTipos_Publicacion == 2) 
-        {
-        	$datos['titulo']=$res[0]->titulo;
-	        $datos['descripcion']=$res[0]->descripcion;
-	        $datos['fecha']=$res[0]->fecha;
-	        $datos['portada']=$res[0]->portada;
-	        //echo $datos['titulo'];
+        	$datos['titulo']=$res->titulo;
+	        $datos['descripcion']=$res->descripcion;
+	        $datos['fecha']=$res->fecha;
+	        $datos['portada']=$res->portada;
         }
 		
-		$this->loadView('public/noticias',$datos);
+		$this->loadView('public/noticia',$datos);
 	}
 }

@@ -31,7 +31,7 @@
                             <div class="white-space-8"></div>
                                 <div class="notice-banner">
                                     <div class="responsive-img">
-                                        <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo $portada; ?>" alt="">
                                     </div>
                                 </div>
                                 <div class="white-space-16"></div>
@@ -48,7 +48,7 @@
                                 <div class="notice-gallery">
                                     <div class="column">
                                         <div class="row-responsive">
-                                            <img src="<?php echo $portada ?>" alt="">
+                                            <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
                                             <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
                                             <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">
                                             <img src="<?php echo base_url(); ?>assets/img/noticia.jpg" alt="">

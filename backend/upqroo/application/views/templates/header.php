@@ -63,7 +63,7 @@
                                 </div>
 
                                 <div class="nav-item">
-                                    <a href="<?php echo base_url().'index.php/';?>noticias">NOTICIAS</a>
+                                    <a href="<?php echo base_url().'index.php/'; ?>noticias">NOTICIAS</a>
                                 </div>
 
                                 <div class="nav-item">
