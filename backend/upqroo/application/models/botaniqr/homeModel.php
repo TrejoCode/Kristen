@@ -18,6 +18,7 @@ class homeModel extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('noticias');
+        $this->db->limit('3');
         $res=$this->db->get();
         return $res->result();
     }
@@ -26,6 +27,7 @@ class homeModel extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('plantas');
+        $this->db->limit('3');
         $res=$this->db->get();
         return $res->result();
     }

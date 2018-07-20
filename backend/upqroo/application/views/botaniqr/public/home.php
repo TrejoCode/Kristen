@@ -85,8 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <?php foreach ($plantas as $dataPlant)
-                    {?>
+
                     <div class="notice-card">
                         <div class="column">
                             <div class="card-image responsive-img">
@@ -124,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                    <?php }?>
+
                 </div>
             </div>
         </div>
@@ -160,42 +159,16 @@
             <div class="white-space-16"></div>
             <div class="row">
                 <div class="cards-container row-responsive">
-                    <div class="plant-card">
-                        <div class="column">
-                            <div class="card-image responsive-img">
-                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/planta1.jpg" alt="" title="">
-                            </div>
-                            <div class="card-title justify">
-                                <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
-                            </div>
-                            <div class="card-details row">
-                                <div class="card-status">
-                                    <div class="column justify">
-                                        <i class="fa fa-thermometer-half" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <div class="card-description">
-                                    <div class="column">
-                                        <p>
-                                            Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
-                                        </p>
-                                        <a href="<?php echo base_url().'index.php/botaniqr/plantas/1'?>" class="read-more">
-                                            Conocer Más
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
+                    <?php foreach ($plantas as $dataPlant)
+                    {?>
                     <div class="plant-card">
                         <div class="column">
                             <div class="card-image responsive-img">
-                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/planta2.jpg" alt="" title="">
+                                <img src="<?php echo base_url().'BotaniQR/'.$dataPlant->imagen; ?>" alt="" title="">
                             </div>
                             <div class="card-title justify">
-                                <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
+                                <h3><?= $dataPlant->nombre; ?></h3>
                             </div>
                             <div class="card-details row">
                                 <div class="card-status">
@@ -206,9 +179,9 @@
                                 <div class="card-description">
                                     <div class="column">
                                         <p>
-                                            Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
+                                            <?= $dataPlant->cientifico; ?>
                                         </p>
-                                        <a href="#" class="read-more">
+                                        <a href="<?php echo base_url().'index.php/botaniqr/plantas/'.$dataPlant->id;?>" class="read-more">
                                             Conocer Más
                                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                                         </a>
@@ -217,35 +190,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="plant-card">
-                        <div class="column">
-                            <div class="card-image responsive-img">
-                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/planta1.jpg" alt="" title="">
-                            </div>
-                            <div class="card-title justify">
-                                <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
-                            </div>
-                            <div class="card-details row">
-                                <div class="card-status">
-                                    <div class="column justify">
-                                        <i class="fa fa-thermometer-half" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <div class="card-description">
-                                    <div class="column">
-                                        <p>
-                                            Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
-                                        </p>
-                                        <a href="#" class="read-more">
-                                            Conocer Más
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php }?>
 
                 </div>
             </div>
