@@ -8,10 +8,9 @@
                 </div>
             </div>
 
-            <?php for($i=0; $i<count($plantas); $i++){
-               echo $i%3==0?'salto':'no'; if ($i%3==0){ echo
+            <?php for($i=0; $i<count($plantas); $i++){ if ($i%3==0){ echo
             '<div class="white-space-16"></div>
-            <div class="row">
+                <div class="row">
                 <div class="cards-container row-responsive">';
               }?>
 
@@ -44,11 +43,8 @@
                         </div>
                     </div>
 
-                <?php if($i%3==0)
-                {?>
-                </div>
-            </div>
-            <?php } } ?>
+
+            <?php  $i+1%3==0?'</div>':'';  } echo '</div></div>'; ?>
 
             <div class="white-space-16"></div>
             <div class="row">
