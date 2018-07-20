@@ -285,6 +285,18 @@ form, form > input {
     color: var(--grayTitle);
 }
 
+.input-date {
+    padding: var(--paddingNormal) var(--paddingMedium);
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: var(--weightSemi);
+    font-family: var(--Roboto);
+    font-size: var(--fontTiny);
+    color: var(--grayTitle);
+}
+
 .input-file-h {
     display: none;
 }
