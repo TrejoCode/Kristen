@@ -40,37 +40,39 @@
                         <div class="white-space-16"></div>
                         <div class="panel-item align-center">
                             <i class="far fa-newspaper"></i>
-                            <a href="#">Noticias</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia' ?>">Noticias</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Ver Noticias</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia' ?>">Ver Noticias</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Agregar Noticia</a>
+                            <a href="<?php echo base_url().'index.php/administrador/agregar/noticia' ?>">Agregar Noticia</a>
                         </div>
 
                         <div class="white-space-16"></div>
 
                         <div class="panel-item align-center">
                             <i class="far fa-calendar-alt"></i>
-                            <a href="#">Eventos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/evento' ?>">Eventos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Ver Eventos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/evento' ?>">Ver Eventos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Agregar Evento</a>
+                            <a href="<?php echo base_url().'index.php/administrador/agregar/evento' ?>">Agregar Evento</a>
                         </div>
 
-                        <div class="white-space-16"></div>
-
-                        <div class="panel-item align-center">
+                        <?php if($tipoUsuario==5)
+                        {
+                          echo '<div class="white-space-16"></div> <div class="panel-item align-center">
                             <i class="fas fa-university"></i>
                             <a href="#">Páginas</a>
                         </div>
+
                         <div class="panel-subitem">
                             <a href="#">Ver Páginas</a>
-                        </div>
+                        </div>';
+                        } ?>
 
                         <div class="white-space-16"></div>
 

@@ -48,27 +48,32 @@ class Welcome extends m_controller {
 
         if($resultado!='404')
         {
-            if($_SESSION['tipoUsuario']==1)
+            redirect(base_url().'index.php/administrador');
+            /*if($_SESSION['tipoUsuario']==1)
             {
                 //Director de carrera
+                redirect(base_url().'index.php/administrador');
             }
             if($_SESSION['tipoUsuario']==2)
             {
                 //Vinculacion
+                redirect(base_url().'index.php/administrador');
             }
             if($_SESSION['tipoUsuario']==3)
             {
                 //Servicios escolares
+                redirect(base_url().'index.php/administrador');
             }
             if($_SESSION['tipoUsuario']==4)
             {
                 //Prensa y difucion
+                redirect(base_url().'index.php/administrador');
             }
             if ($_SESSION['tipoUsuario']==5)
             {
                 //Administrador web
                 redirect(base_url().'index.php/administrador');
-            }
+            }*/
         }
         else
         {

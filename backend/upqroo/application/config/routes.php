@@ -55,6 +55,13 @@ $route['translate_uri_dashes'] = FALSE;
 $route['login']='welcome/loginE';
 $route['logout']='welcome/logoutE';
 
-$route['administrador']='admin';
 
 $route['noticias']='noticia_controller';
+
+//Rutas administrador
+$route['administrador']='admin';
+$route['administrador/agregar/noticia']='admin/addNoticia';
+$route['administrador/agregar/evento']='admin/addEvento';
+$route['administrador/ver/noticia']='admin/noticia';
+$route['administrador/ver/evento']='admin/evento';
+$route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';

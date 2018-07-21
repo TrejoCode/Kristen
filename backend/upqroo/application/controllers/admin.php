@@ -7,13 +7,12 @@ class admin extends m_controller
     public $data;
     public $tipo;
     public $carrera;
-    public $pagina;
+    public $pagina=1;
 
     public function index()
     {
 
         $this->load->model('adminModel');
-        $this->pagina=1;
         if(isset($_SESSION['tipoUsuario']))
         {
             $this->data['nombre']=$_SESSION['nombre'];
@@ -24,31 +23,31 @@ class admin extends m_controller
             {
                 //Director de carrera
                 $this->getEspesificDataByCarrer($this->carrera);
-                $this->loadViewAdmin('admin-view-news',$this->data);
+                $this->noticia();
             }
             if($this->tipo==2)
             {
                 //Vinculacion
                 $this->getGeneralDataByUser($this->tipo);
-                $this->loadViewAdmin('admin-view-news',$this->data);
+                $this->noticia();
             }
             if($this->tipo==3)
             {
                 //Servicios escolares
                 $this->getGeneralDataByUser($this->tipo);
-                $this->loadViewAdmin('admin-view-news',$this->data);
+                $this->noticia();
             }
             if($this->tipo==4)
             {
                 //Prensa y difucion
                 $this->getGeneralDataByUser($this->tipo);
-                $this->loadViewAdmin('admin-view-news',$this->data);
+                $this->noticia();
             }
             if ($this->tipo==5)
             {
                 //Administrador web
                 $this->getGeneralDataByUser($this->tipo);
-                $this->loadViewAdmin('admin-view-news',$this->data);
+                $this->noticia();
             }
         }
         else
@@ -67,13 +66,13 @@ class admin extends m_controller
         }
         //Obtiene todas las noticias
         $this->data['noticias']=$this->adminModel->getNoticias(array('publicacion'=>'noticias',$this->pagina=>''));
-        //var_dump($this->data['noticias']);
+        var_dump($this->data['noticias']);
         //Obtiene todas los eventos
         $this->data['eventos']=$this->adminModel->getEventos(array('publicacion'=>'eventos',$this->pagina=>''));
-        //var_dump($this->data['eventos']);
+        var_dump($this->data['eventos']);
         //Obtiene todos los trabajos
         $this->data['trabajos']=$this->adminModel->getTrabajos(array('publicacion'=>'trabajos',$this->pagina=>''));
-        //var_dump($this->data['trabajos']);
+        var_dump($this->data['trabajos']);
     }
 
     private function getEspesificDataByCarrer($id)
@@ -89,13 +88,46 @@ class admin extends m_controller
             $id=>$this->pagina));
     }
 
+    public function noticia()
+    {
+        $this->data['title']='noticias';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
+        //Obtiene todas las noticias
+        $this->load->model('adminModel');
+        $this->data['noticias']=$this->adminModel->getNoticias(array('publicacion'=>'noticias',$this->pagina=>''));
+        $this->loadViewAdmin('admin-view-news',$this->data);
+    }
+
+    public function evento()
+    {
+        $this->data['title']='evento';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
+        //Obtiene todas las noticias
+        $this->load->model('adminModel');
+        $this->data['eventos']=$this->adminModel->getEventos(array('publicacion'=>'eventos',$this->pagina=>''));
+        $this->loadViewAdmin('admin-view-event',$this->data);
+    }
+
+    public function trabajo()
+    {
+
+    }
+
     public function addNoticia()
     {
+        $this->data['title']='noticias';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
         $this->loadViewAdmin('admin-add-news',$this->data);
     }
 
     public function addEvento()
     {
+        $this->data['title']='evento';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
         $this->loadViewAdmin('admin-add-event',$this->data);
     }
 
@@ -104,4 +136,20 @@ class admin extends m_controller
     {
         $this->loadViewAdmin('add-add-job',$this->data);
     }
+
+    public function editNoticia($id)
+    {
+
+    }
+
+    public function editEvento($id)
+    {
+
+    }
+
+    public function editTrabajo($id)
+    {
+
+    }
+
 }
