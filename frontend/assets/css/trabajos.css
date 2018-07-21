@@ -1,44 +1,53 @@
-/* --- Events --- */
+/* --- JOBS --- */
 
-.events {
+.jobs {
     font-family: var(--Roboto);
 }
 
-.events .events-cards .event-card {
+.jobs .jobs-cards .job-card {
     background-color: var(--white);
     margin: var(--paddingNormal);
     border: 1px solid #e6e7ea;
 }
 
-.events .events-cards .event-card .date {
+.jobs .jobs-cards .job-card .row-responsive {
+    height: 100%;
+}
+
+.jobs .jobs-cards .job-card .date {
     width: 30%;
     background-color: var(--blueLink);
     padding: var(--paddingMedium) 0;
 }
 
-.events .events-cards .event-card .date p {
+.jobs .jobs-cards .job-card .date i {
+    font-size: 1.8em;
+    color: var(--white);
+}
+
+.jobs .jobs-cards .job-card .date p {
     color: var(--white);
     font-weight: var(--weightSemi);
 }
 
-.events .events-cards .event-card .date .day p {
+.jobs .jobs-cards .job-card .date .day p {
     font-size: var(--fontLarge);
 }
 
-.events .events-cards .event-card .date .month p, .home .events .events-cards .event-card .date .year p {
+.jobs .jobs-cards .job-card .date .month p, .home .jobs .jobs-cards .job-card .date .year p {
     font-size: 0.8em;
 }
 
-.events .events-cards .event-card .info, .home .events .events-cards .event-card .schedule {
+.jobs .jobs-cards .job-card .info, .home .jobs .jobs-cards .job-card .schedule {
     padding: var(--paddingNormal) 0;
 }
 
-.events .events-cards .event-card .schedule i {
+.jobs .jobs-cards .job-card .schedule i {
     padding-right: var(--paddingNormal);
 }
 
 
-.events .events-cards .event-card .read-more {
+.jobs .jobs-cards .job-card .read-more {
     width: auto;
     color: var(--blueTeal);
     font-size: 0.9em;
@@ -47,19 +56,20 @@
 
 
 @media screen and (max-width: 1200px) {
-    .events .events-cards .event-card .date {
+    .jobs .jobs-cards .job-card .date {
         width: 40%;
     }
 }
 
 @media screen and (max-width: 768px) {
 
-    .events .events-cards .event-card .date {
+    .jobs .jobs-cards .job-card .date {
         width: 100%;
     }
 
-    .events .events-cards .event-card {
+    .jobs .jobs-cards .job-card {
         margin: var(--paddingNormal) 0;
     }
-
 }
+
+/* --- END JOBS --- */
