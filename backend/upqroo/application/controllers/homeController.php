@@ -11,7 +11,6 @@ class homeController extends m_controller
 		$data['noticias'] = $this->getNews();
 		$data['carrera'] = $this->getCareer();
 		$data['evento'] = $this->getEvent();
-		var_dump($data);
 		$this->loadView('public/home' , $data);
 
 	}
