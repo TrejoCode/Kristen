@@ -63,3 +63,16 @@
     }
 
 }
+
+.pagination .next {
+    padding: var(--paddingMedium) var(--paddingNormal);
+    color: var(--blueTeal);
+    font-weight: var(--weightMedium);
+}
+
+.pagination .prev {
+    font-weight: var(--weightMedium);
+    padding-top: var(--paddingMedium);
+    padding-right: var(--paddingNormal);
+    color: var(--blueTeal);
+}
