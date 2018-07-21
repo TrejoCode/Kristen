@@ -42,10 +42,6 @@
 
 /* --- Quick Info --- */
 
-.home .quick-info {
-    margin-top: -0.55em;
-}
-
 .home .quick-info .left {
     width: 60%;
     background-color: var(--white);

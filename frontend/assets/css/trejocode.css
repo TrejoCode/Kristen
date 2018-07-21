@@ -371,6 +371,10 @@ label {
     .row-responsive {
         flex-direction: column;
     }
+
+    .white-space-64 {
+        height: 32px;
+    }
 }
 
 /*    MOBILE DEVICES    */
