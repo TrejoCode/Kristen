@@ -7,7 +7,7 @@ class homeModel extends m_model
 
    public function getElementBy($elements)
    {
-       return $data=$this->get($elements);
+       return $data=$this->get('',$elements);
    }
 
 

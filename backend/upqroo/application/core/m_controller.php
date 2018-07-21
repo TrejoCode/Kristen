@@ -40,8 +40,8 @@ class m_controller extends Ci_Controller
                 //login success
                 //echo 'login success';
 
-                $getCarrera=$this->m_model->get(array('carrera'=>$result[0]->idCarreras));
-                $getUserType=$this->m_model->get(array('Tipos_usuario'=>$result[0]->idTipos_Usuario));
+                $getCarrera=$this->m_model->get('',array('carrera'=>$result[0]->idCarreras));
+                $getUserType=$this->m_model->get('',array('Tipos_usuario'=>$result[0]->idTipos_Usuario));
 
                 $_SESSION['idUser']=$result[0]->idUsuarios;
                 $_SESSION['nombre']=$result[0]->nombre;
