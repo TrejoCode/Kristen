@@ -27,67 +27,94 @@ class noticias_controller extends m_controller {
 
         $datos['Datos'] = $res;
         $datos['title'] = 'NOTICIAS';
+        $datos['nump'] = $numPag++;
 		
 		$this->loadView('public/noticias',$datos);
 	}
+
+	/*public function paginaNoticia()
+	{
+        $this->load->model('noticias_model');
+
+        $resp=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$_GET['num']));
+
+        if ($resp!='404')
+        {
+        	$datos['Datos'] = $resp;
+	        $datos['title'] = 'NOTICIAS';
+	        $datos['nump'] = $_GET['num']++;
+	        $this->loadView('public/noticias',$datos);
+		}
+		else
+		{
+			redirect(base_url().'index.php/noticias');
+		}
+	}*/	
 
 	public function showNotice()
 	{
 		$this->load->model('noticias_model');
 
-        $res1=$this->noticias_model->getNoticia(array('publicacion'=>$_GET['id']));
-
-        $datos['title'] = 'NOTICIA';
-        if ($res1->idTipos_Publicacion == 2) 
-        {
-        	$datos['titulo']=$res1->titulo;
-	        $datos['descripcion']=$res1->descripcion;
-	        $datos['fecha']=$res1->fecha;
-	        $datos['portada']=$res1->portada;
-        }
-
-        if(isset($_GET['id']))
-        {
-			$ID = $_GET['id'];
+		if ($_GET['id'] == 0 || empty($_GET['id'])) 
+		{
+			redirect(base_url().'index.php/noticias');
 		}
-        
-        $res2 = $this->noticias_model->getNoticias(array('publicacion'=>'noticias/1'));
+		else
+		{
+			$res1=$this->noticias_model->getNoticia(array('publicacion'=>$_GET['id']));
 
-        $cont = 0;
-        $i = 0;
-        while($cont != 1)
-        { 
-        	if ($res2[$i]->idPublicaciones == $ID && $i == 0) 
-        	{
-        		$datos['Ultima1'] = $res2[$i+1];
-        		$datos['Ultima2'] = $res2[$i+2];
-        		$datos['Ultima3'] = $res2[$i+3];
-        		$cont++;
-        	}
-        	elseif ($res2[$i]->idPublicaciones == $ID && $i == 1) 
-        	{
-        		$datos['Ultima1'] = $res2[$i-1];
-        		$datos['Ultima2'] = $res2[$i+1];
-        		$datos['Ultima3'] = $res2[$i+2];
-        		$cont++;
-        	}
-        	elseif($res2[$i]->idPublicaciones == $ID && $i == 2)
-        	{
-        		$datos['Ultima1'] = $res2[$i-2];
-        		$datos['Ultima2'] = $res2[$i-1];
-        		$datos['Ultima3'] = $res2[$i+1];
-        		$cont++;
-        	}
-        	elseif ($res2[$i]->idPublicaciones == $ID && $i < count($res2)) 
-        	{
-        		$datos['Ultima1'] = $res2[$i-3];
-        		$datos['Ultima2'] = $res2[$i-2];
-        		$datos['Ultima3'] = $res2[$i-1];
-        		$cont++;
-        	}
-        	$i++;
-        }
-		
-		$this->loadView('public/noticia',$datos);
+	        $datos['title'] = 'NOTICIA';
+	        if ($res1->idTipos_Publicacion == 2) 
+	        {
+	        	$datos['titulo']=$res1->titulo;
+		        $datos['descripcion']=$res1->descripcion;
+		        $datos['fecha']=$res1->fecha;
+		        $datos['portada']=$res1->portada;
+	        }
+
+	        if(isset($_GET['id']))
+	        {
+				$ID = $_GET['id'];
+			}
+	        
+	        $res2 = $this->noticias_model->getNoticias(array('publicacion'=>'noticias/1'));
+
+	        $cont = 0;
+	        $i = 0;
+	        while($cont != 1)
+	        { 
+	        	if ($res2[$i]->idPublicaciones == $ID && $i == 0) 
+	        	{
+	        		$datos['Ultima1'] = $res2[$i+1];
+	        		$datos['Ultima2'] = $res2[$i+2];
+	        		$datos['Ultima3'] = $res2[$i+3];
+	        		$cont++;
+	        	}
+	        	elseif ($res2[$i]->idPublicaciones == $ID && $i == 1) 
+	        	{
+	        		$datos['Ultima1'] = $res2[$i-1];
+	        		$datos['Ultima2'] = $res2[$i+1];
+	        		$datos['Ultima3'] = $res2[$i+2];
+	        		$cont++;
+	        	}
+	        	elseif($res2[$i]->idPublicaciones == $ID && $i == 2)
+	        	{
+	        		$datos['Ultima1'] = $res2[$i-2];
+	        		$datos['Ultima2'] = $res2[$i-1];
+	        		$datos['Ultima3'] = $res2[$i+1];
+	        		$cont++;
+	        	}
+	        	elseif ($res2[$i]->idPublicaciones == $ID && $i < count($res2)) 
+	        	{
+	        		$datos['Ultima1'] = $res2[$i-3];
+	        		$datos['Ultima2'] = $res2[$i-2];
+	        		$datos['Ultima3'] = $res2[$i-1];
+	        		$cont++;
+	        	}
+	        	$i++;
+	        }
+			
+			$this->loadView('public/noticia',$datos);
+		}
 	}
 }

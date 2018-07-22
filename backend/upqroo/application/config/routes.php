@@ -56,4 +56,5 @@ $route['login']='welcome/loginE';
 $route['logout']='welcome/logoutE';
 $route['noticias'] = 'noticias_controller';
 $route['noticia'] = 'noticias_controller/showNotice';
+//$route['pagina'] = 'noticias_controller/paginaNoticia';
 $route['administrador']='admin';
