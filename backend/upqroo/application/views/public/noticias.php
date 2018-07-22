@@ -55,25 +55,25 @@
                     <div class="white-space-32"></div>
                     <!-- Pagination -->
                     <?php if(!empty($Datos))
-                    { ?>
-                        <div class="pagination justify-between">
+                    { 
+                        /*<div class="pagination justify-between">
                             <a class="next" href="#">ANTERIOR</a>
                             <a class="next" href="#">SIGUIENTE</a>
-                        </div>
-                        <?php /*$num = $nump + 1;
+                        </div>*/
+                        $num = $nump + 1;
                         if ($nump == 1) 
                         { ?>
                             <div class="pagination justify-between">
                                 <a class="next" href="<?php echo base_url().'index.php/pagina?num='.$num; ?>">SIGUIENTE</a>
                             </div>
                         <?php }
-                        else
+                        elseif ($nump > 1) 
                         { ?>
                             <div class="pagination justify-between">
                                 <a class="next" href="<?php echo base_url().'index.php/pagina?num='.$nump; ?>">ANTERIOR</a>
                                 <a class="next" href="<?php echo base_url().'index.php/pagina?num='.$num; ?>">SIGUIENTE</a>
                             </div>
-                        <?php }*/
+                        <?php }
                     } ?>
                     <div class="white-space-32"></div>
                 </div>

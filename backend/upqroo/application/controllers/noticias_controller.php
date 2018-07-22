@@ -24,32 +24,48 @@ class noticias_controller extends m_controller {
 
         $numPag = 1;
         $res=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$numPag.''));
+        $numPag++;
 
-        $datos['Datos'] = $res;
-        $datos['title'] = 'NOTICIAS';
-        $datos['nump'] = $numPag++;
-		
-		$this->loadView('public/noticias',$datos);
+        $respag=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$numPag.''));
+
+        //echo $respag->error->status;
+        if ($respag->error->status != 404) 
+        {
+        	$datos['Datos'] = $res;
+	        $datos['title'] = 'NOTICIAS';
+	        $datos['nump'] = $numPag;
+        }
+        else
+        {
+        	$datos['Datos'] = $res;
+	        $datos['title'] = 'NOTICIAS';
+        	$datos['nump'] = 0;
+        }
+
+        $this->loadView('public/noticias',$datos);
 	}
 
-	/*public function paginaNoticia()
+	public function paginaNoticia()
 	{
         $this->load->model('noticias_model');
 
         $resp=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$_GET['num']));
 
-        if ($resp!='404')
+        if ($resp->error->status != 404)
         {
         	$datos['Datos'] = $resp;
 	        $datos['title'] = 'NOTICIAS';
 	        $datos['nump'] = $_GET['num']++;
-	        $this->loadView('public/noticias',$datos);
 		}
 		else
-		{
-			redirect(base_url().'index.php/noticias');
-		}
-	}*/	
+        {
+        	$datos['Datos'] = $resp;
+	        $datos['title'] = 'NOTICIAS';
+        	$datos['nump'] = 0;
+        }
+
+        $this->loadView('public/noticias',$datos);
+	}
 
 	public function showNotice()
 	{
