@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/admin.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>UPQROO - ADMIN</title>
+</head>
+<body>
+
+    <div class="admin flex">
+        <div class="column">
+            <div class="admin-header justify-center">
+                <div class="container">
+                    <div class="left justify-start">
+                        <div class="logo responsive-img">
+                            <img src="../assets/img/logo-upqroo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="row justify-end align-center">
+                            <div class="current-user justify-end">
+                                <h4>Lorem Ipsum</h4>
+                            </div>
+                            <div class="end-session justify-end">
+                                <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left-panel justify-center">
+                    <div class="container">
+                        <div class="column">
+                            <div class="white-space-16"></div>
+                            <div class="panel-item align-center">
+                                <i class="far fa-newspaper"></i>
+                                <a href="#">Noticias</a>
+                            </div>
+                            <div class="panel-subitem">
+                                <a href="#">Ver Noticias</a>
+                            </div>
+                            <div class="panel-subitem">
+                                <a href="#">Agregar Noticia</a>
+                            </div>
+
+                            <div class="white-space-16"></div>
+
+                            <div class="panel-item align-center">
+                                <i class="far fa-calendar-alt"></i>
+                                <a href="#">Eventos</a>
+                            </div>
+                            <div class="panel-subitem">
+                                <a href="#">Ver Eventos</a>
+                            </div>
+                            <div class="panel-subitem">
+                                <a href="#">Agregar Evento</a>
+                            </div>
+
+                            <div class="white-space-16"></div>
+
+                            <div class="panel-item align-center">
+                                <i class="fas fa-university"></i>
+                                <a href="#">Páginas</a>
+                            </div>
+                            <div class="panel-subitem">
+                                <a href="#">Ver Páginas</a>
+                            </div>
+
+                            <div class="white-space-16"></div>
+
+                            <div class="panel-item align-center">
+                                <i class="fas fa-briefcase"></i>
+                                <a href="#">Trabajos</a>
+                            </div>
+                            <div class="panel-subitem">
+                                <a href="#">Ver Trabajos</a>
+                            </div>
+                            <div class="panel-subitem">
+                                <a href="#">Agregar Trabajos</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IMPORTANTE -->
+                <div class="admin-add-news justify-center">
+                    <form class="flex" action="" method="post">
+                        <div class="left">
+                            <div class="column">
+                                <div class="white-space-16"></div>
+                                <div class="title column">
+                                    <h2>EDITAR MICROSITIO - {CURRENT}</h2>
+                                    <div class="white-space-16"></div>
+                                </div>
+                                <div class="white-space-32"></div>
+                                <h2>CONTENIDO</h2>
+                                <div class="white-space-32"></div>
+                                <h4>RESUMEN</h4>
+                                <div class="white-space-8"></div>
+                                <textarea class="input-textarea" name="summary" rows="4" required></textarea>
+                                <div class="white-space-16"></div>
+                                <h4>OBJETIVO</h4>
+                                <div class="white-space-8"></div>
+                                <textarea class="input-textarea" name="objective" rows="4"></textarea>
+                                <div class="white-space-16"></div>
+                                <h4>DURACIÓN</h4>
+                                <div class="white-space-8"></div>
+                                <textarea class="input-textarea" name="duration" rows="4"></textarea>
+                                <div class="white-space-16"></div>
+                                <h4>PLAN DE ESTUDIO</h4>
+                                <div class="white-space-8"></div>
+                                <div><a class="btn btn-blue" id="gallery-img-click" href="#"><i class="fas fa-file-upload"></i> SUBIR PLAN DE ESTUDIO</a></div>
+                                <input class="input-file-h" id="gallery-img" type="file" name="plan">
+                                <div class="white-space-32"></div>
+                                <h2>HABILIDADES DEL EGRESADO</h2>
+                                <div class="white-space-32"></div>
+                                <h4>HABILIDAD 1</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability1">
+                                <div class="white-space-8"></div>
+                                <h4>HABILIDAD 2</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability2">
+                                <div class="white-space-8"></div>
+                                <h4>HABILIDAD 3</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability3">
+                                <h4>HABILIDAD 4</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability4">
+                                <div class="white-space-32"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="right justify-center">
+                            <div class="container">
+                                <div class="column">
+                                    <div class="white-space-16"></div>
+                                    <h4>IMAGEN DE BANNER</h4>
+                                    <div class="white-space-16"></div>
+                                    <div class="featured-img responsive-img">
+                                        <img src="../assets/img/header-tera.jpg" alt="">
+                                    </div>
+                                    <div class="white-space-8"></div>
+                                    <div><a class="btn btn-blue" id="featured-img-click" href="#"><i class="fas fa-file-upload"></i> CAMBIAR IMAGEN</a></div>
+                                    <input class="input-file-h" id="featured-img" type="file" name="featured-img">
+                                    <div class="white-space-32"></div>
+                                    <input class="btn btn-blue" type="submit" value="ACTUALIZAR">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <!-- FIN IMPORTANTE -->
+
+
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>
