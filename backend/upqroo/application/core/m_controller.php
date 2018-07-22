@@ -61,14 +61,6 @@ class m_controller extends Ci_Controller
         //return status
     }
 
-    //Envia un post al webservice con la informacion necesaria para crear una enviarNotificacion
-    //titulo
-    //descripcion
-    public function enviarNotificacion()
-    {
-        //return success
-    }
-
 
     //Carga las vistas publicas
     public function loadView($view,$data)
@@ -85,28 +77,87 @@ class m_controller extends Ci_Controller
         $this->load->view('private/admin',$data);
         $this->load->view('private/'.$view,$data);
         $this->load->view('templates/footer');
-        /*if(!empty($_SESSION))
-        {
-            if($_SESSION['tipoUsuario']==5)
-            {
-                //echo 'admin logued';
-                $this->load->view('private/admin',$data);
-                //$this->load->view('private/'.$view,$data);
-            }
-            else
-            {
-                echo 'dame admin prro';
-            }
-        }*/
     }
 
 
-    //Carga una imagen
-    //img: nombre de la imagen
-    //src: diretorio donde se almacenara la imagen
-    public function uploadImg($img,$src)
+    /*Carga una imagen
+    *@param field Nombre del input
+    *@param newName nombre que tendra la imagen
+    *@param rute ruta espesifica, si no espesifica se pondra en la carpeta raiz
+    *@param sameFolder bool false: busca una nueva ruta true: misma ruta espesificada
+    */
+    public function uploadImg($field,$newName,$rute,$sameFolder)
     {
+        $result=array();
+        $date=date('Y-m-d');
 
+        if(!$sameFolder)
+        {
+            $rute='public/images/';
+            if (!is_dir($rute.$date)) {
+                $rute.=$date;
+                mkdir($rute, 0777, TRUE);
+            }
+            else
+            {
+                $date.=rand();
+                $rute.=$date;
+                mkdir($rute, 0777, TRUE);
+            }
+        }
+
+        $config['upload_path'] = $rute;
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        $config['overwrite'] = TRUE;
+        $config['max_size'] = "2048000";
+
+        $this->load->library('upload', $config);
+
+        if(is_array($_FILES[$field]['name']))
+        {
+            $files = $_FILES;
+            echo count($_FILES[$field]['name']);
+            $aux=$newName;
+            for($i=0; $i< count($_FILES[$field]['name']); $i++)
+            {
+
+                $newName=$aux;
+                $newName.=$date.($i+1);
+                $config['file_name'] =$newName;
+
+                $_FILES['userfile']['name']= $files[$field]['name'][$i];
+                $_FILES['userfile']['type']= $files[$field]['type'][$i];
+                $_FILES['userfile']['tmp_name']= $files[$field]['tmp_name'][$i];
+                $_FILES['userfile']['error']= $files[$field]['error'][$i];
+                $_FILES['userfile']['size']= $files[$field]['size'][$i];
+
+                $this->upload->initialize($config);
+
+                if ($this->upload->do_upload())
+                {
+                    //$result['path'][$i]=$this->upload->data('full_path');
+                    $tipe=$this->upload->data('file_ext');
+                    $result['rute'][$i]=$rute;
+                    $result['full-rute'][$i]=$rute.'/'.$newName.$tipe;
+                }
+            }
+        }
+        else
+        {
+            $newName.=$date;
+            $config['file_name'] =$newName;
+
+            $this->upload->initialize($config);
+
+            if ($this->upload->do_upload())
+            {
+                //$result['path']=$this->upload->data('full_path');
+                $tipe=$this->upload->data('file_ext');
+                $result['rute']=$rute;
+                $result['full-rute']=$rute.'/'.$newName.$tipe;
+            }
+        }
+        return $result;
     }
 
     //Carga un documento pdf

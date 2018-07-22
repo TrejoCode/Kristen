@@ -23,7 +23,7 @@ class admin extends m_controller
             {
                 //Director de carrera
                 $this->getEspesificDataByCarrer($this->carrera);
-                $this->noticia(0);
+                $this->noticia();
             }
             if($this->tipo==2)
             {
@@ -66,13 +66,13 @@ class admin extends m_controller
         }
         //Obtiene todas las noticias
         $this->data['noticias']=$this->adminModel->getData(array('publicacion'=>'noticias',$this->pagina=>''));
-        var_dump($this->data['noticias']);
+        //var_dump($this->data['noticias']);
         //Obtiene todas los eventos
         $this->data['eventos']=$this->adminModel->getData(array('publicacion'=>'eventos',$this->pagina=>''));
-        var_dump($this->data['eventos']);
+        //var_dump($this->data['eventos']);
         //Obtiene todos los trabajos
         $this->data['trabajos']=$this->adminModel->getData(array('publicacion'=>'trabajos',$this->pagina=>''));
-        var_dump($this->data['trabajos']);
+        //var_dump($this->data['trabajos']);
     }
 
     private function getEspesificDataByCarrer($id)
@@ -96,7 +96,14 @@ class admin extends m_controller
         $this->data['pagina']=$page+1;
         //Obtiene todas las noticias
         $this->load->model('adminModel');
-        $this->data['noticias']=$this->adminModel->getData(array('publicacion'=>'noticias',$this->pagina+$page=>''));
+        if($this->data['tipoUsuario']==1){
+            $carrera=$_SESSION['idCarrera'];
+            $this->data['noticias']=$this->adminModel->getData(array('publicacion'=>'noticias',$carrera=>$this->pagina+$page));
+        }
+        else
+        {
+            $this->data['noticias']=$this->adminModel->getData(array('publicacion'=>'noticias',$this->pagina+$page=>''));
+        }
         $this->loadViewAdmin('admin-view-news',$this->data);
     }
 
@@ -108,7 +115,14 @@ class admin extends m_controller
         $this->data['pagina']=$page+1;
         //Obtiene todas las noticias
         $this->load->model('adminModel');
-        $this->data['eventos']=$this->adminModel->getData(array('publicacion'=>'eventos',$this->pagina+$page=>''));
+        if($this->data['tipoUsuario']==1){
+            $carrera=$_SESSION['idCarrera'];
+            $this->data['eventos']=$this->adminModel->getData(array('publicacion'=>'eventos',$carrera=>$this->pagina+$page));
+        }
+        else
+        {
+            $this->data['eventos']=$this->adminModel->getData(array('publicacion'=>'eventos',$this->pagina+$page=>''));
+        }
         $this->loadViewAdmin('admin-view-event',$this->data);
     }
 
@@ -142,43 +156,22 @@ class admin extends m_controller
             //Post a la db
             /*
              */
+            $galery=$this->uploadImg('gallery-img','gallery','',false);
+            $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
             $datos['titulo']=$this->input->post('titulo');
             $datos['descripcion']=$this->input->post('descripcion');
             $datos['notificar']=$this->input->post('notificacion')!='on'?'false':'true';
-            $datos['portada']=$this->input->post('portada');
+            $datos['portada']=$cover['full-rute'];
             $datos['categorias']=$this->input->post('tags');
             $datos['idUsuarios']=$_SESSION['idUser'];
             $datos['carrera']=$_SESSION['idCarrera'];
             $datos['idTipos_Publicacion']=2;
             $datos['contenidos']=array('parrafos'=>$this->input->post('p'),
-                'galeria'=>$this->input->post('gallery-img'),
+                'galeria'=>$galery['full-rute'],
                 'enlaces'=>$this->input->post('url'));
 
-            //echo base_url().'public/images/';
+            var_dump($datos);
 
-            $config['upload_path'] = 'public/images/';
-            $config['allowed_types'] = 'gif|jpg|png|jpeg';
-            $config['overwrite'] = TRUE;
-            $config['max_size'] = "2048000";
-
-            $this->load->library('upload', $config);
-
-            $files = $_FILES;
-            for($i=0; $i< count($_FILES['gallery-img']['name']); $i++)
-            {
-                $_FILES['userfile']['name']= $files['gallery-img']['name'][$i];
-                $_FILES['userfile']['type']= $files['gallery-img']['type'][$i];
-                $_FILES['userfile']['tmp_name']= $files['gallery-img']['tmp_name'][$i];
-                $_FILES['userfile']['error']= $files['gallery-img']['error'][$i];
-                $_FILES['userfile']['size']= $files['gallery-img']['size'][$i];
-
-                $this->upload->do_upload();
-            }
-
-            if (!$this->upload->do_upload('portada'))
-            {
-                //Error
-            }
 
             /*$titulo = $this->input->post('titulo');
             $descripcion = $this->input->post('descripcion');
