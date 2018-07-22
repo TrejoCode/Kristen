@@ -60,8 +60,16 @@ $route['noticias']='noticia_controller';
 
 //Rutas administrador
 $route['administrador']='admin';
+
+$route['administrador/ver/noticia/(:num)']='admin/noticia/$1';
+$route['administrador/ver/evento/(:num)']='admin/evento/$1';
+
 $route['administrador/agregar/noticia']='admin/addNoticia';
 $route['administrador/agregar/evento']='admin/addEvento';
-$route['administrador/ver/noticia']='admin/noticia';
-$route['administrador/ver/evento']='admin/evento';
-$route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';
+
+$route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
+$route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
+
+//$route['administrador/agregar/noticia']=
+
+

@@ -40,10 +40,10 @@
                         <div class="white-space-16"></div>
                         <div class="panel-item align-center">
                             <i class="far fa-newspaper"></i>
-                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia' ?>">Noticias</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia/0' ?>">Noticias</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia' ?>">Ver Noticias</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia/0' ?>">Ver Noticias</a>
                         </div>
                         <div class="panel-subitem">
                             <a href="<?php echo base_url().'index.php/administrador/agregar/noticia' ?>">Agregar Noticia</a>
@@ -53,10 +53,10 @@
 
                         <div class="panel-item align-center">
                             <i class="far fa-calendar-alt"></i>
-                            <a href="<?php echo base_url().'index.php/administrador/ver/evento' ?>">Eventos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/evento/0' ?>">Eventos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="<?php echo base_url().'index.php/administrador/ver/evento' ?>">Ver Eventos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/evento/0' ?>">Ver Eventos</a>
                         </div>
                         <div class="panel-subitem">
                             <a href="<?php echo base_url().'index.php/administrador/agregar/evento' ?>">Agregar Evento</a>

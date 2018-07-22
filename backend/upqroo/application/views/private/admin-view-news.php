@@ -17,7 +17,7 @@
                     {
                         $count=0;
                         echo
-                        '<div class="white-space-32"></div>
+                        '<div class="white-space-16"></div>
                          <div class="list row">';
                     } ?>
                     <div class="list-item">
@@ -45,7 +45,7 @@
             }
             else
             {
-                echo '<div class="white-space-32"></div><div class="title"><h2>No hay eventos para mostrar</h2></div>';
+                echo '<div class="white-space-16"></div><div class="title"><h2>No hay eventos para mostrar</h2></div>';
             } ?>
 
 

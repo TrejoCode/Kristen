@@ -3,33 +3,9 @@
 class adminModel extends m_model
 {
 
-    public function getNoticias($elements)
+    public function getData($elements)
     {
-        $result=$this->get('',$elements);
-        return $result;
+        return $this->get('',$elements);
     }
 
-    public function getEventos($elements)
-    {
-        $result=$this->get('',$elements);
-        return $result;
-    }
-
-    public function getTrabajos($elements)
-    {
-        $result=$this->get('',$elements);
-        return $result;
-    }
-
-    public function getPaginas($elements)
-    {
-        $result=$this->get('',$elements);
-        return $result;
-    }
-
-    public function getUsuarios($elements)
-    {
-        $result=$this->get('',$elements);
-        return $result;
-    }
 }
