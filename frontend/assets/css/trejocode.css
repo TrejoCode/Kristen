@@ -57,6 +57,10 @@
     --paddingMedium: 16px;
     --paddingSemi: 24px;
     --paddingLarge: 32px;
+
+
+    --border: 1px solid #e6e7ea;
+
 }
 
 /* RESET
@@ -341,10 +345,22 @@ label {
     color: var(--blueTeal);
 }
 
+.border {
+    border: var(--border);
+}
+
 /*    TEXTS     */
 
 .textHuge {
     font-size: var(--fontHuge);
+}
+
+.textTiny {
+    font-size: var(--fontTiny);
+}
+
+.color-teal {
+    color: var(--blueTeal);
 }
 
 
