@@ -115,31 +115,31 @@
                                         <div class="column">
 
                                             <div class="thumb responsive-img">
-                                                <img src="<?php echo base_url(); ?>assets/img/thumcard.jpg" alt="">
+                                                <img src="<?php echo $Ultima1->portada; ?>" alt="">
                                             </div>
                                             <div class="white-space-8"></div>
                                             <div class="title-link">
-                                                <h3><a href="#">DÍA DEL MAESTRO 2018</a></h3>
+                                                <h3><a href="<?php echo base_url().'index.php/noticia?id='.$Ultima1->idPublicaciones; ?>"><?php echo $Ultima1->titulo; ?></a></h3>
                                             </div>
 
                                             <div class="white-space-16"></div>
 
                                             <div class="thumb responsive-img">
-                                                <img src="<?php echo base_url(); ?>assets/img/thumcard.jpg" alt="">
+                                                <img src="<?php echo $Ultima2->portada; ?>" alt="">
                                             </div>
                                             <div class="white-space-8"></div>
                                             <div class="title-link">
-                                                <h3><a href="#">DÍA DEL MAESTRO 2018</a></h3>
+                                                <h3><a href="<?php echo base_url().'index.php/noticia?id='.$Ultima2->idPublicaciones; ?>"><?php echo $Ultima2->titulo; ?></a></h3>
                                             </div>
 
                                             <div class="white-space-16"></div>
 
                                             <div class="thumb responsive-img">
-                                                <img src="<?php echo base_url(); ?>assets/img/thumcard.jpg" alt="">
+                                                <img src="<?php echo $Ultima3->portada; ?>" alt="">
                                             </div>
                                             <div class="white-space-8"></div>
                                             <div class="title-link">
-                                                <h3><a href="#">DÍA DEL MAESTRO 2018</a></h3>
+                                                <h3><a href="<?php echo base_url().'index.php/noticia?id='.$Ultima3->idPublicaciones; ?>"><?php echo $Ultima3->titulo; ?></a></h3>
                                             </div>
 
                                         </div>

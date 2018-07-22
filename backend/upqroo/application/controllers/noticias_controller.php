@@ -45,11 +45,49 @@ class noticias_controller extends m_controller {
 	        $datos['fecha']=$res1->fecha;
 	        $datos['portada']=$res1->portada;
         }
+
+        if(isset($_GET['id']))
+        {
+			$ID = $_GET['id'];
+		}
+        
+        $res2 = $this->noticias_model->getNoticias(array('publicacion'=>'noticias/1'));
+
+        $cont = 0;
+        $i = 0;
+        while($cont != 1)
+        { 
+        	if ($res2[$i]->idPublicaciones == $ID && $i == 0) 
+        	{
+        		$datos['Ultima1'] = $res2[$i+1];
+        		$datos['Ultima2'] = $res2[$i+2];
+        		$datos['Ultima3'] = $res2[$i+3];
+        		$cont++;
+        	}
+        	elseif ($res2[$i]->idPublicaciones == $ID && $i == 1) 
+        	{
+        		$datos['Ultima1'] = $res2[$i-1];
+        		$datos['Ultima2'] = $res2[$i+1];
+        		$datos['Ultima3'] = $res2[$i+2];
+        		$cont++;
+        	}
+        	elseif($res2[$i]->idPublicaciones == $ID && $i == 2)
+        	{
+        		$datos['Ultima1'] = $res2[$i-2];
+        		$datos['Ultima2'] = $res2[$i-1];
+        		$datos['Ultima3'] = $res2[$i+1];
+        		$cont++;
+        	}
+        	elseif ($res2[$i]->idPublicaciones == $ID && $i < count($res2)) 
+        	{
+        		$datos['Ultima1'] = $res2[$i-3];
+        		$datos['Ultima2'] = $res2[$i-2];
+        		$datos['Ultima3'] = $res2[$i-1];
+        		$cont++;
+        	}
+        	$i++;
+        }
 		
 		$this->loadView('public/noticia',$datos);
 	}
-
-
-
-
 }
