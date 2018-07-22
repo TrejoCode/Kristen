@@ -53,3 +53,23 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['login']='welcome/loginE';
+$route['logout']='welcome/logoutE';
+
+
+$route['noticias']='noticia_controller';
+
+//Rutas administrador
+$route['administrador']='admin';
+
+$route['administrador/ver/noticia/(:num)']='admin/noticia/$1';
+$route['administrador/ver/evento/(:num)']='admin/evento/$1';
+
+$route['administrador/agregar/noticia']='admin/addNoticia';
+$route['administrador/agregar/evento']='admin/addEvento';
+
+$route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
+$route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
+
+//$route['administrador/agregar/noticia']=
+
+

@@ -90,38 +90,84 @@
                     </div>
                 </div>
 
+                <!-- IMPORTANTE -->
                 <div class="admin-add-news justify-center">
                     <form class="flex" action="" method="post">
                         <div class="left">
                             <div class="column">
                                 <div class="white-space-16"></div>
                                 <div class="title column">
-                                    <h4>TÍTULO</h4>
-                                    <div class="white-space-8"></div>
-                                    <input class="input-text" type="text" name="titulo" required>
+                                    <h2>EDITAR MICROSITIO - {CURRENT}</h2>
+                                    <div class="white-space-16"></div>
                                 </div>
-                                <div class="white-space-16"></div>
-                                <div class="description column">
-                                    <h4>DESCRIPCIÓN CORTA</h4>
-                                    <div class="white-space-8"></div>
-                                    <textarea class="input-textarea" name="description" rows="2" required></textarea>
-                                </div>
-                                <div class="white-space-16"></div>
+                                <div class="white-space-32"></div>
                                 <h2>CONTENIDO</h2>
+                                <div class="white-space-32"></div>
+                                <h4>RESUMEN</h4>
+                                <div class="white-space-8"></div>
+                                <textarea class="input-textarea" name="summary" rows="4" required></textarea>
                                 <div class="white-space-16"></div>
-
+                                <h4>OBJETIVO</h4>
+                                <div class="white-space-8"></div>
+                                <textarea class="input-textarea" name="objective" rows="4"></textarea>
                                 <div class="white-space-16"></div>
+                                <h4>DURACIÓN</h4>
+                                <div class="white-space-8"></div>
+                                <textarea class="input-textarea" name="duration" rows="4"></textarea>
+                                <div class="white-space-16"></div>
+                                <h4>PLAN DE ESTUDIO</h4>
+                                <div class="white-space-8"></div>
+                                <div><a class="btn btn-blue" id="gallery-img-click" href="#"><i class="fas fa-file-upload"></i> SUBIR PLAN DE ESTUDIO</a></div>
+                                <input class="input-file-h" id="gallery-img" type="file" name="plan">
+                                <div class="white-space-32"></div>
+                                <h2>HABILIDADES DEL EGRESADO</h2>
+                                <div class="white-space-32"></div>
+                                <h4>HABILIDAD 1</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability1">
+                                <div class="white-space-8"></div>
+                                <h4>HABILIDAD 2</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability2">
+                                <div class="white-space-8"></div>
+                                <h4>HABILIDAD 3</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability3">
+                                <h4>HABILIDAD 4</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability4">
+                                <div class="white-space-32"></div>
                             </div>
                         </div>
-                        <div class="right">
-                            <input type="text" name="">
+
+
+                        <div class="right justify-center">
+                            <div class="container">
+                                <div class="column">
+                                    <div class="white-space-16"></div>
+                                    <h4>IMAGEN DE BANNER</h4>
+                                    <div class="white-space-16"></div>
+                                    <div class="featured-img responsive-img">
+                                        <img src="../assets/img/header-tera.jpg" alt="">
+                                    </div>
+                                    <div class="white-space-8"></div>
+                                    <div><a class="btn btn-blue" id="featured-img-click" href="#"><i class="fas fa-file-upload"></i> CAMBIAR IMAGEN</a></div>
+                                    <input class="input-file-h" id="featured-img" type="file" name="featured-img">
+                                    <div class="white-space-32"></div>
+                                    <input class="btn btn-blue" type="submit" value="ACTUALIZAR">
+                                </div>
+                            </div>
                         </div>
+
                     </form>
                 </div>
+                <!-- FIN IMPORTANTE -->
+
+
             </div>
         </div>
 
     </div>
-
+    <script type="text/javascript" src="../assets/js/main.js"></script>
 </body>
 </html>
