@@ -40,13 +40,18 @@
                 <div class="white-space-32"></div>
                 <h4>ENLACE 1</h4>
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="url[]">
+                <input class="input-text" type="text" name="url-name[]" placeholder="Título">
                 <div class="white-space-8"></div>
+                <input class="input-text" type="text" name="url[]">
                 <h4>ENLACE 2</h4>
+                <div class="white-space-8"></div>
+                <input class="input-text" type="text" name="url-name[]" placeholder="Título">
                 <div class="white-space-8"></div>
                 <input class="input-text" type="text" name="url[]">
                 <div class="white-space-8"></div>
                 <h4>ENLACE 3</h4>
+                <div class="white-space-8"></div>
+                <input class="input-text" type="text" name="url-name[]" placeholder="Título">
                 <div class="white-space-8"></div>
                 <input class="input-text" type="text" name="url[]">
                 <div class="white-space-16"></div>

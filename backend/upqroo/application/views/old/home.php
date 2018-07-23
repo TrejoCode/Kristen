@@ -142,7 +142,7 @@
 
         <!-- Call To Action -->
 
-        <div class="call-to-action justify-center align-center" style="background-image: url(<?php echo base_url();?>/assets/img/parallax-uni.jpg);">
+        <div class="call-to-action justify-center align-center" style="background-image: url(<?php echo  base_url();?>assets/img/parallax-uni.jpg);">
             <div class="container">
                 <div class="column">
                     <div class="white-space-64"></div>
@@ -170,31 +170,86 @@
                     <div class="white-space-32"></div>
                     <div class="news-cards">
                         <div class="row-responsive">
-                            <?php for ($j=0; $j<3; $j++)
-                            { $date=date_create($noticias[$j]->fecha);?>
 
-                                <div class="new-card">
+                            <div class="new-card">
                                 <div class="column">
                                     <div class="featured-img responsive-img">
-                                        <img src="<?php echo $noticias[$j]->portada; ?>" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/noticia.jpg" alt="">
                                     </div>
                                     <div class="container">
                                         <div class="column">
-                                            <div class="date">
-                                                <p><?php echo date_format($date,"d M Y");?></p>
-                                            </div>
-                                            <div class="title">
-                                                <h3><?php echo $noticias[$j]->titulo; ?></h3>
-                                            </div>
-                                            <div class="description">
-                                                <p><?php echo $noticias[$j]->descripcion; ?></p>
-                                            </div>
-                                            <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$noticias[$j]->idPublicaciones; ?>">Leer Más</a>
+                                         <?php foreach ($noticias as $noticia) {?>
+                                                <div class="date">
+                                                    <p><?php echo $noticia['fecha']  ?></p>
+                                                </div>
+                                                <div class="title">
+                                                    <h3><?php echo $noticia['titulo']?></h3>
+                                                </div>
+                                                <div class="description">
+                                                    <p><?php echo $noticia['descripcion']?></p>
+                                                </div>
+                                                <a class="read-more" href="#">Leer Más</a>
+
+                                            
+
+                                                <?php } ?>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <?php } ?>
+
+                            <div class="new-card">
+                                <div class="column">
+                                    <div class="featured-img responsive-img">
+                                        <img src="<?php echo base_url();?>assets/img/noticia.jpg" alt="">
+                                    </div>
+                                    <div class="container">
+                                        <div class="column">
+                                          <?php foreach ($noticias as $noticia) { ?>
+                                                <div class="date">
+                                                    <p><?php echo $noticia['fecha']  ?></p>
+                                                </div>
+                                                <div class="title">
+                                                    <h3><?php echo $noticia['titulo']?></h3>
+                                                </div>
+                                                <div class="description">
+                                                    <p><?php echo $noticia['descripcion']?></p>
+                                                </div>
+                                                <a class="read-more" href="#">Leer Más</a>
+
+                                            
+
+                                                <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new-card">
+                                <div class="column">
+                                    <div class="featured-img responsive-img">
+                                        <img src="<?php echo base_url();?>assets/img/noticia.jpg" alt="">
+                                    </div>
+                                    <div class="container">
+                                        <div class="column">
+                                          <?php foreach ($noticias as $noticia) { ?>
+                                                <div class="date">
+                                                    <p><?php echo $noticia['fecha']  ?></p>
+                                                </div>
+                                                <div class="title">
+                                                    <h3><?php echo $noticia['titulo']?></h3>
+                                                </div>
+                                                <div class="description">
+                                                    <p><?php echo $noticia['descripcion']?></p>
+                                                </div>
+                                                <a class="read-more" href="#">Leer Más</a>
+
+                                            
+
+                                                <?php } ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -216,42 +271,101 @@
                 <div class="events-cards">
                     <div class="row-responsive">
 
-                        <?php for ($i=0;$i<3;$i++)
-                        { $date=date_create($evento[$i]->fecha);
-                        ?>
-
-                            <div class="event-card">
+                        <div class="event-card">
                             <div class="column">
                                 <div class="row-responsive">
                                     <div class="date column justify-center">
                                         <div class="day justify-center">
-                                            <p><?php echo date_format($date,"d"); ?></p>
+                                            <p>31</p>
                                         </div>
                                         <div class="month justify-center">
-                                            <p><?php echo date_format($date,"M"); ?></p>
+                                            <p>AGOSTO</p>
                                         </div>
                                         <div class="year justify-center">
-                                            <p><?php echo date_format($date,"Y"); ?></p>
+                                            <p>2018</p>
                                         </div>
                                     </div>
                                     <div class="info justify-center">
                                         <div class="container">
                                             <div class="column">
                                                 <div class="title">
-                                                    <h3><?php echo $evento[$i]->titulo; ?></h3>
+                                                    <h3>Semana Nacional Ciencia y Tecnología</h3>
                                                 </div>
                                                 <div class="schedule align-center">
                                                     <i class="far fa-clock"></i>
                                                     <p>13:00</p>
                                                 </div>
-                                                <a  class="read-more" href="<?php echo base_url().'index.php/ver/evento/'.$evento[$i]->idPublicaciones; ?>">Conocer Más</a>
+                                                <a  class="read-more" href="#">Conocer Más</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <?php } ?>
+
+                        <div class="event-card">
+                            <div class="column">
+                                <div class="row-responsive">
+                                    <div class="date column justify-center">
+                                        <div class="day justify-center">
+                                            <p>31</p>
+                                        </div>
+                                        <div class="month justify-center">
+                                            <p>AGOSTO</p>
+                                        </div>
+                                        <div class="year justify-center">
+                                            <p>2018</p>
+                                        </div>
+                                    </div>
+                                    <div class="info justify-center">
+                                        <div class="container">
+                                            <div class="column">
+                                                <div class="title">
+                                                    <h3>Semana Nacional Ciencia y Tecnología</h3>
+                                                </div>
+                                                <div class="schedule align-center">
+                                                    <i class="far fa-clock"></i>
+                                                    <p>13:00</p>
+                                                </div>
+                                                <a  class="read-more" href="#">Conocer Más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="column">
+                                <div class="row-responsive">
+                                    <div class="date column justify-center">
+                                        <div class="day justify-center">
+                                            <p>31</p>
+                                        </div>
+                                        <div class="month justify-center">
+                                            <p>AGOSTO</p>
+                                        </div>
+                                        <div class="year justify-center">
+                                            <p>2018</p>
+                                        </div>
+                                    </div>
+                                    <div class="info justify-center">
+                                        <div class="container">
+                                            <div class="column">
+                                                <div class="title">
+                                                    <h3>Semana Nacional Ciencia y Tecnología</h3>
+                                                </div>
+                                                <div class="schedule align-center">
+                                                    <i class="far fa-clock"></i>
+                                                    <p>13:00</p>
+                                                </div>
+                                                <a  class="read-more" href="#">Conocer Más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

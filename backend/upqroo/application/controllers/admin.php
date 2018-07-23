@@ -25,34 +25,16 @@ class admin extends m_controller
                 $this->getEspesificDataByCarrer($this->carrera);
                 $this->noticia();
             }
-            if($this->tipo==2)
+            if($this->tipo==2 || $this->tipo==3 || $this->tipo==4 || $this->tipo==5)
             {
                 //Vinculacion
-                $this->getGeneralDataByUser($this->tipo);
-                $this->noticia(0);
-            }
-            if($this->tipo==3)
-            {
-                //Servicios escolares
-                $this->getGeneralDataByUser($this->tipo);
-                $this->noticia(0);
-            }
-            if($this->tipo==4)
-            {
-                //Prensa y difucion
-                $this->getGeneralDataByUser($this->tipo);
-                $this->noticia(0);
-            }
-            if ($this->tipo==5)
-            {
-                //Administrador web
                 $this->getGeneralDataByUser($this->tipo);
                 $this->noticia(0);
             }
         }
         else
         {
-            redirect(base_url());
+            redirect(base_url().'index.php/login');
         }
     }
 
@@ -145,6 +127,40 @@ class admin extends m_controller
         $this->loadViewAdmin('admin-view-job',$this->data);
     }
 
+
+    private function crearContenidos($imgs,$indiceP,$indiceEnlace,$indiceNEnlace)
+    {
+        $result=array();
+
+        $parrafos=array();
+        foreach ($this->input->post($indiceP) as $parrafo)
+        {
+            $aux=array('idTipoContenidos'=>1,'contenido'=>array('texto'=>$parrafo));
+            array_push($parrafos,$aux);
+
+        }
+        //var_dump(json_encode($parrafos));
+
+
+        $urlName=$this->input->post($indiceNEnlace);
+
+        $enlaces=array();
+        $cont=0;
+        foreach ($this->input->post($indiceEnlace) as $enlace)
+        {
+            $cont++;
+            $aux=array('idTipoContenidos'=>2,'contenido'=>array('texto'=>$urlName[$cont-1],'url'=>$enlace));
+            array_push($enlaces,$aux);
+
+        }
+        //var_dump(json_encode($enlaces));
+        $parrafos=array_merge($parrafos,$enlaces);
+        array_push($parrafos,$imgs);
+
+
+        return $result=$parrafos;
+    }
+
     public function addNoticia()
     {
 
@@ -175,7 +191,7 @@ class admin extends m_controller
             $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
             $datos['titulo']=$this->input->post('titulo');
             $datos['descripcion']=$this->input->post('descripcion');
-            $datos['notificar']=$this->input->post('notificacion')!='on'?'false':'true';
+            $datos['notificar']=$this->input->post('notificacion')!='on'?false:true;
             $datos['portada']=$cover['full-rute'];
             $datos['categorias']=$this->input->post('tags');
             $datos['idUsuarios']=$_SESSION['idUser'];
@@ -183,41 +199,19 @@ class admin extends m_controller
             $datos['idTipos_Publicacion']=2;
 
 
-            $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>6,'imagenes'=>$galery['full-rute']));
-            //var_dump(json_encode($imgs));
+            $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
 
-            $parrafos=array();
-            foreach ($this->input->post('p') as $parrafo)
-            {
-                $aux=array('idTipoContenidos'=>1,'contenido'=>array('texto'=>$parrafo));
-                array_push($parrafos,$aux);
+            $datos['contenidos']=$this->crearContenidos($imgs,'p','url','url-name');
 
-            }
-            //var_dump(json_encode($parrafos));
-
-            $enlaces=array();
-            $cont=0;
-            foreach ($this->input->post('url') as $enlace)
-            {
-                $cont++;
-                $aux=array('idTipoContenidos'=>2,'contenido'=>array('texto'=>'enlace'.$cont,'url'=>$enlace));
-                array_push($enlaces,$aux);
-
-            }
-            //var_dump(json_encode($enlaces));
-            $parrafos=array_merge($parrafos,$enlaces);
-            array_push($parrafos,$imgs);
-            $datos['contenidos']=$parrafos;
-
-            var_dump(json_encode($datos));
-            /*if(!empty($this->adminModel->post('publicacion',$datos)))
+            //var_dump(json_encode($datos));
+            if(!empty($this->adminModel->post('publicacion',$datos)))
             {
                 $this->noticia();
             }
             else
             {
                 redirect(base_url().'index.php/administrador/ver/evento');
-            }*/
+            }
         }
     }
 

@@ -8,35 +8,50 @@ class homeController extends m_controller
 
         $this->load->model('homeModel');
 
-		$data['noticias'] = $this->getNews();
-		$data['carrera'] = $this->getCareer();
-		$data['evento'] = $this->getEvent();
+		$data['noticias'] =$this->homeModel->getData('/publicacion',array('noticias'=>1));
+		$data['carrera'] = $this->homeModel->getData('',array('carrera'=>''));
+		$data['evento'] =$this->homeModel->getData('/publicacion',array('eventos'=>1));
+		//var_dump($data['noticias']);
 		$this->loadView('public/home' , $data);
-
 	}
 
 
-	//Obtener Noticias 
-   private function getNews()
-   {
-   	 return $this->homeModel->get('/publicacion',array('noticias' => '1'));
-   }
+	public function entrar()
+    {
+
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('email', 'usuario', 'required');
+        $this->form_validation->set_rules('password', 'contraseña', 'required');
+        $data['titulo']='LOGIN';
+
+        if ($this->form_validation->run() === FALSE)
+        {
+            $this->loadView('public/login',$data);
+        }
+        else
+        {
+            $username = $this->input->post('email');
+            $password = $this->input->post('password');
+            $resultado=$this->login($username,$password);
+
+            if($resultado!='404')
+            {
+                redirect(base_url().'index.php/administrador');
+            }
+            else
+            {
+                redirect(base_url().'index.php/login');
+            }
+        }
+    }
 
 
-   	//Obtener Carrera
-   private function getCareer()
-   {
-   	return $this->homeModel->get('',array('carrera' => ''));
-   }
-
-
-   //Obtener Evento
-   private function getEvent()
-   {
-
-   	return $this->homeModel->get('/publicacion',array('eventos' => '1'));
-   }
-
+    public function salir()
+    {
+        $this->logout();
+        redirect(base_url());
+    }
 
 
 }

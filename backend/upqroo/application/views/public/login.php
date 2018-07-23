@@ -7,7 +7,7 @@
                     <div class="column">
                         <div class="logo">
                             <div class="responsive-img justify-center">
-                                <img src="<?php base_url();?>assets/img/logo-aguila.png" alt="">
+                                <img src="<?php echo base_url();?>assets/img/logo-aguila.png" alt="">
                             </div>
                         </div>
                         <div class="white-space-32"></div>
