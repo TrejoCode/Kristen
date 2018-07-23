@@ -100,7 +100,7 @@ class m_controller extends Ci_Controller
             }
             else
             {
-                $date.=rand();
+                $date.='-'.rand();
                 $rute.=$date;
                 mkdir($rute, 0777, TRUE);
             }
@@ -116,7 +116,7 @@ class m_controller extends Ci_Controller
         if(is_array($_FILES[$field]['name']))
         {
             $files = $_FILES;
-            echo count($_FILES[$field]['name']);
+            //echo count($_FILES[$field]['name']);
             $aux=$newName;
             for($i=0; $i< count($_FILES[$field]['name']); $i++)
             {

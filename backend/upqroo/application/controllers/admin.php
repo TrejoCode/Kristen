@@ -166,31 +166,35 @@ class admin extends m_controller
             $datos['idUsuarios']=$_SESSION['idUser'];
             $datos['carrera']=$_SESSION['idCarrera'];
             $datos['idTipos_Publicacion']=2;
-            $datos['contenidos']=array('parrafos'=>$this->input->post('p'),
-                'galeria'=>$galery['full-rute'],
-                'enlaces'=>$this->input->post('url'));
-
-            var_dump($datos);
 
 
-            /*$titulo = $this->input->post('titulo');
-            $descripcion = $this->input->post('descripcion');
-            $notificar= $this->input->post('notificacion')!='on'?'false':'true';
-            $portada=$this->input->post('portada');
-            $categorias=$this->input->post('tags');
-            $autor=$_SESSION['idUser'];
-            $carrera=$_SESSION['idCarrera'];
-            $tipoPublicacion=2;
+            $imgs=array('idTipoContenido'=>5,'contenido'=>array('cantidad'=>6,'imagenes'=>$galery['full-rute']));
+            //var_dump(json_encode($imgs));
 
-            //Arrays de contenido
-            $parrafos=$this->input->post('p');
-            $galeria=$this->input->post('gallery-img');
-            $enlaces=$this->input->post('url');*/
+            $parrafos=array();
+            foreach ($this->input->post('p') as $parrafo)
+            {
+                $aux=array('idTipoContenidos'=>1,'contenido'=>array('texto'=>$parrafo));
+                array_push($parrafos,$aux);
 
+            }
+            //var_dump(json_encode($parrafos));
 
+            $enlaces=array();
+            $cont=0;
+            foreach ($this->input->post('url') as $enlace)
+            {
+                $cont++;
+                $aux=array('idTipoContenidos'=>2,'contenido'=>array('texto'=>'enlace'.$cont,'url'=>$enlace));
+                array_push($enlaces,$aux);
 
+            }
+            //var_dump(json_encode($enlaces));
+            $parrafos=array_merge($parrafos,$enlaces);
+            array_push($parrafos,$imgs);
+            $datos['contenidos']=$parrafos;
 
-
+            //var_dump(json_encode($datos));
         }
     }
 
