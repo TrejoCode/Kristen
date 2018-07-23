@@ -73,7 +73,7 @@
 }
 
 .institutional .proceso .hability {
-    margin-bottom: var(--paddingSemi);
+    margin-bottom: var(--paddingLarge);
 }
 
 .institutional .proceso .habilities .hability-number p {
@@ -85,6 +85,10 @@
 
 .institutional .proceso .habilities .hability-description p {
     width: 90%;
+}
+
+.institutional .proximo {
+    background-color: var(--blueLink);
 }
 
 @media screen and (max-width: 1200px) {
