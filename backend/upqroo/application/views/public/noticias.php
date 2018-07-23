@@ -9,44 +9,123 @@
 
                     <?php if(!empty($Datos))
                     {
-                        $cont = 0;
+                        $total = count($Datos);
+                        $residuo = $total%3;
+
+                        if ($residuo == 0) 
+                        {
+                            $r = $residuo;
+                        }
+                        else
+                        {
+                            $r = 3 - $residuo;
+                        }
+                        $n = $total + $r;
+                        $contador = 0;
+
+                        for ($i=0; $i < $n; $i++) 
+                        { 
+                            if($contador == 0)
+                            { ?>
+                                <div class="news-cards">
+                                <div class="row-responsive">
+                            <?php } ?>
+
+                            <div class="new-card">
+                                <div class="column">
+                                    <div class="featured-img responsive-img">
+                                        <img src="<?php if (!empty($Datos[$i]->portada)){echo $Datos[$i]->portada;} ?>">
+                                    </div>
+                                    <div class="container">
+                                        <div class="column">
+                                            <div class="date">
+                                                <p><?php if (!empty($Datos[$i]->fecha)){echo $Datos[$i]->fecha;}  ?></p>
+                                            </div>
+                                            <div class="title">
+                                                <h3><?php if (!empty($Datos[$i]->titulo)){echo $Datos[$i]->titulo;}  ?></h3>
+                                            </div>
+                                            <div class="description">
+                                                <p><?php if (!empty($Datos[$i]->descripcion)){echo $Datos[$i]->descripcion;}  ?></p>
+                                            </div>
+                                            <?php if (!empty($Datos[$i]->idPublicaciones)) 
+                                            { ?>
+                                                <a class="read-more" href="echo base_url().'index.php/noticia?id='.$Datos[$i]->idPublicaciones; ">Leer Más</a>
+                                            <?php } ?>       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <?php
+
+
+                            if($contador == 2)
+                            { ?>
+                            </div>
+                                </div>
+                                <?php 
+                                $contador = 0;
+                            }else{
+                                 $contador++;
+                            }
+
+                           
+                       }
+                        /*$cont = 0;
                         $total = count($Datos);
                         while ($cont != $total) 
                         { ?>
                             <div class="news-cards">
                                 <div class="row-responsive">
-                            <?php for($i = 0; $i <= 3; $i++)
-                            {
-                                if ($cont != $total) 
-                                { ?>
-                                    <div class="new-card">
-                                        <div class="column">
-                                            <div class="featured-img responsive-img">
-                                                <img src="<?php echo $Datos[$cont]->portada; ?>">
-                                            </div>
-                                            <div class="container">
+                                    <?php for($i = 0; $i <= 2; $i++)
+                                    { 
+                                        if (empty($Datos[$cont]->titulo)) 
+                                        { ?>
+                                            <div class="new-card">
                                                 <div class="column">
-                                                    <div class="date">
-                                                        <p><?php echo $Datos[$cont]->fecha; ?></p>
+                                                    <div class="featured-img responsive-img"></div>
+                                                    <div class="container">
+                                                        <div class="column">
+                                                            <div class="date"></div>
+                                                            <div class="title"></div>
+                                                            <div class="description"></div>
+                                                            <a class="read-more"></a>
+                                                        </div>
                                                     </div>
-                                                    <div class="title">
-                                                        <h3><?php echo $Datos[$cont]->titulo; ?></h3>
-                                                    </div>
-                                                    <div class="description">
-                                                        <p><?php echo $Datos[$cont]->descripcion; ?></p>
-                                                    </div>
-                                                    <a class="read-more" href="<?php echo base_url().'index.php/noticia?id='.$Datos[$cont]->idPublicaciones; ?>">Leer Más</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                <?php } 
-                                $cont++; 
-                                } ?>
+                                        <?php } 
+                                        else
+                                        { ?>
+                                            <div class="new-card">
+                                                <div class="column">
+                                                    <div class="featured-img responsive-img">
+                                                        <img src="<?php echo $Datos[$cont]->portada; ?>">
+                                                    </div>
+                                                    <div class="container">
+                                                        <div class="column">
+                                                            <div class="date">
+                                                                <p><?php echo $Datos[$cont]->fecha; ?></p>
+                                                            </div>
+                                                            <div class="title">
+                                                                <h3><?php echo $Datos[$cont]->titulo; ?></h3>
+                                                            </div>
+                                                            <div class="description">
+                                                                <p><?php echo $Datos[$cont]->descripcion; ?></p>
+                                                            </div>
+                                                            <a class="read-more" href="<?php echo base_url().'index.php/noticia?id='.$Datos[$cont]->idPublicaciones; ?>">Leer Más</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php } $cont++;
+                                    } ?>
                                 </div>
                             </div>
-                        <?php }
-                    }
+                        <?php }*/
+                   }
                     else
                     {
                         echo '<div class="white-space-32"></div><div class="title"><h2>No hay noticias para mostrar</h2></div>';
@@ -56,14 +135,11 @@
                     <!-- Pagination -->
                     <?php if(!empty($Datos))
                     { 
-                        /*<div class="pagination justify-between">
-                            <a class="next" href="#">ANTERIOR</a>
-                            <a class="next" href="#">SIGUIENTE</a>
-                        </div>*/
                         $num = $nump + 1;
                         if ($nump == 1) 
                         { ?>
                             <div class="pagination justify-between">
+                                <a class="next"></a>
                                 <a class="next" href="<?php echo base_url().'index.php/pagina?num='.$num; ?>">SIGUIENTE</a>
                             </div>
                         <?php }

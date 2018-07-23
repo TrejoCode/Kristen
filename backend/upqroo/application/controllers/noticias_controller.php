@@ -27,19 +27,20 @@ class noticias_controller extends m_controller {
         $numPag++;
 
         $respag=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$numPag.''));
+        $numPag = 1;
 
         //echo $respag->error->status;
-        if ($respag->error->status != 404) 
+        if (empty($respag)) 
         {
         	$datos['Datos'] = $res;
 	        $datos['title'] = 'NOTICIAS';
-	        $datos['nump'] = $numPag;
+        	$datos['nump'] = 0;
         }
         else
         {
         	$datos['Datos'] = $res;
 	        $datos['title'] = 'NOTICIAS';
-        	$datos['nump'] = 0;
+	        $datos['nump'] = $numPag;
         }
 
         $this->loadView('public/noticias',$datos);
@@ -51,7 +52,7 @@ class noticias_controller extends m_controller {
 
         $resp=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$_GET['num']));
 
-        if ($resp->error->status != 404)
+        if (empty($resp))
         {
         	$datos['Datos'] = $resp;
 	        $datos['title'] = 'NOTICIAS';
