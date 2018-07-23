@@ -54,6 +54,8 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['login']='welcome/loginE';
 $route['logout']='welcome/logoutE';
+$route['eventos']='eventos_controller';
+$route['evento']='eventos_controller/showEvento';
 
 
 $route['noticias']='noticia_controller';

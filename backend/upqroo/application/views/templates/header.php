@@ -9,7 +9,7 @@
     <meta name="keywords" content="universisad, universidad en cancún, UPQROO, universidad politécnica de quinatana roo, universidades">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/trejocode.css" media="screen">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/header.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css" media="screen">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 </head>
@@ -55,23 +55,27 @@
                         <div class="right">
                             <nav class="row align-center justify-end">
                                 <div class="nav-item">
-                                    <a href="<?php echo base_url()?>/">UNIVERSIDAD</a>
+                                    <a href="<?php echo base_url();?>/">UNIVERSIDAD</a>
                                 </div>
 
                                 <div class="nav-item">
-                                    <a href="<?php echo base_url()?>carreras">CARRERAS</a>
+                                    <a href="<?php echo base_url();?>carreras">CARRERAS</a>
                                 </div>
 
                                 <div class="nav-item">
-                                    <a href="<?php echo base_url()?>noticias">NOTICIAS</a>
+                                    <a href="<?php echo base_url().'index.php/'; ?>eventos">EVENTO</a>
                                 </div>
 
                                 <div class="nav-item">
-                                    <a href="<?php echo base_url()?>ser_escolares">SERVICIOS ESCOLARES</a>
+                                    <a href="<?php echo base_url().'index.php/'; ?>noticias">NOTICIAS</a>
                                 </div>
 
                                 <div class="nav-item">
-                                    <a href="<?php echo base_url()?>vinculacion">VINCULACIÓN</a>
+                                    <a href="<?php echo base_url();?>ser_escolares">SERVICIOS ESCOLARES</a>
+                                </div>
+
+                                <div class="nav-item">
+                                    <a href="<?php echo base_url();?>vinculacion">VINCULACIÓN</a>
                                 </div>
                             </nav>
                         </div>
