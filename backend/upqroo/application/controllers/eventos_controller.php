@@ -22,7 +22,7 @@ class eventos_controller extends m_controller {
 	{
         $this->load->model('eventos_model');
 
-        $numPag = 1;
+        $numPag = 2;
         $res=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
 
         $datos['Datos'] = $res;
