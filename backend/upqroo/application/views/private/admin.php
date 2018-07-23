@@ -78,13 +78,13 @@
 
                         <div class="panel-item align-center">
                             <i class="fas fa-briefcase"></i>
-                            <a href="#">Trabajos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/trabajo/0' ?>">Trabajos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Ver Trabajos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/trabajo/0' ?>">Ver Trabajos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Agregar Trabajos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/agregar/trabajo/' ?>">Agregar Trabajos</a>
                         </div>
 
                     </div>

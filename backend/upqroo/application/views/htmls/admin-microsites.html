@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/css/admin.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>UPQROO - NUEVA VACANTE</title>
+    <title>UPQROO - ADMIN</title>
 </head>
 <body>
 
@@ -85,58 +85,58 @@
                             <div class="panel-subitem">
                                 <a href="#">Agregar Trabajos</a>
                             </div>
+
                         </div>
                     </div>
                 </div>
 
-
-                <!-- Importante -->
-
-                <div class="admin-add-events justify-center">
+                <!-- IMPORTANTE -->
+                <div class="admin-add-news justify-center">
                     <form class="flex" action="" method="post">
                         <div class="left">
                             <div class="column">
                                 <div class="white-space-16"></div>
                                 <div class="title column">
-                                    <h2>NUEVA VACANTE</h2>
+                                    <h2>EDITAR MICROSITIO - {CURRENT}</h2>
                                     <div class="white-space-16"></div>
-                                    <h4>TÍTULO</h4>
-                                    <div class="white-space-8"></div>
-                                    <input class="input-text" type="text" name="title" required>
-                                </div>
-                                <div class="white-space-16"></div>
-                                <div class="description column">
-                                    <h4>DESCRIPCIÓN CORTA</h4>
-                                    <div class="white-space-8"></div>
-                                    <textarea class="input-textarea" name="description" rows="2" required></textarea>
                                 </div>
                                 <div class="white-space-32"></div>
                                 <h2>CONTENIDO</h2>
                                 <div class="white-space-32"></div>
-                                <h4>DATOS DE LA EMPRESA</h4>
+                                <h4>RESUMEN</h4>
                                 <div class="white-space-8"></div>
-                                <textarea class="input-textarea" name="p1" rows="4" required></textarea>
+                                <textarea class="input-textarea" name="summary" rows="4" required></textarea>
                                 <div class="white-space-16"></div>
-                                <h4>DESCRIPCIÓN</h4>
+                                <h4>OBJETIVO</h4>
                                 <div class="white-space-8"></div>
-                                <textarea class="input-textarea" name="p2" rows="4"></textarea>
+                                <textarea class="input-textarea" name="objective" rows="4"></textarea>
                                 <div class="white-space-16"></div>
-                                <h4>REQUERIMIENTOS</h4>
+                                <h4>DURACIÓN</h4>
                                 <div class="white-space-8"></div>
-                                <textarea class="input-textarea" name="p2" rows="4"></textarea>
+                                <textarea class="input-textarea" name="duration" rows="4"></textarea>
                                 <div class="white-space-16"></div>
-                                <h4>ENLACE 1</h4>
+                                <h4>PLAN DE ESTUDIO</h4>
                                 <div class="white-space-8"></div>
-                                <input class="input-text" type="text" name="file1">
+                                <div><a class="btn btn-blue" id="gallery-img-click" href="#"><i class="fas fa-file-upload"></i> SUBIR PLAN DE ESTUDIO</a></div>
+                                <input class="input-file-h" id="gallery-img" type="file" name="plan">
+                                <div class="white-space-32"></div>
+                                <h2>HABILIDADES DEL EGRESADO</h2>
+                                <div class="white-space-32"></div>
+                                <h4>HABILIDAD 1</h4>
                                 <div class="white-space-8"></div>
-                                <h4>ENLACE 2</h4>
+                                <input class="input-text" type="text" name="hability1">
                                 <div class="white-space-8"></div>
-                                <input class="input-text" type="text" name="file2">
+                                <h4>HABILIDAD 2</h4>
                                 <div class="white-space-8"></div>
-                                <h4>ENLACE 3</h4>
+                                <input class="input-text" type="text" name="hability2">
                                 <div class="white-space-8"></div>
-                                <input class="input-text" type="text" name="file3">
-                                <div class="white-space-16"></div>
+                                <h4>HABILIDAD 3</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability3">
+                                <h4>HABILIDAD 4</h4>
+                                <div class="white-space-8"></div>
+                                <input class="input-text" type="text" name="hability4">
+                                <div class="white-space-32"></div>
                             </div>
                         </div>
 
@@ -145,37 +145,29 @@
                             <div class="container">
                                 <div class="column">
                                     <div class="white-space-16"></div>
-                                    <h4>IMAGEN DE PORTADA</h4>
+                                    <h4>IMAGEN DE BANNER</h4>
                                     <div class="white-space-16"></div>
                                     <div class="featured-img responsive-img">
-                                        <img src="../assets/img/featured.jpeg" alt="">
+                                        <img src="../assets/img/header-tera.jpg" alt="">
                                     </div>
                                     <div class="white-space-8"></div>
                                     <div><a class="btn btn-blue" id="featured-img-click" href="#"><i class="fas fa-file-upload"></i> CAMBIAR IMAGEN</a></div>
                                     <input class="input-file-h" id="featured-img" type="file" name="featured-img">
                                     <div class="white-space-32"></div>
-                                    <h4>ETIQUETAS</h4>
-                                    <div class="white-space-8"></div>
-                                    <p>Sepáralas por coma</p>
-                                    <div class="white-space-16"></div>
-                                        <input class="input-text" type="text" name="tags">
-                                    <div class="white-space-16"></div>
-                                    <div class="row">
-                                        <label><input type="checkbox" name="isNotificable" value="Notificar"><span> ENVIAR NOTIFICACIÓN</span></label>
-                                    </div>
-                                    <div class="white-space-32"></div>
-                                    <input class="btn btn-blue" type="submit" value="PUBLICAR">
+                                    <input class="btn btn-blue" type="submit" value="ACTUALIZAR">
                                 </div>
                             </div>
                         </div>
+
                     </form>
                 </div>
-                <!-- Importante -->
+                <!-- FIN IMPORTANTE -->
+
 
             </div>
-
         </div>
-    </div>
 
+    </div>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
 </body>
 </html>

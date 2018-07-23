@@ -63,12 +63,15 @@ $route['administrador']='admin';
 
 $route['administrador/ver/noticia/(:num)']='admin/noticia/$1';
 $route['administrador/ver/evento/(:num)']='admin/evento/$1';
+$route['administrador/ver/trabajo/(:num)']='admin/trabajo/$1';
 
 $route['administrador/agregar/noticia']='admin/addNoticia';
 $route['administrador/agregar/evento']='admin/addEvento';
+$route['administrador/agregar/trabajo']='admin/addTrabajo';
 
 $route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
 $route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
+
 
 //$route['administrador/agregar/noticia']=
 

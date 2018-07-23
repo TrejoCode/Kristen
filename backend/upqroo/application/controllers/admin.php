@@ -126,9 +126,23 @@ class admin extends m_controller
         $this->loadViewAdmin('admin-view-event',$this->data);
     }
 
-    public function trabajo($page)
+    public function trabajo($page=0)
     {
-
+        $this->data['title']='noticias';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
+        $this->data['pagina']=$page+1;
+        //Obtiene todas las noticias
+        $this->load->model('adminModel');
+        if($this->data['tipoUsuario']==1){
+            $carrera=$_SESSION['idCarrera'];
+            $this->data['trabajos']=$this->adminModel->getData(array('publicacion'=>'trabajos',$carrera=>$this->pagina+$page));
+        }
+        else
+        {
+            $this->data['trabajos']=$this->adminModel->getData(array('publicacion'=>'trabajos',$this->pagina+$page=>''));
+        }
+        $this->loadViewAdmin('admin-view-job',$this->data);
     }
 
     public function addNoticia()
@@ -136,6 +150,7 @@ class admin extends m_controller
 
         $this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
+        $this->load->model('adminModel');
 
         $this->form_validation->set_rules('titulo', 'titulo', 'required|max_length[50]');
         $this->form_validation->set_rules('descripcion', 'descriction', 'required|max_length[200]');
@@ -168,7 +183,7 @@ class admin extends m_controller
             $datos['idTipos_Publicacion']=2;
 
 
-            $imgs=array('idTipoContenido'=>5,'contenido'=>array('cantidad'=>6,'imagenes'=>$galery['full-rute']));
+            $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>6,'imagenes'=>$galery['full-rute']));
             //var_dump(json_encode($imgs));
 
             $parrafos=array();
@@ -194,11 +209,19 @@ class admin extends m_controller
             array_push($parrafos,$imgs);
             $datos['contenidos']=$parrafos;
 
-            //var_dump(json_encode($datos));
+            var_dump(json_encode($datos));
+            /*if(!empty($this->adminModel->post('publicacion',$datos)))
+            {
+                $this->noticia();
+            }
+            else
+            {
+                redirect(base_url().'index.php/administrador/ver/evento');
+            }*/
         }
     }
 
-    public function viewAddEvento()
+    public function addEvento()
     {
         $this->data['title']='evento';
         $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
@@ -206,9 +229,12 @@ class admin extends m_controller
         $this->loadViewAdmin('admin-add-event',$this->data);
     }
 
-    public function viewAddTrabajo()
+    public function addTrabajo()
     {
-        $this->loadViewAdmin('add-add-job',$this->data);
+        $this->data['title']='evento';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
+        $this->loadViewAdmin('admin-add-job',$this->data);
     }
 
     public function editNoticia($id)
