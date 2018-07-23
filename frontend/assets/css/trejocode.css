@@ -27,6 +27,7 @@
     --blueLink:          #2c54b3;
     --grayDescription:   #333333;
     --grayTitle:         #505050;
+		--yellow: 					 #FCDB04;
 
     /*    FONT SIZES    */
 
@@ -331,6 +332,11 @@ label {
     color: var(--white);
 }
 
+.btn-teal {
+    background-color: var(--blueTeal);
+    color: var(--white);
+}
+
 .btn-login {
     background-color: var(--blueTeal);
     color: var(--white);
@@ -361,6 +367,10 @@ label {
 
 .color-teal {
     color: var(--blueTeal);
+}
+
+.color-white {
+    color: var(--white);
 }
 
 
