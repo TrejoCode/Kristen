@@ -11,6 +11,7 @@ class homeController extends m_controller
 		$data['noticias'] =$this->homeModel->getData('/publicacion',array('noticias'=>1));
 		$data['carrera'] = $this->homeModel->getData('',array('carrera'=>''));
 		$data['evento'] =$this->homeModel->getData('/publicacion',array('eventos'=>1));
+		$data['title']='HOME';
 		//var_dump($data['noticias']);
 		$this->loadView('public/home' , $data);
 	}
@@ -23,7 +24,7 @@ class homeController extends m_controller
 
         $this->form_validation->set_rules('email', 'usuario', 'required');
         $this->form_validation->set_rules('password', 'contraseña', 'required');
-        $data['titulo']='LOGIN';
+        $data['title']='LOGIN';
 
         if ($this->form_validation->run() === FALSE)
         {
