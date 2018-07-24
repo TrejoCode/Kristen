@@ -52,7 +52,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'homeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-
+    
+$route['eventos']='eventos_controller';
+$route['evento']='eventos_controller/showEvento';
+$route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1';
+  
 $route['noticias'] = 'noticias_controller';
 $route['ver/noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
 $route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1';
