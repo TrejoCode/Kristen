@@ -48,7 +48,7 @@
                     <div class="row">
                         <div class="left">
                             <div class="logo responsive-img">
-                                <img src="<?php echo base_url(); ?>assets/img/logo-upqroo.png" alt="">
+                                <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo-upqroo.png" alt=""></a>
                             </div>
                         </div>
 
@@ -62,14 +62,6 @@
                                     <a href="<?php echo base_url();?>carreras">CARRERAS</a>
                                 </div>
                               
-                                <div class="nav-item">
-                                    <a href="<?php echo base_url().'index.php/'; ?>noticias">NOTICIAS</a>
-                                </div>
-
-                                <div class="nav-item">
-                                    <a href="<?php echo base_url();?>ser_escolares">SERVICIOS ESCOLARES</a>
-                                </div>
-
                                 <div class="nav-item">
                                     <a href="<?php echo base_url().'index.php/'; ?>noticias">NOTICIAS</a>
                                 </div>
