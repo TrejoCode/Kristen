@@ -27,8 +27,6 @@
 
 
 
-
-
 .institutional .skills {
     background-color: var(--white);
     border: 1px solid #e6e7ea;
@@ -39,7 +37,7 @@
 }
 
 .institutional .skills .habilities .hability-number, .institutional .skills .habilities .hability-description {
-    width: 50%;
+
 }
 
 .institutional .skills .habilities .hability-number p {
@@ -52,8 +50,3 @@
 .institutional .skills .habilities .hability-description p {
     width: 90%;
 }
-
-
-
-
-
