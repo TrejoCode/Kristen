@@ -128,7 +128,7 @@ class admin extends m_controller
     }
 
 
-    private function crearContenidos($imgs,$indiceP,$indiceEnlace,$indiceNEnlace)
+    private function crearContenidos($indiceP,$indiceEnlace,$indiceNEnlace)
     {
         $result=array();
 
@@ -155,7 +155,7 @@ class admin extends m_controller
         }
         //var_dump(json_encode($enlaces));
         $parrafos=array_merge($parrafos,$enlaces);
-        array_push($parrafos,$imgs);
+        //array_push($parrafos,$imgs);
 
 
         return $result=$parrafos;
@@ -171,7 +171,7 @@ class admin extends m_controller
         $this->form_validation->set_rules('titulo', 'titulo', 'required|max_length[50]');
         $this->form_validation->set_rules('descripcion', 'descriction', 'required|max_length[200]');
         //$this->form_validation->set_rules('portada', 'portada', 'required');
-        $this->form_validation->set_rules('tags', 'etiquetas', 'required');
+        //$this->form_validation->set_rules('tags', 'etiquetas', 'required');
 
 
 
@@ -201,7 +201,11 @@ class admin extends m_controller
 
             $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
 
-            $datos['contenidos']=$this->crearContenidos($imgs,'p','url','url-name');
+            $content=$this->crearContenidos('p','url','url-name');
+
+            array_push($content,$imgs);
+
+            $datos['contenidos']=$content;
 
             //var_dump(json_encode($datos));
             if(!empty($this->adminModel->post('publicacion',$datos)))
@@ -217,18 +221,115 @@ class admin extends m_controller
 
     public function addEvento()
     {
-        $this->data['title']='evento';
-        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
-        $this->data['nombre']=$_SESSION['nombre'];
-        $this->loadViewAdmin('admin-add-event',$this->data);
+
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('form_validation');
+        $this->load->model('adminModel');
+
+        $this->form_validation->set_rules('titulo', 'titulo', 'required|max_length[50]');
+        $this->form_validation->set_rules('descripcion', 'descriction', 'required|max_length[200]');
+        //$this->form_validation->set_rules('portada', 'portada', 'required');
+        $this->form_validation->set_rules('fecha', 'etiquetas', 'required');
+        $this->form_validation->set_rules('hora', 'etiquetas', 'required');
+
+        if ($this->form_validation->run() === FALSE)
+        {
+            $this->data['title']='NUEVO EVENTO';
+            $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+            $this->data['nombre']=$_SESSION['nombre'];
+            $this->loadViewAdmin('admin-add-event',$this->data);
+        }
+        else
+        {
+            //Post a la db
+            /*
+             */
+            $galery=$this->uploadImg('gallery-img','gallery','',false);
+            //echo 'ruta para insertar la portada '.$galery['rute'];
+            $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
+            $datos['titulo']=$this->input->post('titulo');
+            $datos['descripcion']=$this->input->post('descripcion');
+            $datos['notificar']=$this->input->post('notificacion')!='on'?false:true;
+            $datos['portada']=$cover['full-rute'];
+            $datos['categorias']=$this->input->post('tags');
+            $datos['idUsuarios']=$_SESSION['idUser'];
+            $datos['carrera']=$_SESSION['idCarrera'];
+            $datos['idTipos_Publicacion']=2;
+            $fecha=$this->input->post('fecha');
+            $hora=$this->input->post('hora');
+
+            $dateEvent=array('idTipoContenidos'=>6,'contenido'=>array('hora'=>$hora,'fecha'=>$fecha));
+
+            $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
+
+            $content=$this->crearContenidos('p','url','url-name');
+
+            array_push($content,$dateEvent);
+            array_push($content,$imgs);
+
+            $datos['contenidos']=$content;
+
+            //var_dump(json_encode($datos));
+            if(!empty($this->adminModel->post('publicacion',$datos)))
+            {
+                $this->evento();
+            }
+            else
+            {
+                redirect(base_url().'index.php/administrador/ver/noticia');
+            }
+        }
     }
 
     public function addTrabajo()
     {
-        $this->data['title']='evento';
-        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
-        $this->data['nombre']=$_SESSION['nombre'];
-        $this->loadViewAdmin('admin-add-job',$this->data);
+
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('form_validation');
+        $this->load->model('adminModel');
+
+        $this->form_validation->set_rules('titulo', 'titulo', 'required|max_length[50]');
+        $this->form_validation->set_rules('descripcion', 'descriction', 'required|max_length[200]');
+        //$this->form_validation->set_rules('portada', 'portada', 'required');
+        //$this->form_validation->set_rules('tags', 'etiquetas', 'required');
+
+
+
+        if ($this->form_validation->run() === FALSE)
+        {
+            $this->data['title']='NUEVA VACANTE';
+            $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+            $this->data['nombre']=$_SESSION['nombre'];
+            $this->loadViewAdmin('admin-add-job',$this->data);
+        }
+        else
+        {
+            //Post a la db
+            /*
+             */
+            //$galery=$this->uploadImg('gallery-img','gallery','',false);
+            $cover=$this->uploadImg('portada','cover','',false);
+            $datos['titulo']=$this->input->post('titulo');
+            $datos['descripcion']=$this->input->post('descripcion');
+            $datos['notificar']=$this->input->post('notificacion')!='on'?false:true;
+            $datos['portada']=$cover['full-rute'];
+            $datos['categorias']=$this->input->post('tags');
+            $datos['idUsuarios']=$_SESSION['idUser'];
+            $datos['carrera']=$_SESSION['idCarrera'];
+            $datos['idTipos_Publicacion']=2;
+
+            $datos['contenidos']=$this->crearContenidos('p','url','url-name');
+
+            //var_dump(json_encode($datos));
+            if(!empty($this->adminModel->post('publicacion',$datos)))
+            {
+                $this->trabajo();
+            }
+            else
+            {
+                redirect(base_url().'index.php/administrador/ver/noticia');
+            }
+        }
     }
 
     public function editNoticia($id)

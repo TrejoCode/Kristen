@@ -90,6 +90,7 @@ class m_controller extends Ci_Controller
     {
         $result=array();
         $date=date('Y-m-d');
+        //echo $field.' '.$newName.' '.$rute.''.$sameFolder;
 
         if(!$sameFolder)
         {
@@ -111,10 +112,13 @@ class m_controller extends Ci_Controller
         $config['overwrite'] = TRUE;
         $config['max_size'] = "2048000";
 
-        $this->load->library('upload', $config);
+        //echo $config['upload_path'];
+
+        $this->load->library('upload');
 
         if(is_array($_FILES[$field]['name']))
         {
+            //echo "Es una galeria";
             $files = $_FILES;
             //echo count($_FILES[$field]['name']);
             $aux=$newName;
@@ -144,19 +148,25 @@ class m_controller extends Ci_Controller
         }
         else
         {
+            //echo 'Es una sola imagen';
             $newName.=$date;
             $config['file_name'] =$newName;
 
             $this->upload->initialize($config);
 
-            if ($this->upload->do_upload())
+            if ($this->upload->do_upload($field))
             {
                 //$result['path']=$this->upload->data('full_path');
                 $tipe=$this->upload->data('file_ext');
                 $result['rute']=$rute;
                 $result['full-rute']=$rute.'/'.$newName.$tipe;
             }
+            /*else
+            {
+                echo 'Error al subir la imagen '.$config['file_name'].' en '.$rute;
+            }*/
         }
+        //var_dump($result);
         return $result;
     }
 
