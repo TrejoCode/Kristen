@@ -79,6 +79,8 @@ $route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';
 $route['administrador/editar/evento/(:num)']='admin/editEvento/$1';
 $route['administrador/editar/trabajo/(:num)']='admin/editTrabajo/$1';
 
+$route['administrador/eliminar/noticia/(:num)']='admin/eliminarNoticia/$1';
+
 
 //$route['administrador/agregar/noticia']=
 
