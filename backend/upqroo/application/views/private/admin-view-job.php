@@ -27,11 +27,11 @@
                         </div>
                         <div class="right">
                             <div class="column">
-                                <a id="title" href="<?php echo base_url().'index.php/evento/ver/'.$trabajos[$i]->idPublicaciones; ?>"><?php echo $trabajos[$i]->titulo; ?></a>
+                                <a id="title" href="<?php echo base_url().'index.php/trabajo/ver/'.$trabajos[$i]->idPublicaciones; ?>"><?php echo $trabajos[$i]->titulo; ?></a>
                                 <div class="row">
                                     <div class="edit align-center">
                                         <i class="far fa-edit"></i>
-                                        <a href="<?php echo base_url().'index.php/administrador/editar/evento/'.$trabajos[$i]->idPublicaciones; ?>"> EDITAR</a>
+                                        <a href="<?php echo base_url().'index.php/administrador/editar/trabajo/'.$trabajos[$i]->idPublicaciones; ?>"> EDITAR</a>
                                     </div>
                                 </div>
                             </div>

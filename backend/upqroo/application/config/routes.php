@@ -52,9 +52,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'homeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['noticias'] = 'noticias_controller';
+$route['noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
+$route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1';
+=======
 $route['login']='homeController/entrar';
 $route['logout']='homeController/salir';
-
 
 $route['noticias']='noticia_controller';
 
@@ -69,8 +73,9 @@ $route['administrador/agregar/noticia']='admin/addNoticia';
 $route['administrador/agregar/evento']='admin/addEvento';
 $route['administrador/agregar/trabajo']='admin/addTrabajo';
 
-$route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
-$route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
+$route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';
+$route['administrador/editar/evento/(:num)']='admin/editEvento/$1';
+$route['administrador/editar/trabajo/(:num)']='admin/editTrabajo/$1';
 
 
 //$route['administrador/agregar/noticia']=
