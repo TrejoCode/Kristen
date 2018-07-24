@@ -39,19 +39,29 @@ class m_model extends CI_Model
      * @param  array $elements indicador and id
      * @return result as array Respuesta generada por el servidor
      */
-    public function get($elements)
+    public function get($table,$elements)
     {
         $this->conecction();
-        curl_setopt($this->curl, CURLOPT_URL, $this->url.$this->urlFormater($elements));
-        //echo $this->url.$this->urlFormater($elements);
+        curl_setopt($this->curl, CURLOPT_URL, $this->url.$table.$this->urlFormater($elements));
+        //echo $this->url.$table.$this->urlFormater($elements);
         curl_setopt($this->curl, CURLOPT_POST,false);
         curl_setopt($this->curl, CURLOPT_HEADER, false);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
         $result=curl_exec ($this->curl);
-        if($result === false){
-            echo curl_error($this->curl);
+        $code = curl_getinfo($this->curl, CURLINFO_HTTP_CODE);
+        //var_dump($result);
+        //echo $code.'/';
+        if($code!=200){
+            //echo 'este es un error '.curl_error($this->curl);
+            $result='{
+                  "error": {
+                    "statusCode": 404,
+                    "name": "Error",
+                    "message": "Error en el get",                    
+                  }}';
         }
         $this->close();
+        //var_dump($result);
         return json_decode($result);
     }
 
@@ -71,8 +81,17 @@ class m_model extends CI_Model
         curl_setopt($this->curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($this->curl, CURLOPT_POSTFIELDS, $elements);
         $result=curl_exec ($this->curl);
-        if($result === false){
-            echo curl_error($this->curl);
+        $code = curl_getinfo($this->curl, CURLINFO_HTTP_CODE);
+        //var_dump($result);
+        //echo $code.'/';
+        if($code!=200){
+            //echo 'este es un error '.curl_error($this->curl);
+            $result='{
+                  "error": {
+                    "statusCode": 404,
+                    "name": "Error",
+                    "message": "Error en el get",                    
+                  }}';
         }
         $this->close();
         return json_decode($result);
@@ -94,8 +113,17 @@ class m_model extends CI_Model
         curl_setopt($this->curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
         curl_setopt($this->curl, CURLOPT_POSTFIELDS, $elements);
         $result=curl_exec ($this->curl);
-        if($result === false){
-            echo curl_error($this->curl);
+        $code = curl_getinfo($this->curl, CURLINFO_HTTP_CODE);
+        //var_dump($result);
+        //echo $code.'/';
+        if($code!=200){
+            //echo 'este es un error '.curl_error($this->curl);
+            $result='{
+                  "error": {
+                    "statusCode": 404,
+                    "name": "Error",
+                    "message": "Error en el get",                    
+                  }}';
         }
         $this->close();
         return json_decode($result);
@@ -114,8 +142,17 @@ class m_model extends CI_Model
         curl_setopt($this->curl, CURLOPT_REFERER, '');
         curl_setopt($this->curl,CURLOPT_CUSTOMREQUEST, 'DELETE');
         $result=curl_exec ($this->curl);
-        if($result === false){
-            echo curl_error($this->curl);
+        $code = curl_getinfo($this->curl, CURLINFO_HTTP_CODE);
+        //var_dump($result);
+        //echo $code.'/';
+        if($code!=200){
+            //echo 'este es un error '.curl_error($this->curl);
+            $result='{
+                  "error": {
+                    "statusCode": 404,
+                    "name": "Error",
+                    "message": "Error en el get",                    
+                  }}';
         }
         $this->close();
         return json_decode($result);

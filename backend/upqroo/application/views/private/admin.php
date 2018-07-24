@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/admin.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>UPQROO - ADMIN</title>
+    <title>UPQROO - <?php echo $title; ?></title>
 </head>
 <body>
     <div class="admin flex">
@@ -40,49 +40,51 @@
                         <div class="white-space-16"></div>
                         <div class="panel-item align-center">
                             <i class="far fa-newspaper"></i>
-                            <a href="#">Noticias</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia/0' ?>">Noticias</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Ver Noticias</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia/0' ?>">Ver Noticias</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Agregar Noticia</a>
+                            <a href="<?php echo base_url().'index.php/administrador/agregar/noticia' ?>">Agregar Noticia</a>
                         </div>
 
                         <div class="white-space-16"></div>
 
                         <div class="panel-item align-center">
                             <i class="far fa-calendar-alt"></i>
-                            <a href="#">Eventos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/evento/0' ?>">Eventos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Ver Eventos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/evento/0' ?>">Ver Eventos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Agregar Evento</a>
+                            <a href="<?php echo base_url().'index.php/administrador/agregar/evento' ?>">Agregar Evento</a>
                         </div>
 
-                        <div class="white-space-16"></div>
-
-                        <div class="panel-item align-center">
+                        <?php if($tipoUsuario==5)
+                        {
+                          echo '<div class="white-space-16"></div> <div class="panel-item align-center">
                             <i class="fas fa-university"></i>
                             <a href="#">Páginas</a>
                         </div>
+
                         <div class="panel-subitem">
                             <a href="#">Ver Páginas</a>
-                        </div>
+                        </div>';
+                        } ?>
 
                         <div class="white-space-16"></div>
 
                         <div class="panel-item align-center">
                             <i class="fas fa-briefcase"></i>
-                            <a href="#">Trabajos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/trabajo/0' ?>">Trabajos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Ver Trabajos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/ver/trabajo/0' ?>">Ver Trabajos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="#">Agregar Trabajos</a>
+                            <a href="<?php echo base_url().'index.php/administrador/agregar/trabajo/' ?>">Agregar Trabajos</a>
                         </div>
 
                     </div>

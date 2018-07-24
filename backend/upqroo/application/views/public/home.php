@@ -4,17 +4,17 @@
         <div class="slider">
             <div class="slide">
                 <a href="#">
-                    <img src="../assets/img/slide1.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="">
                 </a>
             </div>
             <div class="slide">
                 <a href="#">
-                    <img src="../assets/img/slide2.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/slide2.jpg" alt="">
                 </a>
             </div>
             <div class="slide">
                 <a href="#">
-                    <img src="../assets/img/slide1.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="">
                 </a>
             </div>
         </div>
@@ -90,21 +90,21 @@
                             <div class="career">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="../assets/img/carrera-soft.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-soft.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="career">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="../assets/img/carrera-biot.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-biot.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="career">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="../assets/img/carrera-biom.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-biom.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -114,21 +114,21 @@
                             <div class="career">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="../assets/img/carrera-fina.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-fina.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="career">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="../assets/img/carrera-pyme.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-pyme.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="career">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="../assets/img/carrera-tera.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-tera.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
 
         <!-- Call To Action -->
 
-        <div class="call-to-action justify-center align-center" style="background-image: url(../assets/img/parallax-uni.jpg);">
+        <div class="call-to-action justify-center align-center" style="background-image: url(<?php echo base_url();?>/assets/img/parallax-uni.jpg);">
             <div class="container">
                 <div class="column">
                     <div class="white-space-64"></div>
@@ -170,72 +170,31 @@
                     <div class="white-space-32"></div>
                     <div class="news-cards">
                         <div class="row-responsive">
+                            <?php for ($j=0; $j<3; $j++)
+                            { $date=date_create($noticias[$j]->fecha);?>
 
-                            <div class="new-card">
+                                <div class="new-card">
                                 <div class="column">
                                     <div class="featured-img responsive-img">
-                                        <img src="../assets/img/noticia.jpg" alt="">
+                                        <img src="<?php echo $noticias[$j]->portada; ?>" alt="">
                                     </div>
                                     <div class="container">
                                         <div class="column">
                                             <div class="date">
-                                                <p>2 de Marzo, 2018</p>
+                                                <p><?php echo date_format($date,"d M Y");?></p>
                                             </div>
                                             <div class="title">
-                                                <h3>Firma de Convenios con Instituciones Educativas</h3>
+                                                <h3><?php echo $noticias[$j]->titulo; ?></h3>
                                             </div>
                                             <div class="description">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p><?php echo $noticias[$j]->descripcion; ?></p>
                                             </div>
-                                            <a class="read-more" href="#">Leer Más</a>
+                                            <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$noticias[$j]->idPublicaciones; ?>">Leer Más</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="new-card">
-                                <div class="column">
-                                    <div class="featured-img responsive-img">
-                                        <img src="../assets/img/noticia.jpg" alt="">
-                                    </div>
-                                    <div class="container">
-                                        <div class="column">
-                                            <div class="date">
-                                                <p>2 de Marzo, 2018</p>
-                                            </div>
-                                            <div class="title">
-                                                <h3>Firma de Convenios con Instituciones Educativas</h3>
-                                            </div>
-                                            <div class="description">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            </div>
-                                            <a class="read-more" href="#">Leer Más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="new-card">
-                                <div class="column">
-                                    <div class="featured-img responsive-img">
-                                        <img src="../assets/img/noticia.jpg" alt="">
-                                    </div>
-                                    <div class="container">
-                                        <div class="column">
-                                            <div class="date">
-                                                <p>2 de Marzo, 2018</p>
-                                            </div>
-                                            <div class="title">
-                                                <h3>Firma de Convenios con Instituciones Educativas</h3>
-                                            </div>
-                                            <div class="description">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            </div>
-                                            <a class="read-more" href="#">Leer Más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php } ?>
 
                         </div>
                     </div>
@@ -257,101 +216,42 @@
                 <div class="events-cards">
                     <div class="row-responsive">
 
-                        <div class="event-card">
-                            <div class="column">
-                                <div class="row-responsive">
-                                    <div class="date column justify-center">
-                                        <div class="day justify-center">
-                                            <p>31</p>
-                                        </div>
-                                        <div class="month justify-center">
-                                            <p>AGOSTO</p>
-                                        </div>
-                                        <div class="year justify-center">
-                                            <p>2018</p>
-                                        </div>
-                                    </div>
-                                    <div class="info justify-center">
-                                        <div class="container">
-                                            <div class="column">
-                                                <div class="title">
-                                                    <h3>Semana Nacional Ciencia y Tecnología</h3>
-                                                </div>
-                                                <div class="schedule align-center">
-                                                    <i class="far fa-clock"></i>
-                                                    <p>13:00</p>
-                                                </div>
-                                                <a  class="read-more" href="#">Conocer Más</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php for ($i=0;$i<3;$i++)
+                        { $date=date_create($evento[$i]->fecha);
+                        ?>
 
-                        <div class="event-card">
+                            <div class="event-card">
                             <div class="column">
                                 <div class="row-responsive">
                                     <div class="date column justify-center">
                                         <div class="day justify-center">
-                                            <p>31</p>
+                                            <p><?php echo date_format($date,"d"); ?></p>
                                         </div>
                                         <div class="month justify-center">
-                                            <p>AGOSTO</p>
+                                            <p><?php echo date_format($date,"M"); ?></p>
                                         </div>
                                         <div class="year justify-center">
-                                            <p>2018</p>
+                                            <p><?php echo date_format($date,"Y"); ?></p>
                                         </div>
                                     </div>
                                     <div class="info justify-center">
                                         <div class="container">
                                             <div class="column">
                                                 <div class="title">
-                                                    <h3>Semana Nacional Ciencia y Tecnología</h3>
+                                                    <h3><?php echo $evento[$i]->titulo; ?></h3>
                                                 </div>
                                                 <div class="schedule align-center">
                                                     <i class="far fa-clock"></i>
                                                     <p>13:00</p>
                                                 </div>
-                                                <a  class="read-more" href="#">Conocer Más</a>
+                                                <a  class="read-more" href="<?php echo base_url().'index.php/ver/evento/'.$evento[$i]->idPublicaciones; ?>">Conocer Más</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="event-card">
-                            <div class="column">
-                                <div class="row-responsive">
-                                    <div class="date column justify-center">
-                                        <div class="day justify-center">
-                                            <p>31</p>
-                                        </div>
-                                        <div class="month justify-center">
-                                            <p>AGOSTO</p>
-                                        </div>
-                                        <div class="year justify-center">
-                                            <p>2018</p>
-                                        </div>
-                                    </div>
-                                    <div class="info justify-center">
-                                        <div class="container">
-                                            <div class="column">
-                                                <div class="title">
-                                                    <h3>Semana Nacional Ciencia y Tecnología</h3>
-                                                </div>
-                                                <div class="schedule align-center">
-                                                    <i class="far fa-clock"></i>
-                                                    <p>13:00</p>
-                                                </div>
-                                                <a  class="read-more" href="#">Conocer Más</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php } ?>
 
                     </div>
                 </div>

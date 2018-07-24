@@ -1,0 +1,149 @@
+.institutional {
+    font-family: var(--Roboto);
+}
+
+.institutional .nosotros, .institutional .ubicacion {
+    background-color: var(--white);
+}
+
+.institutional .banner {
+    height: 235px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.institutional .banner .title h2 {
+    color: var(--white);
+}
+
+.institutional .mision img, .institutional .vision img, .institutional .mision h3, .institutional .vision h3, .institutional .mision p, .institutional .vision p {
+    margin: 0 var(--paddingNormal);
+}
+
+.institutional .mision p, .institutional .vision p {
+    width: 96%;
+}
+
+.institutional .directorio-rector {
+    background-color: var(--white);
+}
+
+.institutional .directorio-rector .rector img {
+    max-height: 250px;
+}
+
+.institutional .directorio-rector .rector-profile {
+    width: 25%;
+}
+
+.institutional .directorio-rector .rector-info {
+    width: 70%;
+}
+
+
+.institutional .skills {
+    background-color: var(--white);
+    border: 1px solid #e6e7ea;
+}
+
+.institutional .skills .hability {
+    margin-bottom: var(--paddingSemi);
+}
+
+.institutional .skills .habilities .hability-number, .institutional .skills .habilities .hability-description {
+    width: 50%;
+}
+
+.institutional .skills .habilities .hability-number p {
+    font-weight: var(--weightBold);
+    color: var(--blueTeal);
+    padding-right: var(--paddingNormal);
+    font-size: 3.5em;
+}
+
+.institutional .skills .habilities .hability-description p {
+    width: 90%;
+}
+
+/*---*/
+.institutional .proceso {
+    background-color: var(--white);
+    border: 1px solid #e6e7ea;
+}
+
+.institutional .proceso .hability {
+    margin-bottom: var(--paddingLarge);
+}
+
+.institutional .proceso .habilities .hability-number p {
+    font-weight: var(--weightBold);
+    color: var(--blueTeal);
+    padding-right: var(--paddingNormal);
+    font-size: 3.5em;
+}
+
+.institutional .proceso .habilities .hability-description p {
+    width: 90%;
+}
+
+.institutional .proximo {
+    background-color: var(--blueLink);
+}
+
+.institutional .servicios-asistencia  .habilities .hability-number i {
+    padding-right: var(--paddingNormal);
+}
+
+.servicios-asistencia {
+    background-color: var(--white);
+}
+
+.bajas {
+    background-color: var(--white);
+}
+
+.bajas .hability-number p {
+    font-weight: var(--weightBold);
+    color: var(--blueTeal);
+    padding-right: var(--paddingNormal);
+    font-size: 3.5em;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .institutional .directorio-rector .rector-profile {
+        width: 30%;
+    }
+
+    .institutional .directorio-rector .rector-info {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .institutional .directorio-rector .rector-profile {
+        width: 40%;
+    }
+
+    .institutional .directorio-rector .rector-info {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .institutional .directorio-rector .rector-profile {
+        width: 100%;
+    }
+
+    .institutional .directorio-rector .rector img {
+
+    }
+
+    .institutional .directorio-rector .rector-info {
+        width: 100%;
+    }
+
+}
