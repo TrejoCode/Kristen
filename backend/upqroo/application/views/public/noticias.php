@@ -65,7 +65,7 @@
                                             </div>
                                             <?php if (!empty($Datos[$i]->idPublicaciones)) 
                                             { ?>
-                                                <a class="read-more" href="<?php echo base_url().'index.php/noticia/'.$Datos[$i]->idPublicaciones.'/'.$nump?>">Leer Más</a>
+                                                <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$Datos[$i]->idPublicaciones.'/'.$nump?>">Leer Más</a>
                                             <?php } ?>       
                                         </div>
                                     </div>

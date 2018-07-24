@@ -54,13 +54,11 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['noticias'] = 'noticias_controller';
-$route['noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
+$route['ver/noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
 $route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1';
-=======
+
 $route['login']='homeController/entrar';
 $route['logout']='homeController/salir';
-
-$route['noticias']='noticia_controller';
 
 //Rutas administrador
 $route['administrador']='admin';

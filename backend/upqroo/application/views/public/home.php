@@ -189,7 +189,7 @@
                                             <div class="description">
                                                 <p><?php echo $noticias[$j]->descripcion; ?></p>
                                             </div>
-                                            <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$noticias[$j]->idPublicaciones; ?>">Leer Más</a>
+                                            <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$noticias[$j]->idPublicaciones.'/1'; ?>">Leer Más</a>
                                         </div>
                                     </div>
                                 </div>
