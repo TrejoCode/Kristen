@@ -371,4 +371,12 @@ class admin extends m_controller
         $this->loadViewAdmin('admin-add-job',$this->data);
     }
 
+
+    public function eliminarNoticia($id)
+    {
+        $this->load->model('adminModel');
+
+        $this->adminModel->delete(array('publicacion'=>$id));
+    }
+
 }

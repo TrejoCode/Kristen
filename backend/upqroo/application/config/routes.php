@@ -85,9 +85,10 @@ $route['becas'] = 'becasController';
 $route['nosotros'] = 'nosotrosController';
 $route['pagos'] = 'pagosController';
 
+$route['administrador/eliminar/noticia/(:num)']='admin/eliminarNoticia/$1';
+
 $route['reinscripcion'] = 'reinscripcionController';
 $route['transparencia'] = 'transparenciaController';
 $route['serviciosAsistencia'] = 'serviciosAController';
-//$route['administrador/agregar/noticia']=
 
 
