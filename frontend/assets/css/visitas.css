@@ -25,21 +25,8 @@
     width: 96%;
 }
 
-.institutional .directorio-rector {
-    background-color: var(--white);
-}
 
-.institutional .directorio-rector .rector img {
-    max-height: 250px;
-}
 
-.institutional .directorio-rector .rector-profile {
-    width: 25%;
-}
-
-.institutional .directorio-rector .rector-info {
-    width: 70%;
-}
 
 
 .institutional .skills {
@@ -59,48 +46,14 @@
     font-weight: var(--weightBold);
     color: var(--blueTeal);
     padding-right: var(--paddingNormal);
-    font-size: 3.5em;
+    font-size: 1.5em;
 }
 
 .institutional .skills .habilities .hability-description p {
     width: 90%;
 }
 
-@media screen and (max-width: 1200px) {
 
-    .institutional .directorio-rector .rector-profile {
-        width: 30%;
-    }
 
-    .institutional .directorio-rector .rector-info {
-        width: 70%;
-    }
-}
 
-@media screen and (max-width: 992px) {
-
-    .institutional .directorio-rector .rector-profile {
-        width: 40%;
-    }
-
-    .institutional .directorio-rector .rector-info {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .institutional .directorio-rector .rector-profile {
-        width: 100%;
-    }
-
-    .institutional .directorio-rector .rector img {
-
-    }
-
-    .institutional .directorio-rector .rector-info {
-        width: 100%;
-    }
-
-}
 
