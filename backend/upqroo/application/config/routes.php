@@ -81,7 +81,13 @@ $route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';
 $route['administrador/editar/evento/(:num)']='admin/editEvento/$1';
 $route['administrador/editar/trabajo/(:num)']='admin/editTrabajo/$1';
 
+$route['becas'] = 'becasController';
+$route['nosotros'] = 'nosotrosController';
+$route['pagos'] = 'pagosController';
 
+$route['reinscripcion'] = 'reinscripcionController';
+$route['transparencia'] = 'transparenciaController';
+$route['serviciosAsistencia'] = 'serviciosAController';
 //$route['administrador/agregar/noticia']=
 
 
