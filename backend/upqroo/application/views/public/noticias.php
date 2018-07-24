@@ -28,7 +28,7 @@
                             if($contador == 0)
                             { ?>
                                 <div class="news-cards">
-                                <div class="row-responsive">
+                                    <div class="row-responsive">
                             <?php } ?>
 
                             <div class="new-card">
@@ -72,76 +72,18 @@
                                 </div>
                             </div>
 
-
-
-                            <?php
-
-
-                            if($contador == 2)
+                            <?php if($contador == 2)
                             { ?>
-                            </div>
                                 </div>
-                                <?php 
-                                $contador = 0;
-                            }else{
-                                 $contador++;
+                            </div>
+                            <?php $contador = 0;
                             }
-
-                           
-                       }
-                        /*$cont = 0;
-                        $total = count($Datos);
-                        while ($cont != $total) 
-                        { ?>
-                            <div class="news-cards">
-                                <div class="row-responsive">
-                                    <?php for($i = 0; $i <= 2; $i++)
-                                    { 
-                                        if (empty($Datos[$cont]->titulo)) 
-                                        { ?>
-                                            <div class="new-card">
-                                                <div class="column">
-                                                    <div class="featured-img responsive-img"></div>
-                                                    <div class="container">
-                                                        <div class="column">
-                                                            <div class="date"></div>
-                                                            <div class="title"></div>
-                                                            <div class="description"></div>
-                                                            <a class="read-more"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <?php } 
-                                        else
-                                        { ?>
-                                            <div class="new-card">
-                                                <div class="column">
-                                                    <div class="featured-img responsive-img">
-                                                        <img src="<?php echo $Datos[$cont]->portada; ?>">
-                                                    </div>
-                                                    <div class="container">
-                                                        <div class="column">
-                                                            <div class="date">
-                                                                <p><?php echo $Datos[$cont]->fecha; ?></p>
-                                                            </div>
-                                                            <div class="title">
-                                                                <h3><?php echo $Datos[$cont]->titulo; ?></h3>
-                                                            </div>
-                                                            <div class="description">
-                                                                <p><?php echo $Datos[$cont]->descripcion; ?></p>
-                                                            </div>
-                                                            <a class="read-more" href="<?php echo base_url().'index.php/noticia?id='.$Datos[$cont]->idPublicaciones; ?>">Leer Más</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <?php } $cont++;
-                                    } ?>
-                                </div>
-                            </div>
-                        <?php }*/
-                   }
+                            else
+                            {
+                                $contador++;
+                            }
+                        }
+                    }
                     else
                     {
                         echo '<div class="white-space-32"></div><div class="title"><h2>No hay noticias para mostrar</h2></div>';
