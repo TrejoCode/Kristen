@@ -64,13 +64,14 @@ class noticias_controller extends m_controller {
         {
         	$datos['Datos'] = $resp;
 	        $datos['title'] = 'NOTICIAS';
-        	$datos['Anterior'] = "Anterior";
+        	$datos['Anterior'] = 0;
         	$datos['nump'] = $Pagina;
 		}
 		else
         {
         	$datos['Datos'] = $resp;
 	        $datos['title'] = 'NOTICIAS';
+	        $datos['Anterior'] = 1;
 	        $datos['nump'] = $Pagina;
         }
 
