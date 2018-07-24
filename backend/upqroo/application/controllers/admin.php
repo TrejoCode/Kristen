@@ -161,7 +161,7 @@ class admin extends m_controller
         return $result=$parrafos;
     }
 
-    public function addNoticia($id=null)
+    public function addNoticia()
     {
 
         $this->load->helper(array('form', 'url'));
@@ -189,7 +189,6 @@ class admin extends m_controller
              */
             $galery=$this->uploadImg('gallery-img','gallery','',false);
             $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
-            $datos['idPublicacion']=$id;
             $datos['titulo']=$this->input->post('titulo');
             $datos['descripcion']=$this->input->post('descripcion');
             $datos['notificar']=$this->input->post('notificacion')!='on'?false:true;
