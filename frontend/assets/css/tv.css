@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-tv {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    border-bottom: 1px solid #e6e6e7;
+}
+
+.header-tv .left, .header-tv .right  {
+    width: 50%;
+    float: left;
+}
+
+.header-tv .left img {
+    margin-top: 8px;
+    padding-left: 32px;
+    width: 30%;
+}
+
+.header-tv .right {
+    text-align: right;
+    margin-top: 24px;
+}
+
+.header-tv .right .date-time p {
+    display: inline;
+    padding-right: 32px;
+}
+
+.header-tv .right .date-time #date, .header-tv .right .date-time #time {
+    font-weight: 500;
+}
+
+
+.body-tv {
+    background-color: #F6F6F7;
+    height: 89.8%;
+}
