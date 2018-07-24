@@ -52,15 +52,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'homeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-
+    
+$route['eventos']='eventos_controller';
+$route['ver/evento/(:num)']='eventos_controller/showEvento/$1';
+$route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1';
+  
 $route['noticias'] = 'noticias_controller';
-$route['noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
+$route['ver/noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
 $route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1';
-=======
+
 $route['login']='homeController/entrar';
 $route['logout']='homeController/salir';
-
-$route['noticias']='noticia_controller';
 
 //Rutas administrador
 $route['administrador']='admin';

@@ -20,25 +20,72 @@ class eventos_controller extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->model('eventos_model');
+                $this->load->model('eventos_model');
 
-        $numPag = 1;
-        $res=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$numPag.''));
+                $numPag = 1;
+                $res=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
+                $numPag++;
 
-        $datos['Datos'] = $res;
-        $datos['title'] = 'NOTICIAS';
-		
-		$this->loadView('public/eventos',$datos);
-	}
+                $respag=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
+                $numPag = 1;
 
-	public function showEvento()
+                //echo $respag->error->status;
+                if (empty($respag)) 
+                {
+                        $datos['Datos'] = $res;
+                        $datos['title'] = 'EVENTOS';
+                        $datos['nump'] = 0;
+                }
+                else
+                {
+                        $datos['Datos'] = $res;
+                        $datos['title'] = 'EVENTOS';
+                        $datos['nump'] = 1;
+                }
+        		
+        		$this->loadView('public/eventos',$datos);
+        }
+
+        public function paginaEvento($Pagina)
+        {
+                $this->load->model('eventos_model');
+
+                //$Pagina++;
+
+                $resp=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$Pagina));
+
+                $Pagina++;
+
+                $r=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$Pagina));
+
+                $Pagina = $Pagina - 1;
+
+                if (empty($r))
+                {
+                        $datos['Datos'] = $resp;
+                        $datos['title'] = 'EVENTOS';
+                        $datos['Anterior'] = "Anterior";
+                        $datos['nump'] = $Pagina;
+                        }
+                        else
+                {
+                        $datos['Datos'] = $resp;
+                        $datos['title'] = 'EVENTOS';
+                        $datos['nump'] = $Pagina;
+                }
+
+                $this->loadView('public/eventos',$datos);
+        }
+
+
+	public function showEvento($id)
 	{
-		$this->load->model('noticias_model');
+		$this->load->model('eventos_model');
 
-        $res1=$this->noticias_model->getNoticia(array('publicacion'=>$_GET['id']));
+        $res1=$this->eventos_model->getEvento(array('publicacion'=>$id));
 
-        $datos['title'] = 'NOTICIA';
-        if ($res1->idTipos_Publicacion == 2) 
+        $datos['title'] = 'EVENTO';
+        if ($res1->idTipos_Publicacion == 1) 
         {
         	$datos['titulo']=$res1->titulo;
 	        $datos['descripcion']=$res1->descripcion;
@@ -46,6 +93,46 @@ class eventos_controller extends m_controller {
 	        $datos['portada']=$res1->portada;
         }
 		
+
+                $ID = $id;
+                
+                $res2 = $this->eventos_model->getEventos(array('publicacion'=>'eventos/1'));
+
+                $cont = 0;
+                $i = 0;
+                while($cont != 1)
+                { 
+                	if ($res2[$i]->idPublicaciones == $ID && $i == 0) 
+                	{
+                		$datos['Ultima1'] = $res2[$i+1];
+                		$datos['Ultima2'] = $res2[$i+2];
+                		$datos['Ultima3'] = $res2[$i+3];
+                		$cont++;
+                	}
+                	elseif ($res2[$i]->idPublicaciones == $ID && $i == 1) 
+                	{
+                		$datos['Ultima1'] = $res2[$i-1];
+                		$datos['Ultima2'] = $res2[$i+1];
+                		$datos['Ultima3'] = $res2[$i+2];
+                		$cont++;
+                	}
+                	elseif($res2[$i]->idPublicaciones == $ID && $i == 2)
+                	{
+                		$datos['Ultima1'] = $res2[$i-2];
+                		$datos['Ultima2'] = $res2[$i-1];
+                		$datos['Ultima3'] = $res2[$i+1];
+                		$cont++;
+                	}
+                	elseif ($res2[$i]->idPublicaciones == $ID && $i < count($res2)) 
+                	{
+                		$datos['Ultima1'] = $res2[$i-3];
+                		$datos['Ultima2'] = $res2[$i-2];
+                		$datos['Ultima3'] = $res2[$i-1];
+                		$cont++;
+                	}
+                	$i++;
+                }
+
 		$this->loadView('public/evento',$datos);
 	}
 }
