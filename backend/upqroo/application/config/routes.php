@@ -54,6 +54,8 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
     
 $route['eventos']='eventos_controller';
+//$route['planeacion']='planeacion.php';
+
 $route['ver/evento/(:num)']='eventos_controller/showEvento/$1';
 $route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1';
   
