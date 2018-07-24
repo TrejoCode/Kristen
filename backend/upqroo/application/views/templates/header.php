@@ -61,9 +61,13 @@
                                 <div class="nav-item">
                                     <a href="<?php echo base_url();?>carreras">CARRERAS</a>
                                 </div>
+                              
+                                <div class="nav-item">
+                                    <a href="<?php echo base_url().'index.php/'; ?>noticias">NOTICIAS</a>
+                                </div>
 
                                 <div class="nav-item">
-                                    <a href="<?php echo base_url().'index.php/'; ?>eventos">EVENTO</a>
+                                    <a href="<?php echo base_url();?>ser_escolares">SERVICIOS ESCOLARES</a>
                                 </div>
 
                                 <div class="nav-item">

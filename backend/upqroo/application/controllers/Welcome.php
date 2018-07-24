@@ -26,8 +26,11 @@ class Welcome extends m_controller {
         $res=$this->exampleModel->getElementBy(array('carrera'=>'1'));
         $data['carrera']=$res->nombre;
         $data['title']='LOGIN';
-		
-		$this->loadView('public/login',$data);
+
+        if(!isset($_SESSION['tipoUsuario']))
+        {
+            $this->loadView('public/login',$data);
+        }
 	}
 
 	public function logoutE()
@@ -38,36 +41,39 @@ class Welcome extends m_controller {
 
 	public function loginE()
     {
+
         $username = $this->input->post('email');
         $password = $this->input->post('password');
         $resultado=$this->login($username,$password);
 
         if($resultado!='404')
         {
-            if($_SESSION['tipoUsuario']==1)
+            redirect(base_url().'index.php/administrador');
+            /*if($_SESSION['tipoUsuario']==1)
             {
                 //Director de carrera
+                redirect(base_url().'index.php/administrador');
             }
             if($_SESSION['tipoUsuario']==2)
             {
                 //Vinculacion
+                redirect(base_url().'index.php/administrador');
             }
             if($_SESSION['tipoUsuario']==3)
             {
                 //Servicios escolares
+                redirect(base_url().'index.php/administrador');
             }
             if($_SESSION['tipoUsuario']==4)
             {
                 //Prensa y difucion
+                redirect(base_url().'index.php/administrador');
             }
             if ($_SESSION['tipoUsuario']==5)
             {
                 //Administrador web
-                $this->load->helper('url');
                 redirect(base_url().'index.php/administrador');
-                /*$data['nombre']=$_SESSION['nombre'];
-                $this->loadViewAdmin('admin-add-news',$data);*/
-            }
+            }*/
         }
         else
         {

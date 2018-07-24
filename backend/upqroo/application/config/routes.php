@@ -49,13 +49,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'homeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['login']='welcome/loginE';
-$route['logout']='welcome/logoutE';
+    
 $route['eventos']='eventos_controller';
 $route['evento']='eventos_controller/showEvento';
 $route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1';
+  
+$route['noticias'] = 'noticias_controller';
+$route['ver/noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
+$route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1';
 
+$route['login']='homeController/entrar';
+$route['logout']='homeController/salir';
+
+//Rutas administrador
 $route['administrador']='admin';
+
+$route['administrador/ver/noticia/(:num)']='admin/noticia/$1';
+$route['administrador/ver/evento/(:num)']='admin/evento/$1';
+$route['administrador/ver/trabajo/(:num)']='admin/trabajo/$1';
+
+$route['administrador/agregar/noticia']='admin/addNoticia';
+$route['administrador/agregar/evento']='admin/addEvento';
+$route['administrador/agregar/trabajo']='admin/addTrabajo';
+
+$route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';
+$route['administrador/editar/evento/(:num)']='admin/editEvento/$1';
+$route['administrador/editar/trabajo/(:num)']='admin/editTrabajo/$1';
+
+
+//$route['administrador/agregar/noticia']=
+
+

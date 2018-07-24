@@ -10,7 +10,7 @@ class m_controller extends Ci_Controller
     //almacena el tipo del usuario logueado
     public $tipoUsario=0;
     //almacena el nombre del usuario logueado
-    public $nombre='';
+    public $nombre='    ';
 
     public function __construct()
     {
@@ -35,26 +35,20 @@ class m_controller extends Ci_Controller
         $result=$this->m_model->post('Usuarios/iniciaSesion',$data);
         if(!empty($result))
         {
-            if(is_array($result))
-            {
-                //login success
-                //echo 'login success';
 
-                $getCarrera=$this->m_model->get(array('carrera'=>$result[0]->idCarreras));
-                $getUserType=$this->m_model->get(array('Tipos_usuario'=>$result[0]->idTipos_Usuario));
+            $getCarrera=$this->m_model->get('',array('carrera'=>$result[0]->idCarreras));
+            $getUserType=$this->m_model->get('',array('Tipos_usuario'=>$result[0]->idTipos_Usuario));
 
-                $_SESSION['idUser']=$result[0]->idUsuarios;
-                $_SESSION['nombre']=$result[0]->nombre;
-                $_SESSION['tipoUsuario']=$result[0]->idTipos_Usuario;
-                $_SESSION['idCarrera']=$result[0]->idCarreras;
-                $_SESSION['tipoNombre']=$getUserType->nombre;
-                $_SESSION['carrera']=$getCarrera->nombre;
-            }
-            else
-            {
-                $this->status=false;
-                $result=$result->error->statusCode;
-            }
+            $_SESSION['idUser']=$result[0]->idUsuarios;
+            $_SESSION['nombre']=$result[0]->nombre;
+            $_SESSION['tipoUsuario']=$result[0]->idTipos_Usuario;
+            $_SESSION['idCarrera']=$result[0]->idCarreras;
+            $_SESSION['tipoNombre']=$getUserType->nombre;
+            $_SESSION['carrera']=$getCarrera->nombre;
+        }
+        else
+        {
+            $result='404';
         }
         return $result;
     }
@@ -62,17 +56,9 @@ class m_controller extends Ci_Controller
     //Limpia las variables de sesion
     public function logout()
     {
-        //session_destroy();
-        //session_unset();
+        session_unset();
+        session_destroy();
         //return status
-    }
-
-    //Envia un post al webservice con la informacion necesaria para crear una enviarNotificacion
-    //titulo
-    //descripcion
-    public function enviarNotificacion()
-    {
-        //return success
     }
 
 
@@ -88,28 +74,100 @@ class m_controller extends Ci_Controller
     //Carga la vista de administrador
     public function loadViewAdmin($view,$data)
     {
-        if(!empty($_SESSION))
-        {
-            if($_SESSION['tipoUsuario']==5)
-            {
-                //echo 'admin logued';
-                $this->load->view('private/admin',$data);
-                //$this->load->view('private/'.$view,$data);
-            }
-            else
-            {
-                echo 'dame admin prro';
-            }
-        }
+        $this->load->view('private/admin',$data);
+        $this->load->view('private/'.$view,$data);
+        $this->load->view('templates/footer');
     }
 
 
-    //Carga una imagen
-    //img: nombre de la imagen
-    //src: diretorio donde se almacenara la imagen
-    public function uploadImg($img,$src)
+    /*Carga una imagen
+    *@param field Nombre del input
+    *@param newName nombre que tendra la imagen
+    *@param rute ruta espesifica, si no espesifica se pondra en la carpeta raiz
+    *@param sameFolder bool false: busca una nueva ruta true: misma ruta espesificada
+    */
+    public function uploadImg($field,$newName,$rute,$sameFolder)
     {
+        $result=array();
+        $date=date('Y-m-d');
+        //echo $field.' '.$newName.' '.$rute.''.$sameFolder;
 
+        if(!$sameFolder)
+        {
+            $rute='public/images/';
+            if (!is_dir($rute.$date)) {
+                $rute.=$date;
+                mkdir($rute, 0777, TRUE);
+            }
+            else
+            {
+                $date.='-'.rand();
+                $rute.=$date;
+                mkdir($rute, 0777, TRUE);
+            }
+        }
+
+        $config['upload_path'] = $rute;
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        $config['overwrite'] = TRUE;
+        $config['max_size'] = "2048000";
+
+        //echo $config['upload_path'];
+
+        $this->load->library('upload');
+
+        if(is_array($_FILES[$field]['name']))
+        {
+            //echo "Es una galeria";
+            $files = $_FILES;
+            //echo count($_FILES[$field]['name']);
+            $aux=$newName;
+            for($i=0; $i< count($_FILES[$field]['name']); $i++)
+            {
+
+                $newName=$aux;
+                $newName.=$date.($i+1);
+                $config['file_name'] =$newName;
+
+                $_FILES['userfile']['name']= $files[$field]['name'][$i];
+                $_FILES['userfile']['type']= $files[$field]['type'][$i];
+                $_FILES['userfile']['tmp_name']= $files[$field]['tmp_name'][$i];
+                $_FILES['userfile']['error']= $files[$field]['error'][$i];
+                $_FILES['userfile']['size']= $files[$field]['size'][$i];
+
+                $this->upload->initialize($config);
+
+                if ($this->upload->do_upload())
+                {
+                    //$result['path'][$i]=$this->upload->data('full_path');
+                    $tipe=$this->upload->data('file_ext');
+                    $result['rute'][$i]=$rute;
+                    $result['full-rute'][$i]=$rute.'/'.$newName.$tipe;
+                }
+            }
+        }
+        else
+        {
+            //echo 'Es una sola imagen';
+            $newName.=$date;
+            $config['file_name'] =$newName;
+
+            $this->upload->initialize($config);
+
+            if ($this->upload->do_upload($field))
+            {
+                //$result['path']=$this->upload->data('full_path');
+                $tipe=$this->upload->data('file_ext');
+                $result['rute']=$rute;
+                $result['full-rute']=$rute.'/'.$newName.$tipe;
+            }
+            /*else
+            {
+                echo 'Error al subir la imagen '.$config['file_name'].' en '.$rute;
+            }*/
+        }
+        //var_dump($result);
+        return $result;
     }
 
     //Carga un documento pdf
