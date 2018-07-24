@@ -20,16 +20,63 @@ class eventos_controller extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->model('eventos_model');
+                $this->load->model('eventos_model');
 
-        $numPag = 2;
-        $res=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
+                $numPag = 1;
+                $res=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
+                $numPag++;
 
-        $datos['Datos'] = $res;
-        $datos['title'] = 'EVENTOS';
-		
-		$this->loadView('public/eventos',$datos);
-	}
+                $respag=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
+                $numPag = 1;
+
+                //echo $respag->error->status;
+                if (empty($respag)) 
+                {
+                        $datos['Datos'] = $res;
+                        $datos['title'] = 'EVENTOS';
+                        $datos['nump'] = 0;
+                }
+                else
+                {
+                        $datos['Datos'] = $res;
+                        $datos['title'] = 'EVENTOS';
+                        $datos['nump'] = 1;
+                }
+        		
+        		$this->loadView('public/eventos',$datos);
+        }
+
+        public function paginaEvento($Pagina)
+        {
+                $this->load->model('eventos_model');
+
+                //$Pagina++;
+
+                $resp=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$Pagina));
+
+                $Pagina++;
+
+                $r=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$Pagina));
+
+                $Pagina = $Pagina - 1;
+
+                if (empty($r))
+                {
+                        $datos['Datos'] = $resp;
+                        $datos['title'] = 'EVENTOS';
+                        $datos['Anterior'] = "Anterior";
+                        $datos['nump'] = $Pagina;
+                        }
+                        else
+                {
+                        $datos['Datos'] = $resp;
+                        $datos['title'] = 'EVENTOS';
+                        $datos['nump'] = $Pagina;
+                }
+
+                $this->loadView('public/eventos',$datos);
+        }
+
 
 	public function showEvento()
 	{

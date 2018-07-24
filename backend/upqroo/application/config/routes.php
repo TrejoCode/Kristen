@@ -56,5 +56,6 @@ $route['login']='welcome/loginE';
 $route['logout']='welcome/logoutE';
 $route['eventos']='eventos_controller';
 $route['evento']='eventos_controller/showEvento';
+$route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1';
 
 $route['administrador']='admin';

@@ -94,7 +94,33 @@
                         echo '<div class="white-space-32"></div><div class="title"><h2>No hay noticias para mostrar</h2></div>';
                     } ?>
 
-
+                    <?php if(!empty($Datos))
+                    { 
+                        echo $nump;
+                        $num = $nump + 1;
+                        $anterior = $nump - 1;
+                        if ($nump == 1) 
+                        { ?>
+                            <div class="pagination justify-between">
+                                <a class="next"></a>
+                                <a class="next" href="<?php echo base_url().'index.php/pagina/'.$num; ?>">SIGUIENTE</a>
+                            </div>
+                        <?php }
+                        elseif ($nump > 1) 
+                        { ?>
+                            <div class="pagination justify-between">
+                                <a class="next" href="<?php echo base_url().'index.php/pagina/'.$anterior; ?>">ANTERIOR</a>
+                                <a class="next" href="<?php echo base_url().'index.php/pagina/'.$num; ?>">SIGUIENTE</a>
+                            </div>
+                        <?php }
+                        elseif ($Anterior == "Anterior") 
+                        { ?>
+                            <div class="pagination justify-between">
+                                <a class="next" href="<?php echo base_url().'index.php/pagina/'.$anterior; ?>">ANTERIOR</a>
+                                <a class="next"></a>
+                            </div>
+                        <?php } 
+                    } ?>
 
 
                 <div class="white-space-64"></div>
