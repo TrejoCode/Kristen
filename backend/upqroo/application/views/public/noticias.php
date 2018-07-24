@@ -34,18 +34,34 @@
                             <div class="new-card">
                                 <div class="column">
                                     <div class="featured-img responsive-img">
-                                        <img src="<?php if (!empty($Datos[$i]->portada)){echo $Datos[$i]->portada;} ?>">
+                                        <?php 
+                                        if (!empty($Datos[$i]->portada))
+                                        { ?>
+                                            <img src="<?php echo $Datos[$i]->portada; ?>">
+                                        <?php } ?>
                                     </div>
                                     <div class="container">
                                         <div class="column">
                                             <div class="date">
-                                                <p><?php if (!empty($Datos[$i]->fecha)){echo $Datos[$i]->fecha;}  ?></p>
+                                                <?php 
+                                                if (!empty($Datos[$i]->fecha))
+                                                { ?>
+                                                    <p><?php echo $Datos[$i]->fecha; ?></p>
+                                                <?php } ?>
                                             </div>
                                             <div class="title">
-                                                <h3><?php if (!empty($Datos[$i]->titulo)){echo $Datos[$i]->titulo;}  ?></h3>
+                                                <?php 
+                                                if (!empty($Datos[$i]->titulo))
+                                                { ?>
+                                                    <h3><?php echo $Datos[$i]->titulo; ?></h3>
+                                                <?php } ?>
                                             </div>
                                             <div class="description">
-                                                <p><?php if (!empty($Datos[$i]->descripcion)){echo $Datos[$i]->descripcion;}  ?></p>
+                                                <?php 
+                                                if (!empty($Datos[$i]->descripcion))
+                                                { ?>
+                                                    <p><?php echo $Datos[$i]->descripcion; ?></p>
+                                                <?php } ?>
                                             </div>
                                             <?php if (!empty($Datos[$i]->idPublicaciones)) 
                                             { ?>
