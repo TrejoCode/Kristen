@@ -65,7 +65,7 @@
                                             </div>
                                             <?php if (!empty($Datos[$i]->idPublicaciones)) 
                                             { ?>
-                                                <a class="read-more" href="echo base_url().'index.php/noticia?id='.$Datos[$i]->idPublicaciones; ">Leer Más</a>
+                                                <a class="read-more" href="<?php echo base_url().'index.php/noticia/'.$Datos[$i]->idPublicaciones.'/'.$nump?>">Leer Más</a>
                                             <?php } ?>       
                                         </div>
                                     </div>
@@ -93,21 +93,30 @@
                     <!-- Pagination -->
                     <?php if(!empty($Datos))
                     { 
+                        echo $nump;
                         $num = $nump + 1;
+                        $anterior = $nump - 1;
                         if ($nump == 1) 
                         { ?>
                             <div class="pagination justify-between">
                                 <a class="next"></a>
-                                <a class="next" href="<?php echo base_url().'index.php/pagina?num='.$num; ?>">SIGUIENTE</a>
+                                <a class="next" href="<?php echo base_url().'index.php/pagina/'.$num; ?>">SIGUIENTE</a>
                             </div>
                         <?php }
                         elseif ($nump > 1) 
                         { ?>
                             <div class="pagination justify-between">
-                                <a class="next" href="<?php echo base_url().'index.php/pagina?num='.$nump; ?>">ANTERIOR</a>
-                                <a class="next" href="<?php echo base_url().'index.php/pagina?num='.$num; ?>">SIGUIENTE</a>
+                                <a class="next" href="<?php echo base_url().'index.php/pagina/'.$anterior; ?>">ANTERIOR</a>
+                                <a class="next" href="<?php echo base_url().'index.php/pagina/'.$num; ?>">SIGUIENTE</a>
                             </div>
                         <?php }
+                        elseif ($Anterior == "Anterior") 
+                        { ?>
+                            <div class="pagination justify-between">
+                                <a class="next" href="<?php echo base_url().'index.php/pagina/'.$anterior; ?>">ANTERIOR</a>
+                                <a class="next"></a>
+                            </div>
+                        <?php } 
                     } ?>
                     <div class="white-space-32"></div>
                 </div>

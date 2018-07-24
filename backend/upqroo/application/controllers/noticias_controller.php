@@ -40,45 +40,54 @@ class noticias_controller extends m_controller {
         {
         	$datos['Datos'] = $res;
 	        $datos['title'] = 'NOTICIAS';
-	        $datos['nump'] = $numPag;
+	        $datos['nump'] = 1;
         }
 
         $this->loadView('public/noticias',$datos);
 	}
 
-	public function paginaNoticia()
+	public function paginaNoticia($Pagina)
 	{
         $this->load->model('noticias_model');
 
-        $resp=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$_GET['num']));
+        //$Pagina++;
 
-        if (empty($resp))
+        $resp=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$Pagina));
+
+        $Pagina++;
+
+        $r=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$Pagina));
+
+        $Pagina = $Pagina - 1;
+
+        if (empty($r))
         {
         	$datos['Datos'] = $resp;
 	        $datos['title'] = 'NOTICIAS';
-	        $datos['nump'] = $_GET['num']++;
+        	$datos['Anterior'] = "Anterior";
+        	$datos['nump'] = $Pagina;
 		}
 		else
         {
         	$datos['Datos'] = $resp;
 	        $datos['title'] = 'NOTICIAS';
-        	$datos['nump'] = 0;
+	        $datos['nump'] = $Pagina;
         }
 
         $this->loadView('public/noticias',$datos);
 	}
 
-	public function showNotice()
+	public function showNotice($idPNoticia, $idPNoticias)
 	{
 		$this->load->model('noticias_model');
 
-		if ($_GET['id'] == 0 || empty($_GET['id'])) 
+		if ($idPNoticia == 0 || empty($idPNoticia)) 
 		{
 			redirect(base_url().'index.php/noticias');
 		}
 		else
 		{
-			$res1=$this->noticias_model->getNoticia(array('publicacion'=>$_GET['id']));
+			$res1=$this->noticias_model->getNoticia(array('publicacion'=>$idPNoticia));
 
 	        $datos['title'] = 'NOTICIA';
 	        if ($res1->idTipos_Publicacion == 2) 
@@ -88,40 +97,35 @@ class noticias_controller extends m_controller {
 		        $datos['fecha']=$res1->fecha;
 		        $datos['portada']=$res1->portada;
 	        }
-
-	        if(isset($_GET['id']))
-	        {
-				$ID = $_GET['id'];
-			}
 	        
-	        $res2 = $this->noticias_model->getNoticias(array('publicacion'=>'noticias/1'));
+	        $res2 = $this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$idPNoticias));
 
 	        $cont = 0;
 	        $i = 0;
 	        while($cont != 1)
 	        { 
-	        	if ($res2[$i]->idPublicaciones == $ID && $i == 0) 
+	        	if ($res2[$i]->idPublicaciones == $idPNoticia && $i == 0) 
 	        	{
 	        		$datos['Ultima1'] = $res2[$i+1];
 	        		$datos['Ultima2'] = $res2[$i+2];
 	        		$datos['Ultima3'] = $res2[$i+3];
 	        		$cont++;
 	        	}
-	        	elseif ($res2[$i]->idPublicaciones == $ID && $i == 1) 
+	        	elseif ($res2[$i]->idPublicaciones == $idPNoticia && $i == 1) 
 	        	{
 	        		$datos['Ultima1'] = $res2[$i-1];
 	        		$datos['Ultima2'] = $res2[$i+1];
 	        		$datos['Ultima3'] = $res2[$i+2];
 	        		$cont++;
 	        	}
-	        	elseif($res2[$i]->idPublicaciones == $ID && $i == 2)
+	        	elseif($res2[$i]->idPublicaciones == $idPNoticia && $i == 2)
 	        	{
 	        		$datos['Ultima1'] = $res2[$i-2];
 	        		$datos['Ultima2'] = $res2[$i-1];
 	        		$datos['Ultima3'] = $res2[$i+1];
 	        		$cont++;
 	        	}
-	        	elseif ($res2[$i]->idPublicaciones == $ID && $i < count($res2)) 
+	        	elseif ($res2[$i]->idPublicaciones == $idPNoticia && $i < count($res2)) 
 	        	{
 	        		$datos['Ultima1'] = $res2[$i-3];
 	        		$datos['Ultima2'] = $res2[$i-2];
