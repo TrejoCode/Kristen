@@ -78,11 +78,11 @@ class eventos_controller extends m_controller {
         }
 
 
-	public function showEvento()
+	public function showEvento($id)
 	{
 		$this->load->model('eventos_model');
 
-        $res1=$this->eventos_model->getEvento(array('publicacion'=>$_GET['id']));
+        $res1=$this->eventos_model->getEvento(array('publicacion'=>$id));
 
         $datos['title'] = 'EVENTO';
         if ($res1->idTipos_Publicacion == 1) 
@@ -93,10 +93,8 @@ class eventos_controller extends m_controller {
 	        $datos['portada']=$res1->portada;
         }
 		
-        if(isset($_GET['id']))
-                {
-        			$ID = $_GET['id'];
-        		}
+
+                $ID = $id;
                 
                 $res2 = $this->eventos_model->getEventos(array('publicacion'=>'eventos/1'));
 

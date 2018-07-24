@@ -75,7 +75,7 @@
                                                                 <i class="far fa-clock"></i>
                                                                 <p><?php echo $hora?></p>
                                                             </div>
-                                                            <a  class="read-more" href="<?php echo base_url().'index.php/evento?id='.$Datos[$cont]->idPublicaciones; ?>">Conocer Más</a>
+                                                            <a  class="read-more" href="<?php echo base_url().'index.php/ver/evento/'.$Datos[$cont]->idPublicaciones; ?>">Conocer Más</a>
                                                         </div>
                                                     </div>
                                                 </div>
