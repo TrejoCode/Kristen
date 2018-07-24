@@ -161,7 +161,7 @@ class admin extends m_controller
         return $result=$parrafos;
     }
 
-    public function addNoticia()
+    public function addNoticia($id=null)
     {
 
         $this->load->helper(array('form', 'url'));
@@ -189,6 +189,7 @@ class admin extends m_controller
              */
             $galery=$this->uploadImg('gallery-img','gallery','',false);
             $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
+            $datos['idPublicacion']=$id;
             $datos['titulo']=$this->input->post('titulo');
             $datos['descripcion']=$this->input->post('descripcion');
             $datos['notificar']=$this->input->post('notificacion')!='on'?false:true;
@@ -206,6 +207,7 @@ class admin extends m_controller
             array_push($content,$imgs);
 
             $datos['contenidos']=$content;
+
 
             //var_dump(json_encode($datos));
             if(!empty($this->adminModel->post('publicacion',$datos)))
@@ -254,7 +256,7 @@ class admin extends m_controller
             $datos['categorias']=$this->input->post('tags');
             $datos['idUsuarios']=$_SESSION['idUser'];
             $datos['carrera']=$_SESSION['idCarrera'];
-            $datos['idTipos_Publicacion']=2;
+            $datos['idTipos_Publicacion']=1;
             $fecha=$this->input->post('fecha');
             $hora=$this->input->post('hora');
 
@@ -316,7 +318,7 @@ class admin extends m_controller
             $datos['categorias']=$this->input->post('tags');
             $datos['idUsuarios']=$_SESSION['idUser'];
             $datos['carrera']=$_SESSION['idCarrera'];
-            $datos['idTipos_Publicacion']=2;
+            $datos['idTipos_Publicacion']=3;
 
             $datos['contenidos']=$this->crearContenidos('p','url','url-name');
 
@@ -332,19 +334,42 @@ class admin extends m_controller
         }
     }
 
+
+
     public function editNoticia($id)
     {
-
+        $this->data['title']='EDITAR NOTICIA';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
+        $this->load->model('adminModel');
+        $this->data['noticias']=$this->adminModel->getPublicacion($id);
+        //var_dump($this->data['noticias']);
+        //echo $this->data['noticias']->categorias;
+        $this->loadViewAdmin('admin-add-news',$this->data);
     }
 
     public function editEvento($id)
     {
-
+        $this->data['title']='EDITAR EVENTO';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
+        $this->load->model('adminModel');
+        $this->data['eventos']=$this->adminModel->getPublicacion($id);
+        //var_dump($this->data['eventos']);
+        //echo $this->data['eventos']->contenidos[3]->contenido->hora;
+        $this->loadViewAdmin('admin-add-event',$this->data);
     }
 
     public function editTrabajo($id)
     {
-
+        $this->data['title']='EDITAR VACANTE';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
+        $this->load->model('adminModel');
+        $this->data['trabajos']=$this->adminModel->getPublicacion($id);
+        //var_dump($this->data['trabajos']);
+        //echo $this->data['eventos']->contenidos[3]->contenido->hora;
+        $this->loadViewAdmin('admin-add-job',$this->data);
     }
 
 }

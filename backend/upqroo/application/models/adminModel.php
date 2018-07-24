@@ -8,4 +8,8 @@ class adminModel extends m_model
         return $this->get('',$elements);
     }
 
+    public function getPublicacion($id)
+    {
+        return $this->get('',array('publicacion'=>$id));
+    }
 }

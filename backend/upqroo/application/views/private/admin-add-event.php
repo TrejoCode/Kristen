@@ -8,24 +8,24 @@
                     <div class="white-space-16"></div>
                     <h4>TÍTULO</h4>
                     <div class="white-space-8"></div>
-                    <input class="input-text" type="text" name="titulo" required>
+                    <input class="input-text" type="text" name="titulo" value="<?php echo !empty($eventos)?$eventos->titulo:'';?>">
                 </div>
                 <div class="white-space-16"></div>
                 <div class="description column">
                     <h4>DESCRIPCIÓN CORTA</h4>
                     <div class="white-space-8"></div>
-                    <textarea class="input-textarea" name="descripcion" rows="2" required></textarea>
+                    <textarea class="input-textarea" name="descripcion" rows="2"><?php echo !empty($eventos)?$eventos->descripcion:'';?></textarea>
                 </div>
                 <div class="white-space-32"></div>
                 <h2>CONTENIDO</h2>
                 <div class="white-space-32"></div>
                 <h4>PARRAFO 1</h4>
                 <div class="white-space-8"></div>
-                <textarea class="input-textarea" name="p[]" rows="4"></textarea>
+                <textarea class="input-textarea" name="p[]" rows="4"><?php echo !empty($eventos->contenidos[0]->contenido->texto)?$eventos->contenidos[0]->contenido->texto:'';?></textarea>
                 <div class="white-space-16"></div>
                 <h4>PARRAFO 2</h4>
                 <div class="white-space-8"></div>
-                <textarea class="input-textarea" name="p[]" rows="4"></textarea>
+                <textarea class="input-textarea" name="p[]" rows="4"><?php echo !empty($eventos->contenidos[1]->contenido->texto)?$eventos->contenidos[1]->contenido->texto:'';?></textarea>
                 <div class="white-space-16"></div>
                 <h4>IMÁGENES</h4>
                 <p><em>SOLO PUEDEN SUBIR 3 IMÁGENES</em></p>
@@ -35,21 +35,20 @@
                 <div class="white-space-32"></div>
                 <h4>ENLACE 1</h4>
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="url-name[]" placeholder="Título">
+                <input class="input-text" type="text" name="url-name[]" placeholder="Título" value="<?php echo !empty($eventos->contenidos[2]->contenido->texto)?$eventos->contenidos[2]->contenido->texto:'';?>">
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="url[]" placeholder="Url">
+                <input class="input-text" type="text" name="url[]" placeholder="Url" value="<?php echo !empty($eventos->contenidos[2]->contenido->texto)?$eventos->contenidos[2]->contenido->url:'';?>">
                 <div class="white-space-8"></div>
                 <h4>ENLACE 2</h4>
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="url-name[]" placeholder="Título">
+                <input class="input-text" type="text" name="url-name[]" placeholder="Título" value="<?php echo !empty($eventos->contenidos[4]->contenido->texto)?$eventos->contenidos[4]->contenido->texto:'';?>">
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="url[]" placeholder="Url">
-                <div class="white-space-8"></div>
+                <input class="input-text" type="text" name="url[]" placeholder="Url" value="<?php echo !empty($eventos->contenidos[4]->contenido->texto)?$eventos->contenidos[4]->contenido->url:'';?>">
                 <h4>ENLACE 3</h4>
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="url-name[]" placeholder="Título">
+                <input class="input-text" type="text" name="url-name[]" placeholder="Título" value="<?php echo !empty($eventos->contenidos[5]->contenido->texto)?$eventos->contenidos[5]->contenido->texto:'';?>">
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="url[]" placeholder="Url">
+                <input class="input-text" type="text" name="url[]" placeholder="Url" value="<?php echo !empty($eventos->contenidos[5]->contenido->texto)?$eventos->contenidos[5]->contenido->url:'';?>">
                 <div class="white-space-16"></div>
             </div>
         </div>
@@ -70,17 +69,17 @@
                     <div class="white-space-32"></div>
                     <h4>FECHA</h4>
                     <div class="white-space-8"></div>
-                    <input class="input-date" type="date" name="fecha">
+                    <input class="input-date" type="date" name="fecha" value="<?php echo !empty($eventos->contenidos[3]->contenido->texto)?$eventos->contenidos[3]->contenido->fecha:'';?>">
                     <div class="white-space-32"></div>
                     <h4>HORA</h4>
                     <div class="white-space-8"></div>
-                    <input class="input-date" type="time" name="hora">
+                    <input class="input-date" type="time" name="hora" value="<?php echo !empty($eventos->contenidos[3]->contenido->texto)?$eventos->contenidos[3]->contenido->hora:'';?>">
                     <div class="white-space-32"></div>
                     <h4>ETIQUETAS</h4>
                     <div class="white-space-8"></div>
                     <p>Sepáralas por coma</p>
                     <div class="white-space-16"></div>
-                        <input class="input-text" type="text" name="tags">
+                        <input class="input-text" type="text" name="tags" value="<?php echo !empty($eventos)?$eventos->categorias:'';?>">
                     <div class="white-space-16"></div>
                     <div class="row">
                         <label><input type="checkbox" name="notificacion"><span> ENVIAR NOTIFICACIÓN</span></label>

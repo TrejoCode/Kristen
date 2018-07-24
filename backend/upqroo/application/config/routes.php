@@ -69,8 +69,9 @@ $route['administrador/agregar/noticia']='admin/addNoticia';
 $route['administrador/agregar/evento']='admin/addEvento';
 $route['administrador/agregar/trabajo']='admin/addTrabajo';
 
-$route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
-$route['administrador/editar/noticia/(:num)']='admin/viewEditNoticia/$1';
+$route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';
+$route['administrador/editar/evento/(:num)']='admin/editEvento/$1';
+$route['administrador/editar/trabajo/(:num)']='admin/editTrabajo/$1';
 
 
 //$route['administrador/agregar/noticia']=
