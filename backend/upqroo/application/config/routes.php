@@ -54,6 +54,8 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
     
 $route['eventos']='eventos_controller';
+//$route['planeacion']='planeacion.php';
+
 $route['ver/evento/(:num)']='eventos_controller/showEvento/$1';
 $route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1';
   
@@ -79,9 +81,14 @@ $route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';
 $route['administrador/editar/evento/(:num)']='admin/editEvento/$1';
 $route['administrador/editar/trabajo/(:num)']='admin/editTrabajo/$1';
 
+$route['becas'] = 'becasController';
+$route['nosotros'] = 'nosotrosController';
+$route['pagos'] = 'pagosController';
+
 $route['administrador/eliminar/noticia/(:num)']='admin/eliminarNoticia/$1';
 
-
-//$route['administrador/agregar/noticia']=
+$route['reinscripcion'] = 'reinscripcionController';
+$route['transparencia'] = 'transparenciaController';
+$route['serviciosAsistencia'] = 'serviciosAController';
 
 
