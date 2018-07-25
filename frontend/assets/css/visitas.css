@@ -1,21 +1,3 @@
-.institutional {
-    font-family: var(--Roboto);
-}
-
-.institutional .nosotros, .institutional .ubicacion {
-    background-color: var(--white);
-}
-
-.institutional .banner {
-    height: 235px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.institutional .banner .title h2 {
-    color: var(--white);
-}
 
 .institutional .mision img, .institutional .vision img, .institutional .mision h3, .institutional .vision h3, .institutional .mision p, .institutional .vision p {
     margin: 0 var(--paddingNormal);
@@ -25,8 +7,6 @@
     width: 96%;
 }
 
-
-
 .institutional .skills {
     background-color: var(--white);
     border: 1px solid #e6e7ea;
@@ -34,10 +14,6 @@
 
 .institutional .skills .hability {
     margin-bottom: var(--paddingSemi);
-}
-
-.institutional .skills .habilities .hability-number, .institutional .skills .habilities .hability-description {
-
 }
 
 .institutional .skills .habilities .hability-number p {
