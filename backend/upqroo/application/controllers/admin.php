@@ -197,6 +197,7 @@ class admin extends m_controller
             $isInsert=false;
             if($this->input->post('publicacion')!=null)
             {
+                $isInsert=false;
                 $publicacion=$this->input->post('publicacion');
                 $datos['idPublicaciones']=$publicacion;
                 $ruta=null;
@@ -228,7 +229,6 @@ class admin extends m_controller
                 {
                     $datos['portada']=$this->input->post('portadaTxt');
                 }
-                $isInsert=false;
             }
             else
             {
@@ -243,9 +243,9 @@ class admin extends m_controller
             array_push($content,$imgs);
 
             $datos['contenidos']=$content;
+            
 
-
-            var_dump(json_encode($datos));
+            //var_dump(json_encode($datos));
 
             if($isInsert)
             {
@@ -260,13 +260,13 @@ class admin extends m_controller
             }
             else
             {
-                if(!empty($this->adminModel->put(array('publicaciones'=>''),$datos)))
+                if(!empty($this->adminModel->put(array('publicacion'=>''),$datos)))
                 {
                     $this->noticia();
                 }
                 else
                 {
-                    redirect(base_url().'index.php/administrador/ver/evento/0');
+                    redirect(base_url().'index.php/administrador/ver/trabajo/0');
                 }
             }
             /**/
