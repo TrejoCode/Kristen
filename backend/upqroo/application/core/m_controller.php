@@ -61,6 +61,10 @@ class m_controller extends Ci_Controller
         //return status
     }
 
+	public function loadTV($view, $data)
+    {
+        $this->load->view($view,$data);
+    }
 
     //Carga las vistas publicas
     public function loadView($view,$data)
@@ -69,6 +73,8 @@ class m_controller extends Ci_Controller
         $this->load->view($view,$data);
         $this->load->view('templates/footer');
     }
+
+
 
 
     //Carga la vista de administrador
