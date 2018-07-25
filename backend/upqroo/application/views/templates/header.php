@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UPQROO-<?php echo $title;?></title>
+    <title>UPQROO - <?php echo $title;?></title>
     <meta name="description" content="Únete a UPQROO! La oferta educativa superior con áreas de oportunidades y crecimiento.">
     <meta name="keywords" content="universisad, universidad en cancún, UPQROO, universidad politécnica de quinatana roo, universidades">
     <!---   Styles   --->
