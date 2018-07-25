@@ -377,27 +377,22 @@ label {
 /*    LARGE DEVICES    */
 
 @media screen and (max-width: 1200px) {
-    body {
-        background: gray;
-    }
+
+
+
 }
 
 /*    NOTEBOOKS, IPADS DEVICES    */
 
 @media screen and (max-width: 992px) {
 
-    body {
-        background: green;
-    }
+
+
 }
 
 /*    TABLETS DEVICES    */
 
 @media screen and (max-width: 768px) {
-
-    body {
-        background: red;
-    }
 
     .row-responsive {
         flex-direction: column;
@@ -411,7 +406,5 @@ label {
 /*    MOBILE DEVICES    */
 
 @media screen and (max-width: 576px) {
-    body {
-        background: blue;
-    }
+    /*body {background: blue;}
 }
