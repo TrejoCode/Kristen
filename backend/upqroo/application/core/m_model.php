@@ -107,6 +107,7 @@ class m_model extends CI_Model
         $this->conecction();
         $elements=json_encode($put_elements);
         curl_setopt($this->curl, CURLOPT_URL, $this->url.$this->urlFormater($table));
+        echo $this->url.$this->urlFormater($table);
         curl_setopt($this->curl, CURLOPT_POST,false);
         curl_setopt($this->curl, CURLOPT_REFERER, '');
         curl_setopt($this->curl,CURLOPT_CUSTOMREQUEST, 'PUT');

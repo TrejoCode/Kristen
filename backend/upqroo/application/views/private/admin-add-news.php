@@ -6,6 +6,18 @@
                 <div class="white-space-16"></div>
                 <div class="title column">
                     <h2>NUEVA NOTICIA</h2>
+
+                    <!-- Campos Ocultos -->
+                    <input class="input-text" type="text" hidden name="publicacion" value="<?php echo !empty($noticias->idPublicaciones)?$noticias->idPublicaciones:'';?>">
+                    <input class="input-text" type="text" hidden name="portadaTxt" value="<?php echo !empty($noticias->portada)?$noticias->portada:'';?>">
+                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[0])?$noticias->contenidos[6]->contenido->imagenes[0]:'';?>">
+                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[1])?$noticias->contenidos[6]->contenido->imagenes[1]:'';?>">
+                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[2])?$noticias->contenidos[6]->contenido->imagenes[2]:'';?>">
+                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[3])?$noticias->contenidos[6]->contenido->imagenes[3]:'';?>">
+                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[4])?$noticias->contenidos[6]->contenido->imagenes[4]:'';?>">
+                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[5])?$noticias->contenidos[6]->contenido->imagenes[5]:'';?>">
+                    <!-- Fin Campos ocultos -->
+
                     <div class="white-space-16"></div>
                     <h4>TÍTULO</h4>
                     <div class="white-space-8"></div>
@@ -67,7 +79,7 @@
                     <div class="white-space-16"></div>
                     <div class="featured-img responsive-img">
                         <!-- Susituir por la ruta de la portada actual -->
-                        <img src="../assets/img/featured.jpeg" alt="">
+                        <img src="<?php echo !empty($noticias->portada)?base_url().$noticias->portada:''; ?>" alt="">
                     </div>
                     <div class="white-space-8"></div>
                     <div><a class="btn btn-blue" id="featured-img-click" href="#"><i class="fas fa-file-upload"></i> CAMBIAR IMAGEN</a></div>

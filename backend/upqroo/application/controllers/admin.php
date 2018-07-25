@@ -187,20 +187,59 @@ class admin extends m_controller
             //Post a la db
             /*
              */
-            $galery=$this->uploadImg('gallery-img','gallery','',false);
-            $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
             $datos['titulo']=$this->input->post('titulo');
             $datos['descripcion']=$this->input->post('descripcion');
             $datos['notificar']=$this->input->post('notificacion')!='on'?false:true;
-            $datos['portada']=$cover['full-rute'];
             $datos['categorias']=$this->input->post('tags');
             $datos['idUsuarios']=$_SESSION['idUser'];
             $datos['carrera']=$_SESSION['idCarrera'];
             $datos['idTipos_Publicacion']=2;
 
+            $imgs=array();
+            $isInsert=false;
+            if($this->input->post('publicacion')!=null)
+            {
+                $publicacion=$this->input->post('publicacion');
+                $datos['idPublicaciones']=$publicacion;
+                $ruta=null;
+                if($this->input->post('gallery-img')!=null)
+                {
+                    $galery=$this->uploadImg('gallery-img','gallery','',false);
+                    $ruta=$galery['rute'][0];
+                    $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
+                }
+                else
+                {
+                    $imagenes=$this->input->post('imgTxt');
+                    $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($imagenes),'imagenes'=>$imagenes));
+                }
 
-            $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
-
+                if($this->input->post('portada')!=null)
+                {
+                    if($ruta!=null)
+                    {
+                        $cover=$this->uploadImg('portada','cover',$ruta,true);
+                    }
+                    else
+                    {
+                        $cover=$this->uploadImg('portada','cover','',false);
+                    }
+                    $datos['portada']=$cover['full-rute'];
+                }
+                else
+                {
+                    $datos['portada']=$this->input->post('portadaTxt');
+                }
+                $isInsert=false;
+            }
+            else
+            {
+                $galery=$this->uploadImg('gallery-img','gallery','',false);
+                $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
+                $datos['portada']=$cover['full-rute'];
+                $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
+                $isInsert=true;
+            }
             $content=$this->crearContenidos('p','url','url-name');
 
             array_push($content,$imgs);
@@ -208,15 +247,31 @@ class admin extends m_controller
             $datos['contenidos']=$content;
 
 
-            //var_dump(json_encode($datos));
-            if(!empty($this->adminModel->post('publicacion',$datos)))
+            var_dump(json_encode($datos));
+
+            if($isInsert)
             {
-                $this->noticia();
+                if(!empty($this->adminModel->post('publicacion',$datos)))
+                {
+                    $this->noticia();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/evento/0');
+                }
             }
             else
             {
-                redirect(base_url().'index.php/administrador/ver/evento');
+                if(!empty($this->adminModel->put(array('publicaciones'=>''),$datos)))
+                {
+                    $this->noticia();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/evento/0');
+                }
             }
+            /**/
         }
     }
 
@@ -342,7 +397,7 @@ class admin extends m_controller
         $this->data['nombre']=$_SESSION['nombre'];
         $this->load->model('adminModel');
         $this->data['noticias']=$this->adminModel->getPublicacion($id);
-        //var_dump($this->data['noticias']);
+        var_dump($this->data['noticias']);
         //echo $this->data['noticias']->categorias;
         $this->loadViewAdmin('admin-add-news',$this->data);
     }
