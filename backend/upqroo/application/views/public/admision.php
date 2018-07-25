@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
-    <link rel="stylesheet" href="../assets/css/nosotros.css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>UPQROO</title>
-</head>
 
     <div class="institutional flex">
         <div class="column">
@@ -131,9 +119,3 @@
             <div style="width: 100%"><iframe width="100%" height="500" src="https://maps.google.com/maps?width=100%&height=600&hl=es&q=Av.%20Arco%20Bincentenario%2C%20Mza.%2011%2C%20Lote%201119-33%2C%20Sm%20255%2C%2077500%20Canc%C3%BAn%2C%20Q.R.+(Universidad%20Polit%C3%A9cnica%20de%20Quintana%20Roo)&ie=UTF8&t=&z=16&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><br />
         </div> <!-- End Main Column -->
     </div> <!-- End Nosotros Column -->
-
-
-
-<body>
-</body>
-</html>
