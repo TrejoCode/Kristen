@@ -91,4 +91,17 @@ $route['reinscripcion'] = 'reinscripcionController';
 $route['transparencia'] = 'transparenciaController';
 $route['serviciosAsistencia'] = 'serviciosAController';
 
+$route['carreras/biotecnologia']='micrositios_controller/1';
+$route['biotecnologia']='micrositios_controller/1';
+$route['carreras/software']='micrositios_controller/2';
+$route['software']='micrositios_controller/2';
+$route['carreras/biomedica']='micrositios_controller/3';
+$route['biomedica']='micrositios_controller/3';
+$route['carreras/pymes']='micrositios_controller/4';
+$route['pymes']='micrositios_controller/4';
+$route['carreras/financiera']='micrositios_controller/5';
+$route['financiera']='micrositios_controller/5';
+$route['carreras/terapia']='micrositios_controller/6';
+$route['tearapia']='micrositios_controller/6';
+
 
