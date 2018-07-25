@@ -8,7 +8,7 @@
 
                     <!-- Campos Ocultos -->
                     <input class="input-text" type="text" hidden name="publicacion" value="<?php echo !empty($eventos->idPublicaciones)?$eventos->idPublicaciones:'';?>">
-                    <input class="input-text" type="text" hidden name="portadaTxt" value="<?php echo !empty($eventos->portada)?$eventos->portada:'';?>">
+                    <input class="input-text" type="text" name="portadaTxt" value="<?php echo !empty($eventos->portada)?$eventos->portada:'';?>">
                     <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($eventos->contenidos[6]->contenido->imagenes[0])?$eventos->contenidos[6]->contenido->imagenes[0]:'';?>">
                     <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($eventos->contenidos[6]->contenido->imagenes[1])?$eventos->contenidos[6]->contenido->imagenes[1]:'';?>">
                     <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($eventos->contenidos[6]->contenido->imagenes[2])?$eventos->contenidos[6]->contenido->imagenes[2]:'';?>">
