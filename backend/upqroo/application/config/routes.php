@@ -91,4 +91,8 @@ $route['reinscripcion'] = 'reinscripcionController';
 $route['transparencia'] = 'transparenciaController';
 $route['serviciosAsistencia'] = 'serviciosAController';
 
+//Rutas de planeacion, directorio y admision
+$route['planeacion'] = 'planeacionController';
+$route['directorio'] = 'directorioontroller';
+$route['admision'] = 'admisionController';
 
