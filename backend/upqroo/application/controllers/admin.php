@@ -2,8 +2,6 @@
 
 class admin extends m_controller
 {
-
-
     public $data;
     public $tipo;
     public $carrera;
@@ -409,7 +407,7 @@ class admin extends m_controller
         $this->data['nombre']=$_SESSION['nombre'];
         $this->load->model('adminModel');
         $this->data['eventos']=$this->adminModel->getPublicacion($id);
-        //var_dump($this->data['eventos']);
+        var_dump($this->data['eventos']);
         //echo $this->data['eventos']->contenidos[3]->contenido->hora;
         $this->loadViewAdmin('admin-add-event',$this->data);
     }
@@ -421,7 +419,7 @@ class admin extends m_controller
         $this->data['nombre']=$_SESSION['nombre'];
         $this->load->model('adminModel');
         $this->data['trabajos']=$this->adminModel->getPublicacion($id);
-        //var_dump($this->data['trabajos']);
+        var_dump($this->data['trabajos']);
         //echo $this->data['eventos']->contenidos[3]->contenido->hora;
         $this->loadViewAdmin('admin-add-job',$this->data);
     }
