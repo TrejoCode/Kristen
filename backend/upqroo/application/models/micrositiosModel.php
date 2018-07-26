@@ -7,4 +7,14 @@ class micrositiosModel extends m_model
     {
         return $this->get('',$elements);
     }
+
+    public function getData($elements)
+   {
+       return $data=$this->get('/publicacion/noticias/',$elements);
+   }
+
+   public function getDataT($table,$elements)
+   {
+       return $data2=$this->get($table,$elements);
+   }
 }
