@@ -82,7 +82,7 @@
                 <div class="column">
                     <div class="white-space-64"></div>
                     <div class="title justify-start">
-                        <h2 class="textHuge">CARRERAS</h2>
+                        <h2 class="textHuge" id="carreras">CARRERAS</h2>
                     </div>
                     <div class="white-space-32"></div>
                     <div class="column">

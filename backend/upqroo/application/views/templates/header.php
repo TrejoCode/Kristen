@@ -63,7 +63,7 @@
                                 </div>
 
                                 <div class="nav-item wow fadeInLeft" data-wow-delay="0.5s"">
-                                    <a href="<?php echo base_url();?>carreras">CARRERAS</a>
+                                    <a href="<?php echo base_url();?>#carreras">CARRERAS</a>
                                 </div>
 
                                 <div class="nav-item wow fadeInLeft" data-wow-delay="0.6s"">
