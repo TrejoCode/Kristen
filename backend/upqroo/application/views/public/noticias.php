@@ -9,6 +9,7 @@
 
                     <?php if(!empty($Datos))
                     {
+                        $cambio = false;
                         $total = count($Datos);
                         $residuo = $total%3;
 
@@ -64,8 +65,14 @@
                                                 <?php } ?>
                                             </div>
                                             <?php if (!empty($Datos[$i]->idPublicaciones))
-                                            { ?>
-                                                <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$Datos[$i]->idPublicaciones.'/'.$nump?>">Leer Más</a>
+                                            { 
+                                                if($nump == 0)
+                                                {
+                                                    $cambio = true;
+                                                    $nump = 1;
+                                                } ?>
+                                                <a class="read-more" href="<?php
+                                                echo base_url().'index.php/ver/noticia/'.$Datos[$i]->idPublicaciones.'/'.$nump?>">Leer Más</a>
                                             <?php } ?>
                                         </div>
                                     </div>
@@ -95,14 +102,18 @@
                     {
                         //echo $nump;
                         $num = $nump + 1;
-                        $anterior = $nump - 1;
-                        if ($nump == 1)
+                        $anterior = $nump - 1; 
+                        if ($nump == 1 && !$cambio)
                         { ?>
                             <div class="pagination justify-between">
                                 <a class="next"></a>
                                 <a class="next" href="<?php echo base_url().'index.php/pagina/'.$num; ?>">SIGUIENTE</a>
                             </div>
                         <?php }
+                        elseif ($cambio == true) 
+                        {
+                            # code...
+                        }
                             elseif ($Anterior == 0)
                             { ?>
                                 <div class="pagination justify-between">
@@ -116,7 +127,7 @@
                                     <a class="next" href="<?php echo base_url().'index.php/pagina/'.$anterior; ?>">ANTERIOR</a>
                                     <a class="next" href="<?php echo base_url().'index.php/pagina/'.$num; ?>">SIGUIENTE</a>
                                 </div>
-                            <?php }
+                            <?php  }
                     } ?>
                     <div class="white-space-32"></div>
                 </div>

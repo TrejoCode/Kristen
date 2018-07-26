@@ -34,13 +34,15 @@ class noticias_controller extends m_controller {
         {
         	$datos['Datos'] = $res;
 	        $datos['title'] = 'NOTICIAS';
+	        $datos['Anterior'] = 2;
         	$datos['nump'] = 0;
         }
         else
         {
         	$datos['Datos'] = $res;
 	        $datos['title'] = 'NOTICIAS';
-	        $datos['nump'] = 1;
+	        $datos['Anterior'] = 2;
+	        $datos['nump'] = 1;	
         }
 
         $this->loadView('public/noticias',$datos);
@@ -88,6 +90,11 @@ class noticias_controller extends m_controller {
 		}
 		else
 		{
+	        if ($idPNoticias == 0) 
+	        {
+	        	$idPNoticias == 1;
+	        }
+
 			$res1=$this->noticias_model->getNoticia(array('publicacion'=>$idPNoticia));
 
 	        $datos['title'] = 'NOTICIA';
@@ -98,7 +105,7 @@ class noticias_controller extends m_controller {
 		        $datos['fecha']=$res1->fecha;
 		        $datos['portada']=$res1->portada;
 	        }
-	        
+
 	        $res2 = $this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$idPNoticias));
 
 	        $cont = 0;
