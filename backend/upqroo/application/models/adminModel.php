@@ -12,4 +12,9 @@ class adminModel extends m_model
     {
         return $this->get('',array('publicacion'=>$id));
     }
+
+    public function getInfo($id)
+    {
+        return $this->get('',array('InfoInstitucional'=>$id));
+    }
 }
