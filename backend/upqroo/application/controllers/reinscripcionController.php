@@ -20,6 +20,7 @@ class reinscripcionController extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->View('public/reinscripcion');
+        $data['title']='REINSCRIPCION';
+        $this->loadView('public/reinscripcion',$data);
 	}
 }

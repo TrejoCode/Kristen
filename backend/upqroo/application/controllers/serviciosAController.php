@@ -20,6 +20,7 @@ class serviciosAController extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->View('public/serviciosAsistencia');
+        $data['title']='SERVICIOS DE ASISTENCIA';
+        $this->loadView('public/serviciosAsistencia',$data);
 	}
 }

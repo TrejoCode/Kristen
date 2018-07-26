@@ -20,6 +20,7 @@ class planeacionController extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->View('public/planeacion');
+        $data['title']='PLANEACION';
+        $this->loadView('public/planeacion',$data);
 	}
 }

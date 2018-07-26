@@ -20,6 +20,7 @@ class admisionController extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->View('public/admision');
+	    $data['title']='ADMISION';
+        $this->loadView('public/admision',$data);
 	}
 }

@@ -20,6 +20,7 @@ class directorioController extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->View('public/directorio');
+        $data['title']='DIRECTORIO';
+        $this->loadView('public/directorio',$data);
 	}
 }

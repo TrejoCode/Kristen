@@ -20,6 +20,7 @@ class transparenciaController extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->View('public/transparencia');
+        $data['title']='TRANSPARENCIA';
+        $this->loadView('public/transparencia',$data);
 	}
 }

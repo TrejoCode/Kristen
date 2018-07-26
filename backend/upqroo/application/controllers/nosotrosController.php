@@ -20,6 +20,7 @@ class nosotrosController extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->View('public/nosotros');
+        $data['title']='NOSOTROS';
+        $this->loadView('public/nosotros',$data);
 	}
 }

@@ -20,6 +20,7 @@ class becasController extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->View('public/becas');
+	    $data['title']='BECAS';
+        $this->loadView('public/becas',$data);
 	}
 }

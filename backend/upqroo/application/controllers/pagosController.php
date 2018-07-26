@@ -20,6 +20,7 @@ class pagosController extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->View('public/pagos');
+        $data['title']='PAGOS';
+        $this->loadView('public/pagos',$data);
 	}
 }
