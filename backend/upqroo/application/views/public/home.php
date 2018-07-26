@@ -34,7 +34,7 @@
                             <p>Integrate al progreso continuo, las cosas no ocurren por si mismas, ¡Únete a UPQROO!</p>
                             <div class="white-space-32"></div>
                             <div>
-                                <a class="btn btn-blue" href="#">CONOCER MÁS</a>
+                                <a class="btn btn-blue" href="<?php echo base_url();?>index.php/nosotros">CONOCER MÁS</a>
                             </div>
                             <div class="white-space-64"></div>
                         </div>
@@ -151,7 +151,7 @@
                     <p>Se parte de la Universidad Politécnica de Quintana Roo. <br> Haz la mejor elección para tú futuro</p>
                     <div class="white-space-16"></div>
                     <div class="">
-                        <a class="btn btn-blue" href="#">PROCESO DE ADMISIÓN</a>
+                        <a class="btn btn-blue" href="<?php echo base_url();?>index.php/admision">PROCESO DE ADMISIÓN</a>
                     </div>
                     <div class="white-space-64"></div>
                 </div>
