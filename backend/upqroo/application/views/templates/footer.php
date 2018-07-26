@@ -28,7 +28,7 @@
                         <div class="column justify-center">
                             <div class="white-space-32"></div>
                             <div class="responsive-img logo">
-                                <img src="<?php echo base_url();?>assets/img/upqroo-newlogo.png" alt="">
+                                <img src="<?php echo base_url();?>assets/img/upqroo-newlogo.png" alt="Logo UPQROO" title="Logo UPQROO">
                             </div>
                             <div class="white-space-32"></div>
                         </div>
@@ -48,10 +48,10 @@
                     <div class="white-space-8"></div>
                     <div class="row">
                         <div class="social justify-center">
-                            <a class="element text-center btn" href="https://www.facebook.com/upqroo"><i class="social-icon-dark fab fa-facebook-f"></i></a>
-                            <a class="element text-center btn" href="https://twitter.com/upqroo"><i class="social-icon-dark fab fa-twitter"></i></a>
-                            <a class="element text-center btn" href="https://www.youtube.com/channel/UCy6VTWYIB9tay8P28cPe6Eg"><i class="social-icon-dark fab fa-youtube"></i></a>
-                            <a class="element text-center btn" href="mailto:info@upqroo.edu.mx"><i class="social-icon-dark fa fa-envelope"></i></a>
+                            <a rel="follow" class="element text-center btn" href="https://www.facebook.com/upqroo"><i class="social-icon-dark fab fa-facebook-f"></i></a>
+                            <a rel="follow" class="element text-center btn" href="https://twitter.com/upqroo"><i class="social-icon-dark fab fa-twitter"></i></a>
+                            <a rel="follow" class="element text-center btn" href="https://www.youtube.com/channel/UCy6VTWYIB9tay8P28cPe6Eg"><i class="social-icon-dark fab fa-youtube"></i></a>
+                            <a rel="follow" class="element text-center btn" href="mailto:info@upqroo.edu.mx"><i class="social-icon-dark fa fa-envelope"></i></a>
                         </div>
                     </div>
                     <div class="row">

@@ -4,17 +4,17 @@
         <div class="slider">
             <div class="slide">
                 <a href="#">
-                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="Slider 1" title="Slider 1">
                 </a>
             </div>
             <div class="slide">
                 <a href="#">
-                    <img src="<?php echo base_url();?>assets/img/slide2.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/slide2.jpg" alt="Slider 2" title="Slider 2">
                 </a>
             </div>
             <div class="slide">
                 <a href="#">
-                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="Slider 3" title="Slider 3">
                 </a>
             </div>
         </div>
@@ -90,21 +90,21 @@
                             <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-soft.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-soft.jpg" alt="Ingeniería en Software" title="Ingeniería en Software">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-biot.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-biot.jpg" alt=" Ingeniería en Biotecnología " title=" Ingeniería en Biotecnología ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-biom.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-biom.jpg" alt=" Ingeniería en Biomedica " title=" Ingeniería en Biomedica ">
                                     </a>
                                 </div>
                             </div>
@@ -114,21 +114,21 @@
                             <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-fina.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-fina.jpg" alt=" Ingeniería Financiera " title=" Ingeniería Financiera ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-pyme.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-pyme.jpg" alt=" Licenciatura en Pymes " title=" Licenciatura en Pymes ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
                                     <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-tera.jpg" alt="">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-tera.jpg" alt=" Licenciatura en Terapia Física " title=" Licenciatura en Terapia Física ">
                                     </a>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                 <div class="new-card">
                                 <div class="column">
                                     <div class="featured-img responsive-img">
-                                        <img src="<?php echo $noticias[$j]->portada; ?>" alt="">
+                                        <img src="<?php echo $noticias[$j]->portada; ?>" alt=" Imagen Destacada " title=" Imagen Destacada ">
                                     </div>
                                     <div class="container">
                                         <div class="column">
