@@ -77,6 +77,7 @@ $route['servicios-asistencia'] = 'serviciosAController';
 $route['planeacion'] = 'planeacionController';
 $route['directorio'] = 'directorioController';
 $route['admision'] = 'admisionController';
+$route['visitas'] = 'visitasController';
 
 //Rutas funcinalidades
     //Eventos

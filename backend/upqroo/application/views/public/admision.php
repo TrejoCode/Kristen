@@ -112,7 +112,7 @@
                         <div class="white-space-32"></div>
                         <a class="link" href="http://www.upqroo.edu.mx/wp-content/uploads/2018/02/Guia-EXANI-II-2018-1.pdf"><i class="fas fa-book"></i> Guía de Estudio EXANI II 2018</a>
                         <div class="white-space-32"></div>
-                        <a class="link" href="#"><i class="fas fa-book"></i> Reinscripción</a>
+                        <a class="link" href="<?php echo base_url();?>index.php/reinscripcion"><i class="fas fa-book"></i> Reinscripción</a>
                         <div class="white-space-48"></div>
                     </div>
                 </div>
