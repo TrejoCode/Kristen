@@ -1,4 +1,4 @@
-<div class="news flex">
+<div class="news flex wow fadeIn">
 <!-- News Cards -->
         <div class="news justify-center">
             <div class="container">
@@ -12,7 +12,7 @@
                         $total = count($Datos);
                         $residuo = $total%3;
 
-                        if ($residuo == 0) 
+                        if ($residuo == 0)
                         {
                             $r = $residuo;
                         }
@@ -23,8 +23,8 @@
                         $n = $total + $r;
                         $contador = 0;
 
-                        for ($i=0; $i < $n; $i++) 
-                        { 
+                        for ($i=0; $i < $n; $i++)
+                        {
                             if($contador == 0)
                             { ?>
                                 <div class="news-cards">
@@ -34,39 +34,39 @@
                             <div class="new-card">
                                 <div class="column">
                                     <div class="featured-img responsive-img">
-                                        <?php 
+                                        <?php
                                         if (!empty($Datos[$i]->portada))
                                         { ?>
-                                            <img src="<?php echo $Datos[$i]->portada; ?>">
+                                            <img src="<?php echo $Datos[$i]->portada; ?>" alt=" Imagen Destacada " title=" Imagen Destacada ">
                                         <?php } ?>
                                     </div>
                                     <div class="container">
                                         <div class="column">
                                             <div class="date">
-                                                <?php 
+                                                <?php
                                                 if (!empty($Datos[$i]->fecha))
                                                 { ?>
                                                     <p><?php echo $Datos[$i]->fecha; ?></p>
                                                 <?php } ?>
                                             </div>
                                             <div class="title">
-                                                <?php 
+                                                <?php
                                                 if (!empty($Datos[$i]->titulo))
                                                 { ?>
                                                     <h3><?php echo $Datos[$i]->titulo; ?></h3>
                                                 <?php } ?>
                                             </div>
                                             <div class="description">
-                                                <?php 
+                                                <?php
                                                 if (!empty($Datos[$i]->descripcion))
                                                 { ?>
                                                     <p><?php echo $Datos[$i]->descripcion; ?></p>
                                                 <?php } ?>
                                             </div>
-                                            <?php if (!empty($Datos[$i]->idPublicaciones)) 
+                                            <?php if (!empty($Datos[$i]->idPublicaciones))
                                             { ?>
                                                 <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$Datos[$i]->idPublicaciones.'/'.$nump?>">Leer Más</a>
-                                            <?php } ?>       
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 </div>
@@ -92,18 +92,18 @@
                     <div class="white-space-32"></div>
                     <!-- Pagination -->
                     <?php if(!empty($Datos))
-                    { 
+                    {
                         //echo $nump;
                         $num = $nump + 1;
                         $anterior = $nump - 1;
-                        if ($nump == 1) 
+                        if ($nump == 1)
                         { ?>
                             <div class="pagination justify-between">
                                 <a class="next"></a>
                                 <a class="next" href="<?php echo base_url().'index.php/pagina/'.$num; ?>">SIGUIENTE</a>
                             </div>
                         <?php }
-                            elseif ($Anterior == 0) 
+                            elseif ($Anterior == 0)
                             { ?>
                                 <div class="pagination justify-between">
                                     <a class="next" href="<?php echo base_url().'index.php/pagina/'.$anterior; ?>">ANTERIOR</a>

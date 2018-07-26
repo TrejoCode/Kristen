@@ -92,11 +92,11 @@
                         <p class="color-white text-center"><strong>14 JULIO 2018</strong></p>
                         <div class="white-space-32"></div>
                         <div class="justify-center">
-                            <a class="btn btn-teal" href="#"><i class="fas fa-file-invoice"></i> DESCARGAR MANUAL DE ADMISIÓN</a>
+                            <a class="btn btn-teal" href="http://www.upqroo.edu.mx/wp-content/uploads/2018/03/proceso-ingreso-2018.2.pptx"><i class="fas fa-file-invoice"></i> DESCARGAR MANUAL DE ADMISIÓN</a>
                         </div>
                         <div class="white-space-16"></div>
                         <div class="justify-center">
-                            <a class="btn btn-teal" href="#"><i class="fas fa-file-alt"></i> DESCARGAR RESULTADO ADMISIÓN</a>
+                            <a class="btn btn-teal" href="http://www.upqroo.edu.mx/wp-content/uploads/2018/06/resultado_ingreso_26_mayo_2018.pdf"><i class="fas fa-file-alt"></i> DESCARGAR RESULTADO ADMISIÓN</a>
                         </div>
                         <div class="white-space-64"></div>
                     </div>
@@ -110,7 +110,9 @@
                         <div class="white-space-64"></div>
                         <h2>RECURSOS ADICIONALES</h2>
                         <div class="white-space-32"></div>
-                        <a class="link" href="#"><i class="fas fa-book"></i> Guía de Estudio EXANI II 2018</a>
+                        <a class="link" href="http://www.upqroo.edu.mx/wp-content/uploads/2018/02/Guia-EXANI-II-2018-1.pdf"><i class="fas fa-book"></i> Guía de Estudio EXANI II 2018</a>
+                        <div class="white-space-32"></div>
+                        <a class="link" href="<?php echo base_url();?>index.php/reinscripcion"><i class="fas fa-book"></i> Reinscripción</a>
                         <div class="white-space-48"></div>
                     </div>
                 </div>

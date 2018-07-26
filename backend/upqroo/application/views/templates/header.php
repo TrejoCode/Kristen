@@ -59,11 +59,11 @@
                         <div class="right">
                             <nav class="row align-center justify-end">
                                 <div class="nav-item wow fadeInLeft" data-wow-delay="0.5s">
-                                    <a href="<?php echo base_url();?>/">UNIVERSIDAD</a>
+                                    <a href="<?php echo base_url();?>index.php/nosotros">UNIVERSIDAD</a>
                                 </div>
 
                                 <div class="nav-item wow fadeInLeft" data-wow-delay="0.5s"">
-                                    <a href="<?php echo base_url();?>carreras">CARRERAS</a>
+                                    <a href="<?php echo base_url();?>#carreras">CARRERAS</a>
                                 </div>
 
                                 <div class="nav-item wow fadeInLeft" data-wow-delay="0.6s"">
@@ -71,11 +71,11 @@
                                 </div>
 
                                 <div class="nav-item wow fadeInLeft" data-wow-delay="0.7s"">
-                                    <a href="<?php echo base_url();?>ser_escolares">SERVICIOS ESCOLARES</a>
+                                    <a href="<?php echo base_url();?>index.php/admision">SERVICIOS ESCOLARES</a>
                                 </div>
 
                                 <div class="nav-item wow fadeInLeft" data-wow-delay="0.8s"">
-                                    <a href="<?php echo base_url();?>vinculacion">VINCULACIÓN</a>
+                                    <a href="<?php echo base_url();?>index.php/visitas">VINCULACIÓN</a>
                                 </div>
                             </nav>
                         </div>

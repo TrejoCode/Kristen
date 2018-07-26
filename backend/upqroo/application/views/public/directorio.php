@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
-    <link rel="stylesheet" href="../assets/css/nosotros.css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>UPQROO</title>
-</head>
 
     <div class="institutional flex">
         <div class="column">
@@ -113,16 +101,10 @@
             <div class="organigrama justify-center">
                 <div class="container justify-center">
                     <div class="auto">
-                        <a class="btn btn-blue" href="#"><i class="fas fa-file-invoice"></i> DESCARGAR ORGANIGRAMA</a>
+                        <a class="btn btn-blue" href="http://www.upqroo.edu.mx/wp-content/uploads/2017/05/Organigrama-UPQROO.pdf"><i class="fas fa-file-invoice"></i> DESCARGAR ORGANIGRAMA</a>
                     </div>
                 </div>
             </div>
             <div class="white-space-64"></div>
         </div> <!-- End Main Column -->
     </div> <!-- End Nosotros Column -->
-
-
-
-<body>
-</body>
-</html>

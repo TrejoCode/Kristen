@@ -281,6 +281,10 @@ header .header-main .logo {
     border: 1px solid #e6e7ea;
 }
 
+.home .events .events-cards .event-card .row-responsive {
+    height: 100%;
+}
+
 .home .events .events-cards .event-card .date {
     width: 30%;
     background-color: var(--blueLink);

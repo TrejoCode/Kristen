@@ -4,17 +4,17 @@
         <div class="slider">
             <div class="slide">
                 <a href="#">
-                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="Slider 1" title="Slider 1">
                 </a>
             </div>
             <div class="slide">
                 <a href="#">
-                    <img src="<?php echo base_url();?>assets/img/slide2.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/slide2.jpg" alt="Slider 2" title="Slider 2">
                 </a>
             </div>
             <div class="slide">
                 <a href="#">
-                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/slide1.jpg" alt="Slider 3" title="Slider 3">
                 </a>
             </div>
         </div>
@@ -34,7 +34,7 @@
                             <p>Integrate al progreso continuo, las cosas no ocurren por si mismas, ¡Únete a UPQROO!</p>
                             <div class="white-space-32"></div>
                             <div>
-                                <a class="btn btn-blue" href="#">CONOCER MÁS</a>
+                                <a class="btn btn-blue" href="<?php echo base_url();?>index.php/nosotros">CONOCER MÁS</a>
                             </div>
                             <div class="white-space-64"></div>
                         </div>
@@ -82,29 +82,29 @@
                 <div class="column">
                     <div class="white-space-64"></div>
                     <div class="title justify-start">
-                        <h2 class="textHuge">CARRERAS</h2>
+                        <h2 class="textHuge" id="carreras">CARRERAS</h2>
                     </div>
                     <div class="white-space-32"></div>
                     <div class="column">
                         <div class="row-responsive">
                             <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-soft.jpg" alt="">
+                                    <a href="<?php echo base_url().'index.php/software'; ?>">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-soft.jpg" alt="Ingeniería en Software" title="Ingeniería en Software">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-biot.jpg" alt="">
+                                    <a href="<?php echo base_url().'index.php/biotecnologia'; ?>">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-biot.jpg" alt=" Ingeniería en Biotecnología " title=" Ingeniería en Biotecnología ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-biom.jpg" alt="">
+                                    <a href="<?php echo base_url().'index.php/biomedica'; ?>">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-biom.jpg" alt=" Ingeniería en Biomedica " title=" Ingeniería en Biomedica ">
                                     </a>
                                 </div>
                             </div>
@@ -113,22 +113,22 @@
                         <div class="row-responsive">
                             <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-fina.jpg" alt="">
+                                    <a href="<?php echo base_url().'index.php/financiera'; ?>">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-fina.jpg" alt=" Ingeniería Financiera " title=" Ingeniería Financiera ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-pyme.jpg" alt="">
+                                    <a href="<?php echo base_url().'index.php/pymes'; ?>">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-pyme.jpg" alt=" Licenciatura en Pymes " title=" Licenciatura en Pymes ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url();?>assets/img/carrera-tera.jpg" alt="">
+                                    <a href="<?php echo base_url().'index.php/terapia'; ?>">
+                                        <img src="<?php echo base_url();?>assets/img/carrera-tera.jpg" alt=" Licenciatura en Terapia Física " title=" Licenciatura en Terapia Física ">
                                     </a>
                                 </div>
                             </div>
@@ -151,7 +151,7 @@
                     <p>Se parte de la Universidad Politécnica de Quintana Roo. <br> Haz la mejor elección para tú futuro</p>
                     <div class="white-space-16"></div>
                     <div class="">
-                        <a class="btn btn-blue" href="#">PROCESO DE ADMISIÓN</a>
+                        <a class="btn btn-blue" href="<?php echo base_url();?>index.php/admision">PROCESO DE ADMISIÓN</a>
                     </div>
                     <div class="white-space-64"></div>
                 </div>
@@ -170,31 +170,38 @@
                     <div class="white-space-32"></div>
                     <div class="news-cards">
                         <div class="row-responsive">
-                            <?php for ($j=0; $j<3; $j++)
-                            { $date=date_create($noticias[$j]->fecha);?>
+                            <?php if (!empty($noticias)) {
+                                for ($j=0; $j<(count($noticias)<3?count($noticias):3); $j++)
+                                { $date=date_create($noticias[$j]->fecha);?>
 
-                                <div class="new-card">
-                                <div class="column">
-                                    <div class="featured-img responsive-img">
-                                        <img src="<?php echo $noticias[$j]->portada; ?>" alt="">
-                                    </div>
-                                    <div class="container">
+                                    <div class="new-card">
                                         <div class="column">
-                                            <div class="date">
-                                                <p><?php echo date_format($date,"d M Y");?></p>
+                                            <div class="featured-img responsive-img">
+                                                <img src="<?php echo $noticias[$j]->portada; ?>" alt=" Imagen Destacada " title=" Imagen Destacada ">
                                             </div>
-                                            <div class="title">
-                                                <h3><?php echo $noticias[$j]->titulo; ?></h3>
+                                            <div class="container">
+                                                <div class="column">
+                                                    <div class="date">
+                                                        <p><?php echo date_format($date,"d M Y");?></p>
+                                                    </div>
+                                                    <div class="title">
+                                                        <h3><?php echo $noticias[$j]->titulo; ?></h3>
+                                                    </div>
+                                                    <div class="description">
+                                                        <p><?php echo $noticias[$j]->descripcion; ?></p>
+                                                    </div>
+                                                    <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$noticias[$j]->idPublicaciones.'/1'; ?>">Leer Más</a>
+                                                </div>
                                             </div>
-                                            <div class="description">
-                                                <p><?php echo $noticias[$j]->descripcion; ?></p>
-                                            </div>
-                                            <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$noticias[$j]->idPublicaciones.'/1'; ?>">Leer Más</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <?php } ?>
+                                <?php }
+                            }
+                            else
+                            {
+                                echo '<h2>No hay noticias para mostrar</h2>';
+                            }
+                            ?>
 
                         </div>
                     </div>
@@ -216,42 +223,50 @@
                 <div class="events-cards">
                     <div class="row-responsive">
 
-                        <?php for ($i=0;$i<3;$i++)
-                        { $date=date_create($evento[$i]->fecha);
-                        ?>
+                        <?php if(!empty($evento))
+                        {
+                            for ($i=0;$i<(count($evento)<3?count($evento):3);$i++)
+                            { $date=date_create($evento[$i]->fecha);
+                                ?>
 
-                            <div class="event-card">
-                            <div class="column">
-                                <div class="row-responsive">
-                                    <div class="date column justify-center">
-                                        <div class="day justify-center">
-                                            <p><?php echo date_format($date,"d"); ?></p>
-                                        </div>
-                                        <div class="month justify-center">
-                                            <p><?php echo date_format($date,"M"); ?></p>
-                                        </div>
-                                        <div class="year justify-center">
-                                            <p><?php echo date_format($date,"Y"); ?></p>
-                                        </div>
-                                    </div>
-                                    <div class="info justify-center">
-                                        <div class="container">
-                                            <div class="column">
-                                                <div class="title">
-                                                    <h3><?php echo $evento[$i]->titulo; ?></h3>
+                                <div class="event-card">
+                                    <div class="column">
+                                        <div class="row-responsive">
+                                            <div class="date column justify-center">
+                                                <div class="day justify-center">
+                                                    <p><?php echo date_format($date,"d"); ?></p>
                                                 </div>
-                                                <div class="schedule align-center">
-                                                    <i class="far fa-clock"></i>
-                                                    <p>13:00</p>
+                                                <div class="month justify-center">
+                                                    <p><?php echo date_format($date,"M"); ?></p>
                                                 </div>
-                                                <a  class="read-more" href="<?php echo base_url().'index.php/ver/evento/'.$evento[$i]->idPublicaciones; ?>">Conocer Más</a>
+                                                <div class="year justify-center">
+                                                    <p><?php echo date_format($date,"Y"); ?></p>
+                                                </div>
+                                            </div>
+                                            <div class="info justify-center">
+                                                <div class="container">
+                                                    <div class="column">
+                                                        <div class="title">
+                                                            <h3><?php echo $evento[$i]->titulo; ?></h3>
+                                                        </div>
+                                                        <div class="schedule align-center">
+                                                            <i class="far fa-clock"></i>
+                                                            <p>13:00</p>
+                                                        </div>
+                                                        <a  class="read-more" href="<?php echo base_url().'index.php/ver/evento/'.$evento[$i]->idPublicaciones; ?>">Conocer Más</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <?php } ?>
+                            <?php }
+                        }
+                        else
+                        {
+                            echo '<h2>No hay eventos para mostrar</h2>';
+                        }
+                        ?>
 
                     </div>
                 </div>
