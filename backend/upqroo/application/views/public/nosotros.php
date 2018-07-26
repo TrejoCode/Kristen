@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
-    <link rel="stylesheet" href="../assets/css/nosotros.css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>UPQROO</title>
-</head>
 
     <div class="institutional flex">
         <div class="column">
@@ -64,15 +52,15 @@
                     <div class="column">
                         <h2>REGLAMENTOS</h2>
                         <div class="white-space-32"></div>
-                        <a class="link" href="#"><i class="fas fa-book"></i> Decreto Optimizado</a>
+                        <a class="link" href="http://www.upqroo.edu.mx/wp-content/uploads/2016/11/reglamentos/decreto-optimizado.pdf"><i class="fas fa-book"></i> Decreto Optimizado</a>
                         <div class="white-space-16"></div>
-                        <a class="link" href="#"><i class="fas fa-book"></i> Reglamento Interior UPQROO</a>
+                        <a class="link" href="http://www.upqroo.edu.mx/wp-content/uploads/2016/11/reglamentos/REGLAMENTO-INTERIOR-UPQROO.pdf"><i class="fas fa-book"></i> Reglamento Interior UPQROO</a>
                         <div class="white-space-16"></div>
-                        <a class="link" href="#"><i class="fas fa-book"></i> Reglamento para uso de laboratorios UPQROO</a>
+                        <a class="link" href="http://www.upqroo.edu.mx/wp-content/uploads/2016/11/reglamentos/REGLAMENTO-PARA-USO-DE-LABORATORIOS-UPQROO.pdf"><i class="fas fa-book"></i> Reglamento para uso de laboratorios UPQROO</a>
                         <div class="white-space-16"></div>
-                        <a class="link" href="#"><i class="fas fa-book"></i> Reglamento de estudios de Profesional Asociado y Licenciatura UPQROO</a>
+                        <a class="link" href="http://www.upqroo.edu.mx/wp-content/uploads/2016/11/reglamentos/REGLAMENTO-DE-ESTUDIOS-DE-PROFESIONAL-ASOCIADO-Y-LICENCIATURA-UPQROO.pdf"><i class="fas fa-book"></i> Reglamento de estudios de Profesional Asociado y Licenciatura UPQROO</a>
                         <div class="white-space-16"></div>
-                        <a class="link" href="#"><i class="fas fa-book"></i> Reglamento de ingreso, promoción y permanencia del personal académico de la Universidad Politécnica de Quintana Roo</a>
+                        <a class="link" href="http://www.upqroo.edu.mx/wp-content/uploads/2016/11/reglamentos/REGLAMENTO-DE-INGRESO,PROMOCION-Y-PERMANENCIA-DEL-PERSONAL-ACADEMICO-DE-LA-UNIVERSIDAD-POLITECNICA-DE-QUINTANA-ROO.pdf"><i class="fas fa-book"></i> Reglamento de ingreso, promoción y permanencia del personal académico de la Universidad Politécnica de Quintana Roo</a>
                         <div class="white-space-48"></div>
                     </div>
                 </div>
