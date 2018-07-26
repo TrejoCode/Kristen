@@ -61,6 +61,10 @@ class m_controller extends Ci_Controller
         //return status
     }
 
+	public function loadTV($view, $data)
+    {
+        $this->load->view($view,$data);
+    }
 
     //Carga las vistas publicas
     public function loadView($view,$data)
@@ -76,7 +80,7 @@ class m_controller extends Ci_Controller
     {
         $this->load->view('private/admin',$data);
         $this->load->view('private/'.$view,$data);
-        $this->load->view('templates/footer');
+        //$this->load->view('templates/footer');
     }
 
 
@@ -173,9 +177,88 @@ class m_controller extends Ci_Controller
     //Carga un documento pdf
     //img: nombre del documento
     //src: diretorio donde se almacenara el documento
-    public function uploadFile()
+    public function uploadFile($field,$newName,$rute,$sameFolder)
     {
+        $result=array();
+        $date=date('Y-m-d');
+        //echo $field.' '.$newName.' '.$rute.''.$sameFolder;
 
+        if(!$sameFolder)
+        {
+            $rute='public/documents/';
+            if (!is_dir($rute.$date)) {
+                $rute.=$date;
+                mkdir($rute, 0777, TRUE);
+            }
+            else
+            {
+                $date.='-'.rand();
+                $rute.=$date;
+                mkdir($rute, 0777, TRUE);
+            }
+        }
+
+        $config['upload_path'] = $rute;
+        $config['allowed_types'] = 'pdf';
+        $config['overwrite'] = TRUE;
+        $config['max_size'] = "2048000";
+
+        //echo $config['upload_path'];
+
+        $this->load->library('upload');
+
+        if(is_array($_FILES[$field]['name']))
+        {
+            //echo "Es una galeria";
+            $files = $_FILES;
+            //echo count($_FILES[$field]['name']);
+            $aux=$newName;
+            for($i=0; $i< count($_FILES[$field]['name']); $i++)
+            {
+
+                /*$newName=$aux;
+                $newName.=$date.($i+1);
+                $config['file_name'] =$newName;*/
+
+                $_FILES['userfile']['name']= $files[$field]['name'][$i];
+                $_FILES['userfile']['type']= $files[$field]['type'][$i];
+                $_FILES['userfile']['tmp_name']= $files[$field]['tmp_name'][$i];
+                $_FILES['userfile']['error']= $files[$field]['error'][$i];
+                $_FILES['userfile']['size']= $files[$field]['size'][$i];
+
+                $this->upload->initialize($config);
+
+                if ($this->upload->do_upload())
+                {
+                    //$result['path'][$i]=$this->upload->data('full_path');
+                    $tipe=$this->upload->data('file_ext');
+                    $result['rute'][$i]=$rute;
+                    $result['full-rute'][$i]=$rute.'/'.$newName.$tipe;
+                }
+            }
+        }
+        else
+        {
+            //echo 'Es una sola imagen';
+            /*$newName.=$date;
+            $config['file_name'] =$newName;*/
+
+            $this->upload->initialize($config);
+
+            if ($this->upload->do_upload($field))
+            {
+                //$result['path']=$this->upload->data('full_path');
+                $tipe=$this->upload->data('file_ext');
+                $result['rute']=$rute;
+                $result['full-rute']=$rute.'/'.$newName.$tipe;
+            }
+            /*else
+            {
+                echo 'Error al subir la imagen '.$config['file_name'].' en '.$rute;
+            }*/
+        }
+        //var_dump($result);
+        return $result;
     }
 }
 ?>

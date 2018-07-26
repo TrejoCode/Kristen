@@ -6,6 +6,12 @@
                 <div class="white-space-16"></div>
                 <div class="title column">
                     <h2>NUEVA VACANTE</h2>
+
+                    <!-- Campos Ocultos -->
+                    <input class="input-text" type="text" name="publicacion" value="<?php echo !empty($trabajos->idPublicaciones)?$trabajos->idPublicaciones:'';?>">
+                    <input class="input-text" type="text" name="portadaTxt" value="<?php echo !empty($trabajos->portada)?$trabajos->portada:'';?>">
+                    <!-- Fin Campos ocultos -->
+
                     <div class="white-space-16"></div>
                     <h4>TÍTULO</h4>
                     <div class="white-space-8"></div>
@@ -61,7 +67,7 @@
                     <h4>IMAGEN DE PORTADA</h4>
                     <div class="white-space-16"></div>
                     <div class="featured-img responsive-img">
-                        <img src="../assets/img/featured.jpeg" alt="">
+                        <img src="<?php echo !empty($trabajos->portada)?base_url().$trabajos->portada:''; ?>" alt="">
                     </div>
                     <div class="white-space-8"></div>
                     <div><a class="btn btn-blue" id="featured-img-click" href="#"><i class="fas fa-file-upload"></i> CAMBIAR IMAGEN</a></div>

@@ -1,7 +1,0 @@
-.btn_1{
-    padding: var(--paddingMedium) var(--paddingSemi);
-    font-weight: var(--weightBold);
-    color: var(--black);
-    background-color: var(--white);
-    border: 2px solid var(--black);
-}

@@ -2,8 +2,6 @@
 
 class admin extends m_controller
 {
-
-
     public $data;
     public $tipo;
     public $carrera;
@@ -17,6 +15,7 @@ class admin extends m_controller
         {
             $this->data['nombre']=$_SESSION['nombre'];
             $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+            $this->data['carrera']=$_SESSION['idCarrera'];
             $this->carrera=$_SESSION['idCarrera'];
             $this->tipo=$this->data['tipoUsuario'];
             if($this->tipo==1)
@@ -170,8 +169,6 @@ class admin extends m_controller
 
         $this->form_validation->set_rules('titulo', 'titulo', 'required|max_length[50]');
         $this->form_validation->set_rules('descripcion', 'descriction', 'required|max_length[200]');
-        //$this->form_validation->set_rules('portada', 'portada', 'required');
-        //$this->form_validation->set_rules('tags', 'etiquetas', 'required');
 
 
 
@@ -187,36 +184,91 @@ class admin extends m_controller
             //Post a la db
             /*
              */
-            $galery=$this->uploadImg('gallery-img','gallery','',false);
-            $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
             $datos['titulo']=$this->input->post('titulo');
             $datos['descripcion']=$this->input->post('descripcion');
             $datos['notificar']=$this->input->post('notificacion')!='on'?false:true;
-            $datos['portada']=$cover['full-rute'];
             $datos['categorias']=$this->input->post('tags');
             $datos['idUsuarios']=$_SESSION['idUser'];
             $datos['carrera']=$_SESSION['idCarrera'];
             $datos['idTipos_Publicacion']=2;
 
+            $imgs=array();
+            $isInsert=false;
+            if($this->input->post('publicacion')!=null)
+            {
+                $isInsert=false;
+                $publicacion=$this->input->post('publicacion');
+                $datos['idPublicaciones']=$publicacion;
+                $ruta=null;
+                if($this->input->post('gallery-img')!=null)
+                {
+                    $galery=$this->uploadImg('gallery-img','gallery','',false);
+                    $ruta=$galery['rute'][0];
+                    $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
+                }
+                else
+                {
+                    $imagenes=$this->input->post('imgTxt');
+                    $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($imagenes),'imagenes'=>$imagenes));
+                }
 
-            $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
-
+                if($this->input->post('portada')!=null)
+                {
+                    if($ruta!=null)
+                    {
+                        $cover=$this->uploadImg('portada','cover',$ruta,true);
+                    }
+                    else
+                    {
+                        $cover=$this->uploadImg('portada','cover','',false);
+                    }
+                    $datos['portada']=$cover['full-rute'];
+                }
+                else
+                {
+                    $datos['portada']=$this->input->post('portadaTxt');
+                }
+            }
+            else
+            {
+                $galery=$this->uploadImg('gallery-img','gallery','',false);
+                $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
+                $datos['portada']=$cover['full-rute'];
+                $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
+                $isInsert=true;
+            }
             $content=$this->crearContenidos('p','url','url-name');
 
             array_push($content,$imgs);
 
             $datos['contenidos']=$content;
-
+            
 
             //var_dump(json_encode($datos));
-            if(!empty($this->adminModel->post('publicacion',$datos)))
+
+            if($isInsert)
             {
-                $this->noticia();
+                if(!empty($this->adminModel->post('publicacion',$datos)))
+                {
+                    $this->noticia();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/evento/0');
+                }
             }
             else
             {
-                redirect(base_url().'index.php/administrador/ver/evento');
+                if(!empty($this->adminModel->put(array('publicacion'=>''),$datos)))
+                {
+                    $this->noticia();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/trabajo/0');
+                }
             }
+            /**/
         }
     }
 
@@ -229,9 +281,8 @@ class admin extends m_controller
 
         $this->form_validation->set_rules('titulo', 'titulo', 'required|max_length[50]');
         $this->form_validation->set_rules('descripcion', 'descriction', 'required|max_length[200]');
-        //$this->form_validation->set_rules('portada', 'portada', 'required');
-        $this->form_validation->set_rules('fecha', 'etiquetas', 'required');
-        $this->form_validation->set_rules('hora', 'etiquetas', 'required');
+        $this->form_validation->set_rules('fecha', 'fecha', 'required');
+        $this->form_validation->set_rules('hora', 'hora', 'required');
 
         if ($this->form_validation->run() === FALSE)
         {
@@ -245,13 +296,9 @@ class admin extends m_controller
             //Post a la db
             /*
              */
-            $galery=$this->uploadImg('gallery-img','gallery','',false);
-            //echo 'ruta para insertar la portada '.$galery['rute'];
-            $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
             $datos['titulo']=$this->input->post('titulo');
             $datos['descripcion']=$this->input->post('descripcion');
             $datos['notificar']=$this->input->post('notificacion')!='on'?false:true;
-            $datos['portada']=$cover['full-rute'];
             $datos['categorias']=$this->input->post('tags');
             $datos['idUsuarios']=$_SESSION['idUser'];
             $datos['carrera']=$_SESSION['idCarrera'];
@@ -261,7 +308,52 @@ class admin extends m_controller
 
             $dateEvent=array('idTipoContenidos'=>6,'contenido'=>array('hora'=>$hora,'fecha'=>$fecha));
 
-            $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
+            $imgs=array();
+            $isInsert=false;
+            if($this->input->post('publicacion')!=null)
+            {
+                $isInsert=false;
+                $publicacion=$this->input->post('publicacion');
+                $datos['idPublicaciones']=$publicacion;
+                $ruta=null;
+                if($this->input->post('gallery-img')!=null)
+                {
+                    $galery=$this->uploadImg('gallery-img','gallery','',false);
+                    $ruta=$galery['rute'][0];
+                    $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
+                }
+                else
+                {
+                    $imagenes=$this->input->post('imgTxt');
+                    $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($imagenes),'imagenes'=>$imagenes));
+                }
+
+                if($this->input->post('portada')!=null)
+                {
+                    if($ruta!=null)
+                    {
+                        $cover=$this->uploadImg('portada','cover',$ruta,true);
+                    }
+                    else
+                    {
+                        $cover=$this->uploadImg('portada','cover','',false);
+                    }
+                    $datos['portada']=$cover['full-rute'];
+                }
+                else
+                {
+                    $datos['portada']=$this->input->post('portadaTxt');
+                }
+            }
+            else
+            {
+                $galery=$this->uploadImg('gallery-img','gallery','',false);
+                $cover=$this->uploadImg('portada','cover',$galery['rute'][0],true);
+                $datos['portada']=$cover['full-rute'];
+                $imgs=array('idTipoContenidos'=>5,'contenido'=>array('cantidad'=>count($galery['full-rute']),'imagenes'=>$galery['full-rute']));
+                $isInsert=true;
+            }
+
 
             $content=$this->crearContenidos('p','url','url-name');
 
@@ -271,13 +363,28 @@ class admin extends m_controller
             $datos['contenidos']=$content;
 
             //var_dump(json_encode($datos));
-            if(!empty($this->adminModel->post('publicacion',$datos)))
+
+            if($isInsert)
             {
-                $this->evento();
+                if(!empty($this->adminModel->post('publicacion',$datos)))
+                {
+                    $this->evento();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/noticia/0');
+                }
             }
             else
             {
-                redirect(base_url().'index.php/administrador/ver/noticia');
+                if(!empty($this->adminModel->put(array('publicacion'=>''),$datos)))
+                {
+                    $this->noticia();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/trabajo/0');
+                }
             }
         }
     }
@@ -291,10 +398,6 @@ class admin extends m_controller
 
         $this->form_validation->set_rules('titulo', 'titulo', 'required|max_length[50]');
         $this->form_validation->set_rules('descripcion', 'descriction', 'required|max_length[200]');
-        //$this->form_validation->set_rules('portada', 'portada', 'required');
-        //$this->form_validation->set_rules('tags', 'etiquetas', 'required');
-
-
 
         if ($this->form_validation->run() === FALSE)
         {
@@ -308,31 +411,188 @@ class admin extends m_controller
             //Post a la db
             /*
              */
-            //$galery=$this->uploadImg('gallery-img','gallery','',false);
-            $cover=$this->uploadImg('portada','cover','',false);
             $datos['titulo']=$this->input->post('titulo');
             $datos['descripcion']=$this->input->post('descripcion');
             $datos['notificar']=$this->input->post('notificacion')!='on'?false:true;
-            $datos['portada']=$cover['full-rute'];
             $datos['categorias']=$this->input->post('tags');
             $datos['idUsuarios']=$_SESSION['idUser'];
             $datos['carrera']=$_SESSION['idCarrera'];
             $datos['idTipos_Publicacion']=3;
 
-            $datos['contenidos']=$this->crearContenidos('p','url','url-name');
-
-            //var_dump(json_encode($datos));
-            if(!empty($this->adminModel->post('publicacion',$datos)))
+            $imgs=array();
+            $isInsert=false;
+            if($this->input->post('publicacion')!=null)
             {
-                $this->trabajo();
+                $isInsert=false;
+                $publicacion=$this->input->post('publicacion');
+                $datos['idPublicaciones']=$publicacion;
+
+                if($this->input->post('portada')!=null)
+                {
+                    echo 'Insertando nueva portada';
+                    $cover=$this->uploadImg('portada','cover','',false);
+                    $datos['portada']=$cover['full-rute'];
+                }
+                else
+                {
+                    echo 'Insertando vieja portada';
+                    $datos['portada']=$this->input->post('portadaTxt');
+                }
+                var_dump($datos['portada']);
             }
             else
             {
-                redirect(base_url().'index.php/administrador/ver/noticia');
+                $cover=$this->uploadImg('portada','cover','',false);
+                $datos['portada']=$cover['full-rute'];
+                $isInsert=true;
+            }
+
+            $datos['contenidos']=$this->crearContenidos('p','url','url-name');
+
+
+            //var_dump(json_encode($datos));
+            if($isInsert)
+            {
+                if(!empty($this->adminModel->post('publicacion',$datos)))
+                {
+                    $this->evento();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/noticia/0');
+                }
+            }
+            else
+            {
+                if(!empty($this->adminModel->put(array('publicacion'=>''),$datos)))
+                {
+                    $this->noticia();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/trabajo/0');
+                }
             }
         }
     }
 
+
+    private function crearContenidoMicrositio($indiceP)
+    {
+
+        $parrafos = array();
+        foreach ($this->input->post($indiceP) as $parrafo) {
+            $aux = array('idTipoContenidos' => 1, 'contenido' => array('texto' => $parrafo));
+            array_push($parrafos, $aux);
+
+        }
+        return $parrafos;
+    }
+
+    public function addMicrositio()
+    {
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('form_validation');
+        $this->load->model('adminModel');
+
+        $this->form_validation->set_rules('publicacion', 'titulo', 'required|max_length[50]');
+
+        if ($this->form_validation->run() === FALSE)
+        {
+            $this->data['title']='NUEVA VACANTE';
+            $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+            $this->data['nombre']=$_SESSION['nombre'];
+            $this->loadViewAdmin('admin-add-job',$this->data);
+        }
+        else
+        {
+            //Post a la db
+            /*
+             */
+            $datos['titulo']=$this->input->post('titulo');
+            $datos['descripcion']=$this->input->post('descripcion');
+            $datos['categorias']=$this->input->post('tags');
+            $datos['idTipos_Informacion']=19;
+            $datos['idUsuarios']=$_SESSION['idUser'];
+
+            $aux=array();
+            $isInsert=false;
+            if($this->input->post('publicacion')!=null)
+            {
+                $isInsert=false;
+                $publicacion=$this->input->post('publicacion');
+                $datos['idInformacion_Institucional']=$publicacion;
+
+                if($this->input->post('portada')!=null)
+                {
+                    $cover=$this->uploadImg('portada','cover','',false);
+                    $datos['portada']=$cover['full-rute'];
+                }
+                else
+                {
+                    $datos['portada']=$this->input->post('portadaTxt');
+                }
+
+                if($this->input->post('plan')!=null)
+                {
+                    $upFile=$this->uploadFile('plan','mapaCurricular','',false);
+                    $aux=array(''=>array('idTipoContenidos'=>2,'contenido'=>array('texto'=>'DESCARGAR','url'=>$upFile['full-rute'])));
+                }
+                else
+                {
+                    $aux=array(array('idTipoContenidos'=>2,'contenido'=>array('texto'=>'DESCARGAR','url'=>$this->input->post('planTxt'))));
+                }
+            }
+            else
+            {
+                $cover=$this->uploadImg('portada','cover','',false);
+                $datos['portada']=$cover['full-rute'];
+                $isInsert=true;
+            }
+
+
+
+
+            $datos['contenidos']=array_merge($this->crearContenidoMicrositio('p'),$aux);
+
+
+            //var_dump(json_encode($datos));
+
+            if($isInsert)
+            {
+                if(!empty($this->adminModel->post('InfoInstitucional',$datos)))
+                {
+                    $this->evento();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/noticia/0');
+                }
+            }
+            else
+            {
+                if(!empty($this->adminModel->put(array('InfoInstitucional'=>''),$datos)))
+                {
+                    $this->noticia();
+                }
+                else
+                {
+                    redirect(base_url().'index.php/administrador/ver/trabajo/0');
+                }
+            }
+        }
+    }
+
+    public function editMicrositio($id)
+    {
+        $this->data['title']='Micrositios';
+        $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
+        $this->data['nombre']=$_SESSION['nombre'];
+        $this->load->model('adminModel');
+        $this->data['carrera']=$this->adminModel->getInfo($id);
+        //var_dump($this->data['carrera']);
+        $this->loadViewAdmin('admin-microsites',$this->data);
+    }
 
 
     public function editNoticia($id)
@@ -343,7 +603,6 @@ class admin extends m_controller
         $this->load->model('adminModel');
         $this->data['noticias']=$this->adminModel->getPublicacion($id);
         //var_dump($this->data['noticias']);
-        //echo $this->data['noticias']->categorias;
         $this->loadViewAdmin('admin-add-news',$this->data);
     }
 
@@ -355,7 +614,6 @@ class admin extends m_controller
         $this->load->model('adminModel');
         $this->data['eventos']=$this->adminModel->getPublicacion($id);
         //var_dump($this->data['eventos']);
-        //echo $this->data['eventos']->contenidos[3]->contenido->hora;
         $this->loadViewAdmin('admin-add-event',$this->data);
     }
 
@@ -367,12 +625,25 @@ class admin extends m_controller
         $this->load->model('adminModel');
         $this->data['trabajos']=$this->adminModel->getPublicacion($id);
         //var_dump($this->data['trabajos']);
-        //echo $this->data['eventos']->contenidos[3]->contenido->hora;
         $this->loadViewAdmin('admin-add-job',$this->data);
     }
 
 
     public function eliminarNoticia($id)
+    {
+        $this->load->model('adminModel');
+
+        $this->adminModel->delete(array('publicacion'=>$id));
+    }
+
+    public function eliminarEvento($id)
+    {
+        $this->load->model('adminModel');
+
+        $this->adminModel->delete(array('publicacion'=>$id));
+    }
+
+    public function eliminarTrabajo($id)
     {
         $this->load->model('adminModel');
 

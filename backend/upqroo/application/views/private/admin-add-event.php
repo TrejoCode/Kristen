@@ -5,6 +5,15 @@
                 <div class="white-space-16"></div>
                 <div class="title column">
                     <h2>NUEVO EVENTO</h2>
+
+                    <!-- Campos Ocultos -->
+                    <input class="input-text" type="text" hidden name="publicacion" value="<?php echo !empty($eventos->idPublicaciones)?$eventos->idPublicaciones:'';?>">
+                    <input class="input-text" type="text" name="portadaTxt" value="<?php echo !empty($eventos->portada)?$eventos->portada:'';?>">
+                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($eventos->contenidos[6]->contenido->imagenes[0])?$eventos->contenidos[6]->contenido->imagenes[0]:'';?>">
+                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($eventos->contenidos[6]->contenido->imagenes[1])?$eventos->contenidos[6]->contenido->imagenes[1]:'';?>">
+                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($eventos->contenidos[6]->contenido->imagenes[2])?$eventos->contenidos[6]->contenido->imagenes[2]:'';?>">
+                    <!-- Fin Campos ocultos -->
+
                     <div class="white-space-16"></div>
                     <h4>TÍTULO</h4>
                     <div class="white-space-8"></div>
@@ -41,14 +50,14 @@
                 <div class="white-space-8"></div>
                 <h4>ENLACE 2</h4>
                 <div class="white-space-8"></div>
+                <input class="input-text" type="text" name="url-name[]" placeholder="Título" value="<?php echo !empty($eventos->contenidos[3]->contenido->texto)?$eventos->contenidos[3]->contenido->texto:'';?>">
+                <div class="white-space-8"></div>
+                <input class="input-text" type="text" name="url[]" placeholder="Url" value="<?php echo !empty($eventos->contenidos[3]->contenido->texto)?$eventos->contenidos[3]->contenido->url:'';?>">
+                <h4>ENLACE 3</h4>
+                <div class="white-space-8"></div>
                 <input class="input-text" type="text" name="url-name[]" placeholder="Título" value="<?php echo !empty($eventos->contenidos[4]->contenido->texto)?$eventos->contenidos[4]->contenido->texto:'';?>">
                 <div class="white-space-8"></div>
                 <input class="input-text" type="text" name="url[]" placeholder="Url" value="<?php echo !empty($eventos->contenidos[4]->contenido->texto)?$eventos->contenidos[4]->contenido->url:'';?>">
-                <h4>ENLACE 3</h4>
-                <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="url-name[]" placeholder="Título" value="<?php echo !empty($eventos->contenidos[5]->contenido->texto)?$eventos->contenidos[5]->contenido->texto:'';?>">
-                <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="url[]" placeholder="Url" value="<?php echo !empty($eventos->contenidos[5]->contenido->texto)?$eventos->contenidos[5]->contenido->url:'';?>">
                 <div class="white-space-16"></div>
             </div>
         </div>
@@ -61,7 +70,7 @@
                     <h4>IMAGEN DE PORTADA</h4>
                     <div class="white-space-16"></div>
                     <div class="featured-img responsive-img">
-                        <img src="../assets/img/featured.jpeg" alt="">
+                        <img src="<?php echo !empty($eventos->portada)?base_url().$eventos->portada:''; ?>" alt="">
                     </div>
                     <div class="white-space-8"></div>
                     <div><a class="btn btn-blue" id="featured-img-click" href="#"><i class="fas fa-file-upload"></i> CAMBIAR IMAGEN</a></div>
@@ -69,11 +78,11 @@
                     <div class="white-space-32"></div>
                     <h4>FECHA</h4>
                     <div class="white-space-8"></div>
-                    <input class="input-date" type="date" name="fecha" value="<?php echo !empty($eventos->contenidos[3]->contenido->texto)?$eventos->contenidos[3]->contenido->fecha:'';?>">
+                    <input class="input-date" type="date" name="fecha" value="<?php echo !empty($eventos->contenidos[5]->contenido->fecha)?$eventos->contenidos[5]->contenido->fecha:'';?>">
                     <div class="white-space-32"></div>
                     <h4>HORA</h4>
                     <div class="white-space-8"></div>
-                    <input class="input-date" type="time" name="hora" value="<?php echo !empty($eventos->contenidos[3]->contenido->texto)?$eventos->contenidos[3]->contenido->hora:'';?>">
+                    <input class="input-date" type="time" name="hora" value="<?php echo !empty($eventos->contenidos[5]->contenido->hora)?$eventos->contenidos[5]->contenido->hora:'';?>">
                     <div class="white-space-32"></div>
                     <h4>ETIQUETAS</h4>
                     <div class="white-space-8"></div>

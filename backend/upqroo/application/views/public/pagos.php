@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
-    <link rel="stylesheet" href="../assets/css/pagos.css" media="screen">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <title>UPQROO</title>
-</head>
-
     <div class="institutional flex">
         <div class="column">
             <!-- Banner -->
@@ -61,7 +48,7 @@
                                     <div class="white-space-16"></div>
                                     <h3 class="color-teal">16 - CURSO PROPEDEUTICO </h3>
                                     <div class="white-space-16"></div>
-                                    
+
                                 </div>
                                 <div class="column auto">
                                     <p class="color-teal"> $ 700</p>
@@ -98,17 +85,11 @@
                                     <div class="white-space-16"></div>
                                 </div>
                             </div>
-                        </div>      
-                        
+                        </div>
+
                     <div class="white-space-64"></div>
                 </div> <!-- End Main Column -->
             </div> <!-- End Nosotros Column -->
         </div>
      </div>
 </div>
-
-
-
-<body>
-</body>
-</html>
