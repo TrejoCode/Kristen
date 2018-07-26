@@ -53,6 +53,20 @@ $route['default_controller'] = 'homeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+
+$route['ver/eventos']='eventos_controller';
+$route['ver/evento/(:num)']='eventos_controller/showEvento/$1';
+$route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1';
+  
+$route['ver/noticias'] = 'noticias_controller';
+$route['ver/noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
+$route['ver/noticias/(:num)'] = 'noticias_controller';
+$route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1';
+
+//Para cuando fucione la vista general de todos los trabajos
+$route['ver/trabajos']= 'trabajos_controller';
+
+
 //Rutas de carreras
 $route['carreras/biotecnologia']='micrositios_controller/index/1';
 $route['biotecnologia']='micrositios_controller/index/1';
@@ -97,6 +111,7 @@ $route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1'; //Esto va a ca
 $route['tv'] = 'tvController';
 
 //Rutas de acceso
+
 $route['login']='homeController/entrar';
 $route['logout']='homeController/salir';
 
@@ -131,4 +146,20 @@ $route['administrador/finaciera']='admin/editMicrositio/5';
 $route['administrador/pymes']='admin/editMicrositio/6';
 $route['administrador/terapia-fisica']='admin/editMicrositio/7';
 
+
+$route['entrada']='micrositios_Controller';
+$route['carreras/biotecnologia']='micrositios_Controller/index/1';
+$route['biotecnologia']='micrositios_Controller/index/1';
+$route['carreras/software']='micrositios_Controller/index/2';
+$route['software']='micrositios_Controller/index/2';
+$route['carreras/biomedica']='micrositios_Controller/index/3';
+$route['biomedica']='micrositios_Controller/index/3';
+$route['carreras/pymes']='micrositios_Controller/index/4';
+$route['pymes']='micrositios_Controller/index/4';
+$route['carreras/financiera']='micrositios_Controller/index/5';
+$route['financiera']='micrositios_Controller/index/5';
+$route['carreras/terapia']='micrositios_Controller/index/6';
+$route['terapia']='micrositios_Controller/index/6';
+
 $route['administrador/micrositio']='admin/addMicrositio';
+
