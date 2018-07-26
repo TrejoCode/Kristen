@@ -3,7 +3,7 @@
         <div class="footer-main justify-center">
             <div class="container">
                 <div class="row-responsive">
-                    <div class="left">
+                    <div class="left wow fadeInLeft">
                         <div class="column">
                             <div class="white-space-32"></div>
                             <h3 class="color-white">UNIVERSIDAD</h3>
@@ -24,7 +24,7 @@
                             <div class="white-space-32"></div>
                         </div>
                     </div>
-                    <div class="middle">
+                    <div class="middle wow fadeInUp">
                         <div class="column justify-center">
                             <div class="white-space-32"></div>
                             <div class="responsive-img logo">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom justify-center">
+        <div class="footer-bottom justify-center wow fadeInUp" data-wow-delay="0.3s">
             <div class="container">
                 <div class="column">
                     <div class="white-space-8"></div>

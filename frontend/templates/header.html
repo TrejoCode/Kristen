@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="../assets/css/header.css" media="screen">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/animate.css" media="screen">
 </head>
 <body>
 
     <header class="flex">
         <div class="column">
-            <div class="header-top justify-center">
+            <div class="header-top justify-center wow fadeInDown">
                 <div class="container">
                     <div class="row">
                         <div class="left">
@@ -43,7 +44,7 @@
                 </div>
             </div>
 
-            <div class="header-main justify-center">
+            <div class="header-main justify-center wow fadeInDown">
                 <div class="container">
                     <div class="row">
                         <div class="left">
@@ -80,41 +81,13 @@
                 </div>
             </div>
 
-            <div class="header-toggle justify-center">
-                <div class="inner-container">
-                    <div class="row">
-                        <div class="column">
-                            <div class="white-space-32"></div>
-                            <h3>INSTITUCIÓN</h3>
-                            <div class="white-space-32"></div>
-                            <h4><a href="#">Nosotros</a></h4>
-                            <div class="white-space-32"></div>
-                            <h4><a href="#">Directorio</a></h4>
-                            <div class="white-space-32"></div>
-                            <h4><a href="#">Placenación</a></h4>
-                            <div class="white-space-32"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <div class="white-space-32"></div>
-                            <h3>TRANSPARENCIA</h3>
-                            <div class="white-space-32"></div>
-                            <h4><a href="#">Placenación</a></h4>
-                            <div class="white-space-32"></div>
-                            <h4><a href="#">Unidad de trasnparencia</a></h4>
-                            <div class="white-space-32"></div>
-                            <h4><a href="#">Acceso a la información</a></h4>
-                            <div class="white-space-32"></div>
-                        </div>
-                    </div>
-                    <div class="row"></div>
-                </div>
-            </div>
-
         </div>
     </header>
 
     <script type="text/javascript" src="../assets/js/main.js" async></script>
+    <script type="text/javascript" src="../assets/js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
 </body>
 </html>

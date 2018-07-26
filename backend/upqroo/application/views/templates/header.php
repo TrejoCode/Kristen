@@ -18,7 +18,7 @@
 
 </head>
 <body>
-    <header class="flex">
+    <header class="flex wow fadeInDown">
         <div class="column">
             <div class="header-top justify-center">
                 <div class="container">
@@ -58,23 +58,23 @@
 
                         <div class="right">
                             <nav class="row align-center justify-end">
-                                <div class="nav-item">
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.5s">
                                     <a href="<?php echo base_url();?>/">UNIVERSIDAD</a>
                                 </div>
 
-                                <div class="nav-item">
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.5s"">
                                     <a href="<?php echo base_url();?>carreras">CARRERAS</a>
                                 </div>
 
-                                <div class="nav-item">
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.6s"">
                                     <a href="<?php echo base_url().'index.php/'; ?>noticias">NOTICIAS</a>
                                 </div>
 
-                                <div class="nav-item">
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.7s"">
                                     <a href="<?php echo base_url();?>ser_escolares">SERVICIOS ESCOLARES</a>
                                 </div>
 
-                                <div class="nav-item">
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.8s"">
                                     <a href="<?php echo base_url();?>vinculacion">VINCULACIÓN</a>
                                 </div>
                             </nav>

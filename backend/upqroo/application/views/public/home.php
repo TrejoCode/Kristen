@@ -21,7 +21,7 @@
         <!-- End Slider -->
 
         <!-- Quick-Info -->
-        <div class="quick-info justify-center">
+        <div class="quick-info justify-center wow fadeIn">
             <div class="row-responsive">
                 <div class="left justify-center">
                     <div class="inner-container">
@@ -87,21 +87,21 @@
                     <div class="white-space-32"></div>
                     <div class="column">
                         <div class="row-responsive">
-                            <div class="career">
+                            <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
                                     <a href="#">
                                         <img src="<?php echo base_url();?>assets/img/carrera-soft.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
-                            <div class="career">
+                            <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
                                     <a href="#">
                                         <img src="<?php echo base_url();?>assets/img/carrera-biot.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
-                            <div class="career">
+                            <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
                                     <a href="#">
                                         <img src="<?php echo base_url();?>assets/img/carrera-biom.jpg" alt="">
@@ -111,21 +111,21 @@
                         </div>
 
                         <div class="row-responsive">
-                            <div class="career">
+                            <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
                                     <a href="#">
                                         <img src="<?php echo base_url();?>assets/img/carrera-fina.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
-                            <div class="career">
+                            <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
                                     <a href="#">
                                         <img src="<?php echo base_url();?>assets/img/carrera-pyme.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
-                            <div class="career">
+                            <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
                                     <a href="#">
                                         <img src="<?php echo base_url();?>assets/img/carrera-tera.jpg" alt="">
@@ -144,7 +144,7 @@
 
         <div class="call-to-action justify-center align-center" style="background-image: url(<?php echo base_url();?>/assets/img/parallax-uni.jpg);">
             <div class="container">
-                <div class="column">
+                <div class="column wow fadeInUp">
                     <div class="white-space-64"></div>
                     <h2 class="textHuge">FORMANDO EL FUTURO</h2>
                     <div class="white-space-16"></div>
@@ -162,7 +162,7 @@
 
         <!-- News Cards -->
 
-        <div class="news justify-center">
+        <div class="news justify-center wow fadeInUp" data-wow-delay="0.3s">
             <div class="container">
                 <div class="column">
                     <div class="white-space-64"></div>
@@ -207,7 +207,7 @@
 
     <!-- Events -->
 
-    <div class="events justify-center">
+    <div class="events justify-center wow fadeInUp" data-wow-delay="0.3s">
         <div class="container">
             <div class="column">
                 <div class="white-space-64"></div>
@@ -263,10 +263,6 @@
     <!-- End Events -->
 
     <!-- Aliados -->
-
-    <div class="aliados">
-
-    </div>
 
     <!-- End Aliados -->
 
