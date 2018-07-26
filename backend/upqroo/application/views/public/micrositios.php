@@ -4,7 +4,7 @@
             <div class="banner justify-center align-center" style="background-image: url(../assets/img/header-tera.jpg);">
                 <div class="container">
                     <div class="title">
-                        <h2>LICENCIATURA EN TERAPIA FÍSICA</h2>
+                        <h2><?php echo $titulo ?></h2>
                     </div>
                 </div>
             </div> <!-- End Banner -->

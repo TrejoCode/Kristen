@@ -9,11 +9,11 @@
 class micrositios_Controller extends m_controller
 {
 
-    public function index($id)
+    public function index()
     {
-        switch ($id) {
+        /*switch ($id) {
             case 1:
-                $this->getBiomedica();
+                $this->getBiotecnologia();
                 break;
             case 2:
                 $this->getSoftware();
@@ -30,7 +30,18 @@ class micrositios_Controller extends m_controller
             case 6:
                 $this->getTerapia();
                 break;
+        }*/
+        $this->load->model('micrositiosModel');
+
+        $numPag = 2;
+        $res=$this->micrositiosModel->getMicrositios(array('infoinstitucional/' => 2));
+        $datos['Datos']=$res;
+        if (!empty($res)) {
+            
+            $datos['titulo']=$res->titulo;
         }
+
+        $this->loadView('public/micrositios',$datos);
     }
 
     //1

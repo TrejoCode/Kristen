@@ -93,15 +93,15 @@ $route['serviciosAsistencia'] = 'serviciosAController';
 
 $route['tv'] = 'tvController';
 
-$route['carreras/biotecnologia']='micrositios_controller/1';
-$route['biotecnologia']='micrositios_controller/1';
-$route['carreras/software']='micrositios_controller/2';
-$route['software']='micrositios_controller/2';
-$route['carreras/biomedica']='micrositios_controller/3';
-$route['biomedica']='micrositios_controller/3';
-$route['carreras/pymes']='micrositios_controller/4';
-$route['pymes']='micrositios_controller/4';
-$route['carreras/financiera']='micrositios_controller/5';
-$route['financiera']='micrositios_controller/5';
-$route['carreras/terapia']='micrositios_controller/6';
-$route['tearapia']='micrositios_controller/6';
+$route['carreras/biotecnologia']='micrositios_Controller/1';
+$route['biotecnologia']='micrositios_Controller';
+$route['carreras/software']='micrositios_Controller/2';
+$route['software']='micrositios_Controller/2';
+$route['carreras/biomedica']='micrositios_Controller/3';
+$route['biomedica']='micrositios_Controller/3';
+$route['carreras/pymes']='micrositios_Controller/4';
+$route['pymes']='micrositios_Controller/4';
+$route['carreras/financiera']='micrositios_Controller/5';
+$route['financiera']='micrositios_Controller/5';
+$route['carreras/terapia']='micrositios_Controller/6';
+$route['tearapia']='micrositios_Controller/6';
