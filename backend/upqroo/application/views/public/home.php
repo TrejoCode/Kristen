@@ -89,21 +89,21 @@
                         <div class="row-responsive">
                             <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
-                                    <a href="#">
+                                    <a href="<?php echo base_url().'index.php/software'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-soft.jpg" alt="Ingeniería en Software" title="Ingeniería en Software">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
-                                    <a href="#">
+                                    <a href="<?php echo base_url().'index.php/biotecnologia'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-biot.jpg" alt=" Ingeniería en Biotecnología " title=" Ingeniería en Biotecnología ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
-                                    <a href="#">
+                                    <a href="<?php echo base_url().'index.php/biomedica'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-biom.jpg" alt=" Ingeniería en Biomedica " title=" Ingeniería en Biomedica ">
                                     </a>
                                 </div>
@@ -113,21 +113,21 @@
                         <div class="row-responsive">
                             <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
-                                    <a href="#">
+                                    <a href="<?php echo base_url().'index.php/financiera'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-fina.jpg" alt=" Ingeniería Financiera " title=" Ingeniería Financiera ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
-                                    <a href="#">
+                                    <a href="<?php echo base_url().'index.php/pymes'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-pyme.jpg" alt=" Licenciatura en Pymes " title=" Licenciatura en Pymes ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
-                                    <a href="#">
+                                    <a href="<?php echo base_url().'index.php/terapia'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-tera.jpg" alt=" Licenciatura en Terapia Física " title=" Licenciatura en Terapia Física ">
                                     </a>
                                 </div>

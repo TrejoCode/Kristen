@@ -12,12 +12,12 @@
                 <h2>CONTENIDO</h2>
 
                 <!-- Campos Ocultos -->
-                <input class="input-text" type="text" hidden name="publicacion" value="<?php echo !empty($carrera->idInformacion_Institucional)?$carrera->idInformacion_Institucional:'';?>">
-                <input class="input-text" type="text" hidden name="portadaTxt" value="<?php echo !empty($carrera->portada)?$carrera->portada:'';?>">
-                <input class="input-text" type="text" hidden name="planTxt" value="<?php echo !empty($carrera->contenidos[3]->contenido->url)?$carrera->contenidos[3]->contenido->url:'';?>">
-                <input class="input-text" type="text" hidden name="titulo" value="<?php echo !empty($carrera->titulo)?$carrera->titulo:'';?>">
-                <input class="input-text" type="text" hidden name="descripcion" value="<?php echo !empty($carrera->descripcion)?$carrera->descripcion:'';?>">
-                <input class="input-text" type="text" hidden name="tags" value="<?php echo !empty($carrera->categorias)?$carrera->categorias:'';?>">
+                <input class="input-text" type="text"  name="publicacion" value="<?php echo !empty($carrera->idInformacion_Institucional)?$carrera->idInformacion_Institucional:'';?>">
+                <input class="input-text" type="text"  name="portadaTxt" value="<?php echo !empty($carrera->portada)?$carrera->portada:'';?>">
+                <input class="input-text" type="text"  name="planTxt" value="<?php echo !empty($carrera->contenidos[7]->contenido->url)?$carrera->contenidos[7]->contenido->url:'';?>">
+                <input class="input-text" type="text"  name="titulo" value="<?php echo !empty($carrera->titulo)?$carrera->titulo:'';?>">
+                <input class="input-text" type="text"  name="descripcion" value="<?php echo !empty($carrera->descripcion)?$carrera->descripcion:'';?>">
+                <input class="input-text" type="text"  name="tags" value="<?php echo !empty($carrera->categorias)?$carrera->categorias:'';?>">
                 <!-- Fin Campos ocultos -->
 
                 <div class="white-space-32"></div>
@@ -42,18 +42,18 @@
                 <div class="white-space-32"></div>
                 <h4>HABILIDAD 1</h4>
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="p[]" value="<?php echo !empty($carrera->contenidos[4]->contenido->texto)?$carrera->contenidos[4]->contenido->texto:''; ?>">
+                <input class="input-text" type="text" name="p[]" value="<?php echo !empty($carrera->contenidos[3]->contenido->texto)?$carrera->contenidos[3]->contenido->texto:''; ?>">
                 <div class="white-space-8"></div>
                 <h4>HABILIDAD 2</h4>
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="p[]" value="<?php echo !empty($carrera->contenidos[5]->contenido->texto)?$carrera->contenidos[5]->contenido->texto:''; ?>">
+                <input class="input-text" type="text" name="p[]" value="<?php echo !empty($carrera->contenidos[4]->contenido->texto)?$carrera->contenidos[4]->contenido->texto:''; ?>">
                 <div class="white-space-8"></div>
                 <h4>HABILIDAD 3</h4>
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="p[]" value="<?php echo !empty($carrera->contenidos[6]->contenido->texto)?$carrera->contenidos[6]->contenido->texto:''; ?>">
+                <input class="input-text" type="text" name="p[]" value="<?php echo !empty($carrera->contenidos[5]->contenido->texto)?$carrera->contenidos[5]->contenido->texto:''; ?>">
                 <h4>HABILIDAD 4</h4>
                 <div class="white-space-8"></div>
-                <input class="input-text" type="text" name="p[]" value="<?php echo !empty($carrera->contenidos[7]->contenido->texto)?$carrera->contenidos[7]->contenido->texto:''; ?>">
+                <input class="input-text" type="text" name="p[]" value="<?php echo !empty($carrera->contenidos[6]->contenido->texto)?$carrera->contenidos[6]->contenido->texto:''; ?>">
                 <div class="white-space-32"></div>
             </div>
         </div>
