@@ -73,9 +73,9 @@ $route['nosotros'] = 'nosotrosController';
 $route['pagos'] = 'pagosController';
 $route['reinscripcion'] = 'reinscripcionController';
 $route['transparencia'] = 'transparenciaController';
-$route['serviciosAsistencia'] = 'serviciosAController';
+$route['servicios-asistencia'] = 'serviciosAController';
 $route['planeacion'] = 'planeacionController';
-$route['directorio'] = 'directorioontroller';
+$route['directorio'] = 'directorioController';
 $route['admision'] = 'admisionController';
 
 //Rutas funcinalidades
