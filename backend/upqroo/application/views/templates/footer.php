@@ -66,5 +66,9 @@
 </footer>
 
     <script type="text/javascript" src="<?php echo base_url();?>assets/js/main.js" async></script>
+    <script type="text/javascript" src="<?php echo base_url();?>assets/js/wow.min.js" async></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
 </body>
 </html>
