@@ -52,47 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'homeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-    
-$route['eventos']='eventos_controller';
-//$route['planeacion']='planeacion.php';
 
-$route['ver/evento/(:num)']='eventos_controller/showEvento/$1';
-$route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1';
-  
-$route['noticias'] = 'noticias_controller';
-$route['ver/noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
-$route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1';
-
-$route['login']='homeController/entrar';
-$route['logout']='homeController/salir';
-
-//Rutas administrador
-$route['administrador']='admin';
-
-$route['administrador/ver/noticia/(:num)']='admin/noticia/$1';
-$route['administrador/ver/evento/(:num)']='admin/evento/$1';
-$route['administrador/ver/trabajo/(:num)']='admin/trabajo/$1';
-
-$route['administrador/agregar/noticia']='admin/addNoticia';
-$route['administrador/agregar/evento']='admin/addEvento';
-$route['administrador/agregar/trabajo']='admin/addTrabajo';
-
-$route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';
-$route['administrador/editar/evento/(:num)']='admin/editEvento/$1';
-$route['administrador/editar/trabajo/(:num)']='admin/editTrabajo/$1';
-
-$route['becas'] = 'becasController';
-$route['nosotros'] = 'nosotrosController';
-$route['pagos'] = 'pagosController';
-
-$route['administrador/eliminar/noticia/(:num)']='admin/eliminarNoticia/$1';
-
-$route['reinscripcion'] = 'reinscripcionController';
-$route['transparencia'] = 'transparenciaController';
-$route['serviciosAsistencia'] = 'serviciosAController';
-
-$route['tv'] = 'tvController';
-
+//Rutas de carreras
 $route['carreras/biotecnologia']='micrositios_controller/1';
 $route['biotecnologia']='micrositios_controller/1';
 $route['carreras/software']='micrositios_controller/2';
@@ -105,3 +66,65 @@ $route['carreras/financiera']='micrositios_controller/5';
 $route['financiera']='micrositios_controller/5';
 $route['carreras/terapia']='micrositios_controller/6';
 $route['tearapia']='micrositios_controller/6';
+
+//Rutas informativas
+$route['becas'] = 'becasController';
+$route['nosotros'] = 'nosotrosController';
+$route['pagos'] = 'pagosController';
+$route['reinscripcion'] = 'reinscripcionController';
+$route['transparencia'] = 'transparenciaController';
+$route['serviciosAsistencia'] = 'serviciosAController';
+
+//Rutas funcinalidades
+    //Eventos
+$route['eventos']='eventos_controller';
+$route['ver/evento/(:num)']='eventos_controller/showEvento/$1';
+$route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1'; //Esto va a causar un error
+
+    //Noticias
+$route['noticias'] = 'noticias_controller';
+$route['ver/noticia/(:num)/(:num)'] = 'noticias_controller/showNotice/$1/$2';
+$route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1'; //Esto va a causar un error
+
+    //Trabajos
+//Pendientes
+
+    //Tv
+$route['tv'] = 'tvController';
+
+//Rutas de acceso
+$route['login']='homeController/entrar';
+$route['logout']='homeController/salir';
+
+//Rutas administrador
+$route['administrador']='admin';
+
+//Create
+$route['administrador/agregar/noticia']='admin/addNoticia';
+$route['administrador/agregar/evento']='admin/addEvento';
+$route['administrador/agregar/trabajo']='admin/addTrabajo';
+
+//Read
+$route['administrador/ver/noticia/(:num)']='admin/noticia/$1';
+$route['administrador/ver/evento/(:num)']='admin/evento/$1';
+$route['administrador/ver/trabajo/(:num)']='admin/trabajo/$1';
+
+//Update
+$route['administrador/editar/noticia/(:num)']='admin/editNoticia/$1';
+$route['administrador/editar/evento/(:num)']='admin/editEvento/$1';
+$route['administrador/editar/trabajo/(:num)']='admin/editTrabajo/$1';
+
+//Delete
+$route['administrador/eliminar/noticia/(:num)']='admin/eliminarNoticia/$1';
+$route['administrador/eliminar/evento/(:num)']='admin/eliminarEvento/$1';
+$route['administrador/eliminar/trabajo/(:num)']='admin/eliminarTrabajo/$1';
+
+//Micrositios
+$route['administrador/biotecnologia']='admin/editMicrositio/2';
+$route['administrador/software']='admin/editMicrositio/3';
+$route['administrador/biomedica']='admin/editMicrositio/4';
+$route['administrador/finaciera']='admin/editMicrositio/5';
+$route['administrador/pymes']='admin/editMicrositio/6';
+$route['administrador/terapia-fisica']='admin/editMicrositio/7';
+
+$route['administrador/micrositio']='admin/addMicrositio';

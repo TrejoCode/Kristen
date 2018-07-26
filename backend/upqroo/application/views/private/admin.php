@@ -73,9 +73,61 @@
                         </div>
 
                         <div class="panel-subitem">
-                            <a href="#">Ver Páginas</a>
-                        </div>';
-                        } ?>
+                            <a href="'.base_url().'index.php/administrador/biotecnologia">Biotecnologia</a>
+                        </div>
+                        <div class="panel-subitem">
+                            <a href="'.base_url().'index.php/administrador/software">Software</a>
+                        </div>
+                        <div class="panel-subitem">
+                            <a href="'.base_url().'index.php/administrador/biomedica">VBiomedica</a>
+                        </div>
+                        <div class="panel-subitem">
+                            <a href="'.base_url().'index.php/administrador/financiera">Financiera</a>
+                        </div>
+                        <div class="panel-subitem">
+                            <a href="'.base_url().'index.php/administrador/pymes">Pymes</a>
+                        </div>
+                        <div class="panel-subitem">
+                            <a href="'.base_url().'index.php/administrador/terapia-fisica">Terapia Fisica</a>
+                        </div>
+                        ';
+                        }
+                        else if($tipoUsuario==1)
+                        {
+                            switch ($carrera) {
+                                case 2:
+                                    echo '<div class="panel-subitem">
+                                            <a href="'.base_url().'index.php/administrador/biotecnologia">Biotecnologia</a>
+                                          </div>';
+                                    break;
+                                case 3:
+                                    echo '<div class="panel-subitem">
+                                            <a href="'.base_url().'index.php/administrador/software">Software</a>
+                                          </div>';
+                                    break;
+                                case 4:
+                                    echo '<div class="panel-subitem">
+                                            <a href="'.base_url().'index.php/administrador/biomedica">Biomedica</a>
+                                          </div>';
+                                    break;
+                                case 5:
+                                    echo '<div class="panel-subitem">
+                                            <a href="'.base_url().'index.php/administrador/pymes">Pymes</a>
+                                          </div>';
+                                    break;
+                                case 6:
+                                    echo '<div class="panel-subitem">
+                                            <a href="'.base_url().'index.php/administrador/financiera">Financiera</a>
+                                          </div>';
+                                    break;
+                                case 7:
+                                    echo '<div class="panel-subitem">
+                                            <a href="'.base_url().'index.php/administrador/terapia-fisica">Terapia Fisica</a>
+                                          </div>';
+                                    break;
+                            }
+                        }
+                        ?>
 
                         <div class="white-space-16"></div>
 
