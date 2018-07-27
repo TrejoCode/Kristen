@@ -49,7 +49,7 @@
                                 <div class="column">
                                     <div class="row-responsive">
                                         <div class="responsive-img">
-                                            <img src="../assets/img/noticia.jpg" alt=" Imagen Galería " title=" Imagen Galería ">
+                                            <img src="" alt=" Imagen Galería " title=" Imagen Galería ">
                                         </div>
                                         <div class="responsive-img">
                                             <img src="../assets/img/noticia.jpg" alt=" Imagen Galería " title=" Imagen Galería ">
