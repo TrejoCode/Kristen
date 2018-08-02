@@ -14,6 +14,14 @@ class noticiasModel extends CI_Model
         $this->load->database();
     }
 
+    public function getNoticias()
+    {
+        $this->db->select('*');
+        $this->db->from('noticias');
+        $res=$this->db->get();
+        return $res->result();
+    }
+
     public function get_One($id)
     {
         $this->db->select('*');

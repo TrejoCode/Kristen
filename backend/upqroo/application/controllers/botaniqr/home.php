@@ -19,7 +19,7 @@ class home extends CI_Controller
         $data['plantas']=$this->homeModel->getPlantas();
         $data['noticias']=$this->homeModel->getNoticias();
 
-        //var_dump($data);
+        var_dump($data);
 
         $this->load->view('botaniqr/templates/header');
         $this->load->view('botaniqr/public/home',$data);

@@ -1,60 +1,79 @@
-<div class="white-space-25"></div>
-<div class="plants-cards flex justify">
+<div class="plantas flex justify-center">
     <div class="container">
         <div class="column">
-            <div class="row">
-                <div class="title">
-                    <h2>Nuevas Plantas</h2>
-                </div>
+
+            <div class="white-space-64"></div>
+            <div class="title">
+                <h2>Plantas Nuevas</h2>
             </div>
+            <div class="white-space-32"></div>
 
-            <?php $cont=0; for($i=0;$i<count($plantas);$i++){
-                $cont++;
-                if ($i%3==0){
-                    $cont=0;
-                    echo '<div class="white-space-16"></div> <div class="row"> <div class="cards-container row-responsive">';
-                }?>
+            <div class="plantas-contanedor">
 
-                <div class="plant-card">
-                    <div class="column">
-                        <div class="card-image responsive-img">
-                            <img src="<?php echo base_url().'BotaniQR/'.$plantas[$i]->imagen; ?>" alt="" title="">
-                        </div>
-                        <div class="card-title justify">
-                            <h3><?= $plantas[$i]->nombre; ?></h3>
-                        </div>
-                        <div class="card-details row">
-                            <div class="card-status">
-                                <div class="column justify">
-                                    <i class="fa fa-thermometer-half" aria-hidden="true"></i>
-                                </div>
+                <div class="row-responsive">
+
+                    <div class="planta-card">
+                        <div class="column">
+                            <div class="featured-img responsive-img">
+                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/planta1.jpg" alt="">
                             </div>
-                            <div class="card-description">
+                            <div class="container">
                                 <div class="column">
-                                    <p>
-                                        <?= $plantas[$i]->cientifico; ?>
-                                    </p>
-                                    <a href="<?php echo base_url().'index.php/botaniqr/plantas/'.$plantas[$i]->id;?>" class="read-more">
-                                        Conocer Más
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                    </a>
+                                    <div class="date"></div>
+                                    <div class="title">
+                                        <h3>Capsicum annuum var. glabriusculum</h3>
+                                    </div>
+                                    <div class="description">
+                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                                    </div>
+                                    <a class="read-more" href="#">Leer Más</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> <!-- End Card -->
 
-             <?php if ($cont==2)
-                {
-                    echo '</div> </div>';
-                }
-            }?>
 
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="white-space-25">
-
+                    <div class="planta-card">
+                        <div class="column">
+                            <div class="featured-img responsive-img">
+                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/planta2.jpg" alt="">
+                            </div>
+                            <div class="container">
+                                <div class="column">
+                                    <div class="date"></div>
+                                    <div class="title">
+                                        <h3>Capsicum annuum var. glabriusculum</h3>
+                                    </div>
+                                    <div class="description">
+                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                                    </div>
+                                    <a class="read-more" href="#">Leer Más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Card -->
+                    <div class="planta-card">
+                        <div class="column">
+                            <div class="featured-img responsive-img">
+                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/planta1.jpg" alt="">
+                            </div>
+                            <div class="container">
+                                <div class="column">
+                                    <div class="date"></div>
+                                    <div class="title">
+                                        <h3>Capsicum annuum var. glabriusculum</h3>
+                                    </div>
+                                    <div class="description">
+                                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna...</p>
+                                    </div>
+                                    <a class="read-more" href="#">Leer Más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Card -->
+                </div> <!-- End Row-responsive -->
+            </div> <!-- End Plantas Contenedor -->
+            <div class="white-space-32"></div>
+        </div> <!-- End Main Column -->
+    </div> <!-- End Main Container -->
 </div>
