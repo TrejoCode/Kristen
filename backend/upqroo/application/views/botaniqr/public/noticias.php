@@ -1,131 +1,60 @@
-<div class="white-space-25"></div>
-<div class="notices-cards flex justify">
+<div class="noticias flex justify-center">
     <div class="container">
         <div class="column">
-            <div class="row">
-                <div class="title">
-                    <h2>Últimas Noticias</h2>
-                </div>
+
+            <div class="white-space-64"></div>
+            <div class="title">
+                <h2>Últimas Noticias</h2>
             </div>
+            <div class="white-space-32"></div>
+
+                <?php if(!empty($noticias)){
+                    $count=0;
+                    $registros=count($noticias);
+                    for($i=0; $i<count($noticias); $i++)
+                    {
+                        $count++;
+                        if($i%3==0)
+                        {
+                            $count=0;
+                            echo
+                            '<div class="noticias-contanedor"> <div class="row-responsive">';
+                        } ?>
+                        <div class="noticia-card">
+                            <div class="column">
+                                <div class="featured-img responsive-img">
+                                    <img src="<?php echo $noticias[$i]->imagen; ?>" alt="">
+                                </div>
+                                <div class="container">
+                                    <div class="column">
+                                        <div class="date">
+                                            <p><?php echo $noticias[$i]->fecha; ?></p>
+                                        </div>
+                                        <div class="title">
+                                            <h3><?php echo $noticias[$i]->nombre; ?></h3>
+                                        </div>
+                                        <div class="description">
+                                            <p class="text-justify"><?php echo $noticias[$i]->descripcion; ?></p>
+                                        </div>
+                                        <a class="read-more" href="<?php echo base_url().'index.php/botaniqr/noticias/'.$noticias[$i]->id; ?>">Leer Más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End Card -->
+                        <?php  if($count==2 || ($registros<=3 && $count==$registros-1) )
+                    {
+                        $registros=$registros-3;
+                        echo '</div> </div> <div class="white-space-16"></div>';
+                    }
+                    };
+                }
+                else
+                {
+                    echo '<h2>No hay noticias para mostrar</h2>';
+                } ?>
+
+            </div> <!-- End Noticias Contenedor -->
             <div class="white-space-16"></div>
-            <div class="row">
-                <div class="cards-container row-responsive">
-                    <div class="notice-card">
-                        <div class="column">
-                            <div class="card-image responsive-img">
-                                <img src="<?php echo base_url();?>BotaniQr/assets/img/notice1.jpg" alt="" title="">
-                            </div>
-                            <div class="card-title justify">
-                                <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
-                            </div>
-                            <div class="card-details row">
-                                <div class="card-date">
-                                    <div class="column justify">
-                                        <p>
-                                            <time>
-                                                ABR
-                                            </time>
-                                        </p>
-                                        <p>
-                                            <time>
-                                                26
-                                            </time>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-description">
-                                    <div class="column">
-                                        <p>
-                                            Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
-                                        </p>
-                                        <a href="<?php echo base_url();?>noticia" class="read-more">
-                                            Leer Noticia
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="notice-card">
-                        <div class="column">
-                            <div class="card-image responsive-img">
-                                <img src="<?php echo base_url();?>BotaniQr/assets/img/notice2.jpg" alt="" title="">
-                            </div>
-                            <div class="card-title justify">
-                                <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
-                            </div>
-                            <div class="card-details row">
-                                <div class="card-date">
-                                    <div class="column justify">
-                                        <p>
-                                            <time>
-                                                ABR
-                                            </time>
-                                        </p>
-                                        <p>
-                                            <time>
-                                                26
-                                            </time>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-description">
-                                    <div class="column">
-                                        <p>
-                                            Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
-                                        </p>
-                                        <a href="<?php echo base_url();?>noticia" class="read-more">
-                                            Leer Noticia
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="notice-card">
-                        <div class="column">
-                            <div class="card-image responsive-img">
-                                <img src="<?php echo base_url();?>BotaniQr/assets/img/notice1.jpg" alt="" title="">
-                            </div>
-                            <div class="card-title justify">
-                                <h3>Nullam ullamcorper nisl quis ornare molestie</h3>
-                            </div>
-                            <div class="card-details row">
-                                <div class="card-date">
-                                    <div class="column justify">
-                                        <p>
-                                            <time>
-                                                ABR
-                                            </time>
-                                        </p>
-                                        <p>
-                                            <time>
-                                                26
-                                            </time>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card-description">
-                                    <div class="column">
-                                        <p>
-                                            Suspendisse posuere, diam in bibendum lobortis, turpis ipsum aliquam risus, sit
-                                        </p>
-                                        <a href="<?php echo base_url();?>noticia" class="read-more">
-                                            Leer Noticia
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+        </div> <!-- End Main Column -->
+    </div> <!-- End Main Container -->
 </div>
