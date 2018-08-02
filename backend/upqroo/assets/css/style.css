@@ -436,6 +436,1025 @@ footer {
 
     .header-top .university .phone, .header-top .university .email {
         width: 30%;
+/* ---
+        HEADER STYLES
+--- */
+
+
+header {
+    font-family: var(--Roboto);
+}
+
+.header-top{
+    height: 50px;
+    font-size: var(--fontTiny);
+    background-color: var(--blueTeal);
+}
+
+.header-top a {
+    color: var(--white);
+}
+
+.header-top .left{
+    width: 50%;
+}
+
+.header-top .right{
+    width: 50%;
+}
+
+.header-top .phone, .header-top .email, .header-top .phone i, .header-top .email i, .header-top .facebook-icon, .header-top .twitter-icon, .header-top .facebook-icon i, .header-top .twitter-icon i   {
+    width: auto;
+    color: var(--white);
+    padding: 0 var(--paddingNormal);
+}
+
+.header-top .phone a, .header-top .email a {
+    font-weight: var(--weightRegular);
+}
+
+.header-main {
+    height: 95px;
+    background-color: var(--white);
+    border-bottom: 1px solid #e6e6e7;
+}
+
+.header-main .left{
+    width: 40%;
+}
+
+.header-main .right{
+    width: 60%;
+}
+
+header .header-main .logo {
+    justify-content: flex-start;
+}
+
+.header-main .right .nav-item, .header-main .right .nav-item a {
+    width: auto;
+    color: var(--blueLink);
+    padding: var(--paddingNormal);
+    font-size: var(--fontText);
+}
+
+.header-main .right .nav-item a {
+    position: relative;
+}
+
+.header-main .right .nav-item a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--blueLink);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-main .right .nav-item a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+.header-toggle {
+    background-color: var(--white);
+}
+
+
+/* ---
+        END HEADER STYLES
+--- */
+
+
+
+/* ---
+        LOGIN  STYLES
+--- */
+
+
+
+.login {
+    height: 100vh;
+    font-family: var(--Roboto);
+}
+
+.login .left {
+    width: 55%;
+    background-image: url(../img/login-background.jpg);
+    background-size: cover;
+}
+
+.login .right {
+    width: 44%;
+    background-color: #fff;
+    border-right: 5px solid var(--blueTeal);
+}
+
+.login .logo img {
+    width: 50%;
+}
+
+.login .right h2 {
+    color: var(--blueTeal);
+    font-weight: var(--weightMedium);
+}
+
+
+
+/* ---
+        END LOGIN  STYLES
+--- */
+
+
+/* ---
+        HOME  STYLES
+--- */
+
+
+.home {
+    font-family: var(--Roboto);
+}
+
+/* --- Slider --- */
+
+.slider {
+    width: 300%;
+    animation: nextSlide 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    height: 500px;
+    height: auto;
+}
+
+@keyframes nextSlide {
+    0% {
+        margin-left: 0;
+    }
+    27% {
+        margin-left: 0;
+    }
+    33% {
+        margin-left: -100%;
+    }
+    60% {
+        margin-left: -100%;
+    }
+    66% {
+        margin-left: -200%;
+    }
+    94% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+/* --- Quick Info --- */
+
+.home .quick-info .left {
+    width: 60%;
+    background-color: var(--white);
+}
+
+.home .quick-info .right {
+    width: 40%;
+    background-color: var(--blueLink);
+}
+
+.home .quick-info .records h2 {
+    font-size: var(--fontMassive);
+    color: var(--white);
+}
+
+.home .quick-info .records p {
+    font-style: italic;
+    color: var(--white);
+}
+
+/* --- Career --- */
+
+.careers {
+    border: 1px solid #e6e7ea;
+}
+
+.career {
+    padding: var(--paddingNormal);
+}
+
+/* --- Call To Action --- */
+
+.call-to-action {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.call-to-action h2, .call-to-action p {
+    color: var(--white);
+}
+
+.call-to-action p {
+    font-size: var(--fontRegular);
+}
+
+/* --- News --- */
+
+.home .news .news-cards .new-card {
+    margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+}
+
+.home .new-card .date, .home .new-card .description {
+    padding: var(--paddingNormal) var(--paddingMedium);
+}
+
+.new-card .title, .new-card .read-more {
+    padding: 0 var(--paddingMedium);
+}
+
+.new-card .read-more {
+    padding-bottom: var(--paddingMedium);
+}
+
+.home .new-card {
+    background-color: var(--white);
+}
+
+.home .new-card .date p {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--darkGray);
+}
+
+.home .new-card .description p {
+    color: var(--grayDescription);
+    font-size: var(--fontTiny);
+}
+
+.home .new-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+/* --- Events --- */
+
+.home .events .events-cards .event-card {
+    background-color: var(--white);
+    margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+}
+
+.home .events .events-cards .event-card .row-responsive {
+    height: 100%;
+}
+
+.home .events .events-cards .event-card .date {
+    width: 30%;
+    background-color: var(--blueLink);
+    padding: var(--paddingMedium) 0;
+}
+
+.home .events .events-cards .event-card .date p {
+    color: var(--white);
+    font-weight: var(--weightSemi);
+}
+
+.home .events .events-cards .event-card .date .day p {
+    font-size: var(--fontLarge);
+}
+
+.home .events .events-cards .event-card .date .month p, .home .events .events-cards .event-card .date .year p {
+    font-size: 0.8em;
+}
+
+.home .events .events-cards .event-card .info, .home .events .events-cards .event-card .schedule {
+    padding: var(--paddingNormal) 0;
+}
+
+.home .events .events-cards .event-card .schedule i {
+    padding-right: var(--paddingNormal);
+}
+
+
+.home .events .events-cards .event-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+
+/* ---
+        END HOME  STYLES
+--- */
+
+
+
+/* ---
+        NOTICIAS  STYLES
+--- */
+
+
+.news {
+    font-family: var(--Roboto);
+}
+
+.news-cards .new-card {
+    margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+}
+
+ .new-card .date, .new-card .description {
+    padding: var(--paddingNormal) var(--paddingMedium);
+}
+
+.new-card .title, .new-card .read-more {
+    padding: 0 var(--paddingMedium);
+}
+
+.new-card .read-more {
+    padding-bottom: var(--paddingMedium);
+}
+
+.new-card {
+    background-color: var(--white);
+}
+
+.new-card .date p {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--darkGray);
+}
+
+.new-card .description p {
+    color: var(--grayDescription);
+    font-size: var(--fontTiny);
+}
+
+.new-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+.pagination .next {
+    padding: var(--paddingMedium) var(--paddingNormal);
+    color: var(--blueTeal);
+    font-weight: var(--weightMedium);
+}
+
+.pagination .prev {
+    font-weight: var(--weightMedium);
+    padding-top: var(--paddingMedium);
+    padding-right: var(--paddingNormal);
+    color: var(--blueTeal);
+}
+
+
+
+/* ---
+        END NOTICIAS  STYLES
+--- */
+
+
+/* ---
+        EVENTOS  STYLES
+--- */
+
+
+.events {
+    font-family: var(--Roboto);
+}
+
+.events .events-cards .event-card {
+    background-color: var(--white);
+    margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+}
+
+.events .events-cards .event-card .date {
+    width: 30%;
+    background-color: var(--blueLink);
+    padding: var(--paddingMedium) 0;
+}
+
+.events .events-cards .event-card .date p {
+    color: var(--white);
+    font-weight: var(--weightSemi);
+}
+
+.events .events-cards .event-card .date .day p {
+    font-size: var(--fontLarge);
+}
+
+.events .events-cards .event-card .date .month p, .home .events .events-cards .event-card .date .year p {
+    font-size: 0.8em;
+}
+
+.events .events-cards .event-card .info, .home .events .events-cards .event-card .schedule {
+    padding: var(--paddingNormal) 0;
+}
+
+.events .events-cards .event-card .schedule i {
+    padding-right: var(--paddingNormal);
+}
+
+
+.events .events-cards .event-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+/* ---
+        END EVENTOS  STYLES
+--- */
+
+
+/* ---
+        JOBS  STYLES
+--- */
+
+
+.jobs {
+    font-family: var(--Roboto);
+}
+
+.jobs .jobs-cards .job-card {
+    background-color: var(--white);
+    margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+}
+
+.jobs .jobs-cards .job-card .row-responsive {
+    height: 100%;
+}
+
+.jobs .jobs-cards .job-card .date {
+    width: 30%;
+    background-color: var(--blueLink);
+    padding: var(--paddingMedium) 0;
+}
+
+.jobs .jobs-cards .job-card .date i {
+    font-size: 1.8em;
+    color: var(--white);
+}
+
+.jobs .jobs-cards .job-card .date p {
+    color: var(--white);
+    font-weight: var(--weightSemi);
+}
+
+.jobs .jobs-cards .job-card .date .day p {
+    font-size: var(--fontLarge);
+}
+
+.jobs .jobs-cards .job-card .date .month p, .home .jobs .jobs-cards .job-card .date .year p {
+    font-size: 0.8em;
+}
+
+.jobs .jobs-cards .job-card .info, .home .jobs .jobs-cards .job-card .schedule {
+    padding: var(--paddingNormal) 0;
+}
+
+.jobs .jobs-cards .job-card .schedule i {
+    padding-right: var(--paddingNormal);
+}
+
+
+.jobs .jobs-cards .job-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+
+/* ---
+        END JOBS  STYLES
+--- */
+
+
+/* ---
+        NOTICIA  STYLES
+--- */
+
+
+
+.notice {
+    font-family: var(--Roboto);
+}
+
+.notice .left {
+    width: 70%;
+}
+
+.notice .right {
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.notice h2 {
+    color: #505050;
+    font-weight: 700;
+}
+
+.notice h2::after {
+    content: "";
+    width: 48px;
+    height: 2px;
+    margin: var(--paddingNormal) 0;
+    display: block;
+    position: relative;
+    background-color: #333333;
+}
+
+.post-date .date-icon, .post-date .date-text, .post-date .tags-icon, .post-date .notice-tags {
+    width: auto;
+    padding: 0 4px;
+    height: 32px;
+    color: var(--grayDescription);
+}
+
+.date-icon i, .tags-icon i {
+    font-size: 0.8em;
+}
+
+.post-date .date-text p, .post-date .notice-tags a  {
+    font-size: 0.8em;
+    color: var(--darkGray);
+    text-transform: uppercase;
+}
+
+.tags-icon i {
+    padding-left: var(--paddingMedium);
+}
+
+.post-date .notice-tags a {
+    padding: 0 var(--paddingNormal);
+    color: var(--blueLink);
+}
+
+.notice-description {
+    text-align: justify;
+}
+
+.notice-description p {
+    font-size: var(--fontText);
+    line-height: 24px;
+    color: #333;
+}
+
+.notices-latest {
+    width: 80%;
+}
+
+.notices-latest .title h3 {
+    color: var(--blueLink);
+}
+
+.notice-last-card .thumb {
+    width: 90%;
+}
+
+.notice-last-card .title-link a {
+    font-size: 0.8em;
+    font-weight: var(--weightRegular);
+    color: var(--darkGray);
+}
+
+.notice-gallery .responsive-img {
+    padding: var(--paddingNormal);
+}
+
+.notice-files .file-icon, .notice-files .file-link {
+    width: auto;
+}
+
+.notice-files .file {
+    margin: var(--paddingNormal) 0;
+}
+
+.notice-files .file-link {
+    padding: var(--paddingNormal) var(--paddingNormal);
+}
+
+.notice-files .file-icon i {
+    color: var(--grayDescription);
+}
+
+
+
+/* ---
+        END NOTICIA  STYLES
+--- */
+
+
+/* ---
+        NOSOTROS  STYLES
+--- */
+
+
+.institutional {
+    font-family: var(--Roboto);
+}
+
+.institutional .nosotros, .institutional .ubicacion {
+    background-color: var(--white);
+}
+
+.institutional .banner {
+    height: 235px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.institutional .banner .title h2 {
+    color: var(--white);
+}
+
+.institutional .mision img, .institutional .vision img, .institutional .mision h3, .institutional .vision h3, .institutional .mision p, .institutional .vision p {
+    margin: 0 var(--paddingNormal);
+}
+
+.institutional .mision p, .institutional .vision p {
+    width: 96%;
+}
+
+.institutional .directorio-rector {
+    background-color: var(--white);
+}
+
+.institutional .directorio-rector .rector img {
+    max-height: 250px;
+}
+
+.institutional .directorio-rector .rector-profile {
+    width: 25%;
+}
+
+.institutional .directorio-rector .rector-info {
+    width: 70%;
+}
+
+
+.institutional .skills {
+    background-color: var(--white);
+    border: 1px solid #e6e7ea;
+}
+
+.institutional .skills .hability {
+    margin-bottom: var(--paddingSemi);
+}
+
+.institutional .skills .habilities .hability-number, .institutional .skills .habilities .hability-description {
+    width: 50%;
+}
+
+.institutional .skills .habilities .hability-number p {
+    font-weight: var(--weightBold);
+    color: var(--blueTeal);
+    padding-right: var(--paddingNormal);
+    font-size: 3.5em;
+}
+
+.institutional .skills .habilities .hability-description p {
+    width: 90%;
+}
+
+/*---*/
+.institutional .proceso {
+    background-color: var(--white);
+    border: 1px solid #e6e7ea;
+}
+
+.institutional .proceso .hability {
+    margin-bottom: var(--paddingLarge);
+}
+
+.institutional .proceso .habilities .hability-number p {
+    font-weight: var(--weightBold);
+    color: var(--blueTeal);
+    padding-right: var(--paddingNormal);
+    font-size: 3.5em;
+}
+
+.institutional .proceso .habilities .hability-description p {
+    width: 90%;
+}
+
+.institutional .proximo {
+    background-color: var(--blueLink);
+}
+
+.institutional .servicios-asistencia  .habilities .hability-number i {
+    padding-right: var(--paddingNormal);
+}
+
+.servicios-asistencia {
+    background-color: var(--white);
+}
+
+.bajas {
+    background-color: var(--white);
+}
+
+.bajas .hability-number p {
+    font-weight: var(--weightBold);
+    color: var(--blueTeal);
+    padding-right: var(--paddingNormal);
+    font-size: 3.5em;
+}
+
+/* --- Visitas ---*/
+
+.institutional .mision img, .institutional .vision img, .institutional .mision h3, .institutional .vision h3, .institutional .mision p, .institutional .vision p {
+    margin: 0 var(--paddingNormal);
+}
+
+.institutional .mision p, .institutional .vision p {
+    width: 96%;
+}
+
+.institutional .skills {
+    background-color: var(--white);
+    border: 1px solid #e6e7ea;
+}
+
+.institutional .skills .hability {
+    margin-bottom: var(--paddingSemi);
+}
+
+.institutional .skills .habilities .hability-number p {
+    font-weight: var(--weightBold);
+    color: var(--blueTeal);
+    padding-right: var(--paddingNormal);
+    font-size: 1.5em;
+}
+
+.institutional .skills .habilities .hability-description p {
+    width: 90%;
+}
+
+
+/* ---
+        END NOSOTROS  STYLES
+--- */
+
+
+/* ---
+        MICROSITIOS  STYLES
+--- */
+
+.microsite {
+    font-family: var(--Roboto);
+}
+
+.microsite .banner {
+    height: 235px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.microsite .banner .title h2 {
+    color: var(--white);
+}
+
+.microsite .overview  {
+    background-color: var(--white);
+}
+
+.microsite .overview .introduction p, .microsite .overview .goals p {
+    width: 96%;
+}
+
+.microsite .skills {
+    background-color: var(--white);
+    border: 1px solid #e6e7ea;
+}
+
+.microsite .skills .hability {
+    margin-bottom: var(--paddingSemi);
+}
+
+.microsite .skills .habilities .hability-number p {
+    font-weight: var(--weightBold);
+    color: var(--blueTeal);
+    padding-right: var(--paddingNormal);
+    font-size: 3.5em;
+}
+
+.microsite .skills .habilities .hability-description p {
+    width: 90%;
+}
+
+/* --- Call To Action --- */
+
+.call-to-action {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.call-to-action h2, .call-to-action p {
+    color: var(--white);
+}
+
+.call-to-action p {
+    font-size: var(--fontRegular);
+}
+.microsite .news .news-cards .new-card {
+    margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+}
+
+.microsite .new-card .date, .microsite .new-card .description {
+    padding: var(--paddingNormal) var(--paddingMedium);
+}
+
+.new-card .title, .new-card .read-more {
+    padding: 0 var(--paddingMedium);
+}
+
+.new-card .read-more {
+    padding-bottom: var(--paddingMedium);
+}
+
+.microsite .new-card {
+    background-color: var(--white);
+}
+
+.microsite .new-card .date p {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--darkGray);
+}
+
+.microsite .new-card .description p {
+    color: var(--grayDescription);
+    font-size: var(--fontTiny);
+}
+
+.microsite .new-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+/* --- Events --- */
+
+.microsite .events .events-cards .event-card {
+    background-color: var(--white);
+    margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+}
+
+.microsite .events .events-cards .event-card .date {
+    width: 30%;
+    background-color: var(--blueLink);
+    padding: var(--paddingMedium) 0;
+}
+
+.microsite .events .events-cards .event-card .date p {
+    color: var(--white);
+    font-weight: var(--weightSemi);
+}
+
+.microsite .events .events-cards .event-card .date .day p {
+    font-size: var(--fontLarge);
+}
+
+.microsite .events .events-cards .event-card .date .month p, .microsite .events .events-cards .event-card .date .year p {
+    font-size: 0.8em;
+}
+
+.microsite .events .events-cards .event-card .info, .microsite .events .events-cards .event-card .schedule {
+    padding: var(--paddingNormal) 0;
+}
+
+.microsite .events .events-cards .event-card .schedule i {
+    padding-right: var(--paddingNormal);
+}
+
+
+.microsite .events .events-cards .event-card .read-more {
+    width: auto;
+    color: var(--blueTeal);
+    font-size: 0.9em;
+    font-weight: var(--weightSemi);
+}
+
+/* ---
+        END MICROSITIOS  STYLES
+--- */
+
+
+/* ---
+        FOOTER  STYLES
+--- */
+
+footer {
+    font-family: var(--Roboto);
+    background: var(--white);
+}
+
+.footer-main {
+    background-color: var(--blueTeal);
+    border-bottom: 0.3em solid var(--yellow);
+}
+
+.footer-link {
+    color: var(--white);
+    font-size: var(--fontTiny);
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border-left: 0.3em solid var(--yellow);
+}
+
+.footer-link:hover {
+    background-color: var(--yellow);
+}
+
+.footer-bottom .social a {
+    color: var(--grayTitle);
+}
+
+/* ---
+        END FOOTER  STYLES
+--- */
+
+
+
+/*    LARGE DEVICES    */
+
+@media screen and (max-width: 1200px) {
+
+    .header-main .left {
+        width: 30%;
+    }
+
+    .header-main .right {
+        width: 70%;
+    }
+
+    .jobs .jobs-cards .job-card .date {
+        width: 40%;
+    }
+
+    .institutional .directorio-rector .rector-profile {
+        width: 30%;
+    }
+
+    .institutional .directorio-rector .rector-info {
+        width: 70%;
+    }
+
+}
+
+/*    NOTEBOOKS, IPADS DEVICES    */
+
+@media screen and (max-width: 992px) {
+
+    .header-main .left {
+        width: 20%;
+    }
+
+    .header-main .right {
+        width: 80%;
+    }
+
+    .header-main .right .nav-item, .header-main .right .nav-item a {
+        padding: 5px;
+    }
+
+    .institutional .directorio-rector .rector-profile {
+        width: 40%;
+    }
+
+    .institutional .directorio-rector .rector-info {
+        width: 60%;
     }
 
 }
@@ -497,4 +1516,142 @@ footer {
         background: white;
     }
 
+/*    TABLETS DEVICES    */
+
+@media screen and (max-width: 768px) {
+
+    .row-responsive {
+        flex-direction: column;
+    }
+
+    .white-space-64 {
+        height: 32px;
+    }
+
+    header .header-top {
+        display: none;
+    }
+
+    header .header-main .left {
+        width: 100%;
+    }
+
+    header .header-main .logo {
+        justify-content: center;
+    }
+
+    header .header-main .logo img {
+        max-height: 50px;
+    }
+
+    header .header-main .right {
+        display: none;
+    }
+
+    .login {
+        height: auto;
+    }
+
+    .login .left {
+        display: none;
+    }
+
+    .login .right {
+        width: 100%;
+        border: none;
+    }
+
+    .home .quick-info .left, .home .quick-info .right {
+        width: 100%;
+    }
+
+    .home .events .events-cards .event-card .date {
+        width: 100%;
+    }
+
+    .career {
+        padding: var(--paddingNormal) 0;
+    }
+
+    .home .news .news-cards .new-card {
+        margin: var(--paddingNormal) 0;
+    }
+
+    .home .events .events-cards .event-card {
+        margin: var(--paddingNormal) 0;
+    }
+
+    .news-cards .new-card {
+        margin: var(--paddingNormal) 0;
+    }
+
+    .events .events-cards .event-card .date {
+        width: 100%;
+    }
+
+    .events .events-cards .event-card {
+        margin: var(--paddingNormal) 0;
+    }
+
+    .jobs .jobs-cards .job-card .date {
+        width: 100%;
+    }
+
+    .jobs .jobs-cards .job-card {
+        margin: var(--paddingNormal) 0;
+    }
+
+    .notice .left {
+        width: 100%;
+    }
+
+    .notice .right {
+        width: 100%;
+    }
+
+    .notice-files .file-link a {
+        width: 100%;
+    }
+
+    .tags-icon i {
+        padding: 0;
+    }
+
+    .institutional .directorio-rector .rector-profile {
+        width: 100%;
+    }
+
+    .institutional .directorio-rector .rector-info {
+        width: 100%;
+    }
+
+    .microsite .events .events-cards .event-card .date {
+        width: 100%;
+    }
+
+    .microsite .news .news-cards .new-card {
+        margin: var(--paddingNormal) 0;
+    }
+
+    .microsite .events .events-cards .event-card {
+        margin: var(--paddingNormal) 0;
+    }
+
+    .footer-main .left {
+		display: none;
+	}
+
+	.footer-main .middle {
+		order: 1;
+	}
+
+	.footer-main .right {
+		order: 3;
+	}
+
+}
+
+/*    MOBILE DEVICES    */
+
+@media screen and (max-width: 576px) {
 }

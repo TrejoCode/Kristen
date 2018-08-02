@@ -27,6 +27,7 @@
     --blueLink:          #2c54b3;
     --grayDescription:   #333333;
     --grayTitle:         #505050;
+	--yellow: 			 #FCDB04;
 
     /*    FONT SIZES    */
 
@@ -57,6 +58,10 @@
     --paddingMedium: 16px;
     --paddingSemi: 24px;
     --paddingLarge: 32px;
+
+
+    --border: 1px solid #e6e7ea;
+
 }
 
 /* RESET
@@ -155,6 +160,10 @@ p {
     width: 85%;
 }
 
+.auto {
+    width: auto;
+}
+
 .responsive-img {
     display: flex;
     justify-content: center;
@@ -207,6 +216,9 @@ p {
     align-items: flex-end;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
 
 .text-center {
     text-align: center;
@@ -242,13 +254,10 @@ p {
     height: 48px;
 }
 
-.white-space-48 {
-    height: 48px;
-}
-
 .white-space-64 {
     height: 64px;
 }
+
 
 /*    FORMS     */
 
@@ -282,6 +291,22 @@ form, form > input {
     color: var(--grayTitle);
 }
 
+.input-date {
+    padding: var(--paddingNormal) var(--paddingMedium);
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: var(--weightSemi);
+    font-family: var(--Roboto);
+    font-size: var(--fontTiny);
+    color: var(--grayTitle);
+}
+
+.input-file-h {
+    display: none;
+}
+
 label {
     color: var(--grayDescription);
 }
@@ -298,8 +323,17 @@ label {
     border: none;
 }
 
+.btn i {
+    padding: 0 var(--paddingNormal);
+}
+
 .btn-blue {
     background-color: var(--blueLink);
+    color: var(--white);
+}
+
+.btn-teal {
+    background-color: var(--blueTeal);
     color: var(--white);
 }
 
@@ -313,8 +347,12 @@ label {
     color: var(--white);
 }
 
-.btn-file i {
-    padding: 0 var(--paddingNormal);
+.link {
+    color: var(--blueTeal);
+}
+
+.border {
+    border: var(--border);
 }
 
 /*    TEXTS     */
@@ -323,41 +361,50 @@ label {
     font-size: var(--fontHuge);
 }
 
+.textTiny {
+    font-size: var(--fontTiny);
+}
+
+.color-teal {
+    color: var(--blueTeal);
+}
+
+.color-white {
+    color: var(--white);
+}
+
 
 /*    LARGE DEVICES    */
 
 @media screen and (max-width: 1200px) {
-    body {
-        background: gray;
-    }
+
+
+
 }
 
 /*    NOTEBOOKS, IPADS DEVICES    */
 
 @media screen and (max-width: 992px) {
 
-    body {
-        background: green;
-    }
+
+
 }
 
 /*    TABLETS DEVICES    */
 
 @media screen and (max-width: 768px) {
 
-    body {
-        background: red;
-    }
-
     .row-responsive {
         flex-direction: column;
+    }
+
+    .white-space-64 {
+        height: 32px;
     }
 }
 
 /*    MOBILE DEVICES    */
 
 @media screen and (max-width: 576px) {
-    body {
-        background: blue;
-    }
+    /*body {background: blue;}
 }

@@ -80,6 +80,12 @@ header .header-main .logo {
     transform: scaleX(1);
 }
 
+
+.header-toggle {
+    background-color: var(--white);
+}
+
+
 /*    LARGE DEVICES    */
 
 @media screen and (max-width: 1200px) {

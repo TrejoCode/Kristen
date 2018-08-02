@@ -1,0 +1,28 @@
+
+.institutional .mision img, .institutional .vision img, .institutional .mision h3, .institutional .vision h3, .institutional .mision p, .institutional .vision p {
+    margin: 0 var(--paddingNormal);
+}
+
+.institutional .mision p, .institutional .vision p {
+    width: 96%;
+}
+
+.institutional .skills {
+    background-color: var(--white);
+    border: 1px solid #e6e7ea;
+}
+
+.institutional .skills .hability {
+    margin-bottom: var(--paddingSemi);
+}
+
+.institutional .skills .habilities .hability-number p {
+    font-weight: var(--weightBold);
+    color: var(--blueTeal);
+    padding-right: var(--paddingNormal);
+    font-size: 1.5em;
+}
+
+.institutional .skills .habilities .hability-description p {
+    width: 90%;
+}

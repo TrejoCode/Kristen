@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UPQROO-<?php echo $title;?></title>
-    <meta name="description" content="Únete a UPQROO! La oferta educativa superior con áreas de oportunidades y crecimiento">
+    <title>UPQROO - <?php echo $title;?></title>
+    <meta name="description" content="Únete a UPQROO! La oferta educativa superior con áreas de oportunidades y crecimiento.">
     <meta name="keywords" content="universisad, universidad en cancún, UPQROO, universidad politécnica de quinatana roo, universidades">
+    <!---   Styles   --->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/trejocode.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/header.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/animate.css" media="screen">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/favicon.ico">
+
 </head>
 <body>
-    <header class="flex">
+    <header class="flex wow fadeInDown">
         <div class="column">
             <div class="header-top justify-center">
                 <div class="container">
@@ -47,30 +52,30 @@
                     <div class="row">
                         <div class="left">
                             <div class="logo responsive-img">
-                                <img src="<?php echo base_url(); ?>assets/img/logo-upqroo.png" alt="">
+                                <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo-upqroo.png" alt=""></a>
                             </div>
                         </div>
 
                         <div class="right">
                             <nav class="row align-center justify-end">
-                                <div class="nav-item">
-                                    <a href="<?php echo base_url()?>/">UNIVERSIDAD</a>
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.5s">
+                                    <a href="<?php echo base_url();?>index.php/nosotros">UNIVERSIDAD</a>
                                 </div>
 
-                                <div class="nav-item">
-                                    <a href="<?php echo base_url()?>carreras">CARRERAS</a>
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.5s"">
+                                    <a href="<?php echo base_url();?>#carreras">CARRERAS</a>
                                 </div>
 
-                                <div class="nav-item">
-                                    <a href="<?php echo base_url()?>noticias">NOTICIAS</a>
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.6s"">
+                                    <a href="<?php echo base_url().'index.php/'; ?>noticias">NOTICIAS</a>
                                 </div>
 
-                                <div class="nav-item">
-                                    <a href="<?php echo base_url()?>ser_escolares">SERVICIOS ESCOLARES</a>
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.7s"">
+                                    <a href="<?php echo base_url();?>index.php/admision">SERVICIOS ESCOLARES</a>
                                 </div>
 
-                                <div class="nav-item">
-                                    <a href="<?php echo base_url()?>vinculacion">VINCULACIÓN</a>
+                                <div class="nav-item wow fadeInLeft" data-wow-delay="0.8s"">
+                                    <a href="<?php echo base_url();?>index.php/visitas">VINCULACIÓN</a>
                                 </div>
                             </nav>
                         </div>
@@ -79,4 +84,3 @@
             </div>
         </div>
     </header>
-<body>

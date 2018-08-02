@@ -25,7 +25,9 @@
     --white:             #FFFFFF;
     --blueTeal:          #00b6bf;
     --blueLink:          #2c54b3;
-    --grayDescription:   #787878;
+    --grayDescription:   #333333;
+    --grayTitle:         #505050;
+	--yellow: 			 #FCDB04;
 
     /*    FONT SIZES    */
 
@@ -36,6 +38,7 @@
     --fontMedium:    1.4em;
     --fontLarge:     1.6em;
     --fontHuge:      1.8em;
+    --fontMassive:   3em;
 
     /*    FONT WEIGHT    */
 
@@ -55,6 +58,10 @@
     --paddingMedium: 16px;
     --paddingSemi: 24px;
     --paddingLarge: 32px;
+
+
+    --border: 1px solid #e6e7ea;
+
 }
 
 /* RESET
@@ -73,6 +80,7 @@ html {
 
 body {
     background-color: #F6F6F7;
+    overflow-x: hidden;
 }
 
 button, input, select, textarea {
@@ -101,8 +109,27 @@ div, header, footer, section, article, aside, nav, form, table {
     width: 100%;
 }
 
+h1 {
+    font-size: var(--fontHuge);
+    color: var(--grayTitle);
+}
+
 h2 {
     font-size: var(--fontLarge);
+    color: var(--grayTitle);
+}
+
+h3 {
+    color: var(--grayTitle);
+}
+
+h4 {
+    color: var(--grayTitle);
+}
+
+p {
+    color: var(--grayDescription);
+    line-height: 24px;
 }
 
 /* CLASES
@@ -127,6 +154,14 @@ h2 {
 
 .container {
     width: 90%;
+}
+
+.inner-container {
+    width: 85%;
+}
+
+.auto {
+    width: auto;
 }
 
 .responsive-img {
@@ -181,6 +216,9 @@ h2 {
     align-items: flex-end;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
 
 .text-center {
     text-align: center;
@@ -190,18 +228,34 @@ h2 {
     text-align: justify;;
 }
 
+.text-right {
+    text-align: right;
+}
+
 /*    WHITE SPACES    */
 
 .white-space-8 {
-    height: 8px ;
+    height: 8px;
 }
 
 .white-space-16 {
-    height: 16px ;
+    height: 16px;
+}
+
+.white-space-24 {
+    height: 24px;
 }
 
 .white-space-32 {
-    height: 32px ;
+    height: 32px;
+}
+
+.white-space-48 {
+    height: 48px;
+}
+
+.white-space-64 {
+    height: 64px;
 }
 
 
@@ -221,6 +275,36 @@ form, form > input {
     outline: none;
     font-weight: var(--weightSemi);
     font-family: var(--Roboto);
+    font-size: var(--fontTiny);
+    color: var(--grayTitle);
+}
+
+.input-textarea {
+    padding: var(--paddingNormal) var(--paddingMedium);
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: var(--weightSemi);
+    font-family: var(--Roboto);
+    font-size: var(--fontTiny);
+    color: var(--grayTitle);
+}
+
+.input-date {
+    padding: var(--paddingNormal) var(--paddingMedium);
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-weight: var(--weightSemi);
+    font-family: var(--Roboto);
+    font-size: var(--fontTiny);
+    color: var(--grayTitle);
+}
+
+.input-file-h {
+    display: none;
 }
 
 label {
@@ -231,11 +315,26 @@ label {
 /*    BUTTONS     */
 
 .btn {
+    width: auto;
     font-weight: var(--weightBold);
     font-size: var(--fontSmall);
     padding: var(--paddingMedium) var(--paddingSemi);
     font-family: var(--Roboto);
     border: none;
+}
+
+.btn i {
+    padding: 0 var(--paddingNormal);
+}
+
+.btn-blue {
+    background-color: var(--blueLink);
+    color: var(--white);
+}
+
+.btn-teal {
+    background-color: var(--blueTeal);
+    color: var(--white);
 }
 
 .btn-login {
@@ -248,45 +347,60 @@ label {
     color: var(--white);
 }
 
-.btn-file i {
-    padding: 0 var(--paddingNormal);
+.link {
+    color: var(--blueTeal);
+}
+
+.border {
+    border: var(--border);
+}
+
+/*    TEXTS     */
+
+.textHuge {
+    font-size: var(--fontHuge);
+}
+
+.textTiny {
+    font-size: var(--fontTiny);
+}
+
+.color-teal {
+    color: var(--blueTeal);
+}
+
+.color-white {
+    color: var(--white);
 }
 
 
 /*    LARGE DEVICES    */
 
 @media screen and (max-width: 1200px) {
-    body {
-        background: gray;
-    }
+
 }
 
 /*    NOTEBOOKS, IPADS DEVICES    */
 
 @media screen and (max-width: 992px) {
 
-    body {
-        background: green;
-    }
 }
 
 /*    TABLETS DEVICES    */
 
 @media screen and (max-width: 768px) {
 
-    body {
-        background: red;
-    }
-
     .row-responsive {
         flex-direction: column;
+    }
+
+    .white-space-64 {
+        height: 32px;
     }
 }
 
 /*    MOBILE DEVICES    */
 
 @media screen and (max-width: 576px) {
-    body {
-        background: blue;
-    }
+    /*body {background: blue;}
 }
