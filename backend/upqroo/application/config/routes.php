@@ -53,7 +53,6 @@ $route['default_controller'] = 'homeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-
 $route['ver/eventos']='eventos_controller';
 $route['ver/evento/(:num)']='eventos_controller/showEvento/$1';
 $route['pagina/(:num)'] = 'eventos_controller/paginaEvento/$1';
@@ -65,7 +64,6 @@ $route['pagina/(:num)'] = 'noticias_controller/paginaNoticia/$1';
 
 //Para cuando fucione la vista general de todos los trabajos
 $route['ver/trabajos']= 'trabajos_controller';
-
 
 //Rutas de carreras
 $route['carreras/biotecnologia']='micrositios_controller/index/1';
@@ -163,3 +161,11 @@ $route['terapia']='micrositios_Controller/index/6';
 
 $route['administrador/micrositio']='admin/addMicrositio';
 
+//Rutas para botaniQR
+$route['botaniqr']='botaniqr/home';
+$route['botaniqr/plantas']='botaniqr/plantas';
+$route['botaniqr/plantas/(:num)']='botaniqr/plantas/showOne/$1';
+$route['botaniqr/noticias']='botaniqr/noticias';
+$route['botaniqr/noticias/(:num)']='botaniqr/noticias/showOne/$1';
+$route['botaniqr/webservice/(:any)']='botaniqr/webservice/$1';
+$route['botaniqr/login']='botaniqr/home/login';

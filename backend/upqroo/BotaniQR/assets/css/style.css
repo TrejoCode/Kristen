@@ -1,0 +1,192 @@
+
+.title {
+    border-left: 4px solid var(--darkGreen);
+}
+
+.title h2 {
+    padding: 0 var(--paddingNormal);
+}
+
+header, .noticias, .plantas, .call-to-action, .error-page, .login {
+    font-family: var(--Roboto);
+}
+
+.header-top {
+    background-color: var(--lightGreen);
+    padding: var(--paddingMedium) 0;
+}
+
+.header-top .university-contact a {
+    margin: 0 var(--marginNormal);
+}
+
+.header-main {
+    height: 95px;
+    background-color: var(--white);
+    border-bottom: var(--border);
+}
+
+.header-main .logo .responsive-img {
+    justify-content: flex-start;
+}
+
+.header-main nav .nav-item a {
+    font-size: var(--fontText);
+    padding: var(--paddingNormal);
+    color: var(--darkGreen);
+    position: relative;
+}
+
+.header-main nav .nav-item a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--darkGreen);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-main nav .nav-item a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.noticias .noticia-card, .plantas .planta-card {
+    margin: var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+    background-color: var(--white);
+}
+
+.noticia-card .date, .noticia-card .description, .planta-card .date, .planta-card .description {
+   padding: var(--paddingNormal) var(--paddingMedium);
+}
+
+.noticia-card .title, .planta-card .title {
+    border: none;
+}
+
+.noticia-card .title, .noticia-card .read-more, .planta-card .title, .planta-card .read-more {
+   padding: 0 var(--paddingMedium);
+}
+
+.noticia-card .date p, .planta-card .date p{
+   text-transform: uppercase;
+   font-size: 0.8em;
+   color: var(--darkGray);
+}
+
+.noticia-card.description p, .planta-card.description p {
+   color: var(--grayDescription);
+   font-size: var(--fontTiny);
+}
+
+.noticia-card .read-more, .planta-card .read-more {
+   width: auto;
+   color: var(--lightGreen);
+   font-size: 0.9em;
+   font-weight: var(--weightSemi);
+   padding-bottom: var(--paddingMedium);
+}
+
+.call-to-action .adoptar .container {
+    background-color: var(--darkGreen);
+    padding: var(--paddingSemi);
+}
+
+.login {
+    height: 100vh;
+    font-family: var(--Roboto);
+}
+
+.login .left {
+    width: 55%;
+    background-image: url(../img/login.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.login .right {
+    width: 45%;
+    background-color: #fff;
+}
+
+.login .logo img {
+    width: 50%;
+}
+
+.login .right h2 {
+    color: var(--blueTeal);
+    font-weight: var(--weightMedium);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+
+
+}
+
+/*    NOTEBOOKS, IPADS DEVICES    */
+
+@media screen and (max-width: 992px) {
+
+
+
+}
+
+/*    TABLETS DEVICES    */
+
+@media screen and (max-width: 768px) {
+
+    header .header-top {
+        display: none;
+    }
+
+    header .header-main nav {
+        display: none;
+    }
+
+    header .header-main .logo .responsive-img {
+        justify-content: center;
+    }
+
+    .noticias .noticia-card, .plantas .planta-card {
+        margin: var(--paddingNormal) 0;
+    }
+
+    .call-to-action .legend {
+        display: none;
+    }
+
+    .call-to-action .call-button {
+        justify-content: center;
+    }
+
+    .login {
+        height: auto;
+    }
+
+    .login .left {
+        display: none;
+    }
+
+    .login .right {
+        width: 100%;
+        height: 95vh;
+        border: none;
+    }
+
+}
+
+/*    MOBILE DEVICES    */
+
+@media screen and (max-width: 576px) {
+    /*body {background: blue;}
+}
