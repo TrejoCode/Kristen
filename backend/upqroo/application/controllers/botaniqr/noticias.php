@@ -28,10 +28,12 @@ class noticias extends CI_Controller
 
         $res = $this->noticiasModel->get_One($id);
 
-        $data['titulo'] = $res[0]->nombre;
+        $date['id'] = $id;
+        $data['nombre'] = $res[0]->nombre;
         $data['fecha'] = $res[0]->fecha;
-        $data['imgUrl'] = $res[0]->imagen;
+        $data['imagen'] = $res[0]->imagen;
         $data['descripcion'] = $res[0]->descripcion;
+        $data['contenido'] = $res[0]->contenido;
 
         $this->load->view('botaniqr/templates/header');
         $this->load->view('botaniqr/public/noticia', $data);
