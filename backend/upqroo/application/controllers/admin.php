@@ -126,7 +126,6 @@ class admin extends m_controller
         $this->loadViewAdmin('admin-view-job',$this->data);
     }
 
-
     private function crearContenidos($indiceP,$indiceEnlace,$indiceNEnlace)
     {
         $result=array();
