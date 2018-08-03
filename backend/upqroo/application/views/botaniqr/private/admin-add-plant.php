@@ -8,14 +8,9 @@
                     <h2>NUEVA PLANTA</h2>
 
                     <!-- Campos Ocultos -->
-                    <input class="input-text" type="text" hidden name="publicacion" value="<?php echo !empty($noticias->idPublicaciones)?$noticias->idPublicaciones:'';?>">
-                    <input class="input-text" type="text" hidden name="portadaTxt" value="<?php echo !empty($noticias->portada)?$noticias->portada:'';?>">
-                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[0])?$noticias->contenidos[6]->contenido->imagenes[0]:'';?>">
-                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[1])?$noticias->contenidos[6]->contenido->imagenes[1]:'';?>">
-                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[2])?$noticias->contenidos[6]->contenido->imagenes[2]:'';?>">
-                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[3])?$noticias->contenidos[6]->contenido->imagenes[3]:'';?>">
-                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[4])?$noticias->contenidos[6]->contenido->imagenes[4]:'';?>">
-                    <input class="input-text" type="text" hidden name="imgTxt[]" value="<?php echo !empty($noticias->contenidos[6]->contenido->imagenes[5])?$noticias->contenidos[6]->contenido->imagenes[5]:'';?>">
+                    <input class="input-text" type="text" hidden name="id" value="<?php echo !empty($plantas[0]->id)?$plantas[0]->id:'';?>">
+                    <input class="input-text" type="text" hidden name="codigo" value="<?php echo !empty($plantas[0]->codigo)?$plantas[0]->codigo:'';?>">
+                    <input class="input-text" type="text" hidden name="qr" value="<?php echo !empty($plantas[0]->qr)?$plantas[0]->qr:'';?>">
                     <!-- Fin Campos ocultos -->
 
                     <div class="white-space-16"></div>
