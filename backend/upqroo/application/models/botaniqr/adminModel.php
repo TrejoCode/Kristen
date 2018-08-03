@@ -57,4 +57,36 @@ class adminModel extends CI_Model
         return $res->result();
     }
 
+    public function addPlanta($data)
+    {
+        $this->db->insert('plantas',$data);
+    }
+
+    public function addNoticia($data)
+    {
+        $this->db->insert('noticias',$data);
+    }
+
+    public function updatePlanta($data)
+    {
+        $this->db->replace('plantas', $data);
+    }
+
+    public function updateNoticia($data)
+    {
+        $this->db->replace('noticias', $data);
+    }
+
+    public function deletePlanta($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('plantas');
+    }
+
+    public function deleteNoticia($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('noticias');
+    }
+
 }

@@ -65,6 +65,7 @@ class admin extends m_controller
     public function plantas($pages=0)
     {
         $this->load->model('botaniqr/adminModel');
+        $this->data['title']='ADMIN';
         $this->data['nombre']=$_SESSION['bUserName'];
         $this->data['plantas']=$this->adminModel->getPlantas();
         $this->load->view('botaniqr/private/admin',$this->data);
@@ -74,6 +75,7 @@ class admin extends m_controller
     public function noticias($pages=0)
     {
         $this->load->model('botaniqr/adminModel');
+        $this->data['title']='ADMIN';
         $this->data['nombre']=$_SESSION['bUserName'];
         $this->data['noticias']=$this->adminModel->getNoticias();
         $this->load->view('botaniqr/private/admin',$this->data);
