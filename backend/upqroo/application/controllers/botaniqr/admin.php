@@ -88,10 +88,9 @@ class admin extends m_controller
         $this->load->library('form_validation');
         $this->load->model('botaniqr/adminModel');
 
-        $this->form_validation->set_rules('titulo', 'titulo', 'required|max_length[50]');
-        $this->form_validation->set_rules('descripcion', 'descriction', 'required|max_length[200]');
-
-
+        $this->form_validation->set_rules('nombre', 'nombre', 'required');
+        $this->form_validation->set_rules('descripcion', 'descriction', 'required');
+        $this->form_validation->set_rules('contenido', 'contenido', 'required');
 
         if ($this->form_validation->run() === FALSE)
         {
@@ -109,21 +108,27 @@ class admin extends m_controller
                 $isInsert=false;
                 $idP=$this->input->post('idNoticia');
             }
+            $cover=$this->uploadImg('imagen','cover','',false);
+            $date=new DateTime(); //this returns the current date time
+            $result = $date->format('Y-m-d-H-i-s');
             $nPlant=array(
                 'id'=>$idP,
-                'fecha'=>getdate(),
+                'fecha'=>$result,
                 'nombre'=>$this->input->post('nombre'),
                 'descripcion'=>$this->input->post('descripcion'),
-                'imagen'=>$this->input->post('imagen'),
+                'contenido'=>$this->input->post('contenido'),
+                'imagen'=>!empty($cover['full-rute'])?$cover['full-rute']:''
             );
 
             if($isInsert)
             {
                 $this->adminModel->addNoticia($nPlant);
+                redirect(base_url().'index.php/botaniqr/administrador/ver/noticias/0');
             }
             else
             {
                 $this->adminModel->updateNoticia($nPlant);
+                redirect(base_url().'index.php/botaniqr/administrador/ver/noticias/0');
             }
         }
     }
@@ -134,9 +139,11 @@ class admin extends m_controller
         $this->load->library('form_validation');
         $this->load->model('botaniqr/adminModel');
 
-        $this->form_validation->set_rules('titulo', 'titulo', 'required|max_length[50]');
-        $this->form_validation->set_rules('descripcion', 'descriction', 'required|max_length[200]');
-
+        $this->form_validation->set_rules('nombre', 'nombre', 'required');
+        $this->form_validation->set_rules('descripcion', 'descriction', 'required');
+        $this->form_validation->set_rules('cientifico', 'cientifico', 'required');
+        $this->form_validation->set_rules('taxonomia', 'taxonomia', 'required');
+        $this->form_validation->set_rules('aplicaciones', 'aplicaciones', 'required');
 
 
         if ($this->form_validation->run() === FALSE)
@@ -150,13 +157,17 @@ class admin extends m_controller
         {
             $idP=null;
             $isInsert=true;
+            $total=count($this->adminModel->getPlantas());
+            $nCod='UPQROO_P_'.($total+1);
+            $qr='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data='.$nCod;
             if($this->input->post('idPlanta')!=null)
             {
                 $isInsert=false;
                 $idP=$this->input->post('idPlanta');
+                $nCod=$this->input->post('codigo');
+                $qr=$this->input->post('qr');
             }
-            $total=count($this->adminModel->getPlantas());
-            $nCod='UPQROO_P_'.($total+1);
+            $cover=$this->uploadImg('imagen','cover','',false);                        
             $nPlant=array(
                 'id'=>$idP,
                 'codigo'=>$nCod,
@@ -165,17 +176,19 @@ class admin extends m_controller
                 'descripcion'=>$this->input->post('descripcion'),
                 'taxonomia'=>$this->input->post('taxonomia'),
                 'aplicaciones'=>$this->input->post('aplicaciones'),
-                'imagen'=>$this->input->post('imagen'),
-                'qr'=>'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data='.$nCod
+                'imagen'=>!empty($cover['full-rute'])?$cover['full-rute']:'',
+                'qr'=>$qr
             );
 
             if($isInsert)
             {
                 $this->adminModel->addPlanta($nPlant);
+                redirect(base_url().'index.php/botaniqr/administrador/ver/plantas/0');
             }
             else
             {
                 $this->adminModel->updatePlanta($nPlant);
+                redirect(base_url().'index.php/botaniqr/administrador/ver/plantas/0');
             }
         }
     }

@@ -1,6 +1,6 @@
 <!-- IMPORTANTE -->
 <div class="admin-add-news justify-center">
-    <?php echo form_open_multipart('administrador/agregar/noticia',array('class'=>'flex'));?>
+    <?php echo form_open_multipart('botaniqr/administrador/agregar/noticia',array('class'=>'flex'));?>
         <div class="left">
             <div class="column">
                 <div class="white-space-16"></div>
@@ -8,7 +8,7 @@
                     <h2>NUEVA NOTICIA</h2>
 
                     <!-- Campos Ocultos -->
-                    <input class="input-text" type="text" hidden name="id" value="<?php echo !empty($noticias[0]->id)?$noticias[0]->id:'';?>">
+                    <input class="input-text" type="text" hidden name="idNoticia" value="<?php echo !empty($noticias[0]->id)?$noticias[0]->id:'';?>">
                     <!-- Fin Campos ocultos -->
 
                     <div class="white-space-16"></div>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="white-space-8"></div>
                     <div><a class="btn btn-blue" id="featured-img-click" href="#"><i class="fas fa-file-upload"></i> CAMBIAR IMAGEN</a></div>
-                    <input class="input-file-h" id="featured-img" type="file" name="portada">
+                    <input class="input-file-h" id="featured-img" type="file" name="imagen">
                     <div class="white-space-32"></div>
                     <input class="btn btn-blue" type="submit" value="PUBLICAR">
                 </div>
