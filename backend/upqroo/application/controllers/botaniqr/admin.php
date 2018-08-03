@@ -96,16 +96,13 @@ class admin extends m_controller
         if ($this->form_validation->run() === FALSE)
         {
             $this->data['title']='noticias';
-            $this->data['tipoUsuario']=$_SESSION['tipoUsuario'];
-            $this->data['nombre']=$_SESSION['nombre'];
+            $this->data['nombre']=$_SESSION['bUserName'];
             $this->load->view('botaniqr/private/admin', $this->data);
             $this->load->view('botaniqr/private/admin-add-news',$this->data);
         }
         else
         {
-            //Post a la db
-            /*
-             */
+
         }
     }
 
@@ -123,7 +120,7 @@ class admin extends m_controller
         if ($this->form_validation->run() === FALSE)
         {
             $this->data['title']='planta';
-            $this->data['nombre']=$_SESSION['nombre'];
+            $this->data['nombre']=$_SESSION['bUserName'];
             $this->load->view('botaniqr/private/admin', $this->data);
             $this->load->view('botaniqr/private/admin-add-plant',$this->data);
         }
@@ -138,7 +135,7 @@ class admin extends m_controller
     public function editPlant($id)
     {
         $this->data['title']='EDITAR PLANTA';
-        $this->data['nombre']=$_SESSION['nombre'];
+        $this->data['nombre']=$_SESSION['bUserName'];
         $this->load->model('botaniqr/adminModel');
         $this->data['plantas']=$this->adminModel->getPlanta($id);
         //var_dump($this->data['noticias']);
@@ -149,11 +146,22 @@ class admin extends m_controller
     public function editNoticia($id)
     {
         $this->data['title']='EDITAR NOTICIA';
-        $this->data['nombre']=$_SESSION['nombre'];
+        $this->data['nombre']=$_SESSION['bUserName'];
         $this->load->model('botaniqr/adminModel');
         $this->data['noticias']=$this->adminModel->getNoticia($id);
         //var_dump($this->data['noticias']);
         $this->load->view('botaniqr/private/admin',$this->data);
         $this->load->view('botaniqr/private/admin-add-news',$this->data);
     }
+
+    public function eliminarPlanta($id)
+    {
+
+    }
+
+    public function eliminarNoticia($id)
+    {
+
+    }
+
 }

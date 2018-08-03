@@ -16,7 +16,7 @@
             <div class="notice-banner">
                 <div class="container">
                     <div class="responsive-img">
-                        <img src="<?php echo base_url().'BotaniQR/'.$imgUrl; ?>" alt="">
+                        <img src="<?php echo $imgUrl; ?>" alt="">
                     </div>
                 </div>
             </div>
