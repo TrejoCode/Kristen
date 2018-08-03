@@ -1,0 +1,165 @@
+
+/* --- Admin General -- */
+
+.admin {
+    font-family: var(--Roboto);
+}
+
+.admin-header {
+    height: 95px;
+    background-color: var(--white);
+    border-bottom: 1px solid #e6e6e7;
+}
+
+.admin-header .left {
+    width: 50%;
+}
+
+.admin-header .left .logo {
+    justify-content: flex-start;
+}
+
+.admin-header .right {
+    width: 50%;
+}
+
+.admin-header .right .current-user, .admin-header .right .end-session {
+    width: auto;
+    padding: 0 var(--paddingNormal);
+    color: var(--grayDescription);
+}
+
+.admin-header .right .end-session i {
+    color: #545454;
+}
+
+.admin .left-panel {
+    width: 18%;
+    border-right: 1px solid #e6e6e7;
+    background-color: var(--white);
+}
+
+.left-panel .panel-item {
+    padding: var(--paddingNormal);
+    color: var(--blueLink);
+}
+
+.left-panel .panel-item a {
+    padding: 0 var(--paddingMedium);
+    color: var(--grayDescription);
+    font-weight: var(--weightMedium);
+}
+
+.left-panel .panel-item i {
+    font-size: var(--fontMedium);
+}
+
+.left-panel .panel-subitem {
+    padding: var(--paddingNormal) var(--paddingLarge);
+}
+
+.left-panel .panel-subitem a {
+    font-size: var(--fontTiny);
+    color: var(--grayDescription);
+}
+
+/* --- End Admin General -- */
+
+
+/* --- Admin News -- */
+
+.admin-add-news, .admin-list {
+    width: 81%;
+}
+
+.admin-add-news .left {
+    width: 70%;
+    padding: 0 var(--paddingMedium);
+}
+
+.admin-add-news .right {
+    width: 30%;
+    background-color: #fafafa;
+    border: 1px solid #e6e7ea;
+}
+
+.admin-add-news .right span {
+    font-weight: var(--weightMedium);
+}
+
+/* --- End Admin News -- */
+
+/* --- Admin Events -- */
+
+.admin-add-events{
+    width: 81%;
+}
+
+.admin-add-events .left {
+    width: 70%;
+    padding: 0 var(--paddingMedium);
+}
+
+.admin-add-events .right {
+    width: 30%;
+    background-color: #fafafa;
+    border: 1px solid #e6e7ea;
+}
+
+/* --- End Admin Events -- */
+
+/* --- Admin List -- */
+
+.admin-list .news-list {
+    padding: 0 var(--paddingMedium);
+}
+
+.admin-list .news-list .list-item {
+    background-color: var(--white);
+    margin: 0 var(--paddingNormal);
+    border: 1px solid #e6e7ea;
+}
+
+.admin-list .news-list .list-item .left {
+    width: 30%;
+    background-color: var(--blueLink);
+    color: var(--white);
+}
+
+.admin-list .news-list .list-item .left i {
+    font-size: 1.8em;
+}
+
+.admin-list .news-list .list-item #title {
+    font-weight: var(--weightMedium);
+    color: var(--grayDescription);
+    padding: var(--paddingMedium) var(--paddingNormal);
+}
+
+.admin-list .news-list .list-item .edit {
+    padding: 0 var(--paddingNormal);
+    padding-bottom: 1em;
+}
+
+.admin-list .news-list .list-item .edit i {
+    color: var(--blueTeal);
+    padding-right: 0.5em;
+}
+
+.admin-list .news-list .list-item .edit a {
+    font-size: var(--fontTiny);
+    color: var(--blueTeal);
+}
+
+.pagination .next {
+    padding: var(--paddingMedium) var(--paddingNormal);
+    color: var(--blueTeal);
+    font-weight: var(--weightMedium);
+}
+
+.pagination .prev {
+    font-weight: var(--weightMedium);
+    padding-top: var(--paddingMedium);
+    padding-right: var(--paddingNormal);
+    color: var(--blueTeal);
+}

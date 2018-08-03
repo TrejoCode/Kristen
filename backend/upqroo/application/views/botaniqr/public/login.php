@@ -16,7 +16,7 @@
                         <div class="white-space-32"></div>
                         <div class="login-form justify-center">
                             <div class="container">
-                                <form class="" method="post">
+                                <form  <?= form_open('botaniqr/login'); ?>
                                     <div class="column">
                                         <label for="email">CORREO:</label>
                                         <div class="white-space-8"></div>

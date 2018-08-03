@@ -53,6 +53,28 @@ class m_controller extends Ci_Controller
         return $result;
     }
 
+    public function botaniLogin($username,$password)
+    {
+        $this->load->model('botaniqr/adminModel');
+        $resultado=$this->adminModel->login($username,$password);
+        if(!empty($resultado))
+        {
+            $_SESSION['bUserName']=$resultado[0]->usuario;
+            $_SESSION['bUserid']=$resultado[0]->id;
+        }
+        else
+        {
+            $resultado=null;
+        }
+        return $resultado;
+    }
+
+    public function botaniLogout()
+    {
+        unset($_SESSION['bUserName']);
+        unset($_SESSION['bUserid']);
+    }
+
     //Limpia las variables de sesion
     public function logout()
     {

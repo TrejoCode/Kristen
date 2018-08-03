@@ -168,4 +168,7 @@ $route['botaniqr/plantas/(:num)']='botaniqr/plantas/showOne/$1';
 $route['botaniqr/noticias']='botaniqr/noticias';
 $route['botaniqr/noticias/(:num)']='botaniqr/noticias/showOne/$1';
 $route['botaniqr/webservice/(:any)']='botaniqr/webservice/$1';
-$route['botaniqr/login']='botaniqr/home/login';
+
+$route['botaniqr/administrador']='botaniqr/admin';
+$route['botaniqr/login']='botaniqr/admin/bLogin';
+$route['botaniqr/logout']='botaniqr/admin/bLogout';
