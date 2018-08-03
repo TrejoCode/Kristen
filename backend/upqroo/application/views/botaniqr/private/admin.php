@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="<?php echo base_url();?>BotaniQR/assets/css/admin.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link rel="shortcut icon" href="<?php echo base_url();?>BotaniQR/assets/img/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo base_url();?>BotaniQR/favicon.ico">
     <title>UPQROO - <?php echo $title; ?></title>
     
 </head>
