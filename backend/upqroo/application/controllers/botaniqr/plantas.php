@@ -35,7 +35,7 @@ class plantas extends CI_Controller
         $data['descripcion'] = $res[0]->descripcion;
         $data['taxonomia'] = $res[0]->taxonomia;
         $data['aplicaciones'] = $res[0]->aplicaciones;
-        $data['imgUrl'] = $res[0]->imagen;
+        $data['imagen'] = $res[0]->imagen;
 
         $this->load->view('botaniqr/templates/header');
         $this->load->view('botaniqr/public/planta', $data);
