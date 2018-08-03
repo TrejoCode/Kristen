@@ -30,12 +30,15 @@ class plantas extends CI_Controller
 
         $res = $this->plantasModel->get_One($id);
 
+        $data['id'] = $res[0]->id;
+        $data['codigo'] = $res[0]->codigo;
         $data['nombre'] = $res[0]->nombre;
         $data['cientifico'] = $res[0]->cientifico;
         $data['descripcion'] = $res[0]->descripcion;
         $data['taxonomia'] = $res[0]->taxonomia;
         $data['aplicaciones'] = $res[0]->aplicaciones;
         $data['imagen'] = $res[0]->imagen;
+        $data['qr'] = $res[0]->qr;
 
         $this->load->view('botaniqr/templates/header');
         $this->load->view('botaniqr/public/planta', $data);
