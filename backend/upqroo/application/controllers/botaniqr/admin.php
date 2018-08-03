@@ -132,7 +132,7 @@ class admin extends m_controller
         }
     }
 
-    public function editPlant($id)
+    public function editPlanta($id)
     {
         $this->data['title']='EDITAR PLANTA';
         $this->data['nombre']=$_SESSION['bUserName'];
