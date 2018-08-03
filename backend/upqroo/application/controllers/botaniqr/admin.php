@@ -102,7 +102,29 @@ class admin extends m_controller
         }
         else
         {
+            $idP=null;
+            $isInsert=true;
+            if($this->input->post('idNoticia')!=null)
+            {
+                $isInsert=false;
+                $idP=$this->input->post('idNoticia');
+            }
+            $nPlant=array(
+                'id'=>$idP,
+                'fecha'=>getdate(),
+                'nombre'=>$this->input->post('nombre'),
+                'descripcion'=>$this->input->post('descripcion'),
+                'imagen'=>$this->input->post('imagen'),
+            );
 
+            if($isInsert)
+            {
+                $this->adminModel->addNoticia($nPlant);
+            }
+            else
+            {
+                $this->adminModel->updateNoticia($nPlant);
+            }
         }
     }
 
@@ -126,9 +148,35 @@ class admin extends m_controller
         }
         else
         {
-            //Post a la db
-            /*
-             */
+            $idP=null;
+            $isInsert=true;
+            if($this->input->post('idPlanta')!=null)
+            {
+                $isInsert=false;
+                $idP=$this->input->post('idPlanta');
+            }
+            $total=count($this->adminModel->getPlantas());
+            $nCod='UPQROO_P_'.($total+1);
+            $nPlant=array(
+                'id'=>$idP,
+                'codigo'=>$nCod,
+                'nombre'=>$this->input->post('nombre'),
+                'cientifico'=>$this->input->post('cientifico'),
+                'descripcion'=>$this->input->post('descripcion'),
+                'taxonomia'=>$this->input->post('taxonomia'),
+                'aplicaciones'=>$this->input->post('aplicaciones'),
+                'imagen'=>$this->input->post('imagen'),
+                'qr'=>'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data='.$nCod
+            );
+
+            if($isInsert)
+            {
+                $this->adminModel->addPlanta($nPlant);
+            }
+            else
+            {
+                $this->adminModel->updatePlanta($nPlant);
+            }
         }
     }
 
