@@ -6,7 +6,7 @@
  * Time: 10:40 AM
  */
 
-class homeModel extends CI_Model
+class HomeModel extends CI_Model
 {
 
     public function __construct()

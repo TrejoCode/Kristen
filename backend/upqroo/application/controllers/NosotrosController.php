@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class becasController extends m_controller {
+class NosotrosController extends M_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class becasController extends m_controller {
 	 */
 	public function index()
 	{
-	    $data['title']='BECAS';
-        $this->loadView('public/becas',$data);
+        $data['title']='NOSOTROS';
+        $this->loadView('public/nosotros',$data);
 	}
 }

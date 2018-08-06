@@ -1,8 +1,8 @@
 <?php
 
-//require_once '../core/m_model.php';
+//require_once '../core/M_model.php';
 
-class eventos_model extends m_model
+class EventosModel extends M_model
 {
 	public function getEventos($elements)
    {

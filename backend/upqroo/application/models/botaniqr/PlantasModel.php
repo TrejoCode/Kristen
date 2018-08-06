@@ -6,7 +6,7 @@
  * Time: 10:40 AM
  */
 
-class plantasModel extends CI_Model
+class PlantasModel extends CI_Model
 {
     public function __construct()
     {

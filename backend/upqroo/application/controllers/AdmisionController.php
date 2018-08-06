@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class admisionController extends m_controller {
+class AdmisionController extends M_controller {
 
 	/**
 	 * Index Page for this controller.

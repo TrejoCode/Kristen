@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class directorioController extends m_controller {
+class PlaneacionController extends M_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class directorioController extends m_controller {
 	 */
 	public function index()
 	{
-        $data['title']='DIRECTORIO';
-        $this->loadView('public/directorio',$data);
+        $data['title']='PLANEACION';
+        $this->loadView('public/planeacion',$data);
 	}
 }

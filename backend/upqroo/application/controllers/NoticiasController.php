@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class noticias_controller extends m_controller {
+class NoticiasController extends M_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,13 +20,13 @@ class noticias_controller extends m_controller {
 	 */
 	public function index()
 	{
-        $this->load->model('noticias_model');
+        $this->load->model('NoticiasModel');
 
         $numPag = 1;
-        $res=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$numPag.''));
+        $res=$this->NoticiasModel->getNoticias(array('publicacion'=>'noticias/'.$numPag.''));
         $numPag++;
 
-        $respag=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$numPag.''));
+        $respag=$this->NoticiasModel->getNoticias(array('publicacion'=>'noticias/'.$numPag.''));
         $numPag = 1;
 
         //echo $respag->error->status;
@@ -50,15 +50,15 @@ class noticias_controller extends m_controller {
 
 	public function paginaNoticia($Pagina)
 	{
-        $this->load->model('noticias_model');
+        $this->load->model('NoticiasModel');
 
         //$Pagina++;
 
-        $resp=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$Pagina));
+        $resp=$this->NoticiasModel->getNoticias(array('publicacion'=>'noticias/'.$Pagina));
 
         $Pagina++;
 
-        $r=$this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$Pagina));
+        $r=$this->NoticiasModel->getNoticias(array('publicacion'=>'noticias/'.$Pagina));
 
         $Pagina = $Pagina - 1;
 
@@ -82,7 +82,7 @@ class noticias_controller extends m_controller {
 
 	public function showNotice($idPNoticia, $idPNoticias)
 	{
-		$this->load->model('noticias_model');
+		$this->load->model('NoticiasModel');
 
 		if ($idPNoticia == 0 || empty($idPNoticia)) 
 		{
@@ -95,7 +95,7 @@ class noticias_controller extends m_controller {
 	        	$idPNoticias == 1;
 	        }
 
-			$res1=$this->noticias_model->getNoticia(array('publicacion'=>$idPNoticia));
+			$res1=$this->NoticiasModel->getNoticia(array('publicacion'=>$idPNoticia));
 
 	        $datos['title'] = 'NOTICIA';
 	        if ($res1->idTipos_Publicacion == 2) 
@@ -106,7 +106,7 @@ class noticias_controller extends m_controller {
 		        $datos['portada']=$res1->portada;
 	        }
 
-	        $res2 = $this->noticias_model->getNoticias(array('publicacion'=>'noticias/'.$idPNoticias));
+	        $res2 = $this->NoticiasModel->getNoticias(array('publicacion'=>'noticias/'.$idPNoticias));
 
 	        $cont = 0;
 	        $i = 0;

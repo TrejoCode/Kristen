@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class serviciosAController extends m_controller {
+class TransparenciaController extends M_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class serviciosAController extends m_controller {
 	 */
 	public function index()
 	{
-        $data['title']='SERVICIOS DE ASISTENCIA';
-        $this->loadView('public/serviciosAsistencia',$data);
+        $data['title']='TRANSPARENCIA';
+        $this->loadView('public/transparencia',$data);
 	}
 }

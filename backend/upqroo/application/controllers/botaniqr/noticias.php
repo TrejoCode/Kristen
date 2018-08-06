@@ -6,7 +6,7 @@
  * Time: 10:10 AM
  */
 
-class noticias extends CI_Controller
+class Noticias extends CI_Controller
 {
 
     public function index()

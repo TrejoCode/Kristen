@@ -6,7 +6,7 @@
  * Time: 11:24 AM
  */
 
-class micrositios_Controller extends m_controller
+class MicrositiosController extends M_controller
 {
 
     public function index($id)
@@ -36,9 +36,9 @@ class micrositios_Controller extends m_controller
     //1
     public function getBiotecnologia()
     {
-        $this->load->model('micrositiosModel');
+        $this->load->model('MicrositiosModel');
 
-        $res=$this->micrositiosModel->getMicrositios(array('infoinstitucional' => 2));
+        $res=$this->MicrositiosModel->getMicrositios(array('infoinstitucional' => 2));
 
         if (!empty($res)) {
             $datos['Datos']=$res;
@@ -54,9 +54,9 @@ class micrositios_Controller extends m_controller
             $datos['habilidad4']=$res->contenidos[5]->contenido->texto;
         }
 
-        $datos['noticias'] =$this->micrositiosModel->getData(array(2=>1));
+        $datos['noticias'] =$this->MicrositiosModel->getData(array(2=>1));
         //var_dump($datos['noticias']);
-        $datos['evento'] =$this->micrositiosModel->getData(array(2=>1));
+        $datos['evento'] =$this->MicrositiosModel->getData(array(2=>1));
 
         $this->loadView('public/micrositios',$datos);
     }
@@ -64,9 +64,9 @@ class micrositios_Controller extends m_controller
     //2
     public function getSoftware()
     {
-        $this->load->model('micrositiosModel');
+        $this->load->model('MicrositiosModel');
 
-        $res=$this->micrositiosModel->getMicrositios(array('infoinstitucional' => 3));
+        $res=$this->MicrositiosModel->getMicrositios(array('infoinstitucional' => 3));
 
         if (!empty($res)) {
             $datos['Datos']=$res;
@@ -82,8 +82,8 @@ class micrositios_Controller extends m_controller
             $datos['habilidad4']=$res->contenidos[7]->contenido->texto;
         }
 
-        $datos['noticias'] =$this->micrositiosModel->getData(array(3=>1));
-        $datos['evento'] =$this->micrositiosModel->getData(array(3=>1));
+        $datos['noticias'] =$this->MicrositiosModel->getData(array(3=>1));
+        $datos['evento'] =$this->MicrositiosModel->getData(array(3=>1));
         //var_dump($datos['noticias']);
 
         $this->loadView('public/micrositios',$datos);
@@ -92,9 +92,9 @@ class micrositios_Controller extends m_controller
     //3
     public function getBiomedica()
     {
-        $this->load->model('micrositiosModel');
+        $this->load->model('MicrositiosModel');
 
-        $res=$this->micrositiosModel->getMicrositios(array('infoinstitucional' => 7));
+        $res=$this->MicrositiosModel->getMicrositios(array('infoinstitucional' => 7));
 
         if (!empty($res)) {
             $datos['Datos']=$res;
@@ -110,12 +110,12 @@ class micrositios_Controller extends m_controller
             $datos['habilidad4']=$res->contenidos[7]->contenido->texto;
         }
         
-        $datos['noticias'] =$this->micrositiosModel->getData(array(7=>1));
-        $datos['evento'] =$this->micrositiosModel->getData(array(7=>1));
+        $datos['noticias'] =$this->MicrositiosModel->getData(array(7=>1));
+        $datos['evento'] =$this->MicrositiosModel->getData(array(7=>1));
 
-        $datos2['trabajos']=$this->micrositiosModel->getDataT('/publicacion',array('trabajos'=>1));
+        $datos2['trabajos']=$this->MicrositiosModel->getDataT('/publicacion',array('trabajos'=>1));
         if ($datos2['trabajos']->idUsuarios == 7) {
-            $datos['trabajos']=$this->micrositiosModel->getDataT('/publicacion',array('trabajos'=>1));
+            $datos['trabajos']=$this->MicrositiosModel->getDataT('/publicacion',array('trabajos'=>1));
         }
         //var_dump($datos['trabajos']);
         //tengo que sacar la informacion de trabajos, REVISAR BIEN LA ESTRUCTURA DE AQUÍ ARRIBA
@@ -127,9 +127,9 @@ class micrositios_Controller extends m_controller
     //4
     public function getPymes()
     {
-        $this->load->model('micrositiosModel');
+        $this->load->model('MicrositiosModel');
 
-        $res=$this->micrositiosModel->getMicrositios(array('infoinstitucional' => 5));
+        $res=$this->MicrositiosModel->getMicrositios(array('infoinstitucional' => 5));
 
         if (!empty($res)) {
             $datos['Datos']=$res;
@@ -145,8 +145,8 @@ class micrositios_Controller extends m_controller
             $datos['habilidad4']=$res->contenidos[7]->contenido->texto;
         }
 
-        $datos['noticias'] =$this->micrositiosModel->getData(array(5=>1));
-        $datos['evento'] =$this->micrositiosModel->getData(array(5=>1));
+        $datos['noticias'] =$this->MicrositiosModel->getData(array(5=>1));
+        $datos['evento'] =$this->MicrositiosModel->getData(array(5=>1));
         $this->loadView('public/micrositios',$datos);
 
     }
@@ -154,9 +154,9 @@ class micrositios_Controller extends m_controller
     //5
     public function getFinanciera()
     {
-        $this->load->model('micrositiosModel');
+        $this->load->model('MicrositiosModel');
 
-        $res=$this->micrositiosModel->getMicrositios(array(4=>1));
+        $res=$this->MicrositiosModel->getMicrositios(array(4=>1));
 
         if (!empty($res)) {
             $datos['Datos']=$res;
@@ -172,17 +172,17 @@ class micrositios_Controller extends m_controller
             $datos['habilidad4']=$res->contenidos[7]->contenido->texto;
         }
 
-        $datos['noticias'] =$this->micrositiosModel->getData(array(4=>1));
-        $datos['evento'] =$this->micrositiosModel->getData(array(4=>1));
+        $datos['noticias'] =$this->MicrositiosModel->getData(array(4=>1));
+        $datos['evento'] =$this->MicrositiosModel->getData(array(4=>1));
         $this->loadView('public/micrositios',$datos);
     }
 
     //6
     public function getTerapia()
     {
-        $this->load->model('micrositiosModel');
+        $this->load->model('MicrositiosModel');
 
-        $res=$this->micrositiosModel->getMicrositios(array('infoinstitucional' => 6));
+        $res=$this->MicrositiosModel->getMicrositios(array('infoinstitucional' => 6));
 
         if (!empty($res)) {
             $datos['Datos']=$res;
@@ -198,8 +198,8 @@ class micrositios_Controller extends m_controller
             $datos['habilidad4']=$res->contenidos[7]->contenido->texto;
         }
 
-        $datos['noticias'] =$this->micrositiosModel->getData(array(6=>1));
-        $datos['evento'] =$this->micrositiosModel->getData(array(6=>1));
+        $datos['noticias'] =$this->MicrositiosModel->getData(array(6=>1));
+        $datos['evento'] =$this->MicrositiosModel->getData(array(6=>1));
         $this->loadView('public/micrositios',$datos);
     }
 

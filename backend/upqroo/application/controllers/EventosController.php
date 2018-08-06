@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class eventos_controller extends m_controller {
+class EventosController extends M_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,13 +20,13 @@ class eventos_controller extends m_controller {
 	 */
 	public function index()
 	{
-                $this->load->model('eventos_model');
+                $this->load->model('EventosModel');
 
                 $numPag = 1;
-                $res=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
+                $res=$this->EventosModel->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
                 $numPag++;
 
-                $respag=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
+                $respag=$this->EventosModel->getEventos(array('publicacion'=>'eventos/'.$numPag.''));
                 $numPag = 1;
 
                 //echo $respag->error->status;
@@ -46,17 +46,17 @@ class eventos_controller extends m_controller {
         		$this->loadView('public/eventos',$datos);
         }
 
-        public function paginaEvento($Pagina)
+    public function paginaEvento($Pagina)
         {
-                $this->load->model('eventos_model');
+                $this->load->model('EventosModel');
 
                 //$Pagina++;
 
-                $resp=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$Pagina));
+                $resp=$this->EventosModel->getEventos(array('publicacion'=>'eventos/'.$Pagina));
 
                 $Pagina++;
 
-                $r=$this->eventos_model->getEventos(array('publicacion'=>'eventos/'.$Pagina));
+                $r=$this->EventosModel->getEventos(array('publicacion'=>'eventos/'.$Pagina));
 
                 $Pagina = $Pagina - 1;
 
@@ -77,12 +77,11 @@ class eventos_controller extends m_controller {
                 $this->loadView('public/eventos',$datos);
         }
 
-
 	public function showEvento($id)
 	{
-		$this->load->model('eventos_model');
+		$this->load->model('EventosModel');
 
-        $res1=$this->eventos_model->getEvento(array('publicacion'=>$id));
+        $res1=$this->EventosModel->getEvento(array('publicacion'=>$id));
 
         $datos['title'] = 'EVENTO';
         if ($res1->idTipos_Publicacion == 1) 
@@ -96,7 +95,7 @@ class eventos_controller extends m_controller {
 
                 $ID = $id;
                 
-                $res2 = $this->eventos_model->getEventos(array('publicacion'=>'eventos/1'));
+                $res2 = $this->EventosModel->getEventos(array('publicacion'=>'eventos/1'));
 
                 $cont = 0;
                 $i = 0;
@@ -135,4 +134,6 @@ class eventos_controller extends m_controller {
 
 		$this->loadView('public/evento',$datos);
 	}
+
+
 }

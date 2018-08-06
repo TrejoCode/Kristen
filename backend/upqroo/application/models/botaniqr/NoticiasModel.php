@@ -6,7 +6,7 @@
  * Time: 10:20 AM
  */
 
-class noticiasModel extends CI_Model
+class NoticiasModel extends CI_Model
 {
 
     public function __construct()

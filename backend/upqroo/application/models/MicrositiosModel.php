@@ -1,6 +1,6 @@
 <?php
 
-class micrositiosModel extends m_model
+class MicrositiosModel extends M_model
 {
 
     public function getMicrositios($elements)

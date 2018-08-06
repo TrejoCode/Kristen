@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class transparenciaController extends m_controller {
+class ReinscripcionController extends M_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class transparenciaController extends m_controller {
 	 */
 	public function index()
 	{
-        $data['title']='TRANSPARENCIA';
-        $this->loadView('public/transparencia',$data);
+        $data['title']='REINSCRIPCION';
+        $this->loadView('public/reinscripcion',$data);
 	}
 }

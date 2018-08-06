@@ -6,7 +6,7 @@
  * Date: 02/08/2018
  * Time: 04:27 PM
  */
-class adminModel extends CI_Model
+class AdminModel extends CI_Model
 {
     public function __construct()
     {

@@ -1,6 +1,6 @@
 <?php
 
-class adminModel extends m_model
+class AdminModel extends M_model
 {
 
     public function getData($elements)

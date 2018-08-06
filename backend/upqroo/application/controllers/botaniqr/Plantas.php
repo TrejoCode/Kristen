@@ -6,7 +6,7 @@
  * Time: 10:20 AM
  */
 
-class plantas extends CI_Controller
+class Plantas extends CI_Controller
 {
 
     public function index()

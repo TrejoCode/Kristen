@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23b29969-f0f4-43f7-8955-e283cb343136" name="Default" comment="" />
+    <list default="true" id="23b29969-f0f4-43f7-8955-e283cb343136" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/admin.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/Admin.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/admisionController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/AdmisionController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/becasController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/BecasController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/admin.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Admin.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/home.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Home.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/plantas.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Plantas.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/directorioController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/DirectorioController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/eventos_controller.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/EventosController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/homeController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/HomeController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/micrositios_controller.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/MicrositiosController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/nosotrosController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/NosotrosController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/noticias_controller.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/NoticiasController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/pagosController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/PagosController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/planeacionController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/PlaneacionController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/reinscripcionController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/ReinscripcionController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/serviciosAController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/ServiciosAController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/transparenciaController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/TransparenciaController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/tvController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/visitasController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/VisitasController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/core/m_controller.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/core/M_controller.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/core/m_model.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/core/M_model.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/adminModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/AdminModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/adminModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/AdminModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/homeModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/HomeModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/noticiasModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/NoticiasModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/plantasModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/PlantasModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/eventos_model.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/EventosModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/homeModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/HomeModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/micrositiosModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/MicrositiosModel.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/noticias_model.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/NoticiasModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/Welcome.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/Welcome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/noticias.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/noticias.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,57 +47,101 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/admin.php">
+      <file leaf-file-name="NoticiasController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/NoticiasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="84" column="32" lean-forward="false" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
-              <folding>
-                <element signature="n#index#0;n#admin#0;n#!!top" expanded="false" />
-                <element signature="n#bLogin#0;n#admin#0;n#!!top" expanded="false" />
-                <element signature="n#bLogout#0;n#admin#0;n#!!top" expanded="false" />
-                <element signature="n#plantas#0;n#admin#0;n#!!top" expanded="false" />
-                <element signature="n#noticias#0;n#admin#0;n#!!top" expanded="false" />
-                <element signature="n#addNoticia#0;n#admin#0;n#!!top" expanded="false" />
-                <element signature="e#3049#4116#0#PHP" expanded="false" />
-                <element signature="n#addPlanta#0;n#admin#0;n#!!top" expanded="false" />
-                <element signature="n#editPlanta#0;n#admin#0;n#!!top" expanded="false" />
-                <marker date="1533271002753" expanded="false" signature="6458:6874" ph="{...}" />
-                <marker date="1533271002753" expanded="false" signature="6915:6928" ph="{...}" />
-                <marker date="1533271002753" expanded="false" signature="6970:6983" ph="{...}" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/adminModel.php">
+      <file leaf-file-name="TvController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-              <folding>
-                <element signature="n#__construct#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#login#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#getPlantas#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#getNoticias#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#getPlanta#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#getNoticia#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#addPlanta#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#addNoticia#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#updatePlanta#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#updateNoticia#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#deletePlanta#0;n#adminModel#0;n#!!top" expanded="false" />
-                <element signature="n#deleteNoticia#0;n#adminModel#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="339">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/upqroo/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="185" column="44" lean-forward="false" selection-start-line="185" selection-start-column="44" selection-end-line="185" selection-end-column="44" />
+            <state relative-caret-position="2210">
+              <caret line="130" column="63" lean-forward="true" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MicrositiosController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/MicrositiosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VisitasController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/VisitasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PagosController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/PagosController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaneacionController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/PlaneacionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReinscripcionController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/ReinscripcionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiciosAController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/ServiciosAController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransparenciaController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TransparenciaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -72,9 +151,48 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>eventosModel</find>
+      <find>eventosodel</find>
+      <find>eventos_odel</find>
+      <find>eventos_model</find>
+      <find>H</find>
+      <find>h</find>
+      <find>homeMo</find>
+      <find>homeMod</find>
+      <find>homeMode</find>
+      <find>homeModel</find>
+      <find>i</find>
+      <find>m</find>
+      <find>micr</find>
+      <find>microsi</find>
+      <find>micrositios</find>
+      <find>micrositiosMo</find>
+      <find>micrositiosMod</find>
+      <find>micrositiosMode</find>
+      <find>micrositiosModel</find>
+      <find>N</find>
+      <find>no</find>
+      <find>noti</find>
       <find>noticias</find>
-      <find>fa</find>
+      <find>noticias_n</find>
+      <find>noticias_</find>
+      <find>noticias_m</find>
+      <find>noticias_mo</find>
+      <find>noticias_mod</find>
+      <find>noticias_mode</find>
+      <find>noticias_model</find>
     </findStrings>
+    <replaceStrings>
+      <replace>AdminModel</replace>
+      <replace />
+      <replace>Admin</replace>
+      <replace>M_controller</replace>
+      <replace>EventosModel</replace>
+      <replace>HomeModel</replace>
+      <replace>MicrositiosMOdel</replace>
+      <replace>MicrositiosModel</replace>
+      <replace>NoticiasModel</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,57 +200,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/htmls/admin-add-job.html" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/htmls/admin-view-job.html" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/private/admin-view-job.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/private/admin-add-job.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/core/m_model.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/private/admin-add-news.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/private/admin-add-event.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/htmls/admin-microsites.html" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/models/adminModel.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/micrositios_controller.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/private/admin.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/becasController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/admisionController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/directorioController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/nosotrosController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/pagosController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/planeacionController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/reinscripcionController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/serviciosAController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/transparenciaController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/private/admin-microsites.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/public/home.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/eventosController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/noticias_controller.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/trejocode.css" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/templates/header.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/plantas.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/.htaccess" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/config/config.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/home.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/plantas.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/noticiasModel.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/noticias.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/home.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/login.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/homeModel.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/core/m_botaniController.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/core/m_controllerBotani.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/core/m_controller.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-view-news.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-view-plants.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/admin.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/adminModel.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin.php" />
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/planta.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/templates/footer.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/noticia.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-plant.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-news.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/admin.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/homeModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/core/m_model.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/noticias_model.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/micrositiosModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/homeModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/noticiasModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/plantasModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/EventosModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/HomeModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/MicrositiosModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/NoticiasModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/exampleModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/home.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/noticias.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/plantas.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/admin.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Admin.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/AdminModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/AdminModel.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/Welcome.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/becasController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/serviciosAController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/core/M_controller.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/Admin.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/admisionController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/BecasController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/directorioController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/eventos_controller.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/homeController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/micrositios_controller.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/nosotrosController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/noticias_controller.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/pagosController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/planeacionController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/reinscripcionController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/ServiciosAController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/transparenciaController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/tvController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/visitasController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/EventosController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Home.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/MicrositiosController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/NoticiasController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" />
       </list>
     </option>
   </component>
@@ -169,7 +287,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,8 +339,87 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upqroo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upqroo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upqroo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,20 +552,33 @@
       <workItem from="1533103981526" duration="1807000" />
       <workItem from="1533139644312" duration="7010000" />
       <workItem from="1533238282893" duration="27829000" />
+      <workItem from="1533411344932" duration="1214000" />
+      <workItem from="1533577277558" duration="6703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47363000" />
+    <option name="totallyTimeSpent" value="55280000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30786687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31694403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -381,7 +590,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -419,206 +627,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/public/eventos.php" />
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/public/evento.php" />
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/templates/buttons.php" />
-    <entry file="file://$PROJECT_DIR$/frontend/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5870">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/private/footer.php" />
-    <entry file="file://$PROJECT_DIR$/frontend/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/templates/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/private/admin-add-event.php" />
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/private/admin-add-news.php" />
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/Welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/agregaNoticia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/agregarPlanta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/old.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/plantas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="78" column="6" lean-forward="false" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/.htaccess" />
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/plantasModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/noticiasModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/private/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <marker date="1533237221460" expanded="true" signature="3689:3834" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="3887:4026" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="4078:4207" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="4259:4391" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="4443:4576" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="4628:4751" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="4803:4944" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="5230:5403" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="5558:5721" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="5876:6041" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="6196:6353" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="6508:6675" ph="..." />
-            <marker date="1533237221460" expanded="true" signature="6830:7005" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/public/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/homeModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/homeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="46" column="9" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="46" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/core/m_controllerBotani.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/adminModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-event.php" />
     <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="293" column="15" lean-forward="false" selection-start-line="293" selection-start-column="14" selection-end-line="293" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="732">
           <caret line="104" column="27" lean-forward="false" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <marker date="1533256434697" expanded="true" signature="2295:2423" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -652,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,15 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="69" lean-forward="false" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/plantas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,15 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,15 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1819">
           <caret line="107" column="120" lean-forward="false" selection-start-line="107" selection-start-column="120" selection-end-line="107" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/core/m_controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,17 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="32" column="139" lean-forward="false" selection-start-line="32" selection-start-column="139" selection-end-line="32" selection-end-column="139" />
-          <folding>
-            <marker date="1533256167064" expanded="true" signature="2305:2433" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="185" column="44" lean-forward="false" selection-start-line="185" selection-start-column="44" selection-end-line="185" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="163" lean-forward="false" selection-start-line="10" selection-start-column="163" selection-end-line="10" selection-end-column="163" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,72 +735,310 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/admin.php">
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/core/M_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1704">
-          <caret line="584" column="0" lean-forward="false" selection-start-line="584" selection-start-column="0" selection-end-line="584" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="45" column="8" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/PlantasModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/NoticiasModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/HomeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/HomeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/MicrositiosModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/NoticiasModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/exampleModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/EventosModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Plantas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding>
-            <element signature="n#index#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#getGeneralDataByUser#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#getEspesificDataByCarrer#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#evento#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#trabajo#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#crearContenidos#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#addEvento#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#addTrabajo#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#crearContenidoMicrositio#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#addMicrositio#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#editMicrositio#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#editNoticia#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#editEvento#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#editTrabajo#0;n#admin#0;n#!!top" expanded="false" />
+            <element signature="n#index#0;n#Plantas#0;n#!!top" expanded="false" />
+            <element signature="n#showOne#0;n#Plantas#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/adminModel.php">
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/noticias.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="85" column="38" lean-forward="false" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+        <state relative-caret-position="51">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/AdminModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/AdminModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="16" />
           <folding>
-            <element signature="n#__construct#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#login#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#getPlantas#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#getNoticias#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#getPlanta#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#getNoticia#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#addPlanta#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#addNoticia#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#updatePlanta#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#updateNoticia#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#deletePlanta#0;n#adminModel#0;n#!!top" expanded="false" />
-            <element signature="n#deleteNoticia#0;n#adminModel#0;n#!!top" expanded="false" />
+            <element signature="n#__construct#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#login#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#getPlantas#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#getNoticias#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#getPlanta#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#getNoticia#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#addPlanta#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#addNoticia#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#updatePlanta#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#updateNoticia#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#deletePlanta#0;n#AdminModel#0;n#!!top" expanded="false" />
+            <element signature="n#deleteNoticia#0;n#AdminModel#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/admin.php">
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/core/M_controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="84" column="32" lean-forward="false" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+        <state relative-caret-position="85">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="59" lean-forward="false" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
           <folding>
-            <element signature="n#index#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#bLogin#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#bLogout#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#plantas#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#noticias#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#addNoticia#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="e#3049#4116#0#PHP" expanded="false" />
-            <element signature="n#addPlanta#0;n#admin#0;n#!!top" expanded="false" />
-            <element signature="n#editPlanta#0;n#admin#0;n#!!top" expanded="false" />
-            <marker date="1533271002753" expanded="false" signature="6458:6874" ph="{...}" />
-            <marker date="1533271002753" expanded="false" signature="6915:6928" ph="{...}" />
-            <marker date="1533271002753" expanded="false" signature="6970:6983" ph="{...}" />
+            <element signature="n#bLogout#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#eliminarPlanta#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#eliminarNoticia#0;n#Admin#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/Welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/EventosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="137" column="4" lean-forward="false" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
+          <folding>
+            <element signature="n#index#0;n#EventosController#0;n#!!top" expanded="false" />
+            <element signature="n#paginaEvento#0;n#EventosController#0;n#!!top" expanded="false" />
+            <element signature="n#showEvento#0;n#EventosController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/DirectorioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/BecasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/AdmisionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/NosotrosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/NoticiasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/PagosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/PlaneacionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/ReinscripcionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/ServiciosAController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TransparenciaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/VisitasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/MicrositiosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="130" column="63" lean-forward="true" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

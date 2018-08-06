@@ -1,8 +1,8 @@
 <?php
 
-//require_once '../core/m_model.php';
+//require_once '../core/M_model.php';
 
-class homeModel extends m_model
+class HomeModel extends M_model
 {
 
    public function getData($table,$elements)

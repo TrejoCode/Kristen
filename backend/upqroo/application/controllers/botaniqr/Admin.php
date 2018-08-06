@@ -1,11 +1,11 @@
 <?php
 
-class admin extends m_controller
+class Admin extends M_controller
 {
 
     public function index()
     {
-        $this->load->model('botaniqr/adminModel');
+        $this->load->model('botaniqr/AdminModel');
         if(isset($_SESSION['bUserid']))
         {
             $this->data['nombre']=$_SESSION['bUserName'];
@@ -22,7 +22,7 @@ class admin extends m_controller
     public function bLogin()
     {
         $this->load->library('form_validation');
-        $this->load->model('botaniqr/adminModel');
+        $this->load->model('botaniqr/AdminModel');
         $this->load->helper(array('form', 'url'));
 
         $this->form_validation->set_rules('email', 'usuario', 'required');
@@ -64,20 +64,20 @@ class admin extends m_controller
 
     public function plantas($pages=0)
     {
-        $this->load->model('botaniqr/adminModel');
+        $this->load->model('botaniqr/AdminModel');
         $this->data['title']='ADMIN';
         $this->data['nombre']=$_SESSION['bUserName'];
-        $this->data['plantas']=$this->adminModel->getPlantas();
+        $this->data['plantas']=$this->AdminModel->getPlantas();
         $this->load->view('botaniqr/private/admin',$this->data);
         $this->load->view('botaniqr/private/admin-view-plants',$this->data);
     }
 
     public function noticias($pages=0)
     {
-        $this->load->model('botaniqr/adminModel');
+        $this->load->model('botaniqr/AdminModel');
         $this->data['title']='ADMIN';
         $this->data['nombre']=$_SESSION['bUserName'];
-        $this->data['noticias']=$this->adminModel->getNoticias();
+        $this->data['noticias']=$this->AdminModel->getNoticias();
         $this->load->view('botaniqr/private/admin',$this->data);
         $this->load->view('botaniqr/private/admin-view-news',$this->data);
     }
@@ -86,7 +86,7 @@ class admin extends m_controller
     {
         $this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
-        $this->load->model('botaniqr/adminModel');
+        $this->load->model('botaniqr/AdminModel');
 
         $this->form_validation->set_rules('nombre', 'nombre', 'required');
         $this->form_validation->set_rules('descripcion', 'descriction', 'required');
@@ -122,12 +122,12 @@ class admin extends m_controller
 
             if($isInsert)
             {
-                $this->adminModel->addNoticia($nPlant);
+                $this->AdminModel->addNoticia($nPlant);
                 redirect(base_url().'index.php/botaniqr/administrador/ver/noticias/0');
             }
             else
             {
-                $this->adminModel->updateNoticia($nPlant);
+                $this->AdminModel->updateNoticia($nPlant);
                 redirect(base_url().'index.php/botaniqr/administrador/ver/noticias/0');
             }
         }
@@ -137,7 +137,7 @@ class admin extends m_controller
     {
         $this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
-        $this->load->model('botaniqr/adminModel');
+        $this->load->model('botaniqr/AdminModel');
 
         $this->form_validation->set_rules('nombre', 'nombre', 'required');
         $this->form_validation->set_rules('descripcion', 'descriction', 'required');
@@ -157,7 +157,7 @@ class admin extends m_controller
         {
             $idP=null;
             $isInsert=true;
-            $total=count($this->adminModel->getPlantas());
+            $total=count($this->AdminModel->getPlantas());
             $nCod='UPQROO_P_'.($total+1);
             $qr='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data='.$nCod;
             if($this->input->post('idPlanta')!=null)
@@ -182,12 +182,12 @@ class admin extends m_controller
 
             if($isInsert)
             {
-                $this->adminModel->addPlanta($nPlant);
+                $this->AdminModel->addPlanta($nPlant);
                 redirect(base_url().'index.php/botaniqr/administrador/ver/plantas/0');
             }
             else
             {
-                $this->adminModel->updatePlanta($nPlant);
+                $this->AdminModel->updatePlanta($nPlant);
                 redirect(base_url().'index.php/botaniqr/administrador/ver/plantas/0');
             }
         }
@@ -197,8 +197,8 @@ class admin extends m_controller
     {
         $this->data['title']='EDITAR PLANTA';
         $this->data['nombre']=$_SESSION['bUserName'];
-        $this->load->model('botaniqr/adminModel');
-        $this->data['plantas']=$this->adminModel->getPlanta($id);
+        $this->load->model('botaniqr/AdminModel');
+        $this->data['plantas']=$this->AdminModel->getPlanta($id);
         //var_dump($this->data['noticias']);
         $this->load->view('botaniqr/private/admin',$this->data);
         $this->load->view('botaniqr/private/admin-add-plant',$this->data);
@@ -208,8 +208,8 @@ class admin extends m_controller
     {
         $this->data['title']='EDITAR NOTICIA';
         $this->data['nombre']=$_SESSION['bUserName'];
-        $this->load->model('botaniqr/adminModel');
-        $this->data['noticias']=$this->adminModel->getNoticia($id);
+        $this->load->model('botaniqr/AdminModel');
+        $this->data['noticias']=$this->AdminModel->getNoticia($id);
         //var_dump($this->data['noticias']);
         $this->load->view('botaniqr/private/admin',$this->data);
         $this->load->view('botaniqr/private/admin-add-news',$this->data);

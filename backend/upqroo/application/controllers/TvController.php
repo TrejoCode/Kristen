@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class visitasController extends m_controller {
+class TvController extends M_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,13 @@ class visitasController extends m_controller {
 	 */
 	public function index()
 	{
-	    $data['title']='VISITAS INDUSTRIALES';
-        $this->loadView('public/visitas',$data);
+		$this->load->model('NoticiasModel');
+
+		$res=$this->NoticiasModel->getNoticias(array('publicacion'=>'noticias/1'));
+
+		$datos['Datos'] = $res;
+		$datos['title'] = "TV";
+
+        $this->loadTV('public/tv', $datos);
 	}
 }

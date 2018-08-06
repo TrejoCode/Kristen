@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class nosotrosController extends m_controller {
+class DirectorioController extends M_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class nosotrosController extends m_controller {
 	 */
 	public function index()
 	{
-        $data['title']='NOSOTROS';
-        $this->loadView('public/nosotros',$data);
+        $data['title']='DIRECTORIO';
+        $this->loadView('public/directorio',$data);
 	}
 }

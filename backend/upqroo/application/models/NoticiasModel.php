@@ -1,8 +1,8 @@
 <?php
 
-//require_once '../core/m_model.php';
+//require_once '../core/M_model.php';
 
-class noticias_model extends m_model
+class NoticiasModel extends M_model
 {
 	public function getNoticia($elements)
    {

@@ -1,16 +1,16 @@
 <?php
 
-class homeController extends m_controller
+class HomeController extends M_controller
 {
 
 	//Se asigna el data a la vista home , regresa toda la información
 	public function index(){
 
-        $this->load->model('homeModel');
+        $this->load->model('HomeModel');
 
-		$data['noticias'] =$this->homeModel->getData('/publicacion',array('noticias'=>1));
-		$data['carrera'] = $this->homeModel->getData('',array('carrera'=>''));
-		$data['evento'] =$this->homeModel->getData('/publicacion',array('eventos'=>1));
+		$data['noticias'] =$this->HomeModel->getData('/publicacion',array('noticias'=>1));
+		$data['carrera'] = $this->HomeModel->getData('',array('carrera'=>''));
+		$data['evento'] =$this->HomeModel->getData('/publicacion',array('eventos'=>1));
 		$data['title']='HOME';
 		//var_dump($data['noticias']);
 		$this->loadView('public/home' , $data);

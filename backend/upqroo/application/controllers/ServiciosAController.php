@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class reinscripcionController extends m_controller {
+class ServiciosAController extends M_controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class reinscripcionController extends m_controller {
 	 */
 	public function index()
 	{
-        $data['title']='REINSCRIPCION';
-        $this->loadView('public/reinscripcion',$data);
+        $data['title']='SERVICIOS DE ASISTENCIA';
+        $this->loadView('public/serviciosAsistencia',$data);
 	}
 }

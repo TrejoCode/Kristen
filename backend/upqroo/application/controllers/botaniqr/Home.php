@@ -6,18 +6,18 @@
  * Time: 10:36 AM
  */
 
-class home extends CI_Controller
+class Home extends CI_Controller
 {
 
     public function index()
     {
 
-        $this->load->model('botaniqr/homeModel');
+        $this->load->model('botaniqr/HomeModel');
 
         $this->load->helper('url');
 
-        $data['plantas']=$this->homeModel->getPlantas();
-        $data['noticias']=$this->homeModel->getNoticias();
+        $data['plantas']=$this->HomeModel->getPlantas();
+        $data['noticias']=$this->HomeModel->getNoticias();
 
         //var_dump($data);
 

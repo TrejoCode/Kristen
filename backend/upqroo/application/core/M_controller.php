@@ -3,7 +3,7 @@
 /**
  *
  */
-class m_controller extends Ci_Controller
+class M_controller extends Ci_Controller
 {
     //
     public $status=false;
@@ -55,8 +55,8 @@ class m_controller extends Ci_Controller
 
     public function botaniLogin($username,$password)
     {
-        $this->load->model('botaniqr/adminModel');
-        $resultado=$this->adminModel->login($username,$password);
+        $this->load->model('botaniqr/AdminModel');
+        $resultado=$this->AdminModel->login($username,$password);
         if(!empty($resultado))
         {
             $_SESSION['bUserName']=$resultado[0]->usuario;
