@@ -188,5 +188,5 @@ header, .noticias, .plantas, .call-to-action, .error-page, .login {
 /*    MOBILE DEVICES    */
 
 @media screen and (max-width: 576px) {
-    /*body {background: blue;}
+    body {background: blue;}
 }

@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23b29969-f0f4-43f7-8955-e283cb343136" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/admin.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/Admin.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/admisionController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/AdmisionController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/becasController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/BecasController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/admin.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Admin.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/home.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Home.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/plantas.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Plantas.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/directorioController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/DirectorioController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/eventos_controller.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/EventosController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/homeController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/HomeController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/micrositios_controller.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/MicrositiosController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/nosotrosController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/NosotrosController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/noticias_controller.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/NoticiasController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/pagosController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/PagosController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/planeacionController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/PlaneacionController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/reinscripcionController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/ReinscripcionController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/serviciosAController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/ServiciosAController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/transparenciaController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/TransparenciaController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/tvController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/visitasController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/VisitasController.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/core/m_controller.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/core/M_controller.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/core/m_model.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/core/M_model.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/adminModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/AdminModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/adminModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/AdminModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/homeModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/HomeModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/noticiasModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/NoticiasModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/plantasModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/botaniqr/PlantasModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/eventos_model.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/EventosModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/homeModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/HomeModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/micrositiosModel.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/MicrositiosModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/backend/upqroo/application/models/noticias_model.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/models/NoticiasModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/Welcome.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/Welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/noticias.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/noticias.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css" afterPath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,16 +14,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NoticiasController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/NoticiasController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TvController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,11 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/upqroo/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2210">
               <caret line="130" column="63" lean-forward="true" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="189" column="38" lean-forward="true" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -200,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/templates/footer.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/noticia.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-plant.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-news.php" />
@@ -251,6 +217,7 @@
         <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/NoticiasController.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -335,7 +302,63 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="BotaniQR" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upqroo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BotaniQR" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kristen" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upqroo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BotaniQR" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,62 +381,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kristen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kristen" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upqroo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kristen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kristen" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upqroo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -553,12 +520,12 @@
       <workItem from="1533139644312" duration="7010000" />
       <workItem from="1533238282893" duration="27829000" />
       <workItem from="1533411344932" duration="1214000" />
-      <workItem from="1533577277558" duration="6703000" />
+      <workItem from="1533577277558" duration="7092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55280000" />
+    <option name="totallyTimeSpent" value="55669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,7 +537,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31694403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -633,13 +600,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-event.php" />
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/trejocode.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -1038,6 +998,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2210">
           <caret line="130" column="63" lean-forward="true" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="189" column="38" lean-forward="true" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
           <folding />
         </state>
       </provider>
