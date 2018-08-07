@@ -33,7 +33,7 @@ class Admin extends M_controller
         }
         else
         {
-            redirect(base_url().'index.php/login');
+            redirect(base_url().'login');
         }
     }
 
@@ -253,7 +253,7 @@ class Admin extends M_controller
                 }
                 else
                 {
-                    redirect(base_url().'index.php/administrador/ver/evento/0');
+                    redirect(base_url().'administrador/ver/evento/0');
                 }
             }
             else
@@ -264,7 +264,7 @@ class Admin extends M_controller
                 }
                 else
                 {
-                    redirect(base_url().'index.php/administrador/ver/trabajo/0');
+                    redirect(base_url().'administrador/ver/trabajo/0');
                 }
             }
             /**/
@@ -371,7 +371,7 @@ class Admin extends M_controller
                 }
                 else
                 {
-                    redirect(base_url().'index.php/administrador/ver/noticia/0');
+                    redirect(base_url().'administrador/ver/noticia/0');
                 }
             }
             else
@@ -382,7 +382,7 @@ class Admin extends M_controller
                 }
                 else
                 {
-                    redirect(base_url().'index.php/administrador/ver/trabajo/0');
+                    redirect(base_url().'administrador/ver/trabajo/0');
                 }
             }
         }
@@ -458,7 +458,7 @@ class Admin extends M_controller
                 }
                 else
                 {
-                    redirect(base_url().'index.php/administrador/ver/noticia/0');
+                    redirect(base_url().'administrador/ver/noticia/0');
                 }
             }
             else
@@ -469,7 +469,7 @@ class Admin extends M_controller
                 }
                 else
                 {
-                    redirect(base_url().'index.php/administrador/ver/trabajo/0');
+                    redirect(base_url().'administrador/ver/trabajo/0');
                 }
             }
         }
@@ -565,7 +565,7 @@ class Admin extends M_controller
                 }
                 else
                 {
-                    redirect(base_url().'index.php/administrador/ver/noticia/0');
+                    redirect(base_url().'administrador/ver/noticia/0');
                 }
             }
             else
@@ -576,7 +576,7 @@ class Admin extends M_controller
                 }
                 else
                 {
-                    redirect(base_url().'index.php/administrador/ver/trabajo/0');
+                    redirect(base_url().'administrador/ver/trabajo/0');
                 }
             }
         }

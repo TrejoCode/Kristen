@@ -119,7 +119,7 @@
                                             </div>
                                             <div class="white-space-8"></div>
                                             <div class="title-link">
-                                                <h3><a href="<?php echo base_url().'index.php/noticia?id='.$Ultima1->idPublicaciones; ?>"><?php echo $Ultima1->titulo; ?></a></h3>
+                                                <h3><a href="<?php echo base_url().'noticia?id='.$Ultima1->idPublicaciones; ?>"><?php echo $Ultima1->titulo; ?></a></h3>
                                             </div>
 
                                             <div class="white-space-16"></div>
@@ -129,7 +129,7 @@
                                             </div>
                                             <div class="white-space-8"></div>
                                             <div class="title-link">
-                                                <h3><a href="<?php echo base_url().'index.php/noticia?id='.$Ultima2->idPublicaciones; ?>"><?php echo $Ultima2->titulo; ?></a></h3>
+                                                <h3><a href="<?php echo base_url().'noticia?id='.$Ultima2->idPublicaciones; ?>"><?php echo $Ultima2->titulo; ?></a></h3>
                                             </div>
 
                                             <div class="white-space-16"></div>
@@ -139,7 +139,7 @@
                                             </div>
                                             <div class="white-space-8"></div>
                                             <div class="title-link">
-                                                <h3><a href="<?php echo base_url().'index.php/noticia?id='.$Ultima3->idPublicaciones; ?>"><?php echo $Ultima3->titulo; ?></a></h3>
+                                                <h3><a href="<?php echo base_url().'noticia?id='.$Ultima3->idPublicaciones; ?>"><?php echo $Ultima3->titulo; ?></a></h3>
                                             </div>
 
                                         </div>

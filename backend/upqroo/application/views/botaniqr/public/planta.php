@@ -20,7 +20,7 @@
             <div class="container row-responsive">
                 <div class="imagen-planta">
                     <div class="responsive-img" id="planta-img">
-                        <img src="<?php echo base_url().'BotaniQR/'.$imgUrl; ?>" alt="Planta">
+                        <img src="<?php echo base_url().'assets/BotaniQR/'.$imagen; ?>" alt="Planta">
                     </div>
                 </div>
                 <div class="informacion-planta">

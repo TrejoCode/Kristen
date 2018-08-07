@@ -3,7 +3,7 @@
         <div class="column">
             <div class="white-space-32"></div>
             <div class="title">
-                <h2><?php echo $titulo; ?></h2>
+                <h2><?php echo $nombre; ?></h2>
             </div>
             <div class="white-space-16"></div>
             <div class="publish">
@@ -16,7 +16,7 @@
             <div class="notice-banner">
                 <div class="container">
                     <div class="responsive-img">
-                        <img src="<?php echo $imgUrl; ?>" alt="">
+                        <img src="<?php echo $imagen; ?>" alt="">
                     </div>
                 </div>
             </div>

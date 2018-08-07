@@ -84,7 +84,7 @@
                         <h2 class="color-white text-center">CONOCE EL DIRECTORIO</h2>
                         <div class="white-space-32"></div>
                         <div class="justify-center">
-                            <a class="btn btn-teal" href="<?php echo base_url();?>index.php/directorio"><i class="fas fa-file-invoice"></i> VISITAR DIRECTORIO</a>
+                            <a class="btn btn-teal" href="<?php echo base_url();?>directorio"><i class="fas fa-file-invoice"></i> VISITAR DIRECTORIO</a>
                         </div>
                         <div class="white-space-64"></div>
                     </div>

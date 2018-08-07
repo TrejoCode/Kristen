@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/tv.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/tv.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <title>UPQROO - TV</title>
 </head>
@@ -12,7 +12,7 @@
 <body>
     <div class="header-tv">
         <div class="left">
-            <img src="../assets/img/logo-upqroo.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/img/logo-upqroo.png" alt="">
         </div>
         <div class="right">
             <div class="date-time">

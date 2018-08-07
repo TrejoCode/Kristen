@@ -26,11 +26,11 @@
                         </div>
                         <div class="right">
                             <div class="column">
-                                <a id="title" href="<?php echo base_url().'index.php/botaniqr/planta/'.$plantas[$i]->id; ?>"><?php echo $plantas[$i]->nombre; ?></a>
+                                <a id="title" href="<?php echo base_url().'botaniqr/planta/'.$plantas[$i]->id; ?>"><?php echo $plantas[$i]->nombre; ?></a>
                                 <div class="row">
                                     <div class="edit align-center">
                                         <i class="far fa-edit"></i>
-                                        <a href="<?php echo base_url().'index.php/botaniqr/administrador/editar/planta/'.$plantas[$i]->id; ?>"> EDITAR</a>
+                                        <a href="<?php echo base_url().'botaniqr/administrador/editar/planta/'.$plantas[$i]->id; ?>"> EDITAR</a>
                                     </div>
                                 </div>
                             </div>

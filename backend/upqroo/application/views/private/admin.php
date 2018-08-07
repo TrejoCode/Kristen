@@ -29,7 +29,7 @@
                                 <h4><?php echo $nombre; ?></h4>
                             </div>
                             <div class="end-session justify-end">
-                                <a href="<?php echo base_url().'index.php/logout';?>"><i class="fas fa-sign-out-alt"></i></a>
+                                <a href="<?php echo base_url().'logout';?>"><i class="fas fa-sign-out-alt"></i></a>
                             </div>
                         </div>
                     </div>
@@ -43,26 +43,26 @@
                         <div class="white-space-16"></div>
                         <div class="panel-item align-center">
                             <i class="far fa-newspaper"></i>
-                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia/0' ?>">Noticias</a>
+                            <a href="<?php echo base_url().'administrador/ver/noticia/0' ?>">Noticias</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="<?php echo base_url().'index.php/administrador/ver/noticia/0' ?>">Ver Noticias</a>
+                            <a href="<?php echo base_url().'administrador/ver/noticia/0' ?>">Ver Noticias</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="<?php echo base_url().'index.php/administrador/agregar/noticia' ?>">Agregar Noticia</a>
+                            <a href="<?php echo base_url().'administrador/agregar/noticia' ?>">Agregar Noticia</a>
                         </div>
 
                         <div class="white-space-16"></div>
 
                         <div class="panel-item align-center">
                             <i class="far fa-calendar-alt"></i>
-                            <a href="<?php echo base_url().'index.php/administrador/ver/evento/0' ?>">Eventos</a>
+                            <a href="<?php echo base_url().'administrador/ver/evento/0' ?>">Eventos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="<?php echo base_url().'index.php/administrador/ver/evento/0' ?>">Ver Eventos</a>
+                            <a href="<?php echo base_url().'administrador/ver/evento/0' ?>">Ver Eventos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="<?php echo base_url().'index.php/administrador/agregar/evento' ?>">Agregar Evento</a>
+                            <a href="<?php echo base_url().'administrador/agregar/evento' ?>">Agregar Evento</a>
                         </div>
 
                         <?php if($tipoUsuario==5)
@@ -73,22 +73,22 @@
                         </div>
 
                         <div class="panel-subitem">
-                            <a href="'.base_url().'index.php/administrador/biotecnologia">Biotecnologia</a>
+                            <a href="'.base_url().'administrador/biotecnologia">Biotecnologia</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="'.base_url().'index.php/administrador/software">Software</a>
+                            <a href="'.base_url().'administrador/software">Software</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="'.base_url().'index.php/administrador/biomedica">VBiomedica</a>
+                            <a href="'.base_url().'administrador/biomedica">VBiomedica</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="'.base_url().'index.php/administrador/financiera">Financiera</a>
+                            <a href="'.base_url().'administrador/financiera">Financiera</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="'.base_url().'index.php/administrador/pymes">Pymes</a>
+                            <a href="'.base_url().'administrador/pymes">Pymes</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="'.base_url().'index.php/administrador/terapia-fisica">Terapia Fisica</a>
+                            <a href="'.base_url().'administrador/terapia-fisica">Terapia Fisica</a>
                         </div>
                         ';
                         }
@@ -97,32 +97,32 @@
                             switch ($carrera) {
                                 case 2:
                                     echo '<div class="panel-subitem">
-                                            <a href="'.base_url().'index.php/administrador/biotecnologia">Biotecnologia</a>
+                                            <a href="'.base_url().'administrador/biotecnologia">Biotecnologia</a>
                                           </div>';
                                     break;
                                 case 3:
                                     echo '<div class="panel-subitem">
-                                            <a href="'.base_url().'index.php/administrador/software">Software</a>
+                                            <a href="'.base_url().'administrador/software">Software</a>
                                           </div>';
                                     break;
                                 case 4:
                                     echo '<div class="panel-subitem">
-                                            <a href="'.base_url().'index.php/administrador/biomedica">Biomedica</a>
+                                            <a href="'.base_url().'administrador/biomedica">Biomedica</a>
                                           </div>';
                                     break;
                                 case 5:
                                     echo '<div class="panel-subitem">
-                                            <a href="'.base_url().'index.php/administrador/pymes">Pymes</a>
+                                            <a href="'.base_url().'administrador/pymes">Pymes</a>
                                           </div>';
                                     break;
                                 case 6:
                                     echo '<div class="panel-subitem">
-                                            <a href="'.base_url().'index.php/administrador/financiera">Financiera</a>
+                                            <a href="'.base_url().'administrador/financiera">Financiera</a>
                                           </div>';
                                     break;
                                 case 7:
                                     echo '<div class="panel-subitem">
-                                            <a href="'.base_url().'index.php/administrador/terapia-fisica">Terapia Fisica</a>
+                                            <a href="'.base_url().'administrador/terapia-fisica">Terapia Fisica</a>
                                           </div>';
                                     break;
                             }
@@ -133,13 +133,13 @@
 
                         <div class="panel-item align-center">
                             <i class="fas fa-briefcase"></i>
-                            <a href="<?php echo base_url().'index.php/administrador/ver/trabajo/0' ?>">Trabajos</a>
+                            <a href="<?php echo base_url().'administrador/ver/trabajo/0' ?>">Trabajos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="<?php echo base_url().'index.php/administrador/ver/trabajo/0' ?>">Ver Trabajos</a>
+                            <a href="<?php echo base_url().'administrador/ver/trabajo/0' ?>">Ver Trabajos</a>
                         </div>
                         <div class="panel-subitem">
-                            <a href="<?php echo base_url().'index.php/administrador/agregar/trabajo/' ?>">Agregar Trabajos</a>
+                            <a href="<?php echo base_url().'administrador/agregar/trabajo/' ?>">Agregar Trabajos</a>
                         </div>
 
                     </div>

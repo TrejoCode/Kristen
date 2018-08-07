@@ -35,7 +35,7 @@
                                         <div class="description">
                                             <p class="text-justify"><?php echo $plantas[$i]->descripcion; ?></p>
                                         </div>
-                                        <a class="read-more" href="<?php echo base_url().'index.php/botaniqr/plantas/'.$plantas[$i]->id; ?>">Leer Más</a>
+                                        <a class="read-more" href="<?php echo base_url().'botaniqr/plantas/'.$plantas[$i]->id; ?>">Leer Más</a>
                                     </div>
                                 </div>
                             </div>

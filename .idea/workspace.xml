@@ -2,7 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23b29969-f0f4-43f7-8955-e283cb343136" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css" afterPath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/admin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/old.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/trejocode.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/404.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/Login.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/LoginBackground.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/LogoBotaniQR.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/login-background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/logo-aguila.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/notice-banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/notice1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/notice2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/planta1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/planta2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/img/upqroo-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/databases/botanicqr.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/noticias/notice11121801.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/CespedLimon.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/Chaya.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/Chayote.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/ChilePiquin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/Oregano.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/OreganoFrances.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/Perejil.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/Romero.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/Ruda.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/Sabila.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/upqroo/BotaniQR/images/plantas/Tomate.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/config/config.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/Admin.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/Admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/EventosController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/EventosController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/HomeController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/HomeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/NoticiasController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/NoticiasController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/Welcome.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/Welcome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Admin.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/Admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-view-news.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-view-news.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-view-plants.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-view-plants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/home.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/login.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/noticia.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/noticia.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/noticias.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/noticias.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/planta.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/planta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/plantas.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/plantas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/templates/404.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/templates/404.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/templates/footer.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/templates/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/templates/header.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/templates/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/private/admin.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/private/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/admision.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/admision.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/evento.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/evento.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/eventos.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/eventos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/home.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/micrositios.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/micrositios.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/nosotros.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/nosotros.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/noticia.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/noticia.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/noticias.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/noticias.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/planeacion.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/planeacion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/serviciosAsistencia.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/serviciosAsistencia.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/transparencia.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/transparencia.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/public/tv.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/public/tv.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/templates/footer.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/templates/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/upqroo/application/views/templates/header.php" afterPath="$PROJECT_DIR$/backend/upqroo/application/views/templates/header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,101 +88,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TvController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/config/routes.php">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
-              <caret line="130" column="63" lean-forward="true" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="189" column="38" lean-forward="true" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MicrositiosController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/MicrositiosController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VisitasController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/VisitasController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PagosController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/PagosController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlaneacionController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/PlaneacionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReinscripcionController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/ReinscripcionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiciosAController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/ServiciosAController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransparenciaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TransparenciaController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            <state relative-caret-position="357">
+              <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -167,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/public/noticia.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-plant.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-news.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/botaniqr/admin.php" />
@@ -218,6 +211,7 @@
         <option value="$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/application/config/routes.php" />
         <option value="$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/backend/upqroo/.htacces" />
       </list>
     </option>
   </component>
@@ -302,63 +296,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BotaniQR" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kristen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kristen" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upqroo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BotaniQR" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kristen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kristen" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="upqroo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BotaniQR" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -383,6 +321,10 @@
               <option name="myItemId" value="application" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -391,7 +333,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BotaniQR-Web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../upqroo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -520,12 +462,12 @@
       <workItem from="1533139644312" duration="7010000" />
       <workItem from="1533238282893" duration="27829000" />
       <workItem from="1533411344932" duration="1214000" />
-      <workItem from="1533577277558" duration="7092000" />
+      <workItem from="1533577277558" duration="9718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55669000" />
+    <option name="totallyTimeSpent" value="58295000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,7 +479,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31694403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -599,21 +541,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-add-event.php" />
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/trejocode.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="293" column="15" lean-forward="false" selection-start-line="293" selection-start-column="14" selection-end-line="293" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="104" column="27" lean-forward="false" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/upqroo/application/views/botaniqr/private/admin-view-plants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -625,13 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -838,11 +758,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="48" column="59" lean-forward="false" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
-          <folding>
-            <element signature="n#bLogout#0;n#Admin#0;n#!!top" expanded="false" />
-            <element signature="n#eliminarPlanta#0;n#Admin#0;n#!!top" expanded="false" />
-            <element signature="n#eliminarNoticia#0;n#Admin#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -866,11 +782,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="137" column="4" lean-forward="false" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
-          <folding>
-            <element signature="n#index#0;n#EventosController#0;n#!!top" expanded="false" />
-            <element signature="n#paginaEvento#0;n#EventosController#0;n#!!top" expanded="false" />
-            <element signature="n#showEvento#0;n#EventosController#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -954,30 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/ServiciosAController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TransparenciaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/VisitasController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -994,6 +882,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="189" column="38" lean-forward="true" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/upqroo/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2210">
@@ -1002,10 +898,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/upqroo/BotaniQR/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TvController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="189" column="38" lean-forward="true" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
+        <state relative-caret-position="339">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/ServiciosAController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/controllers/TransparenciaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/.htacces">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/upqroo/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
           <folding />
         </state>
       </provider>

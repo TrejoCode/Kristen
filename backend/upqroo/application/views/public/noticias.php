@@ -72,7 +72,7 @@
                                                     $nump = 1;
                                                 } ?>
                                                 <a class="read-more" href="<?php
-                                                echo base_url().'index.php/ver/noticia/'.$Datos[$i]->idPublicaciones.'/'.$nump?>">Leer Más</a>
+                                                echo base_url().'ver/noticia/'.$Datos[$i]->idPublicaciones.'/'.$nump?>">Leer Más</a>
                                             <?php } ?>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@
                         { ?>
                             <div class="pagination justify-between">
                                 <a class="next"></a>
-                                <a class="next" href="<?php echo base_url().'index.php/pagina/'.$num; ?>">SIGUIENTE</a>
+                                <a class="next" href="<?php echo base_url().'pagina/'.$num; ?>">SIGUIENTE</a>
                             </div>
                         <?php }
                         elseif ($cambio == true) 
@@ -117,15 +117,15 @@
                             elseif ($Anterior == 0)
                             { ?>
                                 <div class="pagination justify-between">
-                                    <a class="next" href="<?php echo base_url().'index.php/pagina/'.$anterior; ?>">ANTERIOR</a>
+                                    <a class="next" href="<?php echo base_url().'pagina/'.$anterior; ?>">ANTERIOR</a>
                                     <a class="next"></a>
                                 </div>
                             <?php }
                             else
                             { ?>
                                 <div class="pagination justify-between">
-                                    <a class="next" href="<?php echo base_url().'index.php/pagina/'.$anterior; ?>">ANTERIOR</a>
-                                    <a class="next" href="<?php echo base_url().'index.php/pagina/'.$num; ?>">SIGUIENTE</a>
+                                    <a class="next" href="<?php echo base_url().'pagina/'.$anterior; ?>">ANTERIOR</a>
+                                    <a class="next" href="<?php echo base_url().'pagina/'.$num; ?>">SIGUIENTE</a>
                                 </div>
                             <?php  }
                     } ?>

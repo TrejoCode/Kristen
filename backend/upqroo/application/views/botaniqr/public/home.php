@@ -33,7 +33,7 @@
                                     <div class="description">
                                         <p class="text-justify"><?php echo $noticias[$i]->descripcion; ?></p>
                                     </div>
-                                    <a class="read-more" href="<?php echo base_url().'index.php/botaniqr/noticias/'.$noticias[$i]->id; ?>">Leer Más</a>
+                                    <a class="read-more" href="<?php echo base_url().'botaniqr/noticias/'.$noticias[$i]->id; ?>">Leer Más</a>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                             <div class="planta-card">
                                 <div class="column">
                                     <div class="featured-img responsive-img">
-                                        <img src="<?php echo base_url().'BotaniQR/'.$plantas[$i]->imagen; ?>" alt="">
+                                        <img src="<?php echo base_url().'assets/BotaniQR/'.$plantas[$i]->imagen; ?>" alt="">
                                     </div>
                                     <div class="container">
                                         <div class="column">
@@ -105,7 +105,7 @@
                                             <div class="description">
                                                 <p class="text-justify"><?php echo $plantas[$i]->descripcion; ?></p>
                                             </div>
-                                            <a class="read-more" href="<?php echo base_url().'index.php/botaniqr/plantas/'.$plantas[$i]->id; ?>">Leer Más</a>
+                                            <a class="read-more" href="<?php echo base_url().'botaniqr/plantas/'.$plantas[$i]->id; ?>">Leer Más</a>
                                         </div>
                                     </div>
                                 </div>

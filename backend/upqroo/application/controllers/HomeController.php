@@ -38,11 +38,11 @@ class HomeController extends M_controller
 
             if($resultado!='404')
             {
-                redirect(base_url().'index.php/administrador');
+                redirect(base_url().'administrador');
             }
             else
             {
-                redirect(base_url().'index.php/login');
+                redirect(base_url().'login');
             }
         }
     }

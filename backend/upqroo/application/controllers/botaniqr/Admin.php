@@ -15,7 +15,7 @@ class Admin extends M_controller
         }
         else
         {
-            redirect(base_url().'index.php/botaniqr/login');
+            redirect(base_url().'botaniqr/login');
         }
     }
 
@@ -45,14 +45,15 @@ class Admin extends M_controller
 
                 $this->data['nombre']=$resultado[0]->usuario;
                 $this->data['title']='ADMIN';
-                //redirect(base_url().'index.php/botaniqr');
+                //redirect(base_url().'botaniqr');
                 //$this->load->view('botaniqr/private/admin',$this->data);
-                $this->plantas();
+                redirect(base_url().'botaniqr/administrador/ver/plantas/0');
+                //$this->plantas();
                 //$this->load->view('botaniqr/private/admin-view-news',$this->data);
             }
             else
             {
-                redirect(base_url().'index.php/botaniqr/login');
+                redirect(base_url().'botaniqr/login');
             }
         }
     }
@@ -60,6 +61,7 @@ class Admin extends M_controller
     public function bLogout()
     {
         $this->botaniLogout();
+        redirect(base_url().'botaniqr');
     }
 
     public function plantas($pages=0)
@@ -123,12 +125,12 @@ class Admin extends M_controller
             if($isInsert)
             {
                 $this->AdminModel->addNoticia($nPlant);
-                redirect(base_url().'index.php/botaniqr/administrador/ver/noticias/0');
+                redirect(base_url().'botaniqr/administrador/ver/noticias/0');
             }
             else
             {
                 $this->AdminModel->updateNoticia($nPlant);
-                redirect(base_url().'index.php/botaniqr/administrador/ver/noticias/0');
+                redirect(base_url().'botaniqr/administrador/ver/noticias/0');
             }
         }
     }
@@ -183,12 +185,12 @@ class Admin extends M_controller
             if($isInsert)
             {
                 $this->AdminModel->addPlanta($nPlant);
-                redirect(base_url().'index.php/botaniqr/administrador/ver/plantas/0');
+                redirect(base_url().'botaniqr/administrador/ver/plantas/0');
             }
             else
             {
                 $this->AdminModel->updatePlanta($nPlant);
-                redirect(base_url().'index.php/botaniqr/administrador/ver/plantas/0');
+                redirect(base_url().'botaniqr/administrador/ver/plantas/0');
             }
         }
     }

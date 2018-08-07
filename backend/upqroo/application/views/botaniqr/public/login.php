@@ -8,7 +8,7 @@
                         <div class="white-space-32"></div>
                         <div class="logo">
                             <div class="responsive-img justify-center">
-                                <img src="<?php echo base_url(); ?>BotaniQR/assets/img/logo-aguila.png" alt="Login Background">
+                                <img src="<?php echo base_url(); ?>assets/BotaniQR/assets/img/logo-aguila.png" alt="Login Background">
                             </div>
                         </div>
                         <div class="white-space-32"></div>

@@ -7,15 +7,15 @@ class Welcome extends M_controller {
 	 * Index Page for this controller.
 	 *
 	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
+	 * 		http://example.com/welcome
 	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
+	 * 		http://example.com/welcome/index
 	 *	- or -
 	 * Since this controller is set as the default controller in
 	 * config/routes.php, it's displayed at http://example.com/
 	 *
 	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
+	 * map to /welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
@@ -48,31 +48,31 @@ class Welcome extends M_controller {
 
         if($resultado!='404')
         {
-            redirect(base_url().'index.php/administrador');
+            redirect(base_url().'administrador');
             /*if($_SESSION['tipoUsuario']==1)
             {
                 //Director de carrera
-                redirect(base_url().'index.php/administrador');
+                redirect(base_url().'administrador');
             }
             if($_SESSION['tipoUsuario']==2)
             {
                 //Vinculacion
-                redirect(base_url().'index.php/administrador');
+                redirect(base_url().'administrador');
             }
             if($_SESSION['tipoUsuario']==3)
             {
                 //Servicios escolares
-                redirect(base_url().'index.php/administrador');
+                redirect(base_url().'administrador');
             }
             if($_SESSION['tipoUsuario']==4)
             {
                 //Prensa y difucion
-                redirect(base_url().'index.php/administrador');
+                redirect(base_url().'administrador');
             }
             if ($_SESSION['tipoUsuario']==5)
             {
                 //Administrador web
-                redirect(base_url().'index.php/administrador');
+                redirect(base_url().'administrador');
             }*/
         }
         else

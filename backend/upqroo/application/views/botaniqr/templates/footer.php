@@ -9,7 +9,7 @@
         </div>
     </div>
 </footer>
-<script async src="<?php echo base_url(); ?>BotaniQR/assets/js/main.js"></script>
+<script async src="<?php echo base_url(); ?>assets/BotaniQR/assets/js/main.js"></script>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
