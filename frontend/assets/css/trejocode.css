@@ -38,14 +38,13 @@
     --fontMedium:    1.4em;
     --fontLarge:     1.6em;
     --fontHuge:      1.8em;
-    --fontMassive:   3em;
+
 
     /*    FONT WEIGHT    */
 
     --weightLight:   300;
     --weightRegular: 400;
     --weightMedium:  500;
-    --weightSemi:    600;
     --weightBold:    700;
 
     /*    FONT FAMILIES    */
@@ -121,10 +120,16 @@ h2 {
 
 h3 {
     color: var(--grayTitle);
+    font-size: var(--fontMedium);
 }
 
 h4 {
     color: var(--grayTitle);
+    font-size: var(--fontMedium);
+}
+
+h5 {
+    font-size: var(--fontMedium);
 }
 
 p {
