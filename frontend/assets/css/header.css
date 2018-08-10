@@ -6,35 +6,29 @@ header {
 .header-top{
     height: 50px;
     font-size: var(--fontTiny);
-    background-color: var(--blueTeal);
+    background-color: var(--lightBlue);
 }
 
-.header-top a {
-    color: var(--white);
-}
-
-.header-top .left{
+.header-top .left, .header-top .right{
     width: 50%;
 }
 
-.header-top .right{
-    width: 50%;
+.header-top .left .phone,
+.header-top .left .email
+{
+    padding: var(--paddingNormal);
 }
 
-.header-top .phone, .header-top .email, .header-top .phone i, .header-top .email i, .header-top .facebook-icon, .header-top .twitter-icon, .header-top .facebook-icon i, .header-top .twitter-icon i   {
-    width: auto;
-    color: var(--white);
-    padding: 0 var(--paddingNormal);
-}
-
-.header-top .phone a, .header-top .email a {
-    font-weight: var(--weightRegular);
+.header-top .right .facebook-icon,
+.header-top .right .twitter-icon
+{
+    padding: var(--paddingNormal);
 }
 
 .header-main {
     height: 95px;
     background-color: var(--white);
-    border-bottom: 1px solid #e6e6e7;
+    border-bottom: 1px solid var(--borderBackground);
 }
 
 .header-main .left{
@@ -49,12 +43,16 @@ header .header-main .logo {
     justify-content: flex-start;
 }
 
-.header-main .right .nav-item, .header-main .right .nav-item a {
-    width: auto;
-    color: var(--blueLink);
-    padding: var(--paddingNormal);
+.header-main .right .nav-item a {
+    color: var(--darkBlue);
     font-size: var(--fontText);
 }
+
+.header-main .right .nav-item, .header-main .right .nav-item a {
+    padding: var(--paddingNormal);
+}
+
+/* --- Hover Effect --- */
 
 .header-main .right .nav-item a {
     position: relative;
@@ -67,7 +65,7 @@ header .header-main .logo {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: var(--blueLink);
+    background-color: var(--darkBlue);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -80,10 +78,7 @@ header .header-main .logo {
     transform: scaleX(1);
 }
 
-
-.header-toggle {
-    background-color: var(--white);
-}
+/* --- // End Hover Effect --- */
 
 
 /*    LARGE DEVICES    */

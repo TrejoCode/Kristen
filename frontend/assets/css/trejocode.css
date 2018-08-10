@@ -354,6 +354,10 @@ label {
     border: var(--border);
 }
 
+.color-white {
+    color: var(--white);
+}
+
 .color-lightBlue {
     color: var(--darkBlue);
 }
