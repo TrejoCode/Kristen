@@ -1,10 +1,10 @@
 /*
     INFORMACIÓN
 	- Documento:      TrejoCode.CSS
-	- Versión:        1.1.2
+	- Versión:        1.1.3
 	- Licence:        MIT
 	- Author:         TrejoCode
-    - Actualización:  08/07/2018
+    - Actualización:  09/08/2018
 */
 
 
@@ -25,11 +25,13 @@
 
     --black:             #000000;
     --white:             #FFFFFF;
-    --ligthBlue:         #00B6BF;
+    --lightBlue:         #00B6BF;
     --darkBlue:          #2C54B3;
     --darkGray:          #333333;
     --lightGray:         #505050;
     --background:        #F6F6F7;
+    --formBackground:    #E5E5E5;
+    --borderBackground:  #E6E7EA;
 	--yellow: 			 #FCDB04;
 
     /*    FONT FAMILIES    */
@@ -46,7 +48,6 @@
     --fontLarge:     1.6em;
     --fontHuge:      1.8em;
 
-
     /*    FONT WEIGHT    */
 
     --weightLight:   300;
@@ -61,10 +62,9 @@
     --paddingSemi: 24px;
     --paddingLarge: 32px;
 
-
     /*    BORDER    */
 
-    --border: 1px solid #e6e7ea;
+    --border: 1px solid var(--borderBackground);
 
 }
 
@@ -162,6 +162,7 @@ p {
     3. = WHITE SPACES
     4. = FORMS
     5. = BUTTONS
+    6. = DECORATORS & COLORS
 
 */
 
@@ -239,10 +240,6 @@ p {
     align-items: flex-end;
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
-
 .text-center {
     text-align: center;
 }
@@ -289,49 +286,28 @@ form, form > input {
     font-family: var(--Roboto);
 }
 
+label {
+    color: var(--darkGray);
+}
+
+.input-text, .input-textarea, .input-date {
+    background-color: var(--formBackground);
+    padding: var(--paddingNormal) var(--paddingMedium);
+    outline: var(--borderBackground);
+    font-weight: var(--weightSemi);
+    font-family: var(--Roboto);
+    font-size: var(--fontTiny);
+    color: var(--lightGray);
+    border: none;
+    border-radius: 5px;
+}
+
 .input-text {
     height: 24px;
-    padding: var(--paddingNormal) var(--paddingMedium);
-    background-color: #E5E5E5;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    font-weight: var(--weightSemi);
-    font-family: var(--Roboto);
-    font-size: var(--fontTiny);
-    color: var(--grayTitle);
-}
-
-.input-textarea {
-    padding: var(--paddingNormal) var(--paddingMedium);
-    background-color: #E5E5E5;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    font-weight: var(--weightSemi);
-    font-family: var(--Roboto);
-    font-size: var(--fontTiny);
-    color: var(--grayTitle);
-}
-
-.input-date {
-    padding: var(--paddingNormal) var(--paddingMedium);
-    background-color: #E5E5E5;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    font-weight: var(--weightSemi);
-    font-family: var(--Roboto);
-    font-size: var(--fontTiny);
-    color: var(--grayTitle);
 }
 
 .input-file-h {
     display: none;
-}
-
-label {
-    color: var(--grayDescription);
 }
 
 
@@ -339,10 +315,11 @@ label {
 
 .btn {
     width: auto;
+    padding: var(--paddingMedium) var(--paddingSemi);
     font-weight: var(--weightBold);
     font-size: var(--fontSmall);
-    padding: var(--paddingMedium) var(--paddingSemi);
     font-family: var(--Roboto);
+    color: var(--white);
     border: none;
 }
 
@@ -350,50 +327,39 @@ label {
     padding: 0 var(--paddingNormal);
 }
 
-.btn-blue {
-    background-color: var(--blueLink);
-    color: var(--white);
+.btn-darkBlue {
+    background-color: var(--darkBlue);
 }
 
-.btn-teal {
-    background-color: var(--blueTeal);
-    color: var(--white);
+.btn-lightBlue {
+    background-color: var(--lightBlue);
 }
 
 .btn-login {
-    background-color: var(--blueTeal);
-    color: var(--white);
+    background-color: var(--darkBlue);
 }
 
 .btn-file {
-    background-color: var(--blueLink);
+    background-color: var(--darkBlue);
     color: var(--white);
 }
 
 .link {
-    color: var(--blueTeal);
+    color: var(--lightBlue);
 }
 
-.border {
+/*    DECORATORS & COLORS    */
+
+.bordered {
     border: var(--border);
 }
 
-/*    TEXTS     */
-
-.textHuge {
-    font-size: var(--fontHuge);
+.color-lightBlue {
+    color: var(--darkBlue);
 }
 
-.textTiny {
-    font-size: var(--fontTiny);
-}
-
-.color-teal {
-    color: var(--blueTeal);
-}
-
-.color-white {
-    color: var(--white);
+.color-lightBlue {
+    color: var(--lightBlue);
 }
 
 
