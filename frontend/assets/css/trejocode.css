@@ -11,10 +11,12 @@
 /* VARIABLES
    =============================
 	1. = COLORS
-	2. = FONTS
-    3. = FONT WEIGHT
-    4. = FONT FAMILY
+	2. = FONT FAMILY
+    3. = FONT SIZE
+    4. = FONT WEIGHT
 	5. = PADDINGS
+    6. = BORDER
+
 */
 
 :root {
@@ -23,11 +25,16 @@
 
     --black:             #000000;
     --white:             #FFFFFF;
-    --blueTeal:          #00b6bf;
-    --blueLink:          #2c54b3;
-    --grayDescription:   #333333;
-    --grayTitle:         #505050;
+    --ligthBlue:         #00B6BF;
+    --darkBlue:          #2C54B3;
+    --darkGray:          #333333;
+    --lightGray:         #505050;
+    --background:        #F6F6F7;
 	--yellow: 			 #FCDB04;
+
+    /*    FONT FAMILIES    */
+
+    --Roboto: 'Roboto', sans-serif;
 
     /*    FONT SIZES    */
 
@@ -47,10 +54,6 @@
     --weightMedium:  500;
     --weightBold:    700;
 
-    /*    FONT FAMILIES    */
-
-    --Roboto: 'Roboto', sans-serif;
-
     /*    PADDINGS    */
 
     --paddingNormal: 8px;
@@ -58,6 +61,8 @@
     --paddingSemi: 24px;
     --paddingLarge: 32px;
 
+
+    /*    BORDER    */
 
     --border: 1px solid #e6e7ea;
 
@@ -78,12 +83,14 @@ html {
 }
 
 body {
-    background-color: #F6F6F7;
+    background-color: var(--background);
     overflow-x: hidden;
 }
 
-button, input, select, textarea {
-  margin: 0;
+button, input, select, textarea, option {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 ul, ol {
@@ -95,7 +102,7 @@ a {
 }
 
 a:visited {
-    color: none;
+    color: inherit;
 }
 
 img {
@@ -108,34 +115,45 @@ div, header, footer, section, article, aside, nav, form, table {
     width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--lightGray);
+}
+
 h1 {
     font-size: var(--fontHuge);
-    color: var(--grayTitle);
+    font-weight: var(--weightBold);
 }
 
 h2 {
     font-size: var(--fontLarge);
-    color: var(--grayTitle);
+    font-weight: var(--weightBold);
 }
 
 h3 {
-    color: var(--grayTitle);
     font-size: var(--fontMedium);
+    font-weight: var(--weightBold);
 }
 
 h4 {
-    color: var(--grayTitle);
-    font-size: var(--fontMedium);
+    font-size: var(--fontRegular);
+    font-weight: var(--weightMedium);
 }
 
 h5 {
     font-size: var(--fontMedium);
+    font-weight: var(--weightMedium);
+}
+
+h6 {
+    font-size: var(--fontMedium);
+    font-weight: var(--weightRegular);
 }
 
 p {
-    color: var(--grayDescription);
+    color: var(--darkGray);
     line-height: 24px;
 }
+
 
 /* CLASES
    =============================
