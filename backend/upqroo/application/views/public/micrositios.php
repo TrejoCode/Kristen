@@ -1,7 +1,7 @@
 <div class="microsite flex">
         <div class="column">
             <!-- Banner -->
-            <div class="banner justify-center align-center" style="background-image: url(../<?php echo $portada ?>);">
+            <div class="banner justify-center align-center" style="background-image: url(<?php echo base_url().$portada ?>);">
                 <div class="container">
                     <div class="title">
                         <h2> <?php echo $titulo ?></h2>
@@ -186,7 +186,7 @@
                                                    echo '#';
                                                 }else
                                                 {
-                                                echo base_url().'index.php/ver/noticias/'.$noticias[$j]->idPublicaciones.'/1'; } ?>">Leer Más</a>
+                                                echo base_url().'ver/noticias/'.$noticias[$j]->idPublicaciones.'/1'; } ?>">Leer Más</a>
                                             </div>
                                         </div>
                                     </div>
@@ -196,7 +196,7 @@
                         </div>
                         <div class="white-space-8"></div>
                         <div class="justify-end">
-                            <a class="link" href="<?php  echo base_url().'index.php/ver/noticias';?>">VER TODOS LAS NOTICIAS</a>
+                            <a class="link" href="<?php  echo base_url().'ver/noticias';?>">VER TODOS LAS NOTICIAS</a>
                         </div>
                     </div>
                 </div>
@@ -287,7 +287,7 @@
                                                    echo '#';
                                                 }else
                                                 {
-                                                echo base_url().'index.php/ver/evento/'.$evento[$j]->idPublicaciones.'/1'; } ?>">Conocer Más</a>
+                                                echo base_url().'ver/evento/'.$evento[$j]->idPublicaciones.'/1'; } ?>">Conocer Más</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -299,7 +299,7 @@
                     </div>
                     <div class="white-space-8"></div>
                     <div class="justify-end">
-                        <a class="link" href="<?php echo base_url().'index.php/ver/eventos'; ?>">VER TODOS LOS EVENTOS</a>
+                        <a class="link" href="<?php echo base_url().'ver/eventos'; ?>">VER TODOS LOS EVENTOS</a>
                     </div>
                     <div class="white-space-32"></div>
                 </div>
@@ -355,7 +355,7 @@
                                                    echo '#';
                                                 }else
                                                 {
-                                                echo base_url().'index.php/ver/vacantes/'.$trabajos[$j]->idPublicaciones.'/1'; } ?>">Ver Vacante</a>
+                                                echo base_url().'ver/vacantes/'.$trabajos[$j]->idPublicaciones.'/1'; } ?>">Ver Vacante</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -369,7 +369,7 @@
                         <!-- White Space 32px -->
                         <div class="white-space-32"></div>
                         <div class="justify-end">
-                            <a class="link" href="<?php echo base_url().'index.php/ver/trabajos'; ?>">VER TODAS LAS VACANTES</a>
+                            <a class="link" href="<?php echo base_url().'ver/trabajos'; ?>">VER TODAS LAS VACANTES</a>
                         </div>
                         <!-- White Space 64px -->
                         <div class="white-space-64"></div>

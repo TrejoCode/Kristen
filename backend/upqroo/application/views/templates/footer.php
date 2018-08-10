@@ -11,13 +11,13 @@
                                 <div class="column">
                                     <div class="white-space-8"></div>
                                     <div class="quick-link">
-                                        <a class="footer-link" href="<?php echo base_url();?>index.php/nosotros">NOSOTROS</a>
+                                        <a class="footer-link" href="<?php echo base_url();?>nosotros">NOSOTROS</a>
                                     </div>
                                     <div class="quick-link">
-                                        <a class="footer-link" href="<?php echo base_url();?>index.php/directorio">DIRECTORIO</a>
+                                        <a class="footer-link" href="<?php echo base_url();?>directorio">DIRECTORIO</a>
                                     </div>
                                     <div class="quick-link">
-                                        <a class="footer-link" href="<?php echo base_url();?>index.php/admision">ADMISIÓN</a>
+                                        <a class="footer-link" href="<?php echo base_url();?>admision">ADMISIÓN</a>
                                     </div>
                                 </div>
                             </div>

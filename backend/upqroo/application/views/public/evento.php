@@ -1,5 +1,3 @@
-
-
 <div class="notice flex justify-center">
     <div class="container">
         <div class="row-responsive">
@@ -108,7 +106,7 @@
                                     </div>
                                     <div class="white-space-8"></div>
                                     <div class="title-link">
-                                        <h3><a href="<?php echo base_url().'index.php/evento?id='.$Ultima1->idPublicaciones; ?>"><?php echo $Ultima1->titulo; ?></a></h3>
+                                        <h3><a href="<?php echo base_url().'evento?id='.$Ultima1->idPublicaciones; ?>"><?php echo $Ultima1->titulo; ?></a></h3>
                                     </div>
 
                                     <div class="white-space-16"></div>
@@ -118,7 +116,7 @@
                                     </div>
                                     <div class="white-space-8"></div>
                                     <div class="title-link">
-                                        <h3><a href="<?php echo base_url().'index.php/evento?id='.$Ultima2->idPublicaciones; ?>"><?php echo $Ultima2->titulo; ?></a></h3>
+                                        <h3><a href="<?php echo base_url().'evento?id='.$Ultima2->idPublicaciones; ?>"><?php echo $Ultima2->titulo; ?></a></h3>
                                     </div>
 
                                     <div class="white-space-16"></div>
@@ -128,7 +126,7 @@
                                     </div>
                                     <div class="white-space-8"></div>
                                     <div class="title-link">
-                                        <h3><a href="<?php echo base_url().'index.php/evento?id='.$Ultima3->idPublicaciones; ?>"><?php echo $Ultima3->titulo; ?></a></h3>
+                                        <h3><a href="<?php echo base_url().'evento?id='.$Ultima3->idPublicaciones; ?>"><?php echo $Ultima3->titulo; ?></a></h3>
                                     </div>
 
                                 </div>

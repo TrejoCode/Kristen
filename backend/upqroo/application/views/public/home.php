@@ -34,7 +34,7 @@
                             <p>Integrate al progreso continuo, las cosas no ocurren por si mismas, ¡Únete a UPQROO!</p>
                             <div class="white-space-32"></div>
                             <div>
-                                <a class="btn btn-blue" href="<?php echo base_url();?>index.php/nosotros">CONOCER MÁS</a>
+                                <a class="btn btn-blue" href="<?php echo base_url();?>nosotros">CONOCER MÁS</a>
                             </div>
                             <div class="white-space-64"></div>
                         </div>
@@ -89,21 +89,21 @@
                         <div class="row-responsive">
                             <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
-                                    <a href="<?php echo base_url().'index.php/software'; ?>">
+                                    <a href="<?php echo base_url().'software'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-soft.jpg" alt="Ingeniería en Software" title="Ingeniería en Software">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
-                                    <a href="<?php echo base_url().'index.php/biotecnologia'; ?>">
+                                    <a href="<?php echo base_url().'biotecnologia'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-biot.jpg" alt=" Ingeniería en Biotecnología " title=" Ingeniería en Biotecnología ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
-                                    <a href="<?php echo base_url().'index.php/biomedica'; ?>">
+                                    <a href="<?php echo base_url().'biomedica'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-biom.jpg" alt=" Ingeniería en Biomedica " title=" Ingeniería en Biomedica ">
                                     </a>
                                 </div>
@@ -113,21 +113,21 @@
                         <div class="row-responsive">
                             <div class="career wow fadeInLeft" data-wow-delay="0.3s">
                                 <div class="responsive-img">
-                                    <a href="<?php echo base_url().'index.php/financiera'; ?>">
+                                    <a href="<?php echo base_url().'financiera'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-fina.jpg" alt=" Ingeniería Financiera " title=" Ingeniería Financiera ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.5s">
                                 <div class="responsive-img">
-                                    <a href="<?php echo base_url().'index.php/pymes'; ?>">
+                                    <a href="<?php echo base_url().'pymes'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-pyme.jpg" alt=" Licenciatura en Pymes " title=" Licenciatura en Pymes ">
                                     </a>
                                 </div>
                             </div>
                             <div class="career wow fadeInLeft" data-wow-delay="0.7s">
                                 <div class="responsive-img">
-                                    <a href="<?php echo base_url().'index.php/terapia'; ?>">
+                                    <a href="<?php echo base_url().'terapia'; ?>">
                                         <img src="<?php echo base_url();?>assets/img/carrera-tera.jpg" alt=" Licenciatura en Terapia Física " title=" Licenciatura en Terapia Física ">
                                     </a>
                                 </div>
@@ -151,7 +151,7 @@
                     <p>Se parte de la Universidad Politécnica de Quintana Roo. <br> Haz la mejor elección para tú futuro</p>
                     <div class="white-space-16"></div>
                     <div class="">
-                        <a class="btn btn-blue" href="<?php echo base_url();?>index.php/admision">PROCESO DE ADMISIÓN</a>
+                        <a class="btn btn-blue" href="<?php echo base_url();?>admision">PROCESO DE ADMISIÓN</a>
                     </div>
                     <div class="white-space-64"></div>
                 </div>
@@ -190,7 +190,7 @@
                                                     <div class="description">
                                                         <p><?php echo $noticias[$j]->descripcion; ?></p>
                                                     </div>
-                                                    <a class="read-more" href="<?php echo base_url().'index.php/ver/noticia/'.$noticias[$j]->idPublicaciones.'/1'; ?>">Leer Más</a>
+                                                    <a class="read-more" href="<?php echo base_url().'ver/noticia/'.$noticias[$j]->idPublicaciones.'/1'; ?>">Leer Más</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -253,7 +253,7 @@
                                                             <i class="far fa-clock"></i>
                                                             <p>13:00</p>
                                                         </div>
-                                                        <a  class="read-more" href="<?php echo base_url().'index.php/ver/evento/'.$evento[$i]->idPublicaciones; ?>">Conocer Más</a>
+                                                        <a  class="read-more" href="<?php echo base_url().'ver/evento/'.$evento[$i]->idPublicaciones; ?>">Conocer Más</a>
                                                     </div>
                                                 </div>
                                             </div>

@@ -281,10 +281,6 @@ header .header-main .logo {
     border: 1px solid #e6e7ea;
 }
 
-.home .events .events-cards .event-card .row-responsive {
-    height: 100%;
-}
-
 .home .events .events-cards .event-card .date {
     width: 30%;
     background-color: var(--blueLink);
@@ -1127,6 +1123,10 @@ footer {
         width: 100%;
     }
 
+    .institutional .directorio-rector .rector img {
+
+    }
+
     .institutional .directorio-rector .rector-info {
         width: 100%;
     }
@@ -1155,10 +1155,13 @@ footer {
 		order: 3;
 	}
 
+
 }
 
 /*    MOBILE DEVICES    */
 
 @media screen and (max-width: 576px) {
-
+    body {
+        background: blue;
+    }
 }

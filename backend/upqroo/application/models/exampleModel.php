@@ -10,6 +10,4 @@ class exampleModel extends m_model
        return $data=$this->get('',$elements);
    }
 
-
-
 }
