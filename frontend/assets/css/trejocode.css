@@ -99,6 +99,7 @@ ul, ol {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:visited {
@@ -323,6 +324,10 @@ label {
     border: none;
 }
 
+.btn-darkBlue, .btn-lightBlue, .btn-file {
+    color: var(--white);
+}
+
 .btn i {
     padding: 0 var(--paddingNormal);
 }
@@ -335,13 +340,8 @@ label {
     background-color: var(--lightBlue);
 }
 
-.btn-login {
-    background-color: var(--darkBlue);
-}
-
 .btn-file {
     background-color: var(--darkBlue);
-    color: var(--white);
 }
 
 .link {
@@ -379,7 +379,7 @@ label {
 
 @media screen and (max-width: 992px) {
 
-
+    body {background: darkGray;}
 
 }
 
@@ -399,5 +399,5 @@ label {
 /*    MOBILE DEVICES    */
 
 @media screen and (max-width: 576px) {
-    /*body {background: blue;}
+
 }

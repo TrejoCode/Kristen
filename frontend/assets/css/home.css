@@ -12,7 +12,6 @@
 
 .slide {
     width: 100%;
-    height: 500px;
     height: auto;
 }
 
@@ -42,24 +41,19 @@
 
 /* --- Quick Info --- */
 
-.home .quick-info .left {
-    width: 60%;
+.home .quick-info {
     background-color: var(--white);
 }
 
+.home .quick-info .left,
 .home .quick-info .right {
-    width: 40%;
-    background-color: var(--blueLink);
+    width: 50%;
 }
 
-.home .quick-info .records h2 {
-    font-size: var(--fontMassive);
-    color: var(--white);
-}
-
-.home .quick-info .records p {
-    font-style: italic;
-    color: var(--white);
+.home .quick-info .right .video iframe {
+    width: 85%;
+    margin: auto;
+    height: 300px;
 }
 
 /* --- Career --- */
@@ -212,10 +206,20 @@
         margin: var(--paddingNormal) 0;
     }
 
+    .home .quick-info .right .video iframe {
+        width: 100%;
+        height: 380px;
+    }
+
 }
 
 /*    MOBILE DEVICES    */
 
 @media screen and (max-width: 576px) {
+
+    .home .quick-info .right .video iframe {
+        width: 100%;
+        height: 220px;
+    }
 
 }
