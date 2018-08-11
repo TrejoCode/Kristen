@@ -56,7 +56,7 @@
     height: 300px;
 }
 
-/* --- Career --- */
+/* --- Careers --- */
 
 .careers {
     border: 1px solid #e6e7ea;
@@ -74,14 +74,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.call-to-action h2, .call-to-action p {
-    color: var(--white);
-}
-
-.call-to-action p {
-    font-size: var(--fontRegular);
 }
 
 /* --- News --- */
