@@ -163,9 +163,6 @@
     padding: 0.5em 0 var(--paddingNormal) var(--paddingNormal);
 }
 
-/* --- Aliados --- */
-
-
 
 /*    LARGE DEVICES    */
 
@@ -210,20 +207,20 @@
         height: 380px;
     }
 
-    .home .events .events-cards .event-card .date .column {
-        flex-direction: row;
-    }
-
-    .home .events .events-cards .event-card .date .justify-center {
-        justify-content: flex-start;
-    }
-
     .career {
         padding: var(--paddingNormal) 0;
     }
 
     .home .news .news-cards .new-card {
         margin: var(--paddingNormal) 0;
+    }
+
+    .home .events .events-cards .event-card .date .column {
+        flex-direction: row;
+    }
+
+    .home .events .events-cards .event-card .date .justify-center {
+        justify-content: flex-start;
     }
 
     .home .events .events-cards .event-card {

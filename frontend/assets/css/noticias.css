@@ -4,62 +4,76 @@
     font-family: var(--Roboto);
 }
 
-.news-cards .new-card {
-    margin: var(--paddingNormal);
-    border: 1px solid #e6e7ea;
+ .new-card {
+    background-color: var(--white);
 }
 
- .new-card .date, .new-card .description {
+ .news .news-cards .new-card {
+    margin: var(--paddingNormal);
+}
+
+ .news .news-cards .new-card .featured-img {
+    border-bottom: 4px solid var(--lightBlue);
+}
+
+ .new-card .date,
+ .new-card .description {
     padding: var(--paddingNormal) var(--paddingMedium);
 }
 
-.new-card .title, .new-card .read-more {
+.new-card .new-title {
     padding: 0 var(--paddingMedium);
 }
 
 .new-card .read-more {
-    padding-bottom: var(--paddingMedium);
+    padding: 0.5em var(--paddingMedium) var(--paddingSemi) var(--paddingMedium);
 }
 
-.new-card {
-    background-color: var(--white);
+ .new-card .date p {
+    font-size: var(--fontMini);
 }
 
-.new-card .date p {
-    text-transform: uppercase;
-    font-size: 0.8em;
-    color: var(--darkGray);
+ .new-card .date p:nth-child(2)::before {
+    content: '-';
 }
 
-.new-card .description p {
-    color: var(--grayDescription);
+ .new-card .description p {
     font-size: var(--fontTiny);
 }
 
-.new-card .read-more {
-    width: auto;
-    color: var(--blueTeal);
-    font-size: 0.9em;
+ .new-card .read-more {
+    font-size: var(--fontMini);
     font-weight: var(--weightSemi);
 }
 
+/*    NOTEBOOKS, IPADS DEVICES    */
+
+@media screen and (max-width: 992px) {
+
+    .new-card .date {
+        flex-direction: column;
+    }
+
+    .new-card .date p:nth-child(2)::before {
+        content: '';
+    }
+
+}
+
+/*    TABLETS DEVICES    */
+
 @media screen and (max-width: 768px) {
 
-    .news-cards .new-card {
+    .news .news-cards .new-card {
         margin: var(--paddingNormal) 0;
     }
 
 }
 
-.pagination .next {
-    padding: var(--paddingMedium) var(--paddingNormal);
-    color: var(--blueTeal);
-    font-weight: var(--weightMedium);
-}
+/*    MOBILE DEVICES    */
 
-.pagination .prev {
-    font-weight: var(--weightMedium);
-    padding-top: var(--paddingMedium);
-    padding-right: var(--paddingNormal);
-    color: var(--blueTeal);
+@media screen and (max-width: 576px) {
+
+
+
 }
