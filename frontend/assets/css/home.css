@@ -174,18 +174,18 @@
 
 @media screen and (max-width: 992px) {
 
-    .home .events .events-cards .event-card .info, .home .events .events-cards .event-card .new-title,
-    .home .events .events-cards .event-card .info, .home .events .events-cards .event-card .schedule
-     {
-        padding: var(--paddingNormal) 0.5em;
-    }
-
     .home .new-card .date {
         flex-direction: column;
     }
 
     .home .new-card .date p:nth-child(2)::before {
         content: '';
+    }
+
+    .home .events .events-cards .event-card .info, .home .events .events-cards .event-card .new-title,
+    .home .events .events-cards .event-card .info, .home .events .events-cards .event-card .schedule
+     {
+        padding: var(--paddingNormal) 0.5em;
     }
 
     .home .events .events-cards .event-card .date {
