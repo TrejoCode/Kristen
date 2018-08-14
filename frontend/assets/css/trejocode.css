@@ -142,7 +142,7 @@ h4 {
 }
 
 h5 {
-    font-size: var(--fontMedium);
+    font-size: var(--fontText);
     font-weight: var(--weightMedium);
 }
 
