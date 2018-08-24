@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/admin.css" media="screen">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <title>UPQROO - ADMINISTRADOR</title>
+</head>
+<body>
+
+    <div class="admin flex">
+        <div class="column">
+            <!-- Header -->
+            <header>
+                <div class="column">
+                    <div class="header-main justify-center wow fadeInDown">
+                        <div class="container">
+                            <div class="row">
+                                <div class="left auto">
+                                    <div class="logo responsive-img">
+                                        <a href="#">
+                                            <img src="../assets/img/logo-upqroo.png" alt="Logo UPQROO" title="Logo UPQROO">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <nav class="row align-center justify-end">
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-newspaper"></i>
+                                            <a href="#">NOTICIAS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <a href="#">EVENTOS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-briefcase"></i>
+                                            <a href="#">VACANTES</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-university"></i>
+                                            <a href="#">PÁGINAS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-users"></i>
+                                            <a href="#">USUARIOS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            <a href="#">SALIR</a>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header> <!-- End Header -->
+
+            <!-- Admin Content -->
+            <div class="admin-content">
+
+                <div class="admin-agregar-noticia justify-center">
+                    <div class="container">
+                        <div class="column">
+                            <div class="white-space-32"></div>
+                            <div class="row">
+                                <div class="components">
+                                    <div class="column">
+                                        <h3>Nueva Noticia</h3>
+                                        <div class="white-space-8"></div>
+                                        <p>Añadir Componentes</p>
+                                        <div class="white-space-16"></div>
+                                        <div class="add-component auto bordered column" id="encabezado-click">
+                                            <h4><i class="fas fa-text-height"></i> &nbsp Encabezado</h4>
+                                            <p>Añada un subtítulo</p>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="add-component auto bordered column" id="parrafo-click">
+                                            <h4><i class="fas fa-font"></i></i> &nbsp Párrafo</h4>
+                                            <p>Añada líneas de texto</p>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="add-component auto bordered column">
+                                            <h4><i class="fas fa-list-ul"></i> &nbsp Lista</h4>
+                                            <p>Añada un listado</p>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="add-component auto bordered column" id="imagen-click">
+                                            <h4><i class="fas fa-image"></i> &nbsp Imagen</h4>
+                                            <p>Añada una imagen</p>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="add-component auto bordered column">
+                                            <h4><i class="fas fa-images"></i> &nbsp Galería</h4>
+                                            <p>Añada hasta 6 imágenes</p>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="add-component auto bordered column">
+                                            <h4><i class="fas fa-video"></i> &nbsp Video</h4>
+                                            <p>Añada un video de Youtube</p>
+                                        </div>
+                                        <div class="white-space-16 hidden"></div>
+                                        <div class="add-component auto bordered column hidden">
+                                            <h4><i class="fas fa-file"></i> &nbsp Archivo</h4>
+                                            <p>Subir un archivo</p>
+                                        </div>
+                                        <div class="white-space-16"></div>
+                                        <div class="add-component auto bordered column" id="enlaces-click">
+                                            <h4><i class="fas fa-external-link-alt"></i> &nbsp Enlaces</h4>
+                                            <p>Añadir enlaces</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sheet justify-center bordered">
+                                    <div class="container">
+                                        <form class="admin-form" action="" method="post">
+                                            <div class="column">
+                                                <!-- Foto Portada -->
+                                                <div class="white-space-32"></div>
+                                                <div class="banner-img bordered-dotted responsive-img">
+                                                    <img id="banner-img" src="" alt="Imagen de Portada" title="Banner Image">
+                                                    <input class="hidden" id="banner-input" type="file" name="banner-img">
+                                                </div>
+                                                <p class="text-center info-sheet"><a id="banner-button" href="#">Click para cambiar imagen de portada</a></p>
+                                                <!-- // Fin Foto Portada -->
+
+                                                <!-- Título -->
+                                                <div class="white-space-32"></div>
+                                                <h3>Título</h3>
+                                                <div class="white-space-8"></div>
+                                                <div class="sheet-title">
+                                                    <input class="input-ghost input-ghost-title" type="text" name="titulo" maxlength="60" placeholder="Título de la publicación (60 carácteres)">
+                                                </div>
+                                                <!-- // End Título -->
+
+                                                <!-- Descripción Corta -->
+                                                <div class="white-space-32"></div>
+                                                <h3>Extracto</h3>
+                                                <div class="white-space-8"></div>
+                                                <div class="sheet-description">
+                                                    <input class="input-ghost" type="text" name="descripcion" maxlength="120" placeholder="Descripción corta (120 carácteres)">
+                                                </div>
+                                                <!-- // End Descripción Corta -->
+
+                                                <div class="contenedor-componentes column" id="contenedor-componentes">
+
+                                                <!-- Contenido Dinámico -->
+
+
+                                                <!-- Categorías -->
+                                                <div class="categorias column">
+                                                    <div class="white-space-32"></div>
+                                                    <h3>Categorías</h3>
+                                                    <div class="white-space-8"></div>
+                                                    <div class="sheet-text">
+                                                        <input class="input-ghost input-ghost-list" type="text" name="categorias" placeholder="Añade categorías, sepáralas por coma">
+                                                    </div>                                                    
+                                                </div>
+                                                <!-- //End Categorías -->
+                                                <div class="publicar column">
+                                                    <div class="white-space-32"></div>
+                                                    <div class="auto color-white">
+                                                        <a class="btn btn-darkBlue" href="#"><i class="fas fa-check-double"></i>PUBLICAR NOTICIA</a>
+                                                    </div>
+                                                </div>                                                
+                                                </div>                                                
+                                                <div class="white-space-32"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white-space-32"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End Admin Content -->
+
+        </div> <!-- End Main Column -->
+    </div>
+    <script type="text/javascript" src="../assets/js/admin.js" async></script>
+</body>
+</html>

@@ -33,6 +33,7 @@
     --formBackground:    #E5E5E5;
     --borderBackground:  #E6E7EA;
 	--yellow: 			 #FCDB04;
+    --red:               #D64541;
 
     /*    FONT FAMILIES    */
 
@@ -309,8 +310,8 @@ label {
     height: 24px;
 }
 
-.input-file-h {
-    display: none;
+.hidden {
+    display: none !important;
 }
 
 
