@@ -144,15 +144,36 @@ header .header-main .logo {
     cursor: pointer;
 }
 
-#elegirImagen {
+#elegirImagen, #elegirImagenes {
     cursor: pointer;
 }
 
+#btn-validar, #agregarLista, #removerLista {
+    color: var(--black);    
+    cursor: pointer;
+}
+
+#lista li {        
+    padding: var(--paddingNormal);
+}
+
+#lista li::before {
+    content: '- ';
+}
+
+#lista li:hover::before {
+    content: 'REMOVER ';
+}
+
 .enlaces {
-    order: 4;
+    order: 3;
 }
 
 .categorias {
+    order: 4;
+}
+
+.share {
     order: 5;
 }
 

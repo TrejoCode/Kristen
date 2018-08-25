@@ -93,7 +93,7 @@
                                             <p>Añada líneas de texto</p>
                                         </div>
                                         <div class="white-space-16"></div>
-                                        <div class="add-component auto bordered column">
+                                        <div class="add-component auto bordered column" id="lista-click">
                                             <h4><i class="fas fa-list-ul"></i> &nbsp Lista</h4>
                                             <p>Añada un listado</p>
                                         </div>
@@ -103,12 +103,12 @@
                                             <p>Añada una imagen</p>
                                         </div>
                                         <div class="white-space-16"></div>
-                                        <div class="add-component auto bordered column">
+                                        <div class="add-component auto bordered column" id="gallery-click">
                                             <h4><i class="fas fa-images"></i> &nbsp Galería</h4>
                                             <p>Añada hasta 6 imágenes</p>
                                         </div>
                                         <div class="white-space-16"></div>
-                                        <div class="add-component auto bordered column">
+                                        <div class="add-component auto bordered column" id="video-click">
                                             <h4><i class="fas fa-video"></i> &nbsp Video</h4>
                                             <p>Añada un video de Youtube</p>
                                         </div>
@@ -170,10 +170,22 @@
                                                     </div>                                                    
                                                 </div>
                                                 <!-- //End Categorías -->
+
+                                                <!-- Notificar -->
+
+                                                <div class="share column">
+                                                    <div class="white-space-32"></div>
+                                                    <div class="notificacion">
+                                                        <input type="checkbox" name="notificar">
+                                                        <label for="notificar">&nbsp Envíar Notificación</label>
+                                                    </div>                                                 
+                                                    
+                                                </div>
+
                                                 <div class="publicar column">
                                                     <div class="white-space-32"></div>
-                                                    <div class="auto color-white">
-                                                        <a class="btn btn-darkBlue" href="#"><i class="fas fa-check-double"></i>PUBLICAR NOTICIA</a>
+                                                    <div class="auto color-white">                                                
+                                                        <input class="btn btn-darkBlue" type="submit" value="PUBLICAR NOTICIA">                                                        
                                                     </div>
                                                 </div>                                                
                                                 </div>                                                

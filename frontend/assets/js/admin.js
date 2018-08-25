@@ -47,6 +47,21 @@ agregarEnlaces.addEventListener('click', function(){
     crearContenedores('enlaces');
 });
 
+let agregarVideo = document.getElementById('video-click');
+agregarVideo.addEventListener('click', function(){
+    crearContenedores('video');
+});
+
+let agregarGaleria = document.getElementById('gallery-click');
+agregarGaleria.addEventListener('click', function(){
+    crearContenedores('galeria');
+});
+
+let agregarLista = document.getElementById('lista-click');
+agregarLista.addEventListener('click', function(){
+    crearContenedores('lista');
+});
+
 // --- End Eventos
 
 function crearContenedores(componente){
@@ -103,6 +118,14 @@ function crearContenedores(componente){
         case 'enlaces':
             crearEnlaces(contenedor);
             break;
+        case 'video':
+            crearVideo(contenedor);
+            break;
+        case 'galeria':
+            crearGaleria(contenedor);
+            break;
+        case 'lista':
+            crearLista(contenedor);
         default:
     }
 }
@@ -196,7 +219,7 @@ function crearEnlaces(contenedor) {
 
     for (let index = 1; index <= 3; index++) {
 
-        // --- sheet-title
+        // --- sheet-text
         let sheetText = document.createElement('div');
         sheetText.classList.add('sheet-text');
         contenedor.appendChild(sheetText);
@@ -218,8 +241,147 @@ function crearEnlaces(contenedor) {
         let whiteSpace = document.createElement('div');
         whiteSpace.classList.add('white-space-8');
         contenedor.appendChild(whiteSpace);
-    }    
+    }
+}
+
+function crearVideo(contenedor) {
+    
+    // --- sheet-text
+    let sheetText = document.createElement('div');
+    sheetText.classList.add('sheet-text');
+    contenedor.appendChild(sheetText);
+
+    // --- input
+    let inputVideo = document.createElement('input');
+    inputVideo.id = 'inputVideo';
+    inputVideo.classList.add('input-ghost');    
+    inputVideo.setAttribute('type', 'text');
+    inputVideo.setAttribute('name', 'videoURL');    
+    inputVideo.setAttribute('placeholder', 'URL del video youtube');
+    sheetText.appendChild(inputVideo);
+
+    // --- valid button
+    let validButtton = document.createElement('p');
+    validButtton.id = 'btn-validar';    
+    validButtton.classList.add('btn');
+    validButtton.textContent = 'VALIDAR';
+    sheetText.appendChild(validButtton);
+
+    validButtton.addEventListener('click', function(){
+        if(isYoutube(inputVideo.value) == false || isYoutube(inputVideo.value) == null) {
+            alert("URL erróneo");
+        } else {
+            alert("Video Correcto: " + isYoutube(inputVideo.value));
+        }
+    });
+
+    function isYoutube(getURL){
+        if(typeof getURL!=='string') return false;
+        var newA = document.createElement('A');
+        newA.href = getURL;
+        var host = newA.hostname;
+        var srch = newA.search;
+        var path = newA.pathname;
+        
+        if(host.search(/youtube\.com|youtu\.be/)===-1) return false;
+        if(host.search(/youtu\.be/)!==-1) return path.slice(1);
+        if(path.search(/embed/)!==-1) return /embed\/([A-z0-9]+)(\&|$)/.exec(path)[1];
+        var getId = /v=([A-z0-9]+)(\&|$)/.exec(srch);
+        if(host.search(/youtube\.com/)!==-1) return !getId ? '':getId[1];        
+    }
+}
+
+function crearGaleria(contenedor) {
+
+    let imageGalleryColumn = document.createElement('div');
+    imageGalleryColumn.classList.add('image-gallery');
+    imageGalleryColumn.classList.add('column');
+    contenedor.appendChild(imageGalleryColumn);
+
+    for (let i = 0; i < 2; i++) {
+        // row
+        let row = document.createElement('div');
+        row.classList.add('row');   
+        imageGalleryColumn.appendChild(row);
+
+        // --- white-space-16
+        let whiteSpace16 = document.createElement('div');
+        whiteSpace16.classList.add('white-space-16');
+        imageGalleryColumn.appendChild(whiteSpace16);
+
+        for (let j = 0; j < 3; j++) {  
+
+            // --- Contenedores de Imágenes          
+            let singleImageGalleryDiv = document.createElement('div');
+            singleImageGalleryDiv.classList.add('single-image-gallery');
+            singleImageGalleryDiv.classList.add('bordered-dotted');
+            singleImageGalleryDiv.classList.add('responsive-img');
+            row.appendChild(singleImageGalleryDiv);
+
+            // --- Imágenes
+            let singleImageGallery = document.createElement('img');
+            singleImageGallery.setAttribute('src','');
+            singleImageGallery.setAttribute('alt','Imagen');
+            singleImageGalleryDiv.appendChild(singleImageGallery);
+        }
+    }
+
+    // --- trigger hidden input
+    let elegirImagenes = document.createElement('p');
+    elegirImagenes.id = 'elegirImagenes';
+    elegirImagenes.classList.add('text-center');
+    elegirImagenes.classList.add('info-sheet');    
+    elegirImagenes.textContent = 'Click para cambiar/elegir imágenes';
+    contenedor.appendChild(elegirImagenes);
+
+    // --- hidden input
+    let inputImagenes = document.createElement('input');
+    inputImagenes.id = 'imagenesInput';
+    inputImagenes.setAttribute('type', 'file');
+    inputImagenes.setAttribute('name','galeria');
+    inputImagenes.setAttribute('multiple','');
+    inputImagenes.classList.add('hidden');
+    contenedor.appendChild(inputImagenes);
+    elegirImagenes.addEventListener('click', function(){
+        inputImagenes.click();
+    });
+
+   // Función para mostrar imágenes
 
 }
 
+function crearLista(contenedor) {
 
+    // --- Input, Añadir, Remover Botones
+    let sheetText = document.createElement('div');
+    sheetText.classList.add('info-shet');
+    contenedor.appendChild(sheetText);
+    let inputLista = document.createElement('input');
+    inputLista.classList.add('input-ghost');
+    inputLista.classList.add('input-ghost-list');
+    inputLista.id = 'input-lista';
+    inputLista.setAttribute('placeholder', 'Elemento de Lista (50 carácteres)');
+    inputLista.setAttribute('maxlength', '50');
+    sheetText.appendChild(inputLista);
+    let addListButton = document.createElement('a');
+    addListButton.classList.add('btn');
+    addListButton.textContent = 'AÑADIR';
+    addListButton.id = 'agregarLista';    
+    sheetText.appendChild(addListButton);    
+
+    let lista = document.createElement('ol');
+    lista.id = 'lista';
+    contenedor.appendChild(lista);
+
+    addListButton.addEventListener('click', function(){
+        let listElement = document.createElement('li');
+        listElement.textContent = inputLista.value;
+        lista.appendChild(listElement);
+        inputLista.value = '';
+        for (var i = 0; i <= lista.children.length -1; i++) {
+            lista.children[i].addEventListener("click", function(){
+                this.parentNode.removeChild(this);
+            });
+        }
+    });
+}
