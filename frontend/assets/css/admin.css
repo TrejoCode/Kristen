@@ -105,6 +105,28 @@ header .header-main .logo {
 
 /* --- Admin News -- */
 
+
+.header-admin {
+    background-color: var(--white);
+    padding: var(--paddingSemi) var(--paddingMedium);
+    box-shadow: 2px 4px 2px var(--borderBackground);
+}
+
+.admin-list-element {
+    color: var(--lightBlue);
+}
+
+.admin-list-element .controls {
+    border-left: 2px solid var(--borderBackground); 
+}
+
+.line-divider {
+    padding: var(--paddingNormal) 0;
+    height: 8px;
+    border-bottom: 2px solid var(--borderBackground);
+}
+
+
 .components, .sheet {
     margin: var(--paddingNormal);
 }
