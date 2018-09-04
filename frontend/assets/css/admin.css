@@ -229,6 +229,24 @@ header .header-main .logo {
     content: 'REMOVER ';
 }
 
+#inputEnlacesName {
+    margin-left: var(--paddingNormal);
+}
+
+.destino-carrera select, .admin-users select {
+    width: auto;
+    padding: var(--paddingNormal) var(--paddingNormal);
+    font-weight: var(--weightBold);
+    font-size: var(--fontSmall);
+    font-family: var(--Roboto);
+    color: var(--lightGray);
+    border: var(--border);
+}
+
+.admin-users select {
+    background-color: var(--formBackground);
+}
+
 .enlaces {
     order: 1;
 }
@@ -245,8 +263,16 @@ header .header-main .logo {
     order: 4;
 }
 
+.destino-carrera {
+    order: 5;
+}
+
 .publicar {
     order: 6;
 }
 
 /* --- End Admin News -- */
+
+.admin-users .right {
+    margin: 0 var(--paddingLarge);
+}
