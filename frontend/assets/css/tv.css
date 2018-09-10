@@ -1,131 +1,156 @@
-* {
-    padding: 0;
-    margin: 0;
+
+header, .tv {
+    font-family: var(--Roboto);
 }
 
-body, html {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+.header-main {
+    padding: var(--paddingNormal) 0;   
+    background-color: var(--white);
+    border-bottom: 1px solid var(--borderBackground);
 }
 
-.header-tv {
+.header-main .left {
+    width: 40%;
+}
+
+.header-main .right{
+    width: 60%;
+}
+
+header .header-main .logo {
+    justify-content: flex-start;
+}
+
+.header-main .right .nav-item a {
+    color: var(--darkBlue);
+    font-size: var(--fontText);
+}
+
+.header-main .right .nav-item, .header-main .right .nav-item a {
+    padding: var(--paddingNormal);
+}
+
+/* --- Hover Effect --- */
+
+.header-main .right .nav-item a {
+    position: relative;
+}
+
+.header-main .right .nav-item a:before {
+    content: "";
+    position: absolute;
     width: 100%;
-    height: 12%;
-    background-color: white;
-    border-bottom: 4px solid #FCDB04;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--darkBlue);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
 }
 
-.header-tv .left, .header-tv .right  {
-    width: 50%;
-    float: left;
+.header-main .right .nav-item a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
-.header-tv .left img {
-    margin-top: 12px;
-    padding-left: 32px;
-    width: 30%;
+#header-date {
+    text-transform: capitalize;
 }
 
-.header-tv .right {
-    text-align: right;
-    margin-top: 32px;
+.current-noticia .left, .current-noticia .right {
+    margin: 0 var(--paddingNormal);
 }
 
-.header-tv .right .date-time p {
-    display: inline;
-    padding-right: 32px;
+.current-noticia .left {
+    min-width: 65%;    
 }
 
-.header-tv .right .date-time #date, .header-tv .right .date-time #time {
-    font-weight: 500;
+.current-noticia .left .notice-big .description {
+    padding: var(--paddingMedium) var(--paddingNormal);
+    background-color: var(--white);
 }
 
-.body-tv {
-    background-color: #F6F6F7;
-    height: 88%;
+.current-noticia .right {
+    background-color: var(--darkBlue);
+    align-self: flex-start;
 }
 
-.body-tv .left {
-    width: 65%;
-    height: 100%;
-    float: left;
+.current-noticia .right .upcoming-events {
+    padding: 0 var(--paddingNormal);
 }
 
-.body-tv .left .main-new {
-    width: 100%;
-    height: 100%;
+.current-noticia .right .date-events h5 {
+    margin-right: var(--paddingMedium);
 }
 
-.body-tv .left .main-new .image {
-    width: 100%;
-    height: 72%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.current-noticia .right .list-events {
+    padding: 0 var(--paddingNormal);
 }
 
-.body-tv .left .main-new .title {
-    width: 100%;
+/* --- // End Hover Effect --- */
+
+
+/*    LARGE DEVICES    */
+
+@media screen and (max-width: 1200px) {
+
+    .header-main .left {
+        width: 30%;
+    }
+
+    .header-main .right {
+        width: 70%;
+    }
+
 }
 
-.body-tv .left .main-new .title h2 {
-    width: 95%;
-    margin: auto;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    color: #505050;
+/*    NOTEBOOKS, IPADS DEVICES    */
+
+@media screen and (max-width: 992px) {
+
+    .header-main .left {
+        width: 20%;
+    }
+
+    .header-main .right {
+        width: 80%;
+    }
+
+    .header-main .right .nav-item, .header-main .right .nav-item a {
+        padding: 5px;
+    }
+
 }
 
-.body-tv .left .main-new .description {
-    width: 100%;
+/*    TABLETS DEVICES    */
+
+@media screen and (max-width: 768px) {
+   
+    header .header-main .left {
+        width: 100%;
+    }
+
+    header .header-main .logo {
+        justify-content: center;
+    }
+
+    header .header-main .logo img {
+        max-height: 50px;
+    }
+
+    header .header-main .right {
+        display: none;
+    }
+
 }
 
+/*    MOBILE DEVICES    */
 
-.body-tv .left .main-new .description p {
-    width: 95%;
-    margin: auto;
-    text-align: justify;
-    line-height: 24px;
-    color: #333333;
-}
+@media screen and (max-width: 576px) {
 
-.body-tv .right {
-    width: 34.8%;
-    height: 100%;
-    float: left;
-}
 
-.body-tv .right .news {
-    width: 100%;
-    height: 100%;
-    padding: 8px 0;
-}
 
-.body-tv .right .news .new {
-    width: 90%;
-    height: 46%;
-    margin: auto;
-    margin-bottom: 16px;
-    background-color: white;
-    border: 2px solid #e6e6e7;
-}
-
-.body-tv .right .news .new h3 {
-    color: #505050;
-}
-
-.body-tv .right .news .new p {
-    color: #333333;
-}
-
-.body-tv .right .news .new h3, .body-tv .right .news .new p {
-    padding: 8px;
-}
-
-.body-tv .right .news .new .image {
-    height: 30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }

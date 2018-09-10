@@ -1,74 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/tv.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/tv.css" media="screen">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+        crossorigin="anonymous">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <!-- Animate -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" media="screen">
     <title>UPQROO - TV</title>
 </head>
 
 <body>
-    <div class="header-tv">
-        <div class="left">
-            <img src="../assets/img/logo-upqroo.png" alt="">
-        </div>
-        <div class="right">
-            <div class="date-time">
-                <p id="date"></p>
-                &nbsp
-                <p id="time"></p>
-            </div>
-        </div>
-    </div>
 
-    <div class="body-tv">
-        <div class="left">
-            <div class="main-new">
-                <div class="image" style="background-image: url(../assets/img/noticia.jpg);"></div>
-                <div class="title">
-                    <h2>SEGUNDA EXPOSOFT 20 - Universidad Politécnica de Quinatana Roo</h2>
-                </div>
-                <div class="description">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ea commodo conseq.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="news">
-                <div class="new">
-                    <div class="image" style="background-image: url(../assets/img/noticia.jpg);"></div>
-                    <div class="title">
-                        <h3>EXPOSOFT 20 - Universidad Politécnica de Quinatana Roo</h3>
-                    </div>
-                    <div class="description">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ea commodo conseq.
-                        </p>
+    <div class="tv flex">
+        <div class="column">
+            <header class="flex">
+                <div class="column">                
+                    <div class="header-main justify-center wow fadeInDown">
+                        <div class="container">
+                            <div class="row">
+                                <div class="left">
+                                    <div class="logo responsive-img">
+                                        <a href="#">
+                                            <img src="../assets/img/logo-upqroo.png" alt="Logo UPQROO" title="Logo UPQROO">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="header-full-date align-center justify-end">
+                                        <h4 id="header-date"></h4>
+                                    </div>                                       
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="new">
-                    <div class="image" style="background-image: url(../assets/img/noticia.jpg);"></div>
-                    <div class="title">
-                        <h3>SEGUNDA EXPOSOFT 20 - Universidad Politécnica de Quinatana Roo</h3>
-                    </div>
-                    <div class="description">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ea commodo conseq.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </header> <!-- End Header -->
+            
+            <div class="white-space-16"></div>
+
+            <div class="current-noticia justify-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="left">
+                            <div class="column">
+                                <div class="notice-big column">
+                                    <div class="responsive-img">
+                                        <img src="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Noticia Actual" title="Noticia Actual">
+                                    </div>                                    
+                                    <div class="description column">
+                                        <h4>
+                                            FIRMA DE CONVENIOS CON INSTITUCIONES EDUCATIVAS 2018
+                                        </h4>
+                                        <div class="white-space-8"></div>
+                                        <p>
+                                            Firma de convenios entre las universidad politécnicas y tecnológicas del estado de Quintana Roo a cargo de la
+                                            universidad.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="white-space-16"></div>
+                            </div>                            
+                        </div> <!-- End Left-->
+
+                        <div class="right bordered">
+                            <div class="column">
+                                <div class="upcoming-events">                                    
+                                    <div class="column">
+                                        <div class="white-space-32"></div>
+                                        <div class="row">
+                                            <h2 class="color-white">
+                                                PROXIMOS EVENTOS
+                                            </h2>
+                                        </div>
+                                        <div class="white-space-32"></div>
+                                        <div class="list-events column">
+                                            <!-- Dinamic List Content-->
+                                            <div class="date-events row">
+                                                <h5 class="color-white">
+                                                    <i class="color-white fas fa-calendar-alt"></i>
+                                                    01/04/2018
+                                                </h5>
+                                                <h5 class="color-white">
+                                                    <i class="color-white fas fa-clock"></i>
+                                                    01/04/2018
+                                                </h5>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <h4 class="event-title color-white">
+                                                Día Mundial del Fisioterapeuta 2018
+                                            </h4>
+                                            <div class="white-space-48"></div>
+                                            <!-- End First Element -->
+
+                                            <div class="date-events row">
+                                                <h5 class="color-white">
+                                                    <i class="color-white fas fa-calendar-alt"></i>
+                                                    01/04/2018
+                                                </h5>
+                                                <h5 class="color-white">
+                                                    <i class="color-white fas fa-clock"></i>
+                                                    01/04/2018
+                                                </h5>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <h4 class="event-title color-white">
+                                                Día Mundial del Fisioterapeuta 2018
+                                            </h4>
+                                            <div class="white-space-48"></div>
+                                            <!-- End Second Element -->
+
+                                            <div class="date-events row">
+                                                <h5 class="color-white">
+                                                    <i class="color-white fas fa-calendar-alt"></i>
+                                                    01/04/2018
+                                                </h5>
+                                                <h5 class="color-white">
+                                                    <i class="color-white fas fa-clock"></i>
+                                                    01/04/2018
+                                                </h5>
+                                            </div>
+                                            <div class="white-space-8"></div>
+                                            <h4 class="event-title color-white">
+                                                Día Mundial del Fisioterapeuta 2018
+                                            </h4>
+                                            <div class="white-space-48"></div>
+                                            <!-- End Third Element -->             
+
+                                        </div> <!-- End Dinamic List-->
+                                    </div> <!-- End Column-->
+                                </div> <!-- End Upcoming Events-->
+                            </div>
+                        </div> <!-- End Right-->
+
+                    </div> <!-- End Row-->
+                </div> <!-- End Container-->
+            </div> <!-- End Current Noticia-->
+
         </div>
     </div>
 
     <script>
-        (function() {
+        (function () {
             'use strict';
-
             function getDate() {
                 var date = new Date();
                 var weekday = date.getDay();
@@ -78,37 +162,22 @@
                 var hour = date.getHours();
                 var minutes = date.getMinutes();
                 var seconds = date.getSeconds();
-
                 if (hour < 10) hour = "0" + hour;
                 if (minutes < 10) minutes = "0" + minutes;
                 if (seconds < 10) seconds = "0" + seconds;
-
                 var monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-
                 var weekdayNames = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-
                 var ampm = " PM ";
-
                 if (hour < 12) ampm = " AM ";
-
                 if (hour > 12) hour -= 12;
-
-                var showDate = weekdayNames[weekday] + ", " + day + " de " + monthNames[month] + " del " + year;
-
+                var showDate = weekdayNames[weekday] + " " + day + " de " + monthNames[month] + " del " + year;
                 var showTime = hour + ":" + minutes + ":" + seconds + ampm;
+                document.getElementById('header-date').innerHTML = showDate;                
+            requestAnimationFrame(getDate);
+        }
+        getDate();
+    }());
 
-
-                document.getElementById('date').innerHTML = showDate;
-
-                document.getElementById('time').innerHTML = showTime;
-
-
-                requestAnimationFrame(getDate);
-            }
-
-            getDate();
-
-        }());
-    </script>
+</script>
 </body>
 </html>
