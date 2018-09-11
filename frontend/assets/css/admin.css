@@ -273,6 +273,6 @@ header .header-main .logo {
 
 /* --- End Admin News -- */
 
-.admin-users .right {
+.admin-users #inner-user-lis {
     margin: 0 var(--paddingLarge);
 }
