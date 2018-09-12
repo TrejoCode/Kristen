@@ -276,3 +276,11 @@ header .header-main .logo {
 .admin-users #inner-user-lis {
     margin: 0 var(--paddingLarge);
 }
+
+#user-form {
+    display: none;
+}
+
+#user-role {
+    display: none;
+}

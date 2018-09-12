@@ -21,7 +21,7 @@
 
     <div class="admin flex">
         <div class="column">
-            <!-- Header -->
+            
             <header>
                 <div class="column">
                     <div class="header-main justify-center wow fadeInDown">
@@ -87,7 +87,7 @@
                                     &nbsp; Todos los Usuarios
                                 </h2>
                                 <div class="admin-card auto color-white">
-                                    <a class="btn btn-darkBlue" href="#">
+                                    <a class="btn btn-darkBlue" href="#" id="add-user">
                                         <i class="fas fa-plus-circle"></i>
                                         AGREGAR USUARIO
                                     </a>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="white-space-48"></div>
 
-                            <form action="" method="">
+                            <form id="user-form" action="" method="" onsubmit="checkUserPassword(event);">
                                 <div class="column">
                                     <div class="agregar-usuario">
                                         <div class="column">
@@ -107,31 +107,31 @@
                                                 Nombre de usuario
                                             </h4>
                                             <div class="white-space-8"></div>
-                                            <input class="input-text" type="text" placeholder="50 Carácteres" name="nombre">
+                                            <input class="input-text" type="text" placeholder="50 Carácteres" name="nombre" required>
                                             <div class="white-space-16"></div>
                                             <h4>
                                                 Correo Institucional
                                             </h4>
                                             <div class="white-space-8"></div>
-                                            <input class="input-text" type="password" placeholder="Correo Institucional" name="correo">
+                                            <input class="input-text" type="email" placeholder="Correo Institucional" name="correo" required>
                                             <div class="white-space-16"></div>
                                             <h4>
                                                 Contraseña
                                             </h4>
                                             <div class="white-space-8"></div>
-                                            <input class="input-text" type="password" placeholder="18 Carácteres" name="password">
+                                            <input class="input-text" id="password" type="password" placeholder="18 Carácteres" name="password" required>
                                             <div class="white-space-16"></div>
                                             <h4>
                                                 Repetir Contraseña
                                             </h4>
                                             <div class="white-space-8"></div>
-                                            <input class="input-text" type="password" placeholder="18 Carácteres" name="repassword">
+                                            <input class="input-text" id="repassword" type="password" placeholder="18 Carácteres" name="repassword" required>
                                             <div class="white-space-16"></div>
                                             <h4>
                                                 Rol de usuario
                                             </h4>
                                             <div class="white-space-8"></div>
-                                            <select name="usuario-rol">
+                                            <select id="role" name="usuario-rol" onchange="checkCarrer();" required>
                                                 <option value="1">
                                                     Director de Carrera
                                                 </option>
@@ -146,6 +146,31 @@
                                                 </option>
                                                 <option value="5">
                                                     Información Institucional
+                                                </option>
+                                            </select>
+                                            <div class="white-space-16"></div>                                            
+                                            <h4>
+                                                Carrera
+                                            </h4>
+                                            <div class="white-space-8"></div>
+                                            <select id="user-role" name="usuario-rol" required>
+                                                <option value="2">
+                                                    Biotecnología
+                                                </option>
+                                                <option value="3">
+                                                    Software
+                                                </option>
+                                                <option value="4">
+                                                    Financiera
+                                                </option>
+                                                <option value="5">
+                                                    Administración de PyMES
+                                                </option>
+                                                <option value="6">
+                                                    Terapia Física
+                                                </option>
+                                                <option value="7">
+                                                    Biomédica
                                                 </option>
                                             </select>
                                             <div class="white-space-16"></div>
@@ -164,19 +189,19 @@
                                         <div class="column">
                                             <div class="white-space-32"></div>
                                             <!-- Admin-list-element (Repetir n noticias) -->
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Mario Gutiérrez
                                                     </a>
                                                 </h4>
-                                                <div class="controls auto align-center">
+                                                <div class="controls auto align-center color-lightBlue">
                                                     <a class="link" href="#">
                                                         &nbsp;
                                                         <i class="fas fa-edit"></i>
                                                         EDITAR &nbsp;
                                                     </a>
-                                                    <a class="link" href="#">
+                                                    <a class="link" href="#" onclick="deleteUser(event);">
                                                         &nbsp;
                                                         <i class="fas fa-eraser"></i>
                                                         ELIMINAR &nbsp;
@@ -187,7 +212,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 1 -->
                                     
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Mariano Xui Chan
@@ -210,7 +235,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 2 -->
                                     
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
@@ -233,7 +258,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 3 -->
 
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
@@ -257,7 +282,7 @@
                                             <!-- // END Admin-list-element 3 -->
 
 
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
@@ -280,13 +305,13 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 3 -->
 
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
                                                     </a>
                                                 </h4>
-                                                <div class="controls auto align-center">
+                                                <div class="controls auto align-center ">
                                                     <a class="link" href="#">
                                                         &nbsp;
                                                         <i class="fas fa-edit"></i>
@@ -303,7 +328,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 3 -->
 
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
@@ -337,9 +362,9 @@
                                         <div class="column">
                                             <div class="white-space-32"></div>
                                             <!-- Admin-list-element (Repetir n noticias) -->
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
-                                                    <a href="#">
+                                                    <a class="color-lightBlue" href="#">
                                                         Mario Gutiérrez
                                                     </a>
                                                 </h4>
@@ -360,7 +385,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 1 -->
                                     
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Mariano Xui Chan
@@ -383,7 +408,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 2 -->
                                     
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
@@ -406,7 +431,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 3 -->
 
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
@@ -429,7 +454,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 3 -->
 
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
@@ -452,7 +477,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 3 -->
 
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
@@ -475,7 +500,7 @@
                                             <div class="white-space-16"></div>
                                             <!-- // END Admin-list-element 3 -->
 
-                                            <div class="user-list-element auto justify-between">
+                                            <div class="user-list-element auto justify-between color-lightBlue">
                                                 <h4 class="auto">
                                                     <a href="#">
                                                         Administrador Supremo
@@ -503,20 +528,68 @@
                                 </div> <!-- End Second Inner User List-->
                             </div> <!-- End Main UserList Row -->
 
-                            <div class="row">
-                                <div class="right">
-                                    
-                                </div> <!-- End Right-->
                             </div> <!-- End Row Responsive-->
                         </div>
-                    </div>
                 </div>
-
-
+            
             </div> <!-- End Admin Content -->
+
+            <div class="white-space-16"></div>
+            <!-- Paginación -->
+            <div class="pagination justify-center">
+                <div class="container">
+                    <div class="color-lightBlue justify-start">
+                        <a class="prev link" href="#">ANTERIOR</a>
+                    </div>
+                    <div class="color-lightBlue justify-end">
+                        <a class="next link" href="#">SIGUIENTE</a>
+                    </div>
+                </div>                
+            </div>
+            <div class="white-space-48"></div>
+            <!-- End Paginación -->
 
         </div> <!-- End Main Column -->
     </div>
+
+    <script src="../assets/js/admin.js"></script>
+
+    <script>
+        // Admin-Add-User
+            var addUser = document.getElementById('add-user');
+            addUser.addEventListener('click', function () {
+                document.getElementById('user-form').style.display = 'block';
+            });
+
+            function checkUserPassword(event) {
+                var userPassword = document.getElementById('password').value;
+                var userRepassword = document.getElementById('repassword').value;
+                if (userPassword !== userRepassword) {
+                    event.preventDefault();
+                    alert("Verifica que la contraseña sea correcta");
+                }
+            }
+
+            function deleteUser(event) {
+                if (confirm("¿Estás seguro de elimar el usuario?")) {
+                    txt = "Sí, eliminar";
+                } else {
+                    txt = "Cancelar!";
+                    event.preventDefault();
+                }
+            }
+
+            function checkCarrer() {
+                var carrerSelected = document.getElementById('role').value;
+                if(carrerSelected == 1) {
+                    document.getElementById('user-role').style.display = 'block';
+                }
+                else {
+                    document.getElementById('user-role').style.display = 'none';
+                }
+            }
+
+    </script>
 
 </body>
 
