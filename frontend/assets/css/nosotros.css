@@ -110,6 +110,11 @@
     font-size: 3.5em;
 }
 
+.panel-lightBlue {
+    background-color: var(--lightBlue);
+    padding: var(--paddingSemi) var(--paddingNormal);
+}
+
 @media screen and (max-width: 1200px) {
 
     .institutional .directorio-rector .rector-profile {

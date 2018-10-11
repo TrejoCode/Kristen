@@ -15,28 +15,23 @@
         <div class="column">
             <!-- Banner -->
             <div class="banner justify-center align-center" style="background-image: url(../assets/img/header-nosotros.jpg);">
-                <div class="container">
-                    <div class="title">
-                        <h2>OBLIGACIONES DE TRANSPARENCIA</h2>
-                    </div>
+                <div class="container">                    
+                    <h2 class="color-white">OBLIGACIONES DE TRANSPARENCIA</h2>                    
                 </div>
-            </div> <!-- End Banner -->
-
-            <div class="directorio-rector justify-center">
-                <div class="container">
-                    <div class="column">
-                    </div>
-                </div>
+            </div> <!-- End Banner -->  
+            <div class="white-space-64"></div>
+            <div class="justify-center">
+                <div class="container panel-lightBlue">
+                    <p class="text-justify color-white weight-medium">
+                    El artículo 64 de la Ley de Transparencia y Acceso a la Información Pública para el Estado de Quintana Roo, establece que las Unidades de Transparencia serán el enlace entre los sujetos obligados <br> y el solicitante, establecerán sus oficinas en lugares visibles y accesibles al público, ya que son las responsables de la atención de las solicitudes de información y gozarán de autonomía de gestión <br> a fin de cumplir con sus funciones y las disposiciones de esta Ley.
+                </p>
+                </div>                     
             </div>
-            
-            <div class="directorio-otros justify-center">
-            <p class="text-justify textTiny auto">El artículo 64 de la Ley de Transparencia y Acceso a la Información Pública para el Estado de Quintana Roo, establece que las Unidades de Transparencia serán el enlace entre los sujetos obligados <br> y el solicitante, establecerán sus oficinas en lugares visibles y accesibles al público, ya que son las responsables de la atención de las solicitudes de información y gozarán de autonomía de gestión <br> a fin de cumplir con sus funciones y las disposiciones de esta Ley.</p>
-            </div>
-            
+                                                
             <div class="directorio-otros justify-center">
                 <div class="container">
                     <div class="column">
-                        <div class="white-space-64"></div>
+                        <div class="white-space-64"></div>                        
                         <div class="directorio-list">
                             <div class="row-responsive justify-between">
                                 <div class="column auto">
@@ -837,26 +832,26 @@
                     </div>
                 </div>
             </div>
-           
-            
-            
+                                   
             <div class="directorio-otros justify-center">
-            <p class="text-justify textTiny auto">En la Universidad Politecnica de Quintana Roo, el servidor público encargado de atender las solicitudes de acceso a la información que se realicen ante esta Institución es: 
+                <div class="container">
+                    <p class="text-justify textTiny auto">En la Universidad Politecnica de Quintana Roo, el servidor público encargado de atender las solicitudes de acceso a la información que se realicen ante esta Institución es: 
             <br>Nombre del responsable:
-            <br>Mtro. Jorge Reyes Jiménez
+            <strong> Mtro. Jorge Reyes Jiménez </strong> 
 
             <br> Titular de la Unidad de Transparencia
 
             <br>Teléfono: 
-            <br>(998) 283 1859 Ext. 103 
+            <strong> (998) 283 1859 Ext. 103  </strong> 
 
-            <br>Dirección de correo electrónico: transparencia@upqroo.edu.mx 
+            <br>Dirección de correo electrónico: <strong> transparencia@upqroo.edu.mx  </strong>
 
-            <br>Solicitudes de información: http://infomex.qroo.gob.mx 
+            <br>Solicitudes de información: <strong> http://infomex.qroo.gob.mx  </strong> 
 
-            <br>Domicilio: Av. Arco Bicentenario, Mza. 11, Lote 1119-33, Sm. 255. Cancún, Quintana Roo, México. C.P. 77500 
+            <br>Domicilio: <strong> Av. Arco Bicentenario, Mza. 11, Lote 1119-33, Sm. 255. Cancún, Quintana Roo, México. C.P. 77500  </strong> 
 
-            <br>Horarios de atención: Lunes a Viernes 9:00 a 17:00 hrs</p>
+            <br>Horarios de atención: <strong> Lunes a Viernes 9:00 a 17:00 hrs </strong> </p>
+                </div>            
             </div>
             
             <div class="white-space-64"></div>

@@ -15,10 +15,8 @@
         <div class="column">
             <!-- Banner -->
             <div class="banner justify-center align-center" style="background-image: url(../assets/img/header-nosotros.jpg);">
-                <div class="container">
-                    <div class="title">
-                        <h2>DIRECTORIO</h2>
-                    </div>
+                <div class="container">                    
+                    <h2 class="color-white">DIRECTORIO</h2>                    
                 </div>
             </div> <!-- End Banner -->
 
@@ -113,7 +111,7 @@
             <div class="organigrama justify-center">
                 <div class="container justify-center">
                     <div class="auto">
-                        <a class="btn btn-blue" href="#"><i class="fas fa-file-invoice"></i> DESCARGAR ORGANIGRAMA</a>
+                        <a class="btn btn-darkBlue" href="#"><i class="fas fa-file-invoice"></i> DESCARGAR ORGANIGRAMA</a>
                     </div>
                 </div>
             </div>

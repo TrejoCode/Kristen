@@ -15,10 +15,8 @@
         <div class="column">
             <!-- Banner -->
             <div class="banner justify-center align-center" style="background-image: url(../assets/img/header-nosotros.jpg);">
-                <div class="container">
-                    <div class="title">
-                        <h2>SOBRE NOSOTROS</h2>
-                    </div>
+                <div class="container">                    
+                    <h2 class="color-white">SOBRE NOSOTROS</h2>                    
                 </div>
             </div> <!-- End Banner -->
             <div class="nosotros row justify-center">

@@ -15,10 +15,8 @@
         <div class="column">
             <!-- Banner -->
             <div class="banner justify-center align-center" style="background-image: url(../assets/img/header-planeacion.jpg);">
-                <div class="container">
-                    <div class="title">
-                        <h2>PLANEACIÓN</h2>
-                    </div>
+                <div class="container">                    
+                    <h2 class="color-white">PLANEACIÓN</h2>                    
                 </div>
             </div> <!-- End Banner -->
 
@@ -26,6 +24,10 @@
                 <div class="container">
                     <div class="column">
                         <div class="white-space-64"></div>
+                        <h2>
+                            CONSULTA LOS DOCUMENTOS DE PLANEACIÓN
+                        </h2>
+                        <div class="white-space-32"></div>
                         <div class="directorio-list">
                             <div class="row-responsive justify-between">
                                 <div class="column auto">
