@@ -1,6 +1,9 @@
 
 /* --- LOGIN --- */
 
+.btn {
+    cursor: pointer;
+}
 
 .login {
     height: 100vh;
@@ -171,11 +174,16 @@ header .header-main .logo {
 }
 
 .input-ghost {
-    width: 100%;
+    width: 96%;
     font-family: var(--Roboto);
-    border-bottom: 2px solid var(--borderBackground);
-    padding: var(--paddingNormal) var(--paddingMedium);
-    font-size: var(--fontText);
+    border-bottom: 2px solid var(--borderBackground);    
+    padding: var(--paddingNormal) 4px;    
+    font-size: var(--fontText);    
+}
+
+.input-ghost:focus {
+    border-radius: 4px;
+    border: 2px solid var(--borderBackground);
 }
 
 .input-ghost-title {
@@ -233,7 +241,7 @@ header .header-main .logo {
     margin-left: var(--paddingNormal);
 }
 
-.destino-carrera select, .admin-users select {
+.destino-carrera select, .admin-users select, .select-ghost {
     width: auto;
     padding: var(--paddingNormal) var(--paddingNormal);
     font-weight: var(--weightBold);
@@ -242,6 +250,7 @@ header .header-main .logo {
     color: var(--lightGray);
     border: var(--border);
 }
+
 
 .admin-users select {
     background-color: var(--formBackground);
@@ -283,4 +292,20 @@ header .header-main .logo {
 
 #user-role {
     display: none;
+}
+
+
+
+/* --- Admin Mircosites -- */
+
+.sheet-microsite {
+    width: 100%;
+}
+
+.components, .sheet-microsite {
+    margin: 0;
+}
+
+#microsite-duration {
+    max-width: 90%;
 }
