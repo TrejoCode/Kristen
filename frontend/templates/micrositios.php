@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.7/tiny-slider.css">
     <title>UPQROO</title>
 </head>
 
@@ -18,7 +19,9 @@
         <!-- Banner -->
         <div class="banner justify-center align-center" style="background-image: url(../assets/img/header-tera.jpg);">
             <div class="container">                
-                <h2 class="color-white">LICENCIATURA EN TERAPIA FÍSICA</h2>                
+                <h2 class="color-white">
+                    LICENCIATURA EN TERAPIA FÍSICA
+                </h2>
             </div>
         </div> <!-- End Banner -->
 
@@ -57,7 +60,8 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
+
                     <div class="white-space-32"></div>
                     <div class="about">
                         <div class="column">
@@ -85,8 +89,8 @@
                                         </p>
                                         <div class="white-space-16"></div>
                                     </div>
-                                </div>
-                                <div class="download">
+                                </div>                                
+                                <div class="component-plan-estudio">
                                     <div class="column">
                                         <h3>
                                             PLAN DE ESTUDIO
@@ -98,10 +102,10 @@
                                                 DESCARGAR
                                             </a>
                                         </div>
+                                        <div class="white-space-8"></div>
                                     </div>
                                 </div>
-                                <div class="offset">                                    
-                                </div>
+                                <div class="offset"></div>
                             </div>
                         </div>
                     </div>
@@ -110,15 +114,32 @@
             </div>
         </div> <!-- End Overview -->
 
+        <div class="component-mapa-curricular justify-center">
+            <div class="container">
+                <div class="column">
+                    <div class="white-space-32"></div>
+
+                    <h2>
+                        MAPA CURRICULAR
+                    </h2>
+                    <div class="white-space-16"></div>
+
+                    
+
+                    <div class="white-space-32"></div>
+                </div>
+            </div>            
+        </div>
+
         <div class="skills justify-center">
             <div class="container">
                 <div class="column">
                     <div class="white-space-64"></div>                    
                     <h2>
                         HABILIDADES Y DESTREZAS DEL EGRESADO
-                    </h2>                    
+                    </h2>
                     <div class="white-space-64"></div>
-                    <div class="habilities">
+                    <div class="component-habilities">
                         <div class="column">
                             <div class="row-responsive">
                                 <div class="hability">
@@ -182,7 +203,7 @@
                                         <div class="white-space-24"></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>                            
                             <div class="white-space-64"></div>
                         </div>
                     </div>
@@ -503,7 +524,7 @@
     </div>
 </div>
 
-<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.5.1/lory.min.js"></script>
 </body>
 
 </html>

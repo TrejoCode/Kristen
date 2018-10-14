@@ -21,19 +21,24 @@
 
 .microsite .skills {
     background-color: var(--white);
-    border: 1px solid #e6e7ea;
+    /*border: 1px solid #e6e7ea;*/
+}
+
+.component-mapa-curricular {
+    background-color: var(--white);
 }
 
 
-.microsite .skills .habilities .hability-number h2 {
+.component-habilities .hability-number h2 {
     font-weight: var(--weightBold);    
     padding-right: var(--paddingMedium);
     font-size: 3em;
 }
 
-.microsite .skills .habilities .hability-description p {
+.component-habilities .hability-description p {
     width: 90%;
 }
+
 
 /* --- Call To Action --- */
 
