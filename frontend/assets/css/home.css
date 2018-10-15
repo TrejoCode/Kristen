@@ -163,6 +163,59 @@
     padding: 0.5em 0 var(--paddingNormal) var(--paddingNormal);
 }
 
+/* --- Footer --- */
+
+footer {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.column-aguila {
+    justify-content: center;
+}
+
+.footer-link {
+    max-width: 40%;
+    background-color: rgba(0,182,191,.2);
+    border-left: 2px solid var(--yellow);
+    padding: var(--paddingNormal);
+    margin-left: var(--paddingNormal);
+    letter-spacing: 0.5px;
+    transition: border-left 0.2s;
+}
+
+.footer-link:hover {
+    background-color: rgba(0,182,191,.8);
+    border-left: 4px solid var(--yellow);
+}
+
+.footer-link a {
+    width: 100%;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(252, 219, 4,.8);
+    background-color: rgba(0,182,191,.2);
+}
+
+.footer-bottom p {
+    font-size: var(--fontMini);    
+}
+
+.footer-bottom .social-icon {
+    margin: 0 var(--paddingMedium);
+    color: var(--white);
+}
+
+.footer-bottom .social-icon a:hover {
+    color: var(--yellow);
+}
+
+#polices {
+    font-size: var(--fontMini);
+}
+
 
 /*    LARGE DEVICES    */
 
@@ -190,6 +243,10 @@
 
     .home .events .events-cards .event-card .date {
         padding: 0 var(--paddingNormal);
+    }
+
+    .hideInMobile {
+        display: none !important;
     }
 
 }
@@ -241,6 +298,23 @@
         padding: 0 0.5em;
         font-size: var(--fontRegular);
     }
+
+    .logo-aguila {
+        justify-content: center;
+        margin-bottom: var(--paddingMedium);
+    }
+
+    .footer-links {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-link {
+        max-width: 100%;        
+        padding: var(--paddingNormal) 0;
+        margin-left: 0;
+    }
+    
 
 }
 
