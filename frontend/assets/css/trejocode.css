@@ -249,7 +249,7 @@ p {
 }
 
 .text-justify {
-    text-align: justify;;
+    text-align: justify;
 }
 
 .text-right {
@@ -425,6 +425,8 @@ label {
 /*    TABLETS DEVICES    */
 
 @media screen and (max-width: 768px) {
+
+    body {background: lightblue;}
 
     .row-responsive {
         flex-direction: column;

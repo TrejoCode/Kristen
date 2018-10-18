@@ -110,11 +110,6 @@
     font-size: 3.5em;
 }
 
-.panel-lightBlue {
-    background-color: var(--lightBlue);
-    padding: var(--paddingSemi) var(--paddingNormal);
-}
-
 @media screen and (max-width: 1200px) {
 
     .institutional .directorio-rector .rector-profile {
@@ -141,14 +136,110 @@
 
     .institutional .directorio-rector .rector-profile {
         width: 100%;
-    }
-
-    .institutional .directorio-rector .rector img {
-
-    }
+    }    
 
     .institutional .directorio-rector .rector-info {
         width: 100%;
     }
 
 }
+
+.componente-card-link-container {
+    justify-content: space-between;
+}
+
+
+.componente-card-link {
+    max-width: 45%;
+    background-color: var(--white);        
+    padding: var(--paddingSemi) var(--paddingNormal);
+}
+
+.componente-card-link:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.1);
+}
+
+@media screen and (max-width: 768px) {
+
+    .componente-card-link {
+        max-width: 100%;        
+        padding: var(--paddingSemi) 0;
+        margin-bottom: var(--paddingLarge);
+    }
+
+}
+
+.componente-panel-lightBlue{
+    background-color: var(--lightBlue);
+    padding: var(--paddingSemi);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    font-weight: var(--weightBold);    
+}
+
+.componente-transparencia-list {
+    padding: var(--paddingLarge) 0;
+    background-color: var(--white);
+}
+
+.componente-transparencia-list .number, .componente-transparencia-list .description {
+    margin: 0 var(--paddingSemi);
+}
+
+.componente-transparencia-list .description {
+    max-width: 90%;    
+}
+
+.componente-transparencia-list .download {
+    max-width: 10%;
+    align-items: center;
+} 
+
+@media screen and (max-width: 1200px) {
+
+    .componente-transparencia-list .number, .componente-transparencia-list .description {
+        margin: 0 var(--paddingMedium);
+    }
+
+    .componente-transparencia-list .description {
+        max-width: 85%;    
+    }
+
+    .componente-transparencia-list .download {
+        max-width: 15%;    
+    } 
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .componente-transparencia-list .number, .componente-transparencia-list .description {
+        margin: 0 var(--paddingNormal);
+    }
+
+    .componente-transparencia-list .description {
+        max-width: 90%;        
+    }
+
+    .componente-transparencia-list .download {
+        max-width: 15%;    
+    } 
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .componente-transparencia-list .number, .componente-transparencia-list .description, .componente-transparencia-list .download {
+        margin: 0 var(--paddingNormal);
+    }
+
+    .componente-transparencia-list .description {
+        max-width: 95%;        
+    }
+
+    .componente-transparencia-list .download {
+        max-width: 100%;  
+        padding: var(--paddingMedium) 0;  
+    } 
+
+}
+

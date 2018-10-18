@@ -20,71 +20,65 @@
                 </div>
             </div> <!-- End Banner -->
 
-            <div class="directorio-otros justify-center">
-                <div class="container">
-                    <div class="column">
-                        <div class="white-space-64"></div>
-                        <h2>
-                            CONSULTA LOS DOCUMENTOS DE PLANEACIÓN
-                        </h2>
-                        <div class="white-space-32"></div>
-                        <div class="directorio-list">
-                            <div class="row-responsive justify-between">
-                                <div class="column auto">
-                                    <h3 class="color-teal">DECRETO</h3>
-                                    <div class="white-space-8"></div>
-                                </div>
-                                <div class="auto">
-                                    <a class="link auto" href="#"><i class="fas fa-book-open"></i> CONSULTAR</a>
-                                </div>
+            <div class="planeacion justify-center">
+                <div class="container column">
+                    <div class="white-space-64"></div>
+                    <h2>
+                        CONSULTA LOS DOCUMENTOS DE PLANEACIÓN
+                    </h2>
+                    <div class="white-space-48"></div>
+                    <div class="row-responsive componente-card-link-container">
+                        <div class="componente-card-link bordered column align-center">
+                            <h3 class="text-center">
+                                DECRETO ACTUALIZADO
+                            </h3>
+                            <div class="white-space-16"></div>
+                            <div class="color-lightBlue justify-center">
+                                <a href="#" class="link">
+                                    <i class="fas fa-book-open"></i> CONSULTAR
+                                </a>
                             </div>
                         </div>
-                        <div class="white-space-32"></div>
-
-                        <div class="directorio-list">
-                            <div class="row-responsive justify-between">
-                                <div class="column auto">
-                                    <h3 class="color-teal">CRONOGRAMA DE CALIDAD</h3>
-                                    <div class="white-space-8"></div>
-                                </div>
-                                <div class="auto">
-                                    <a class="link auto" href="#"><i class="fas fa-book-open"></i> CONSULTAR</a>
-                                </div>
+                        <div class="componente-card-link bordered column align-center">
+                            <h3 class="text-center">
+                                CRONOGRAMA DE CALIDAD
+                            </h3>
+                            <div class="white-space-16"></div>
+                            <div class="color-lightBlue justify-center">
+                                <a href="#" class="link">
+                                    <i class="fas fa-book-open"></i> CONSULTAR
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="white-space-32"></div>
+                    <div class="row-responsive componente-card-link-container">
+                        <div class="componente-card-link bordered column align-center">
+                            <h3 class="text-center">
+                                COMITÉ DE CALIDAD
+                            </h3>
+                            <div class="white-space-16"></div>
+                            <div class="color-lightBlue justify-center">
+                                <a href="#" class="link">
+                                    <i class="fas fa-book-open"></i> CONSULTAR
+                                </a>
                             </div>
                         </div>
-
-                        <div class="white-space-32"></div>
-
-                        <div class="directorio-list">
-                            <div class="row-responsive justify-between">
-                                <div class="column auto">
-                                    <h3 class="color-teal">COMITÉ DE CALIDAD</h3>
-                                    <div class="white-space-8"></div>
-                                </div>
-                                <div class="auto">
-                                    <a class="link auto" href="#"><i class="fas fa-book-open"></i> CONSULTAR</a>
-                                </div>
+                        <div class="componente-card-link bordered column align-center">
+                            <h3 class="text-center">
+                                P. INSTITUCIONAL DE DESARROLLO 2016-2022
+                            </h3>
+                            <div class="white-space-16"></div>
+                            <div class="color-lightBlue justify-center">
+                                <a href="#" class="link">
+                                    <i class="fas fa-book-open"></i> CONSULTAR
+                                </a>
                             </div>
                         </div>
-
-                        <div class="white-space-32"></div>
-
-                        <div class="directorio-list">
-                            <div class="row-responsive justify-between">
-                                <div class="column auto">
-                                    <h3 class="color-teal">PROGRAMA INSTITUCIONAL DE DESARROLLO 2016-2022</h3>
-                                    <div class="white-space-8"></div>
-                                </div>
-                                <div class="auto">
-                                    <a class="link auto" href="#"><i class="fas fa-book-open"></i> CONSULTAR</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="white-space-32"></div>
                     </div>
                 </div>
             </div>
+            
             <div class="white-space-64"></div>
         </div> <!-- End Main Column -->
     </div> <!-- End Nosotros Column -->
