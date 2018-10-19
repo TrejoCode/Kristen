@@ -176,6 +176,10 @@
     font-weight: var(--weightBold);    
 }
 
+.componente-panel-lightBlue p {
+    max-width: 95%;
+}
+
 .componente-transparencia-list {
     padding: var(--paddingLarge) 0;
     background-color: var(--white);
@@ -240,6 +244,46 @@
         max-width: 100%;  
         padding: var(--paddingMedium) 0;  
     } 
+
+}
+
+.componente-miniheader {
+    background-color: var(--white);
+    border-bottom: var(--border);
+}
+
+.componente-miniheader .left {
+    min-width: 60%;
+}
+
+
+.componente-miniheader .right {
+    align-items: flex-end;
+}
+
+.transparencia-access {
+    align-content: flex-end;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .componente-miniheader .left {
+        text-align: center;
+    } 
+
+    .componente-miniheader .left p {
+       text-align: center;
+    }
+
+    .componente-miniheader .right {
+        align-items: center;
+    }
+
+    .tomini32 {
+        height: 0;
+    }
+
 
 }
 
