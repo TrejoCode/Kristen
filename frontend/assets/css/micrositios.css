@@ -35,6 +35,10 @@
     font-size: 3em;
 }
 
+.component-habilities .hability-number-mini h2 {        
+    font-size: 2em;
+}
+
 .component-habilities .hability-description p {
     width: 90%;
 }
@@ -236,3 +240,34 @@
 
 }
 
+.componente-tabla {
+    overflow-x: auto;
+}
+
+.componente-tabla table {
+    width: 100%;
+    border: 0;
+    border-spacing: 0;    
+}
+
+.componente-tabla table .tbody {
+    display: flex;
+}
+
+.componente-tabla th {    
+    padding: var(--paddingMedium) 0;
+    background-color: var(--lightBlue);
+    color: var(--white);
+}
+
+.componente-tabla td {
+    text-align: center;
+    border: var(--border);
+    padding: var(--paddingMedium) var(--paddingNormal);
+    font-size: var(--fontMini);
+}
+
+.componente-tabla td:hover {
+    background-color: var(--lightBlue);
+    color: var(--white);
+}
