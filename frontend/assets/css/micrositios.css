@@ -271,3 +271,40 @@
     background-color: var(--lightBlue);
     color: var(--white);
 }
+
+/* Estancias y Estadías */
+
+
+.componente-card {
+    width: 49%;
+    padding: var(--paddingSemi) 0;
+    margin: var(--paddingMedium) 0;
+    background-color: var(--white);
+    align-self: flex-start;
+}
+
+.componente-card-single {
+    width: 100%;
+}
+
+.componente-card .name, .componente-card .description {       
+    margin: 0 var(--paddingSemi); 
+}
+
+.componente-card .link, .componente-card-single .link {
+    flex-wrap: wrap;
+}
+
+.componente-card .link a, .componente-card-single .link a {
+    font-size: var(--fontTiny);
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px) {
+ 
+    .componente-card {
+        width: 100%    
+    }
+
+}

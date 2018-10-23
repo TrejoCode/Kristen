@@ -410,6 +410,10 @@ label {
     padding-left: 0.5em;
 }
 
+.textTiny {
+    font-size: var(--fontTiny);
+}
+
 /*    LARGE DEVICES    */
 
 @media screen and (max-width: 1200px) {
