@@ -54,13 +54,105 @@
             <div class="header-main justify-center wow fadeInDown">
                 <div class="container">
                     <div class="row">
-                        <div class="left">
+                        <div class="left auto">
                             <div class="logo responsive-img">
                                 <a href="#">
                                     <img src="../assets/img/logo-upqroo.png" alt="Logo UPQROO" title="Logo UPQROO">
                                 </a>
                             </div>
                         </div>
+
+                        <div class="mobile auto align-center">
+                            <div class="container-open-menu column">
+                                <a href="#" id="open-mobile-menu">
+                                    <i class="fas fa-bars"></i>
+                                </a>                                
+                                <div class="mobile-menu-content column" id="mobile-menu-content">
+
+                                    <div class="mobile-item column color-darkBlue">
+                                        <a href="#" class="first-link link align-center">
+                                            UNIVERSIDAD <span><i class="fas fa-caret-down"></i></span>
+                                        </a>
+                                        <div class="mobile-content column">
+                                            <div class="mobile-content-item">
+                                                <a href="#">NOSOTROS</a>
+                                            </div>
+                                            <div class="white-space-16"></div>
+                                            <div class="mobile-content-item">
+                                                <a href="#">DIRECTORIO</a>
+                                            </div>
+                                            <div class="white-space-16"></div>
+                                            <div class="mobile-content-item">
+                                                <a href="#">PLANEACIÓN</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mobile-item column color-darkBlue">
+                                        <a href="#" class="first-link link align-center">
+                                            OFERTA EDUCATIVA <span><i class="fas fa-caret-down"></i></span>
+                                        </a>
+                                        <div class="mobile-content column">
+                                            <div class="mobile-content-item">
+                                                <a href="#">INGENIERÍA EN SOFTWARE</a>
+                                            </div>
+                                            <div class="white-space-16"></div>
+                                            <div class="mobile-content-item">
+                                                <a href="#">INGENIERÍA EN BIOMÉDICA</a>
+                                            </div>
+                                            <div class="white-space-16"></div>
+                                            <div class="mobile-content-item">
+                                                <a href="#">INGENERÍA EN BIOTECNOLOGÍA</a>
+                                            </div>
+                                            <div class="white-space-16"></div>
+                                            <div class="mobile-content-item">
+                                                <a href="#">INGENIERÍA FINANCIERA</a>
+                                            </div>
+                                            <div class="white-space-16"></div>
+                                            <div class="mobile-content-item">
+                                                <a href="#">LICENCIATURA EN TERAPIA FÍSICA</a>
+                                            </div>
+                                            <div class="white-space-16"></div>
+                                            <div class="mobile-content-item">
+                                                <a href="#">LICENCIATURA EN ADMON Y GESTIÓN DE PYMES</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mobile-item column color-darkBlue">
+                                        <a href="#" class="first-link link">
+                                            SERVICIOS ESCOLARES <span><i class="fas fa-caret-down"></i></span>
+                                        </a>                                        
+                                    </div>  
+
+                                    <div class="mobile-item column color-darkBlue">
+                                        <a href="#" class="first-link link align-center">
+                                            VINCULACIÓN <span><i class="fas fa-caret-down"></i></span>
+                                        </a>
+                                        <div class="mobile-content column">
+                                            <div class="mobile-content-item">
+                                                <a href="#">ESTANCIAS Y ESTADÍAS</a>
+                                            </div>
+                                            <div class="white-space-16"></div>
+                                            <div class="mobile-content-item">
+                                                <a href="#">VISITAS INDUSTRIALES</a>
+                                            </div>
+                                            <div class="white-space-16"></div>
+                                            <div class="mobile-content-item">
+                                                <a href="#">CULTURA Y DEPORTES</a>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mobile-item column color-darkBlue">
+                                        <a href="#" class="first-link link">
+                                            NOTICIAS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="right">
                             <nav class="row align-center justify-end">
                                 <div class="nav-item auto">
@@ -230,6 +322,10 @@
     <script type="text/javascript" src="../assets/js/wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
+        let menuTrigger = document.getElementById('open-mobile-menu');
+        menuTrigger.addEventListener('click', function() {
+            document.getElementById('mobile-menu-content').classList.remove('hidden');
+        });
     </script>
 </body>
 </html>

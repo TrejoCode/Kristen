@@ -34,16 +34,13 @@ header {
     border-bottom: 1px solid var(--borderBackground);
 }
 
-.header-main .left{
-    width: 40%;
-}
-
-.header-main .right{
-    width: 60%;
-}
-
 header .header-main .logo {
     justify-content: flex-start;
+}
+
+header .header-main .logo img {
+    min-height: 55px;
+    object-fit: contain;
 }
 
 .header-main .right .nav-item .direct-link {
@@ -53,6 +50,10 @@ header .header-main .logo {
 
 .header-main .right .nav-item, .header-main .right .nav-item .direct-link {
     padding: var(--paddingNormal);
+}
+
+.header-main .mobile {
+    display: none;
 }
 
 /* --- Hover Effect --- */
@@ -110,41 +111,9 @@ header .header-main .logo {
 /* --- // End Hover Effect --- */
 
 
-/*    LARGE DEVICES    */
-
-@media screen and (max-width: 1200px) {
-
-    .header-main .left {
-        width: 30%;
-    }
-
-    .header-main .right {
-        width: 70%;
-    }
-
-}
-
 /*    NOTEBOOKS, IPADS DEVICES    */
 
 @media screen and (max-width: 992px) {
-
-    .header-main .left {
-        width: 20%;
-    }
-
-    .header-main .right {
-        width: 80%;
-    }
-
-    .header-main .right .nav-item, .header-main .right .nav-item a {
-        padding: 5px;
-    }
-
-}
-
-/*    TABLETS DEVICES    */
-
-@media screen and (max-width: 768px) {
 
     header .header-top {
         display: none;
@@ -166,11 +135,65 @@ header .header-main .logo {
         display: none;
     }
 
+    .header-main .mobile {
+        display: flex;
+    }
+    
+    .mobile-menu-content {
+        position: absolute;
+        max-width: 100%;
+        top: 96px;
+        right: 0;
+        background-color: var(--white);        
+    }
+
+    .header-main .mobile-item {                
+        text-align: right;
+        color: var(--lightBlue);
+    }    
+
+    .header-main .mobile-item .first-link {
+        padding-right: var(--paddingLarge);
+        margin: var(--paddingMedium) 0;
+    }
+
+    .mobile-content {        
+        width: 100%;                
+        padding: var(--paddingNormal) 0;
+        display: none !important;
+        opacity: 0;        
+        background-color: var(--lightBlue);
+        color: var(--white);
+    }
+
+    .mobile-content-item {
+        justify-content: flex-end;        
+        background-color: var(--lightBlue);
+    }    
+
+    .mobile-content-item a {
+        padding-right: var(--paddingLarge);
+        font-size: var(--fontTiny);
+    }    
+        
+    .mobile-item a:focus + .mobile-content {
+        opacity: 1;
+        display: flex !important;        
+    }
+
+    .mobile-item a:focus > span i {
+        transform: rotate(180deg);
+    }
+
 }
 
+/*    TABLETS DEVICES    */
 
+@media screen and (max-width: 768px) {
 
+    
 
+}
 
 .home {
     font-family: var(--Roboto);

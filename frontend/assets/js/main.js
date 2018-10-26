@@ -15,15 +15,4 @@ galleryImg.addEventListener("click", function(){
 });
 
 */
-// --- HEADER FUNCTION
 
-var currentNav;
-
-function checkNavItem(currentNav) {
-    console.log(currentNav);
-}
-
-var navigation = document.getElementsByClassName("nav-item");
-navigation.addEventListener("mouseover", function(){
-    alert("Hola");
-}, false);
