@@ -46,22 +46,22 @@ header .header-main .logo {
     justify-content: flex-start;
 }
 
-.header-main .right .nav-item a {
+.header-main .right .nav-item .direct-link {
     color: var(--darkBlue);
     font-size: var(--fontText);
 }
 
-.header-main .right .nav-item, .header-main .right .nav-item a {
+.header-main .right .nav-item, .header-main .right .nav-item .direct-link {
     padding: var(--paddingNormal);
 }
 
 /* --- Hover Effect --- */
 
-.header-main .right .nav-item a {
+.header-main .right .nav-item .direct-link {
     position: relative;
 }
 
-.header-main .right .nav-item a:before {
+.header-main .right .nav-item .direct-link:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -75,11 +75,37 @@ header .header-main .logo {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.header-main .right .nav-item a:hover:before {
+.header-main .right .nav-item .direct-link:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+.nav-item:hover .nav-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-content {
+    position: absolute;
+    width: 100%;
+    top: 146px;
+    left: 0;    
+    padding: var(--paddingLarge) 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--white);
+    border-bottom: var(--border);     
+}
+
+.nav-content .nav-links {
+    margin: 0 var(--paddingMedium);
+}
+
+.nav-content .nav-links .link {
+    color: var(--darkBlue);
+}
+
 
 /* --- // End Hover Effect --- */
 

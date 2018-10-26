@@ -423,6 +423,10 @@ label {
     font-size: var(--fontTiny);
 }
 
+.textMini {
+    font-size: var(--fontMini);
+}
+
 /*    LARGE DEVICES    */
 
 @media screen and (max-width: 1200px) {
