@@ -67,7 +67,7 @@
                                 <a href="#" id="open-mobile-menu">
                                     <i class="fas fa-bars"></i>
                                 </a>                                
-                                <div class="mobile-menu-content column" id="mobile-menu-content">
+                                <div class="mobile-menu-content column hidden" id="mobile-menu-content">
 
                                     <div class="mobile-item column color-darkBlue">
                                         <a href="#" class="first-link link align-center">
@@ -323,9 +323,15 @@
     <script type="text/javascript">
         new WOW().init();
         let menuTrigger = document.getElementById('open-mobile-menu');
+        let menu = document.getElementById('mobile-menu-content');
         menuTrigger.addEventListener('click', function() {
-            document.getElementById('mobile-menu-content').classList.remove('hidden');
-        });
+            if(menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+            
+        });        
     </script>
 </body>
 </html>
