@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/admin.css" media="screen">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+        crossorigin="anonymous">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <title>UPQROO - ADMINISTRADOR</title>
+</head>
+
+<body>
+
+    <div class="admin flex">
+        <div class="column">
+            <!-- Header -->
+            <header>
+                <div class="column">
+                    <div class="header-main justify-center wow fadeInDown">
+                        <div class="container">
+                            <div class="row">
+                                <div class="left auto">
+                                    <div class="logo responsive-img">
+                                        <a href="#">
+                                            <img src="../assets/img/logo-upqroo.png" alt="Logo UPQROO" title="Logo UPQROO">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <nav class="row align-center justify-end">
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-newspaper"></i>
+                                            <a href="#">NOTICIAS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <a href="#">EVENTOS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-briefcase"></i>
+                                            <a href="#">VACANTES</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-university"></i>
+                                            <a href="#">PÁGINAS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-users"></i>
+                                            <a href="#">USUARIOS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            <a href="#">SALIR</a>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header> <!-- End Header -->
+
+            <!-- Admin Content -->
+            <div class="admin-content">
+
+                <div class="admin-agregar-noticia justify-center">
+                    <div class="container">
+                        <div class="column">
+                            <div class="white-space-32"></div>
+                            <h2>
+                                EDITAR - ESTANCIAS Y ESTADIAS
+                            </h2>                            
+                            <div class="white-space-32"></div>
+                            <div class="row">
+                                <div class="sheet sheet-microsite justify-center bordered">
+                                    <div class="container">
+                                        <form class="admin-form" action="" method="post">
+                                            <div class="column">
+                                                
+                                                <div class="column">
+                                                    <div class="white-space-32"></div>
+                                                    <div class="title-component align-center">
+                                                        <h3>
+                                                            CALENDARIO
+                                                        </h3>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <h4>
+                                                        FECHAS PROGRAMADAS DE ESTANCIAS O ESTADÍAS
+                                                    </h4>
+                                                    <div class="white-space-8"></div>
+                                                    <div class="auto color-white">
+                                                        <a class="btn btn-lightBlue" id="fechaspClick">
+                                                            <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                            DOCUMENTO
+                                                        </a>
+                                                    </div>
+                                                    <input type="file" id="fechaspfile" name="fechasp" class="hidden">
+                                                    <div class="white-space-16"></div>
+                                                </div>
+
+                                                <div class="column admin-overview-container">
+                                                    <div class="row">                                                        
+                                                        <div class="microsite-resumen column">
+                                                            <div class="white-space-32"></div>
+                                                            <div class="title-component align-center">
+                                                                <h3>
+                                                                    ESTANCIAS
+                                                                </h3>
+                                                            </div>
+                                                            <div class="white-space-16"></div>
+                                                            <h4>
+                                                                F-01 Carta de presentación a la empresa
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="estanciaf01Click">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="estanciaf01file" name="estanciaf01" class="hidden">
+
+                                                            <!-- -->
+                                                            <div class="white-space-24"></div>
+                                                            <h4>
+                                                                F-02 Carta de aceptación de la empresa
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="estanciaf02Click">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="estanciaf02file" name="estanciaf02" class="hidden">
+
+                                                            <!-- -->
+                                                            <div class="white-space-24"></div>
+                                                            <h4>
+                                                                F-03 Definición de proyectos
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="estanciaf03Click">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="estanciaf03file" name="estanciaf03" class="hidden">
+
+                                                            <!-- -->
+                                                            <div class="white-space-24"></div>
+                                                            <h4>
+                                                                F-05 Carta de liberación de la empresa
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="estanciaf05Click">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="estanciaf05file" name="estanciaf05" class="hidden">
+
+                                                        </div>
+                                                        <div class="microsite-objetivos column">
+                                                            <div class="white-space-32"></div>
+                                                            <div class="title-component align-center">
+                                                                <h3>
+                                                                    ESTADIAS
+                                                                </h3>
+                                                            </div>
+                                                            <div class="white-space-16"></div>
+                                                            <h4>
+                                                                F-01 Carta de presentación a la empresa
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="estadiaf01Click">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="estadiaf01file" name="estadiaf01" class="hidden">
+
+                                                            <!-- -->
+                                                            <div class="white-space-24"></div>
+                                                            <h4>
+                                                                F-02 Carta de aceptación de la empresa
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="estadiaf02Click">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="estadiaf02file" name="estadiaf02" class="hidden">
+
+                                                            <!-- -->
+                                                            <div class="white-space-24"></div>
+                                                            <h4>
+                                                                F-03 Definición de proyectos
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="estadiaf03Click">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="estadiaf03file" name="estadiaf03" class="hidden">
+
+                                                            <!-- -->
+                                                            <div class="white-space-24"></div>
+                                                            <h4>
+                                                                F-05 Carta de liberación de la empresa
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="estadiaf05Click">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="estadiaf05file" name="estadiaf05" class="hidden">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="microsite-resumen column">
+                                                    <div class="white-space-48"></div>
+                                                    <div class="title-component align-center">
+                                                        <h3>
+                                                            MOVILIDAD ACADÉMICA NACIONAL
+                                                        </h3>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <h4>
+                                                        Información para alumnos de la UPQROO
+                                                    </h4>
+                                                    <div class="white-space-8"></div>
+                                                    <div class="auto color-white">
+                                                        <a class="btn btn-lightBlue" id="movilidad1Click">
+                                                            <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                            DOCUMENTO
+                                                        </a>
+                                                    </div>
+                                                    <input type="file" id="movilidad1file" name="movilidad1" class="hidden">
+                                                
+                                                    <!-- -->
+                                                    <div class="white-space-24"></div>
+                                                    <h4>
+                                                        Información para estudiantes de otras Universidades politécnicas del país.
+                                                    </h4>
+                                                    <div class="white-space-8"></div>
+                                                    <div class="auto color-white">
+                                                        <a class="btn btn-lightBlue" id="movilidad2Click">
+                                                            <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                            DOCUMENTO
+                                                        </a>
+                                                    </div>
+                                                    <input type="file" id="movilidad2file" name="movilidad2" class="hidden">
+                                                
+                                                    <!-- -->
+                                                    <div class="white-space-24"></div>
+                                                    <h4>
+                                                        Solicitud de movilidad Académica para alumnos de la UPQROO.
+                                                    </h4>
+                                                    <div class="white-space-8"></div>
+                                                    <div class="auto color-white">
+                                                        <a class="btn btn-lightBlue" id="movilidad3Click">
+                                                            <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                            DOCUMENTO
+                                                        </a>
+                                                    </div>
+                                                    <input type="file" id="movilidad3file" name="movilidad3" class="hidden">
+                                                </div>
+
+                                                <!-- Contenido Dinámico -->
+                                                <div class="contenedor-componentes column" id="contenedor-componentes">
+                                                    <div class="publicar column">
+                                                        <div class="white-space-32"></div>
+                                                        <div class="auto color-white">
+                                                            <input class="btn btn-darkBlue" type="submit" value="ACTUALIZAR INFORMACIÓN">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="white-space-32"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white-space-32"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End Admin Content -->
+
+        </div> <!-- End Main Column -->
+    </div>
+    <script type="text/javascript" src="../assets/js/admin.js" async></script>
+    <script>
+        document.getElementById('fechaspClick').onclick = function () {
+            document.getElementById('fechaspfile').click();
+        };
+        document.getElementById('estanciaf01Click').onclick = function () {
+            document.getElementById('estanciaf01file').click();
+        };
+        document.getElementById('estanciaf02Click').onclick = function () {
+            document.getElementById('estanciaf02file').click();
+        };
+        document.getElementById('estanciaf03Click').onclick = function () {
+            document.getElementById('estanciaf03file').click();
+        };
+        document.getElementById('estanciaf05Click').onclick = function () {
+            document.getElementById('estanciaf05file').click();
+        };
+        // Estadías
+        document.getElementById('estadiaf01Click').onclick = function () {
+            document.getElementById('estadiaf01file').click();
+        };
+        document.getElementById('estadiaf02Click').onclick = function () {
+            document.getElementById('estadiaf02file').click();
+        };
+        document.getElementById('estadiaf03Click').onclick = function () {
+            document.getElementById('estadiaf03file').click();
+        };
+        document.getElementById('estadiaf05Click').onclick = function () {
+            document.getElementById('estadiaf05file').click();
+        };
+
+        // Movilidad
+        document.getElementById('movilidad1Click').onclick = function () {
+            document.getElementById('movilidad1file').click();
+        };
+        document.getElementById('movilidad2Click').onclick = function () {
+            document.getElementById('movilidad2file').click();
+        };
+        document.getElementById('movilidad3Click').onclick = function () {
+            document.getElementById('movilidad3file').click();
+        };
+    </script>
+</body>
+
+</html>
