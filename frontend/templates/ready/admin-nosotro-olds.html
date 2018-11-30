@@ -115,32 +115,92 @@
                                                     </div>                                                
                                                 </div>
 
-                                                <div class="white-space-32"></div>
-                                                <div class="title-component">
-                                                    <h3>
-                                                        DOCUMENTOS
-                                                    </h3>
-                                                </div>
-
-                                                <div class="archivos-listados-root column" id="archivos-listados-root">
-                                                    <div class="archivo-listado-item column">
-                                                        <div class="white-space-16"></div>
-                                                        <div class="row">
-                                                            <input class="input input-ghost" type="text" placeholder="Nombre del archivo o documento" />
-                                                            <div class="column align-center justify-center">
-                                                                <p> Selecciona un archivo a subir </p>
-                                                                <div class="white-space-16"></div>
-                                                                <input type="file" name="archivo" />
+                                                <div class="column admin-overview-container">
+                                                    <div class="row">
+                                                        
+                                                        <div class="microsite-resumen column">
+                                                            <div class="white-space-32"></div>
+                                                            <div class="title-component align-center">
+                                                                <h3>
+                                                                    DOCUMENTOS
+                                                                </h3>
                                                             </div>
+                                                            <div class="white-space-16"></div>
+                                                            <h4>
+                                                                DECRETO OPTIMIZADO
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="decretroClick">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="decretofile" name="decreto" class="hidden">
+
+                                                            <!-- -->
+                                                            <div class="white-space-24"></div>
+                                                            <h4>
+                                                                REGLAMENTO INTERIOR UPQROO
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="reglamentointClick">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="reglamentointfile" name="reglamento" class="hidden">
+
+                                                            <!-- -->
+                                                            <div class="white-space-24"></div>
+                                                            <h4>
+                                                                REGLAMENTO PARA USO DE LABORATORIOS
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="reglamentolabClick">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="reglamentolabfile" name="reglamentolab" class="hidden">
+
+                                                        </div> <!-- // End Resumen -->
+                                                        <div class="microsite-objetivos column">
+                                                            <div class="white-space-32"></div>                                                            
+                                                            <div class="white-space-16"></div>
+                                                            <h4>
+                                                                REGLAMENTO DE ESTUDIOS DE PROFESIONAL
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="reglamentoprofClick">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="reglamentoprofile" name="reglamentopro" class="hidden">
+
+                                                            <!-- -->
+                                                            <div class="white-space-24"></div>
+                                                            <h4>
+                                                                REGLAMENTO DE INGRESO, PROMOCIÓN Y PERSONAL
+                                                            </h4>
+                                                            <div class="white-space-8"></div>
+                                                            <div class="auto color-white">
+                                                                <a class="btn btn-lightBlue" id="reglamentoingClick">
+                                                                    <i class="fas fa-file-pdf"></i> ACTUALIZAR
+                                                                    DOCUMENTO
+                                                                </a>
+                                                            </div>
+                                                            <input type="file" id="reglamentoingfile" name="reglamentoing" class="hidden">         
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="white-space-32"></div>
-                                                <a class="btn btn-lightBlue text-center" id="addNewListFile">
-                                                    AÑADIR NUEVO
-                                                </a>
-                                                <div class="white-space-32"></div>
-                                                
+
+                                                </div>                                                                                        
+
+                                                <!-- Contenido Dinámico -->
                                                 <div class="contenedor-componentes column" id="contenedor-componentes">
                                                     <div class="publicar column">
                                                         <div class="white-space-32"></div>
@@ -166,25 +226,21 @@
     </div>
     <script type="text/javascript" src="../assets/js/admin.js" async></script>
     <script>
-
-        document.getElementById('addNewListFile').onclick = function () {
-
-            /* Elemento padre, todos los elementos será añadidos aquí */
-            let archivosListadosRoot = document.getElementById('archivos-listados-root');
-            let archivoListadoItem = document.createElement('div');
-            archivoListadoItem.classList.add('archivo-listado-item', 'column');
-            archivoListadoItem.innerHTML = '<div class="white-space-16"></div>' +
-            '<div class="row">' +
-                '<input class="input input-ghost" type="text" placeholder="Nombre del archivo o documento" />' +
-                '<div class="column align-center justify-center">' +
-                    '<p> Selecciona un archivo a subir </p>' +
-                    '<div class="white-space-16"></div>' +
-                    '<input type="file" name="archivo" />' +                    
-                '</div>' +
-            '</div>' +
-            '<div class="white-space-32"></div>';
-            archivosListadosRoot.appendChild(archivoListadoItem);
-        }
+        document.getElementById('decretroClick').onclick = function () {
+            document.getElementById('decretofile').click();
+        };
+        document.getElementById('reglamentointClick').onclick = function () {
+            document.getElementById('reglamentointfile').click();
+        };
+        document.getElementById('reglamentolabClick').onclick = function () {
+            document.getElementById('reglamentolabfile').click();
+        };
+        document.getElementById('reglamentoprofClick').onclick = function () {
+            document.getElementById('reglamentoprofile').click();
+        };
+        document.getElementById('reglamentoingClick').onclick = function () {
+            document.getElementById('reglamentoingfile').click();
+        };        
     </script>
 </body>
 
