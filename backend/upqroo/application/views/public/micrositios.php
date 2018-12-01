@@ -114,16 +114,12 @@
                                             <p class="text-justify"> <?php echo $habilidad4 ?></p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="white-space-64"></div>
+                                </div>                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div> <!-- End Skill -->
-
-
-
 
             <!-- News Cards -->
 
@@ -393,15 +389,7 @@
                     <div class="white-space-64"></div>
                 </div>
             </div>
-        </div> <!-- End Call To Action -->
-
-        <!-- Aliados -->
-
-        <div class="aliados">
-
-        </div>
-
-        <!-- End Aliados -->
+        </div> <!-- End Call To Action -->        
 
         </div>
 </div>
