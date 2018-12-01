@@ -84,7 +84,7 @@
                                 Editar Micrositio - Ingeniería en Software
                             </h2>
                             <div class="white-space-32"></div>
-                            <div class="row">                                
+                            <div class="row">
                                 <div class="sheet sheet-microsite justify-center bordered">
                                     <div class="container">
                                         <form class="admin-form" action="" method="post">
@@ -97,7 +97,7 @@
                                                 </div>
                                                 <p class="text-center info-sheet"><a id="banner-button" href="#">Click
                                                         para cambiar imagen de portada</a></p>
-                                                <!-- // Fin Foto Portada --> 
+                                                <!-- // Fin Foto Portada -->
 
                                                 <!-- Overview -->
                                                 <div class="column admin-overview-container">
@@ -109,8 +109,9 @@
                                                                 <h3>Resumen</h3>
                                                             </div>
                                                             <div class="white-space-8"></div>
-                                                            <textarea class="input-ghost input-ghost-parrafo text-justify" id="contenido1" name="micrositio-resumen"
-                                                                maxlength="500" rows="7" placeholder="Resumen de carrera (500 carácteres máximo)"></textarea>
+                                                            <textarea class="input-ghost input-ghost-parrafo text-justify"
+                                                                id="contenido1" name="micrositio-resumen" maxlength="500"
+                                                                rows="7" placeholder="Resumen de carrera (500 carácteres máximo)"></textarea>
                                                         </div> <!-- // End Resumen -->
                                                         <div class="microsite-objetivos column">
                                                             <div class="white-space-32"></div>
@@ -118,8 +119,9 @@
                                                                 <h3>Objetivos</h3>
                                                             </div>
                                                             <div class="white-space-8"></div>
-                                                            <textarea class="input-ghost input-ghost-parrafo text-justify" id="contenido1" name="micrositio-objetivo"
-                                                                maxlength="500" rows="7" placeholder="Objetivos de carrera (500 carácteres máximo)"></textarea>
+                                                            <textarea class="input-ghost input-ghost-parrafo text-justify"
+                                                                id="contenido1" name="micrositio-objetivo" maxlength="500"
+                                                                rows="7" placeholder="Objetivos de carrera (500 carácteres máximo)"></textarea>
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -129,8 +131,9 @@
                                                             <div class="title-component align-center">
                                                                 <h3>Duración</h3>
                                                             </div>
-                                                            <div class="white-space-8"></div>                                                            
-                                                            <select name="micrositio-duracion" id="microsite-duration" class="select-ghost">
+                                                            <div class="white-space-8"></div>
+                                                            <select name="micrositio-duracion" id="microsite-duration"
+                                                                class="select-ghost">
                                                                 <option value="0">
                                                                     3 Años, 4 Meses
                                                                 </option>
@@ -138,7 +141,7 @@
                                                                     4 Años, 4 Meses
                                                                 </option>
                                                             </select>
-                                                        </div> <!-- // End Duración --> 
+                                                        </div> <!-- // End Duración -->
                                                         <div class="microsite-plan column">
                                                             <div class="white-space-32"></div>
                                                             <div class="title-component align-center">
@@ -150,13 +153,107 @@
                                                                     <i class="fas fa-file-pdf"></i> Subir PDF
                                                                 </a>
                                                             </div>
-                                                            <input type="file" id="planEstudio" name="planEstudio" class="hidden">
+                                                            <input type="file" id="planEstudio" name="planEstudio"
+                                                                class="hidden">
                                                         </div>
                                                     </div>
                                                 </div> <!-- // END Overview -->
 
+                                                <!-- Perfil Egreso -->
                                                 <div class="white-space-32"></div>
-                                                <h3>HABILIDADES Y DESTREZAS DEL EGRESADO</h3>                                                
+                                                <h3>PERFIL DE EGRESO</h3>
+                                                <div class="white-space-16"></div>
+                                                <textarea class="input-ghost input-ghost-parrafo text-justify" name="egreso-descripcion" maxlength="600" rows="5" placeholder="Descripción del perfil de egreso (600 caracteres máximo)"></textarea>
+                                                
+                                                <div class="white-space-16"></div>
+                                                <div class="row">                                                    
+                                                    <div class="microsite-hability row">                                                        
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp; 
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify"  name="egreso1" maxlength="200" rows="3" placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div>                                                     
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="egreso2" maxlength="200" rows="3" placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="white-space-16"></div>
+                                                <div class="row">                                                    
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="egreso3" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div>                                                    
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="egreso4" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="white-space-16"></div>
+                                                <div class="row">                                                    
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="egreso5" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div> 
+                                                    
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="egreso6" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div> 
+                                                </div>
+                                                <!-- // END Perfil Egreso -->
+
+                                                <!-- Perfil Ingreso -->
+                                                <div class="white-space-48"></div>
+                                                <h3>PERFIL DE INGRESO</h3>
+                                                <div class="white-space-16"></div>
+                                                <textarea class="input-ghost input-ghost-parrafo text-justify" name="ingreso-descripcion" maxlength="600" rows="5" placeholder="Descripción del perfil de ingreso (600 caracteres máximo)"></textarea>
+                                                
+                                                <div class="white-space-16"></div>
+                                                <div class="row">                                                    
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="ingreso1" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div>                                                   
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="ingreso2" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div> 
+                                                </div>
+                                                <div class="white-space-16"></div>
+                                                <div class="row">                                                    
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="ingreso3" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div>                                                    
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="ingreso4" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div> 
+                                                </div>
+                                                <div class="white-space-16"></div>
+                                                <div class="row">                                                    
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="ingreso5" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div>                                                    
+                                                    <div class="microsite-hability row">
+                                                        <i class="color-lightBlue fas fa-angle-right auto"></i>&nbsp;
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" name="ingreso6" maxlength="200" rows="3"
+                                                            placeholder="Descripción (200 caracteres máximo)"></textarea>
+                                                    </div>
+                                                </div>
+                                                <!-- // END Perfil Ingreso -->
+
+                                                <div class="white-space-64"></div>
+                                                <h3>COMPETENCIAS Y HABILIDADES</h3>
                                                 <div class="row">
                                                     <!-- Habilidades -->
                                                     <div class="microsite-hability column">
@@ -165,8 +262,9 @@
                                                             <h3>01</h3>
                                                         </div>
                                                         <div class="white-space-8"></div>
-                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" id="contenido1" name="micrositio-hability1"
-                                                            maxlength="250" rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify"
+                                                            id="contenido1" name="micrositio-hability1" maxlength="250"
+                                                            rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
                                                     </div> <!-- // End Habilidades -->
                                                     <!-- Habilidades -->
                                                     <div class="microsite-hability column">
@@ -175,11 +273,12 @@
                                                             <h3>02</h3>
                                                         </div>
                                                         <div class="white-space-8"></div>
-                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" id="contenido1" name="micrositio-hability2" maxlength="250"
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify"
+                                                            id="contenido1" name="micrositio-hability2" maxlength="250"
                                                             rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
                                                     </div> <!-- // End Habilidades -->
                                                 </div>
-                                            
+
                                                 <div class="row">
                                                     <!-- Habilidades -->
                                                     <div class="microsite-hability column">
@@ -188,8 +287,9 @@
                                                             <h3>03</h3>
                                                         </div>
                                                         <div class="white-space-8"></div>
-                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" id="contenido1" name="micrositio-hability3"
-                                                            maxlength="250" rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify"
+                                                            id="contenido1" name="micrositio-hability3" maxlength="250"
+                                                            rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
                                                     </div> <!-- // End Habilidades -->
                                                     <!-- Habilidades -->
                                                     <div class="microsite-hability column">
@@ -198,8 +298,9 @@
                                                             <h3>04</h3>
                                                         </div>
                                                         <div class="white-space-8"></div>
-                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" id="contenido1" name="micrositio-hability4"
-                                                            maxlength="250" rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify"
+                                                            id="contenido1" name="micrositio-hability4" maxlength="250"
+                                                            rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
                                                     </div> <!-- // End Habilidades -->
                                                 </div>
 
@@ -211,8 +312,9 @@
                                                             <h3>05</h3>
                                                         </div>
                                                         <div class="white-space-8"></div>
-                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" id="contenido1" name="micrositio-hability5"
-                                                            maxlength="250" rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify"
+                                                            id="contenido1" name="micrositio-hability5" maxlength="250"
+                                                            rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
                                                     </div> <!-- // End Habilidades -->
                                                     <!-- Habilidades -->
                                                     <div class="microsite-hability column">
@@ -221,14 +323,14 @@
                                                             <h3>06</h3>
                                                         </div>
                                                         <div class="white-space-8"></div>
-                                                        <textarea class="input-ghost input-ghost-parrafo text-justify" id="contenido1" name="micrositio-hability6"
-                                                            maxlength="250" rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
+                                                        <textarea class="input-ghost input-ghost-parrafo text-justify"
+                                                            id="contenido1" name="micrositio-hability6" maxlength="250"
+                                                            rows="4" placeholder="Habilidades o destrezas (250 carácteres máximo)"></textarea>
                                                     </div> <!-- // End Habilidades -->
                                                 </div>
-                         
 
-                                                <!-- Contenido Dinámico -->
-                                                <div class="contenedor-componentes column" id="contenedor-componentes">    
+
+                                                <div class="contenedor-componentes column" id="contenedor-componentes">
 
 
                                                     <!-- Categorías -->
@@ -241,7 +343,7 @@
                                                                 name="categorias" placeholder="Añade categorías, sepáralas por coma">
                                                         </div>
                                                     </div>
-                                                    <!-- //End Categorías -->                                                    
+                                                    <!-- //End Categorías -->
 
                                                     <div class="publicar column">
                                                         <div class="white-space-32"></div>
@@ -267,7 +369,7 @@
     </div>
     <script type="text/javascript" src="../assets/js/admin.js" async></script>
     <script>
-        document.getElementById("planEstudioClick").addEventListener('click', function(){            
+        document.getElementById("planEstudioClick").addEventListener('click', function () {
             document.getElementById("planEstudio").click();
         });
     </script>
