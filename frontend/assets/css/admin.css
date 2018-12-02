@@ -309,3 +309,26 @@ header .header-main .logo {
 #microsite-duration {
     max-width: 90%;
 }
+
+
+.table-admin {
+    border: 1px solid var(--formBackground);
+    table-layout: fixed;
+    box-sizing: border-box;
+}
+
+.table-admin th {
+    padding: var(--paddingNormal) 0;
+    color: var(--lightGray);
+}
+
+.table-admin td {    
+    padding: var(--paddingNormal);  
+}
+
+.table-admin td textarea {
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+    resize: none;
+}
