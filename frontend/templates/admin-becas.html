@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/admin.css" media="screen">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+        crossorigin="anonymous">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <title>UPQROO - ADMINISTRADOR</title>
+</head>
+
+<body>
+
+    <div class="admin flex">
+        <div class="column">
+            <!-- Header -->
+            <header>
+                <div class="column">
+                    <div class="header-main justify-center wow fadeInDown">
+                        <div class="container">
+                            <div class="row">
+                                <div class="left auto">
+                                    <div class="logo responsive-img">
+                                        <a href="#">
+                                            <img src="../assets/img/logo-upqroo.png" alt="Logo UPQROO" title="Logo UPQROO">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <nav class="row align-center justify-end">
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-newspaper"></i>
+                                            <a href="#">NOTICIAS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <a href="#">EVENTOS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-briefcase"></i>
+                                            <a href="#">VACANTES</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-university"></i>
+                                            <a href="#">PÁGINAS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-users"></i>
+                                            <a href="#">USUARIOS</a>
+                                        </div>
+
+                                        <div class="nav-item auto align-center">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            <a href="#">SALIR</a>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header> <!-- End Header -->
+
+            <!-- Admin Content -->
+            <div class="admin-content">
+                <div class="admin-agregar-noticia justify-center">
+                    <div class="container">
+                        <div class="column">
+                            <div class="white-space-32"></div>
+                            <h2>
+                                EDITAR - BECAS
+                            </h2>
+                            <div class="white-space-32"></div>
+                            <div class="row">
+                                <div class="sheet sheet-microsite justify-center bordered">
+                                    <div class="container">
+                                        <form class="becas-form" method="post">
+                                            <!-- Form Column -->
+                                            <div class="column">
+                                                <!-- Beca Root -->
+                                                <div class="beca-root column" id="beca-root">
+                                                    
+                                                </div> <!-- // END Beca Root -->
+
+                                                <div class="white-space-32"></div>
+                                                <a class="btn btn-lightBlue text-center" id="addNewBeca">
+                                                    AÑADIR NUEVA BECA
+                                                </a>
+
+                                                <div class="white-space-32"></div>
+                                                <div class="contenedor-componentes column" id="contenedor-componentes">
+                                                    <div class="publicar column">
+                                                        <div class="white-space-16"></div>
+                                                        <div class="auto color-white">
+                                                            <input class="btn btn-darkBlue" type="submit" value="ACTUALIZAR INFORMACIÓN">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="white-space-32"></div>
+                                            </div> <!-- End Form Column -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white-space-32"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End Admin Content -->
+
+        </div> <!-- End Main Column -->
+    </div>
+    <script>
+
+        /**
+        *   Agregar nueva beca
+        */
+
+        document.getElementById('addNewBeca').onclick = function (event) {
+            event.preventDefault();
+            const becaRoot = document.getElementById('beca-root');
+            let becaContainer = document.createElement('div');
+            becaContainer.classList.add('beca-container', 'column');
+            becaContainer.innerHTML =
+                '<div class="white-space-32"></div>' +
+                '<div class="title-component align-center">' +
+                    '<h4> Nombre de la beca </h4>' +
+                    '<a class="btn" id="delete-component" onclick="eliminarBeca(this);">ELIMINAR BECA</a>' +
+                '</div>' +
+                '<div class="white-space-24"></div>' +
+                '<input class="input input-ghost" type="text" name="nombre-beca" placeholder="Nombre de la beca o convocatoria" />' +
+                '<div class="white-space-24"></div>' +
+                '<div class="title-component">' +
+                    '<h4>Documentos</h4>' +
+                '</div>' +
+                '<div class="white-space-16"></div>' +
+                '<div class="container-becas-item column">' +
+                    '<div class="row">' +
+                        '<input class="input input-ghost" type="text" placeholder="Nombre del archivo o documento" />' +
+                        '<div class="column align-center justify-center">' +
+                            '<p> Selecciona un archivo a subir </p>' +
+                            '<div class="white-space-16"></div>' +
+                            '<input type="file" name="archivo" />' +
+                        '</div>' +  
+                        '<a class="btn" id="delete-component" onclick="eliminarArchivoBeca(this);">ELIMINAR</a>' +
+                    '</div>' +
+                    '<div class="white-space-16"></div>' +
+                '</div>' +
+                '<div class="btn-container" id="becaItemLast">' +
+                    '<a class="btn btn-lightBlue text-center" onclick="addNewBecaItem(this);">' +
+                        '<i class="fas fa-file-alt"></i>&nbsp; AÑADIR NUEVO DOCUMENTO' +
+                    '</a>' +
+                '</div>';
+            becaRoot.appendChild(becaContainer);
+        }       
+
+        /**
+        *   Agregar documentos de a becas
+        */
+
+        function addNewBecaItem(element) {
+            let lastItem = element.parentNode;
+            let becaElement = document.createElement('div');            
+            becaElement.classList.add('row', 'beca-element', 'align-center');
+            becaElement.innerHTML = 
+            '<input class="input input-ghost" type="text" placeholder = "Nombre del archivo o documento" /> ' +
+            '<div class="column align-center justify-center">' +
+                '<p> Selecciona un archivo a subir </p>' +
+                '<div class="white-space-16"></div>' +
+                '<input type="file" name="archivo" />' +
+            '</div>' +
+            '<a class="btn" id="delete-component" onclick="eliminarArchivoBeca(this);">ELIMINAR</a>';
+            element.parentNode.parentNode.insertBefore(becaElement, lastItem);
+        }
+
+        /**
+        *   Eleminar documentos de becas
+        */
+
+       function eliminarArchivoBeca(element) {
+            element.parentNode.parentNode.removeChild(element.parentNode);
+       }
+
+        /**
+        *   Eleminar Beca
+        */
+
+       function eliminarBeca(element) {
+            element.parentNode.parentNode.parentNode.removeChild(element.parentNode.parentNode);
+       }
+
+
+    </script>
+</body>
+
+</html>

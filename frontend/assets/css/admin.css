@@ -1,9 +1,7 @@
 
-/* --- LOGIN --- */
-
-.btn {
-    cursor: pointer;
-}
+/* ==========================================================================
+    LOGIN
+========================================================================== */
 
 .login {
     height: 100vh;
@@ -12,7 +10,7 @@
 
 .login .left {
     width: 55%;
-    background-image: url(../img/login-background.jpg);
+    background-position: center;
     background-size: cover;
 }
 
@@ -41,6 +39,7 @@
         border: none;
     }
 }
+
 
 
 
@@ -173,17 +172,18 @@ header .header-main .logo {
     border: 2px dotted var(--background);
 }
 
-.input-ghost {
+.input-ghost {    
     width: 96%;
-    font-family: var(--Roboto);
-    border-bottom: 2px solid var(--borderBackground);    
-    padding: var(--paddingNormal) 4px;    
+    outline: none;
+    font-family: var(--Roboto);            
     font-size: var(--fontText);    
+    padding: var(--paddingNormal) 4px;    
+    border-bottom: 2px solid var(--borderBackground);
 }
 
 .input-ghost:focus {
     border-radius: 4px;
-    border: 2px solid var(--borderBackground);
+    border-bottom: 2px solid var(--lightBlue);
 }
 
 .input-ghost-title {
@@ -225,6 +225,10 @@ header .header-main .logo {
     cursor: pointer;
 }
 
+#lista {
+    order: 1;
+}
+
 #lista li {        
     padding: var(--paddingNormal);
 }
@@ -234,11 +238,16 @@ header .header-main .logo {
 }
 
 #lista li:hover::before {
-    content: 'REMOVER ';
+    content: 'ELIMINAR ';
+    color: var(--red);
 }
 
-#inputEnlacesName {
+.inputEnlacesName {
     margin-left: var(--paddingNormal);
+}
+
+.list-input-fixed {
+    order: 2;
 }
 
 .destino-carrera select, .admin-users select, .select-ghost {
@@ -257,27 +266,27 @@ header .header-main .logo {
 }
 
 .enlaces {
-    order: 1;
+    order: 0;
 }
 
 .categorias {
-    order: 2;
+    order: 1;
 }
 
 .share {
-    order: 3;
+    order: 2;
 }
 
 .date-time {
-    order: 4;
+    order: 3;
 }
 
 .destino-carrera {
-    order: 5;
+    order: 4;
 }
 
 .publicar {
-    order: 6;
+    order: 5;
 }
 
 /* --- End Admin News -- */
@@ -294,6 +303,9 @@ header .header-main .logo {
     display: none;
 }
 
+#user-role-header {
+    display: none;
+}
 
 
 /* --- Admin Mircosites -- */
@@ -309,7 +321,6 @@ header .header-main .logo {
 #microsite-duration {
     max-width: 90%;
 }
-
 
 .table-admin {
     border: 1px solid var(--formBackground);
@@ -331,4 +342,32 @@ header .header-main .logo {
     word-wrap: break-word;
     word-break: break-all;
     resize: none;
+}
+
+.microsite-egreso, .microsite-ingreso, .microsite-habilidad {
+    width: 46%;
+    margin: 0 var(--paddingMedium);
+}
+
+.microsite-egreso::nth-child(even), .microsite-ingreso::nth-child(even), .microsite-habilidad::nth-child(even) {
+    margin-left: 0;
+}
+
+.microsite-egreso:nth-child(odd), .microsite-ingreso::nth-child(even), .microsite-habilidad::nth-child(even) {
+    margin-right: 0;
+}
+
+.delete-egreso, .delte-ingreso, .delete-hability {
+    cursor: pointer;
+    margin-top: var(--paddingNormal);
+}
+
+.microsite-habilidad p {
+    font-size: 1.5em;    
+    color: var(--lightGray);
+    font-weight: var(--weightBold);
+}
+
+.beca-element {
+    margin-bottom: var(--paddingLarge);
 }

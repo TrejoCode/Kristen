@@ -77,16 +77,21 @@
 * {
     padding: 0;
     margin: 0;
-    transition: all 0.5s;
+    transition: all 400ms;
 }
 
-html {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
-body {
-    background-color: var(--background);
+body {    
     overflow-x: hidden;
+    background-color: var(--background);
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--lightBlue);
 }
 
 button, input, select, textarea, option {
@@ -101,10 +106,6 @@ ul, ol {
 
 a {
     text-decoration: none;
-    color: inherit;
-}
-
-a:visited {
     color: inherit;
 }
 
@@ -194,8 +195,8 @@ p {
 
 .responsive-img {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .row {
@@ -208,6 +209,10 @@ p {
 
 .column {
     flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 /*    ALIGNMENT    */
@@ -325,6 +330,7 @@ label {
     font-family: var(--Roboto);
     color: var(--white);
     border: none;
+    cursor: pointer;
 }
 
 .btn:active {
@@ -427,11 +433,21 @@ label {
     font-size: var(--fontMini);
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 /*    LARGE DEVICES    */
 
+@media screen and (min-width: 1440px) {
+
+    .container {
+        max-width: 75%;
+    }
+
+}
+
 @media screen and (max-width: 1200px) {
-
-
 
 }
 
@@ -439,7 +455,7 @@ label {
 
 @media screen and (max-width: 992px) {
 
-    body {background: darkGray;}
+    /*body {background: darkGray;} */
 
 }
 
@@ -447,7 +463,7 @@ label {
 
 @media screen and (max-width: 768px) {
 
-    body {background: lightblue;}
+    /*body {background: lightblue;}*/
 
     .row-responsive {
         flex-direction: column;
@@ -461,5 +477,5 @@ label {
 /*    MOBILE DEVICES    */
 
 @media screen and (max-width: 576px) {
-    body {background: lightGray;}
+    /*body {background: lightGray;}*/
 }
