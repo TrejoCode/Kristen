@@ -107,6 +107,7 @@ ul, ol {
 a {
     text-decoration: none;
     color: inherit;
+    line-height: 20px;
 }
 
 img {
@@ -435,6 +436,14 @@ label {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-default {
+    cursor: default;
 }
 
 /*    LARGE DEVICES    */
