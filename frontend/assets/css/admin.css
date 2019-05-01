@@ -432,3 +432,20 @@ header .header-main .logo {
         width: 100%;
     }
 }
+
+.admin .slider-root img {
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.admin .slider-root img:first-child {
+    padding-left: 0;
+}
+
+.admin .slider-root img:last-child {
+    padding-right: 0;
+}
+
+.admin .slider-root p {
+    line-height: 18px;
+}

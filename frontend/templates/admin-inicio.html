@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/trejocode.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/admin.css" media="screen">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css"
+        integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
+        integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <title>UPQROO - ADMINISTRADOR</title>
+</head>
+
+<body>
+
+    <div class="admin flex">
+        <div class="column">
+
+            <!-- Admin Content -->
+            <div class="admin-content">
+                <div class="admin-agregar-noticia justify-center">
+                    <div class="container">
+                        <div class="column">
+                            <div class="white-space-32"></div>
+                            <h2>
+                                EDITAR - PÁGINA DE INICIO
+                            </h2>
+                            <div class="white-space-32"></div>
+                            <div class="row">
+                                <div class="sheet sheet-microsite justify-center bordered">
+                                    <div class="container">
+                                        <form class="becas-form" method="post">
+                                            <!-- Form Column -->
+                                            <div class="column">
+                                                <div class="white-space-16"></div>
+                                                <h3>
+                                                    SLIDER
+                                                </h3>
+                                                <div class="white-space-8"></div>
+                                                <p>
+                                                    Se requieren 5 imágenes de con un peso máximo de 300KB
+                                                </p>
+                                                <div class="white-space-16"></div>
+                                                <!-- Slider Root -->
+                                                <div class="slider-root" id="slider-root">
+                                                    <div class="slider-container column">
+                                                        <img src="http://new.upqroo.edu.mx/assets/img/slide2.jpg" alt="Imagen slider" onclick="previewSlider(this)" />
+                                                        <div class="white-space-8"></div>
+                                                        <p class="text-center textMini">
+                                                            Elemento 1 / Click para cambiar
+                                                        </p>
+                                                        <input type="file" name="slide1File" class="hidden" id="slide1Input">
+                                                    </div>
+                                                    <div class="slider-container column">
+                                                        <img src="http://new.upqroo.edu.mx/assets/img/slide2.jpg" alt="Imagen slider" onclick="previewSlider(this)" />
+                                                        <div class="white-space-8"></div>
+                                                        <p class="text-center textMini">
+                                                            Elemento 2 / Click para cambiar
+                                                        </p>
+                                                        <input type="file" name="slide2File" class="hidden" id="slide2Input">
+                                                    </div>
+                                                    <div class="slider-container column">
+                                                        <img src="http://new.upqroo.edu.mx/assets/img/slide2.jpg" alt="Imagen slider" onclick="previewSlider(this)" />
+                                                        <div class="white-space-8"></div>
+                                                        <p class="text-center textMini">
+                                                            Elemento 3 / Click para cambiar
+                                                        </p>
+                                                        <input type="file" name="slide3File" class="hidden" id="slide3Input">
+                                                    </div>
+                                                    <div class="slider-container column">
+                                                        <img src="http://new.upqroo.edu.mx/assets/img/slide2.jpg" alt="Imagen slider" onclick="previewSlider(this)" />
+                                                        <div class="white-space-8"></div>
+                                                        <p class="text-center textMini">
+                                                            Elemento 4 / Click para cambiar
+                                                        </p>
+                                                        <input type="file" name="slide4File" class="hidden" id="slide4Input">
+                                                    </div>
+                                                    <div class="slider-container column">
+                                                        <img src="http://new.upqroo.edu.mx/assets/img/slide2.jpg" alt="Imagen slider" onclick="previewSlider(this)" />
+                                                        <div class="white-space-8"></div>
+                                                        <p class="text-center textMini">
+                                                            Elemento 5 / Click para cambiar
+                                                        </p>
+                                                        <input type="file" name="slide5File" class="hidden" id="slide5Input">
+                                                    </div>
+                                                </div> 
+                                                <!-- // END Root Slider-->
+
+                                                <div class="white-space-48"></div>
+                                                <h3>
+                                                    ALERTA EMERGENTE
+                                                </h3>
+                                                <div class="white-space-8"></div>
+                                                <p>
+                                                    La alerta solo se mostrará si se encuentra activa, si es desmarcada no se mostrará en la pagina de inicio.
+                                                </p>
+                                                <div class="white-space-16"></div>
+                                                <div class="align-center">
+                                                    <input type="checkbox" name="activeModal">
+                                                    <p>
+                                                        &nbsp; ACTIVAR ALERTA EMERGENTE
+                                                    </p>
+                                                </div>
+                                                <div class="white-space-24"></div>
+                                                <h4>
+                                                    URL a redirigir:
+                                                </h4>
+                                                <div class="white-space-8"></div>
+                                                <input class="input-ghost" type="text" name="urlModal" maxlength="500" placeholder="www.ejemplo.com">
+                                                <div class="white-space-24"></div>
+                                                <div class="banner-img bordered-dotted responsive-img">
+                                                    <img id="modal-img" src="https://via.placeholder.com/1200x300.png?text=CAMBIAR" alt="Imagen de Modal" title="Imagen del modal" onclick="previewSlider(this)">
+                                                    <input class="hidden" id="modalInput" type="file" name="modalImg">
+                                                </div>
+                                                <p class="text-center text-Mini">
+                                                    Click sobre la imagen para actualizar
+                                                </p>
+
+                                                <div class="white-space-32"></div>
+                                                <div class="contenedor-componentes column" id="contenedor-componentes">
+                                                    <div class="publicar column">
+                                                        <div class="white-space-16"></div>
+                                                        <div class="auto color-white">
+                                                            <input class="btn btn-darkBlue" type="submit" value="ACTUALIZAR INICIO">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="white-space-32"></div>
+                                            </div> <!-- End Form Column -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white-space-32"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End Admin Content -->
+
+        </div> <!-- End Main Column -->
+    </div>
+    <script>
+
+        function previewSlider(element) {
+            let currentInput = element.parentNode.querySelector("input");
+            currentInput.click();
+            currentInput.onchange = function(event) {
+                let selectedImg = event.target.files[0];
+                let reader = new FileReader();
+                reader.onload = function(event) {
+                    element.src = event.target.result;
+                };
+                reader.readAsDataURL(selectedImg);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
