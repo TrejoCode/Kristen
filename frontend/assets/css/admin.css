@@ -433,8 +433,20 @@ header .header-main .logo {
     }
 }
 
+@media screen and (min-width: 1440px) {
+
+    .inicio-container {
+        max-width: 85%;
+    }
+
+}
+
+.admin .slider-container {
+    margin: 0 4px;
+}
+
 .admin .slider-root img {
-    padding: 0 8px;
+    padding: 0 4px;
     cursor: pointer;
 }
 
